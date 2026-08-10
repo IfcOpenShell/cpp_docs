@@ -1,0 +1,14 @@
+.. _exhale_function_nef__to__halfspace__tree_8h_1a63650b5d18191d13cbb025a855b3eb36:
+
+Template Function ifcopenshell::geom::edge_contract
+===================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::edge_contract(graph<Kernel>&)
+   :project: IfcOpenShell

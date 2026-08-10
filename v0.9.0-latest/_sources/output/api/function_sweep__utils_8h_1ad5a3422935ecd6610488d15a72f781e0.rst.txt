@@ -1,0 +1,14 @@
+.. _exhale_function_sweep__utils_8h_1ad5a3422935ecd6610488d15a72f781e0:
+
+Function ifcopenshell::geom::util::process_sweep_as_pipe
+========================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_sweep_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::process_sweep_as_pipe(const TopoDS_Wire&, const TopoDS_Wire&, TopoDS_Shape&, bool)
+   :project: IfcOpenShell

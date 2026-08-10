@@ -1,0 +1,14 @@
+.. _exhale_typedef_cgal__conversion__result_8h_1a3d3179fec2fc9fbdbdd240b756ebb3c1:
+
+Typedef cgal_vertex_descriptor
+==============================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: cgal_vertex_descriptor
+   :project: IfcOpenShell

@@ -1,0 +1,55 @@
+
+.. _file_src_ifcgeom_kernels_passthrough_passthrough_kernel.h:
+
+File passthrough_kernel.h
+=========================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/passthrough/passthrough_kernel.h``)
+---------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_passthrough_passthrough_kernel.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../../ifcgeom/abstract_kernel.h``
+
+- ``../../../ifcgeom/kernels/ifc_geomlibrary_api.h``
+
+- ``../../../ifcgeom/kernels/passthrough/passthrough_conversion_result.h``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__kernels`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1passthrough__kernel`
+

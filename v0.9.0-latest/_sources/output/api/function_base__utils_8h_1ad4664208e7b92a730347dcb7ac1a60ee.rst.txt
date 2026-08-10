@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1ad4664208e7b92a730347dcb7ac1a60ee:
+
+Function ifcopenshell::geom::util::apply_transformation(const TopoDS_Shape&, const gp_GTrsf&)
+=============================================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::apply_transformation(const TopoDS_Shape&, const gp_GTrsf&)
+   :project: IfcOpenShell

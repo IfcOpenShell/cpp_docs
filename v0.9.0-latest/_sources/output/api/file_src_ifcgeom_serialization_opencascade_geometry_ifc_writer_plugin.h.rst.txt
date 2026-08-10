@@ -1,0 +1,66 @@
+
+.. _file_src_ifcgeom_serialization_opencascade_geometry_ifc_writer_plugin.h:
+
+File opencascade_geometry_ifc_writer_plugin.h
+=============================================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/serialization/opencascade_geometry_ifc_writer_plugin.h``)
+-----------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_serialization_opencascade_geometry_ifc_writer_plugin.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``filesystem``
+
+- ``serialization.h`` (:ref:`file_src_ifcgeom_serialization_serialization.h`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_opencascade__geometry__ifc__writer__plugin_8h_1a3507a0fb050fd6a76bd4043a98e1aeaf`
+
+- :ref:`exhale_function_opencascade__geometry__ifc__writer__plugin_8h_1ad6657fe94ec1eab66dc8f88286c4db2a`
+
+- :ref:`exhale_function_opencascade__geometry__ifc__writer__plugin_8h_1a55418674b13cb1261e2507fb5142c05e`
+
+- :ref:`exhale_function_opencascade__geometry__ifc__writer__plugin_8h_1a641d5cc912c3e578694ba99b226929c0`
+
+- :ref:`exhale_function_opencascade__geometry__ifc__writer__plugin_8h_1ae26b8f704860dc76a0f97ec1d9c872db`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_opencascade__geometry__ifc__writer__plugin_8h_1ae6d77ef85457f159173558acb60afea0`
+

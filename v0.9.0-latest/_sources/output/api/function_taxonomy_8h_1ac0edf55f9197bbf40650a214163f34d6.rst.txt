@@ -1,0 +1,14 @@
+.. _exhale_function_taxonomy_8h_1ac0edf55f9197bbf40650a214163f34d6:
+
+Template Function ifcopenshell::geom::filter
+============================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::filter(const taxonomy::collection::ptr&, Fn)
+   :project: IfcOpenShell

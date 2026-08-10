@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1a5907a59d3e1025ebce2dfa27f07cb317:
+
+Function ifcopenshell::geom::util::is_identity(const gp_GTrsf&, double)
+=======================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::is_identity(const gp_GTrsf&, double)
+   :project: IfcOpenShell

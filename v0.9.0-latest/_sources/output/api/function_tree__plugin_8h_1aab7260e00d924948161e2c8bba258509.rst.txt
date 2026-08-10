@@ -1,0 +1,14 @@
+.. _exhale_function_tree__plugin_8h_1aab7260e00d924948161e2c8bba258509:
+
+Function ifcopenshell::geom::trees::tree_plugin_metadata
+========================================================
+
+- Defined in :ref:`file_src_ifcgeom_tree_plugin.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::trees::tree_plugin_metadata(const std::string&)
+   :project: IfcOpenShell

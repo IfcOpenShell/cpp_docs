@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1inverse__attribute:
+
+Class inverse_attribute
+=======================
+
+- Defined in :ref:`file_src_ifcparse_schema.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::inverse_attribute
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

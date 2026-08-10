@@ -1,0 +1,14 @@
+.. _exhale_function_taxonomy_8h_1ae3e49e73ca029d8bf657446983c70bfa:
+
+Function ifcopenshell::geom::flatten
+====================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::flatten(const taxonomy::collection::ptr&)
+   :project: IfcOpenShell

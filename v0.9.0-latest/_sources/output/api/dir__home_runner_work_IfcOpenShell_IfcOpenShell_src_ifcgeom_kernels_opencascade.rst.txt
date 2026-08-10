@@ -1,0 +1,16 @@
+.. _dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_ifcgeom_kernels_opencascade:
+
+
+Directory opencascade
+=====================
+
+
+|exhale_lsh| :ref:`Parent directory <dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_ifcgeom_kernels>` (``/home/runner/work/IfcOpenShell/IfcOpenShell/src/ifcgeom/kernels``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``/home/runner/work/IfcOpenShell/IfcOpenShell/src/ifcgeom/kernels/opencascade``
+
+
+

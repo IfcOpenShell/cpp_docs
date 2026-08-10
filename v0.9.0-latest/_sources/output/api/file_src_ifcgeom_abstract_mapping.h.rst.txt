@@ -1,0 +1,109 @@
+
+.. _file_src_ifcgeom_abstract_mapping.h:
+
+File abstract_mapping.h
+=======================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/abstract_mapping.h``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_abstract_mapping.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/conversion_settings.h``
+
+- ``../ifcgeom/taxonomy.h``
+
+- ``../ifcparse/express.h``
+
+- ``../plugin/plugin.h``
+
+- ``functional``
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``string``
+
+- ``tuple``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_abstract_kernel.h`
+
+- :ref:`file_src_ifcgeom_converter.h`
+
+- :ref:`file_src_ifcgeom_filter.h`
+
+- :ref:`file_src_ifcgeom_iterator.h`
+
+- :ref:`file_src_ifcgeom_mapping_mapping.h`
+
+- :ref:`file_src_ifcgeom_mapping_plugin.h`
+
+- :ref:`file_src_serializers_schema_dependent_xml_serializer.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__impl`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1geometry__conversion__task`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1mapping__registry_1_1entry`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1abstract__mapping`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1mapping__factory__implementation`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1mapping__registry`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_abstract__mapping_8h_1a2da56ddf474c767e6343684c6b49ebdd`
+
+- :ref:`exhale_function_abstract__mapping_8h_1afdec582d2050987fdf12547f58565c2d`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_abstract__mapping_8h_1a65aac35d731dc63939c30648bec8054d`
+
+- :ref:`exhale_typedef_abstract__mapping_8h_1a0fbdfe360ac38550cd57808559fd42cb`
+

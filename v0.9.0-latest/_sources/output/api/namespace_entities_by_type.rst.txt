@@ -1,0 +1,13 @@
+
+.. _namespace_entities_by_type:
+
+Namespace entities_by_type
+==========================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+

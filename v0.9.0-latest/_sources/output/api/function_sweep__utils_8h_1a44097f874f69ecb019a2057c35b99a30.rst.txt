@@ -1,0 +1,14 @@
+.. _exhale_function_sweep__utils_8h_1a44097f874f69ecb019a2057c35b99a30:
+
+Function ifcopenshell::geom::util::wire_to_ax
+=============================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_sweep_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::wire_to_ax(const TopoDS_Wire&, gp_Ax2&)
+   :project: IfcOpenShell

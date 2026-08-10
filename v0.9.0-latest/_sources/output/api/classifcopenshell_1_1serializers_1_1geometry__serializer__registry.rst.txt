@@ -1,0 +1,27 @@
+.. _exhale_class_classifcopenshell_1_1serializers_1_1geometry__serializer__registry:
+
+Class geometry_serializer_registry
+==================================
+
+- Defined in :ref:`file_src_serializers_geometry_serializer_plugin.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structifcopenshell_1_1serializers_1_1geometry__serializer__registry_1_1entry`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::serializers::geometry_serializer_registry
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

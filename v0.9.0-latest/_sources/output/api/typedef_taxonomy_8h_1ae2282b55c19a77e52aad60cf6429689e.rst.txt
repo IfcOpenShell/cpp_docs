@@ -1,0 +1,14 @@
+.. _exhale_typedef_taxonomy_8h_1ae2282b55c19a77e52aad60cf6429689e:
+
+Typedef ifcopenshell::geom::endpoint_connection
+===============================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::endpoint_connection
+   :project: IfcOpenShell

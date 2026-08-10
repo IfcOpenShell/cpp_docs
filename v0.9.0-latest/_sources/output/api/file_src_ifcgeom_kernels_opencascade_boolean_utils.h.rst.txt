@@ -1,0 +1,114 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_boolean_utils.h:
+
+File boolean_utils.h
+====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/boolean_utils.h``)
+----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_boolean_utils.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../../ifcparse/logger.h``
+
+- ``../ifc_geomlibrary_api.h``
+
+- ``BOPAlgo_Operation.hxx``
+
+- ``BRepTools.hxx``
+
+- ``BRepTopAdaptor_FClass2d.hxx``
+
+- ``BRep_Tool.hxx``
+
+- ``Geom_Surface.hxx``
+
+- ``NCollection_IndexedMap.hxx``
+
+- ``NCollection_List.hxx``
+
+- ``Standard_Macro.hxx``
+
+- ``TopTools_ShapeMapHasher.hxx``
+
+- ``TopoDS_Face.hxx``
+
+- ``TopoDS_Shape.hxx``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__util`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1util_1_1boolean__settings`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1util_1_1points__on__planar__face__generator`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_boolean__utils_8h_1af5061f5193f1dfebaf2dcae950cc0357`
+
+- :ref:`exhale_function_boolean__utils_8h_1afd0b45c7b0d841c5761fdddc50de2f72`
+
+- :ref:`exhale_function_boolean__utils_8h_1a4158bb3142c465178a95127ec082c942`
+
+- :ref:`exhale_function_boolean__utils_8h_1ac456a020bd46a569414bc2ce6866c4ad`
+
+- :ref:`exhale_function_boolean__utils_8h_1aab8751575a47b2a5c0dd07f7828e0a68`
+
+- :ref:`exhale_function_boolean__utils_8h_1a366afc1b9dee9efbaf8b7b716683073f`
+
+- :ref:`exhale_function_boolean__utils_8h_1aba2ea295874d1d3ca3c732e8ca8cd653`
+
+- :ref:`exhale_function_boolean__utils_8h_1ae2522e5d830c3a7e0a2ffca374cae7cb`
+
+- :ref:`exhale_function_boolean__utils_8h_1abf38e35a8b007d795188680dce9e0843`
+
+- :ref:`exhale_function_boolean__utils_8h_1a4563e116bd6c216272f1d2caf7e8960e`
+
+- :ref:`exhale_function_boolean__utils_8h_1a124f7d20d9b56ac8a415d2bb2b1fa05c`
+
+- :ref:`exhale_function_boolean__utils_8h_1ab5c3e488cd921e1ddfb050f8ef0cc465`
+
+- :ref:`exhale_function_boolean__utils_8h_1a22218e6e4403acb7e1f98ca930e6fb6d`
+
+- :ref:`exhale_function_boolean__utils_8h_1a17168ca3d3e87cabebec982203a4031e`
+
+- :ref:`exhale_function_boolean__utils_8h_1ac1cead2ff55b86b49b24c7c14e6b38f5`
+
+- :ref:`exhale_function_boolean__utils_8h_1a58ba8178a0f31c1dff027962c25144f0`
+

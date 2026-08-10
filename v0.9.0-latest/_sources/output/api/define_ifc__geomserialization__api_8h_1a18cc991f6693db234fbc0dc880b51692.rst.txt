@@ -1,0 +1,14 @@
+.. _exhale_define_ifc__geomserialization__api_8h_1a18cc991f6693db234fbc0dc880b51692:
+
+Define IFC_GEOMSERIALIZATION_API
+================================
+
+- Defined in :ref:`file_src_ifcgeom_serialization_ifc_geomserialization_api.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: IFC_GEOMSERIALIZATION_API
+   :project: IfcOpenShell

@@ -1,0 +1,109 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_opencascade_kernel.h:
+
+File opencascade_kernel.h
+=========================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/opencascade_kernel.h``)
+---------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_opencascade_kernel.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../../ifcgeom/abstract_kernel.h``
+
+- ``../../../ifcgeom/conversion_result.h``
+
+- ``../../../ifcgeom/conversion_settings.h``
+
+- ``../../../ifcgeom/element.h``
+
+- ``../../../ifcgeom/kernels/ifc_geomlibrary_api.h``
+
+- ``../../../ifcgeom/kernels/opencascade/opencascade_conversion_result.h``
+
+- ``../../../ifcgeom/representation.h``
+
+- ``../../../ifcgeom/taxonomy.h``
+
+- ``BOPAlgo_Operation.hxx``
+
+- ``BRepBuilderAPI_MakeEdge.hxx``
+
+- ``BRep_Builder.hxx``
+
+- ``Geom_Curve.hxx``
+
+- ``TopoDS.hxx``
+
+- ``TopoDS_Face.hxx``
+
+- ``TopoDS_Wire.hxx``
+
+- ``array`` (:ref:`file_src_ifcparse_variant_array.h`)
+
+- ``cmath``
+
+- ``gp_GTrsf.hxx``
+
+- ``gp_GTrsf2d.hxx``
+
+- ``gp_Mat.hxx``
+
+- ``gp_Mat2d.hxx``
+
+- ``gp_Pln.hxx``
+
+- ``gp_Pnt.hxx``
+
+- ``gp_Quaternion.hxx``
+
+- ``gp_Trsf.hxx``
+
+- ``gp_Trsf2d.hxx``
+
+- ``gp_Vec.hxx``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_tree.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1open__cascade__kernel`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1open__cascade__kernel_1_1faceset__helper`
+

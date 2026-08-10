@@ -1,0 +1,14 @@
+.. _exhale_function_wire__utils_8h_1ae9217242ec5a1d23c838f3e77954c08c:
+
+Function ifcopenshell::geom::util::remove_duplicate_points_from_loop
+====================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::remove_duplicate_points_from_loop(NCollection_Sequence<gp_Pnt>&, bool, double)
+   :project: IfcOpenShell

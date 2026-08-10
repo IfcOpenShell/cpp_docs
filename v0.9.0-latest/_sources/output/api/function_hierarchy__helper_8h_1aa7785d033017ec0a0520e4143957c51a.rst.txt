@@ -1,0 +1,14 @@
+.. _exhale_function_hierarchy__helper_8h_1aa7785d033017ec0a0520e4143957c51a:
+
+Template Function ifcopenshell::hierarchy_detail::get_parent_of_relation
+========================================================================
+
+- Defined in :ref:`file_src_ifcparse_hierarchy_helper.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::hierarchy_detail::get_parent_of_relation(const Relation&)
+   :project: IfcOpenShell

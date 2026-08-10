@@ -1,0 +1,33 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1write__only__geometry__serializer:
+
+Class write_only_geometry_serializer
+====================================
+
+- Defined in :ref:`file_src_ifcgeom_geometry_serializer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::geometry_serializer`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1geometry__serializer`)
+
+
+Derived Types
+*************
+
+- ``public ttl_wkt_serializer`` (:ref:`exhale_class_classttl__wkt__serializer`)
+- ``public wavefront_obj_serializer`` (:ref:`exhale_class_classwavefront__obj__serializer`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::write_only_geometry_serializer
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,26 @@
+.. _exhale_class_classhierarchy__helper:
+
+Template Class hierarchy_helper
+===============================
+
+- Defined in :ref:`file_src_ifcparse_hierarchy_helper.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::file`` (:ref:`exhale_class_classifcopenshell_1_1file`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: hierarchy_helper
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,14 @@
+.. _exhale_function_kernel__registry_8h_1a0202ba6ecfa6a371d67423e1f50e560c:
+
+Function ifcopenshell::geom::kernels::construct
+===============================================
+
+- Defined in :ref:`file_src_ifcgeom_kernel_registry.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::kernels::construct(ifcopenshell::file *, const std::string&, ifcopenshell::geom::settings&, ifcopenshell::logger&)
+   :project: IfcOpenShell

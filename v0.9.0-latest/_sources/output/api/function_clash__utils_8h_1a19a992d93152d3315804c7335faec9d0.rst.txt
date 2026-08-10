@@ -1,0 +1,14 @@
+.. _exhale_function_clash__utils_8h_1a19a992d93152d3315804c7335faec9d0:
+
+Function ifcopenshell::geom::distanceTriangleTriangleSquared
+============================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_clash_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::distanceTriangleTriangleSquared(gp_Vec&, gp_Vec&, const std::array<gp_Vec, 3>, const std::array<gp_Vec, 3>)
+   :project: IfcOpenShell

@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1pushed__sequential__impl:
+
+Class pushed_sequential_impl
+============================
+
+- Defined in :ref:`file_src_ifcparse_file_reader.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::pushed_sequential_impl
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

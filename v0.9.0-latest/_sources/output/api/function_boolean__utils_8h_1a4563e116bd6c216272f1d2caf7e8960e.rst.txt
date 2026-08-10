@@ -1,0 +1,14 @@
+.. _exhale_function_boolean__utils_8h_1a4563e116bd6c216272f1d2caf7e8960e:
+
+Function ifcopenshell::geom::util::faces_overlap
+================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::faces_overlap(const TopoDS_Face&, const TopoDS_Face&)
+   :project: IfcOpenShell

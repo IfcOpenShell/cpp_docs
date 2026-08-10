@@ -1,0 +1,14 @@
+.. _exhale_function_taxonomy_8h_1a62a903bc9dd83e3e62a07c9affd3fa86:
+
+Function ifcopenshell::geom::taxonomy::curve_to_loop_upgrade_impl
+=================================================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::taxonomy::curve_to_loop_upgrade_impl(ptr)
+   :project: IfcOpenShell

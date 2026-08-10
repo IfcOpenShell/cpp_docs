@@ -1,0 +1,26 @@
+.. _exhale_class_classimpl_1_1storage__type__mismatch:
+
+Class storage_type_mismatch
+===========================
+
+- Defined in :ref:`file_src_ifcparse_variant_array.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::exception``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: impl::storage_type_mismatch
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

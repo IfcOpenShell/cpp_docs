@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1map__types_3_4:
+
+Template Struct map_types<  >
+=============================
+
+- Defined in :ref:`file_src_ifcparse_variant_array.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::map_types<>
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

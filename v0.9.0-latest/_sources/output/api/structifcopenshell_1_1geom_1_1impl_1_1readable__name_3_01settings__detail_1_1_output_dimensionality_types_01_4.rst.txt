@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01settings__detail_1_1_output_dimensionality_types_01_4:
+
+Template Struct readable_name< settings_detail::OutputDimensionalityTypes >
+===========================================================================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_settings.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::impl::readable_name< settings_detail::OutputDimensionalityTypes >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

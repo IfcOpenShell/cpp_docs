@@ -1,0 +1,14 @@
+.. _exhale_function_boolean__utils_8h_1a4158bb3142c465178a95127ec082c942:
+
+Function ifcopenshell::geom::util::boolean_subtraction_2d_using_builder
+=======================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::boolean_subtraction_2d_using_builder(const TopoDS_Shape&, const NCollection_List<TopoDS_Shape>&, TopoDS_Shape&, double, ifcopenshell::logger&)
+   :project: IfcOpenShell

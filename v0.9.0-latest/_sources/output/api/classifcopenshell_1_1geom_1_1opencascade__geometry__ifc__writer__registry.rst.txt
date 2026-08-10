@@ -1,0 +1,27 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1opencascade__geometry__ifc__writer__registry:
+
+Class opencascade_geometry_ifc_writer_registry
+==============================================
+
+- Defined in :ref:`file_src_ifcgeom_serialization_serialization.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1opencascade__geometry__ifc__writer__registry_1_1entry`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::opencascade_geometry_ifc_writer_registry
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

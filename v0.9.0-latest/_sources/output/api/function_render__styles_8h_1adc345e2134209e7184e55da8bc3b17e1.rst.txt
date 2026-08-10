@@ -1,0 +1,14 @@
+.. _exhale_function_render__styles_8h_1adc345e2134209e7184e55da8bc3b17e1:
+
+Function ifcopenshell::geom::set_default_style_file
+===================================================
+
+- Defined in :ref:`file_src_ifcgeom_render_styles.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::set_default_style_file(const std::string&)
+   :project: IfcOpenShell

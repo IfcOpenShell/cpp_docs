@@ -1,0 +1,14 @@
+.. _exhale_enum_wire__utils_8h_1a3dea9e0675bded3bd94d4e25f026ebaa:
+
+Enum triangulate_wire_result
+============================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ifcopenshell::geom::util::triangulate_wire_result
+   :project: IfcOpenShell

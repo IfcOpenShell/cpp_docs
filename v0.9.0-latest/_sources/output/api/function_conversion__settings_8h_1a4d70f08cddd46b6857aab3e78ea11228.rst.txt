@@ -1,0 +1,14 @@
+.. _exhale_function_conversion__settings_8h_1a4d70f08cddd46b6857aab3e78ea11228:
+
+Function ifcopenshell::geom::settings_detail::operator>>(std::istream&, FunctionStepMethod&)
+============================================================================================
+
+.. did not find file this was defined in
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::settings_detail::operator>>(std::istream&, FunctionStepMethod&)
+   :project: IfcOpenShell

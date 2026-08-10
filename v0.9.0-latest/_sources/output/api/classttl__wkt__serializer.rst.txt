@@ -1,0 +1,26 @@
+.. _exhale_class_classttl__wkt__serializer:
+
+Class ttl_wkt_serializer
+========================
+
+- Defined in :ref:`file_src_serializers_ttl_wkt_serializer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::write_only_geometry_serializer`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1write__only__geometry__serializer`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ttl_wkt_serializer
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

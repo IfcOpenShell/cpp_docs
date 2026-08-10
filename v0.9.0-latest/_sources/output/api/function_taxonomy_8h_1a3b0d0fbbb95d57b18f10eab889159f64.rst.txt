@@ -1,0 +1,14 @@
+.. _exhale_function_taxonomy_8h_1a3b0d0fbbb95d57b18f10eab889159f64:
+
+Template Function ifcopenshell::geom::visit_2
+=============================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::visit_2(const typename U::ptr&, const Fn&)
+   :project: IfcOpenShell

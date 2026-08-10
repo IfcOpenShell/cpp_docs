@@ -1,0 +1,14 @@
+.. _exhale_enum_taxonomy_8h_1aecc61ecf411355b431422d52a382f0e6:
+
+Enum kinds
+==========
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ifcopenshell::geom::taxonomy::kinds
+   :project: IfcOpenShell

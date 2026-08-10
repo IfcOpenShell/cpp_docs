@@ -1,0 +1,56 @@
+
+.. _file_src_ifcparse_map_transformer.h:
+
+File map_transformer.h
+======================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/map_transformer.h``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_map_transformer.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``functional``
+
+- ``iterator`` (:ref:`file_src_ifcgeom_iterator.h`)
+
+- ``type_traits``
+
+- ``utility``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_storage.h`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structmap__transformer_1_1back__storage__fallback`
+
+- :ref:`exhale_class_classmap__transformer`
+
+- :ref:`exhale_class_classmap__transformer_1_1iterator`
+

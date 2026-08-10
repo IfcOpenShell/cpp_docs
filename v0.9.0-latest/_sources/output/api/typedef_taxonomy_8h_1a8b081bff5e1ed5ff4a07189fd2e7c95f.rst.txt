@@ -1,0 +1,14 @@
+.. _exhale_typedef_taxonomy_8h_1a8b081bff5e1ed5ff4a07189fd2e7c95f:
+
+Typedef ifcopenshell::geom::taxonomy::impl::kinds_tuple
+=======================================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::taxonomy::impl::kinds_tuple
+   :project: IfcOpenShell

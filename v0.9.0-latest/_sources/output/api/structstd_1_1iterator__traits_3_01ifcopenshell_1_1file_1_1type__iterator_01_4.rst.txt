@@ -1,0 +1,17 @@
+.. _exhale_struct_structstd_1_1iterator__traits_3_01ifcopenshell_1_1file_1_1type__iterator_01_4:
+
+Template Struct iterator_traits< ifcopenshell::file::type_iterator >
+====================================================================
+
+- Defined in :ref:`file_src_ifcparse_file.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: std::iterator_traits< ifcopenshell::file::type_iterator >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

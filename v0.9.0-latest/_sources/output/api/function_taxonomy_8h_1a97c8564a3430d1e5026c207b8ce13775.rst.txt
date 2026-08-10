@@ -1,0 +1,14 @@
+.. _exhale_function_taxonomy_8h_1a97c8564a3430d1e5026c207b8ce13775:
+
+Template Function ifcopenshell::geom::apply_predicate_to_collection
+===================================================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::apply_predicate_to_collection(const taxonomy::ptr&, Fn)
+   :project: IfcOpenShell

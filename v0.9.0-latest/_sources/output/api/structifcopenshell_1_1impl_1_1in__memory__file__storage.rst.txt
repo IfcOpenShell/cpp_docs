@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1impl_1_1in__memory__file__storage:
+
+Struct in_memory_file_storage
+=============================
+
+- Defined in :ref:`file_src_ifcparse_storage.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::impl::in_memory_file_storage
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

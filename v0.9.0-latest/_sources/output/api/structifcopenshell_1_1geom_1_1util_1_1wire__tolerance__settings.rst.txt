@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1util_1_1wire__tolerance__settings:
+
+Struct wire_tolerance_settings
+==============================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::util::wire_tolerance_settings
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

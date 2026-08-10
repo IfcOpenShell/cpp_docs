@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1tree:
+
+Class tree
+==========
+
+- Defined in :ref:`file_src_ifcgeom_tree.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::tree
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

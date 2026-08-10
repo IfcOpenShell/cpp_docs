@@ -1,0 +1,95 @@
+
+.. _file_src_ifcparse_parse.h:
+
+File parse.h
+============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/parse.h``)
+-------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_parse.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``argument.h`` (:ref:`file_src_ifcparse_argument.h`)
+
+- ``boost/dynamic_bitset.hpp``
+
+- ``character_decoder.h`` (:ref:`file_src_ifcparse_character_decoder.h`)
+
+- ``cstring``
+
+- ``express.h`` (:ref:`file_src_ifcparse_express.h`)
+
+- ``file_reader.h`` (:ref:`file_src_ifcparse_file_reader.h`)
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``iostream``
+
+- ``macros.h`` (:ref:`file_src_ifcparse_macros.h`)
+
+- ``memory``
+
+- ``storage.h`` (:ref:`file_src_ifcparse_storage.h`)
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_file.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1spf__lexer`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_parse_8h_1a596ed8cc0868e8ba266691fa1dc1a6d3`
+
+- :ref:`exhale_function_parse_8h_1aef4f6615104c983873ca7dc7fc9bef9e`
+
+- :ref:`exhale_function_parse_8h_1a399ed266a25030a49686f9a6a6526e42`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_parse_8h_1a6b3681e13490b3784be21bb328cceccc`
+

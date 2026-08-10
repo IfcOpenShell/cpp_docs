@@ -1,0 +1,13 @@
+
+.. _namespace_ifcopenshell__geom__taxonomy__@52:
+
+Namespace ifcopenshell::geom::taxonomy::@52
+===========================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+

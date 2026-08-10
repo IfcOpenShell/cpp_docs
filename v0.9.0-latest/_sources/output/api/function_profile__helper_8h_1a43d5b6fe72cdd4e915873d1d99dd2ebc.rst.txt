@@ -1,0 +1,14 @@
+.. _exhale_function_profile__helper_8h_1a43d5b6fe72cdd4e915873d1d99dd2ebc:
+
+Function ifcopenshell::geom::fillet_loop
+========================================
+
+- Defined in :ref:`file_src_ifcgeom_profile_helper.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::fillet_loop(taxonomy::loop::ptr, double)
+   :project: IfcOpenShell

@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1box:
+
+Struct box
+==========
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_clash_utils.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::box
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

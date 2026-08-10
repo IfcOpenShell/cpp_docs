@@ -1,0 +1,26 @@
+.. _exhale_struct_structis__std__tuple:
+
+Template Struct is_std_tuple
+============================
+
+- Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::false_type``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: is_std_tuple
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

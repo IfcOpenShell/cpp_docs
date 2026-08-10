@@ -1,0 +1,130 @@
+
+.. _file_src_ifcgeom_conversion_result.h:
+
+File conversion_result.h
+========================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/conversion_result.h``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_conversion_result.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/conversion_settings.h``
+
+- ``../ifcgeom/render_styles.h``
+
+- ``../ifcgeom/taxonomy.h``
+
+- ``algorithm``
+
+- ``array`` (:ref:`file_src_ifcparse_variant_array.h`)
+
+- ``cmath``
+
+- ``cstddef``
+
+- ``iomanip``
+
+- ``limits``
+
+- ``memory``
+
+- ``sstream``
+
+- ``stdexcept``
+
+- ``string_view``
+
+- ``type_traits``
+
+- ``typeinfo``
+
+- ``unordered_map``
+
+- ``utility``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_converter.h`
+
+- :ref:`file_src_ifcgeom_iterator.h`
+
+- :ref:`file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h`
+
+- :ref:`file_src_ifcgeom_kernels_manifold_manifold_conversion_result.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_layerset.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_opencascade_conversion_result.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_opencascade_kernel.h`
+
+- :ref:`file_src_ifcgeom_kernels_passthrough_passthrough_conversion_result.h`
+
+- :ref:`file_src_ifcgeom_representation.h`
+
+- :ref:`file_src_ifcgeom_serialization_serialization.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__util`
+
+- :ref:`namespace_std`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structedge__key`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1opaque__coordinate`
+
+- :ref:`exhale_struct_structstd_1_1hash_3_01edge__key_01_4`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1conversion__result`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1conversion__result__shape`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1opaque__number`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_conversion__result_8h_1a2f2d26cf5206ec419aa96051c7470fd5`
+

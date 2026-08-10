@@ -1,0 +1,14 @@
+.. _exhale_typedef_cgal__conversion__result_8h_1ad81dab1d6b55241798ea200b1dfd9f24:
+
+Typedef cgal_plane
+==================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: cgal_plane
+   :project: IfcOpenShell

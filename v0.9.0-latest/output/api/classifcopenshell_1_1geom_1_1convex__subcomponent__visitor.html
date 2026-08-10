@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Template Class convex_subcomponent_visitor &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Class element" href="classifcopenshell_1_1geom_1_1element.html" />
+    <link rel="prev" title="Class converter" href="classifcopenshell_1_1geom_1_1converter.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-convex-subcomponent-visitor">
+<span id="exhale-class-classifcopenshell-1-1geom-1-1convex-subcomponent-visitor"></span><h1>Template Class convex_subcomponent_visitor<a class="headerlink" href="#template-class-convex-subcomponent-visitor" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h.html#file-src-ifcgeom-kernels-cgal-nef-to-halfspace-tree-h"><span class="std std-ref">File nef_to_halfspace_tree.h</span></a></p></li>
+</ul>
+<section id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Link to this heading">¶</a></h2>
+<section id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">boost::default_bfs_visitor</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading">¶</a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I00EN12ifcopenshell4geom27convex_subcomponent_visitorE">
+<span id="_CPPv3I00EN12ifcopenshell4geom27convex_subcomponent_visitorE"></span><span id="_CPPv2I00EN12ifcopenshell4geom27convex_subcomponent_visitorE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Kernel</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ComponentMap</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classifcopenshell_1_1geom_1_1convex__subcomponent__visitor"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">convex_subcomponent_visitor</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">default_bfs_visitor</span></span><a class="headerlink" href="#_CPPv4I00EN12ifcopenshell4geom27convex_subcomponent_visitorE" title="Link to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ifcopenshell4geom27convex_subcomponent_visitor27convex_subcomponent_visitorE8EdgeTypeR12ComponentMap">
+<span id="_CPPv3N12ifcopenshell4geom27convex_subcomponent_visitor27convex_subcomponent_visitorE8EdgeTypeR12ComponentMap"></span><span id="_CPPv2N12ifcopenshell4geom27convex_subcomponent_visitor27convex_subcomponent_visitorE8EdgeTypeR12ComponentMap"></span><span id="ifcopenshell::geom::convex_subcomponent_visitor::convex_subcomponent_visitor__EdgeType.ComponentMapR"></span><span class="target" id="classifcopenshell_1_1geom_1_1convex__subcomponent__visitor_1a4a929137fa994a17dd2ee3c2f9105aad"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">convex_subcomponent_visitor</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_nef__to__halfspace__tree_8h_1a1ad4f22871f4691d3346ac3656007431.html#_CPPv4N12ifcopenshell4geom8EdgeTypeE" title="ifcopenshell::geom::EdgeType"><span class="n"><span class="pre">EdgeType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">edgetype</span></span>, <a class="reference internal" href="#_CPPv4I00EN12ifcopenshell4geom27convex_subcomponent_visitorE" title="ifcopenshell::geom::convex_subcomponent_visitor::ComponentMap"><span class="n"><span class="pre">ComponentMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">component</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12ifcopenshell4geom27convex_subcomponent_visitor27convex_subcomponent_visitorE8EdgeTypeR12ComponentMap" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I00EN12ifcopenshell4geom27convex_subcomponent_visitor9tree_edgeEb4EdgeRK5graph">
+<span id="_CPPv3I00EN12ifcopenshell4geom27convex_subcomponent_visitor9tree_edgeE4EdgeRK5graph"></span><span id="_CPPv2I00EN12ifcopenshell4geom27convex_subcomponent_visitor9tree_edgeE4EdgeRK5graph"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Edge</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">graph</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classifcopenshell_1_1geom_1_1convex__subcomponent__visitor_1a42e24ef6c7f7734929f04a6b5daa0400"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tree_edge</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I00EN12ifcopenshell4geom27convex_subcomponent_visitor9tree_edgeEb4EdgeRK5graph" title="ifcopenshell::geom::convex_subcomponent_visitor::tree_edge::Edge"><span class="n"><span class="pre">Edge</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">e</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I00EN12ifcopenshell4geom27convex_subcomponent_visitor9tree_edgeEb4EdgeRK5graph" title="ifcopenshell::geom::convex_subcomponent_visitor::tree_edge::graph"><span class="n"><span class="pre">graph</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">g</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I00EN12ifcopenshell4geom27convex_subcomponent_visitor9tree_edgeEb4EdgeRK5graph" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">IfcOpenShell C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#page-hierarchy">Page Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++ API</a><ul>
+      <li>Previous: <a href="classifcopenshell_1_1geom_1_1converter.html" title="previous chapter">Class converter</a></li>
+      <li>Next: <a href="classifcopenshell_1_1geom_1_1element.html" title="next chapter">Class element</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../_sources/output/api/classifcopenshell_1_1geom_1_1convex__subcomponent__visitor.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

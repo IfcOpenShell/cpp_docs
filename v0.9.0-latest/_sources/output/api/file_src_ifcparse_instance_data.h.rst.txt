@@ -1,0 +1,138 @@
+
+.. _file_src_ifcparse_instance_data.h:
+
+File instance_data.h
+====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/instance_data.h``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_instance_data.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``argument_type.h`` (:ref:`file_src_ifcparse_argument_type.h`)
+
+- ``boost/dynamic_bitset.hpp``
+
+- ``boost/logic/tribool.hpp``
+
+- ``boost/optional.hpp``
+
+- ``cstdint``
+
+- ``cstring``
+
+- ``express.h`` (:ref:`file_src_ifcparse_express.h`)
+
+- ``memory``
+
+- ``schema.h`` (:ref:`file_src_ifcparse_schema.h`)
+
+- ``storage.h`` (:ref:`file_src_ifcparse_storage.h`)
+
+- ``variant_array.h`` (:ref:`file_src_ifcparse_variant_array.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_element.h`
+
+- :ref:`file_src_ifcparse_spf_header.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_impl`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1pack__to__variant__array_3_01parameter__pack_3_01_args_8_8_8_01_4_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1parameter__pack`
+
+- :ref:`exhale_struct_structifcopenshell_1_1rocks__db__attribute__storage`
+
+- :ref:`exhale_struct_structifcopenshell_1_1type__encoder__impl_3_01parameter__pack_3_01_types_8_8_8_01_4_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01bool_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01boost_1_1dynamic__bitset_3_4_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01boost_1_1logic_1_1tribool_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01double_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01express_1_1base_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1blank_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1derived_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1empty__aggregate_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1empty__aggregate__of__aggregate_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1enumeration__reference_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01int_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01int64__t_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1string_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1vector_3_01_t_00_01_allocator_01_4_01_4`
+
+- :ref:`exhale_class_classifcopenshell_1_1attribute__value`
+
+- :ref:`exhale_class_classifcopenshell_1_1blank`
+
+- :ref:`exhale_class_classifcopenshell_1_1derived`
+
+- :ref:`exhale_class_classifcopenshell_1_1empty__aggregate`
+
+- :ref:`exhale_class_classifcopenshell_1_1empty__aggregate__of__aggregate`
+
+- :ref:`exhale_class_classifcopenshell_1_1enumeration__reference`
+
+- :ref:`exhale_class_classifcopenshell_1_1instance__data`
+
+- :ref:`exhale_class_classifcopenshell_1_1mutable__attribute__value`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_instance__data_8h_1a4b0a9710dc58c45738bfc0c6b2238a07`
+
+- :ref:`exhale_typedef_instance__data_8h_1aede234cee79438273facc7fd916a1658`
+
+- :ref:`exhale_typedef_instance__data_8h_1a66b39e6bc3e79e82a03bdeef4ad389c5`
+

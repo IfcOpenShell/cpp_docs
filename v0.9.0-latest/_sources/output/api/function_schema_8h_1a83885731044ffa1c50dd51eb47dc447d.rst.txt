@@ -1,0 +1,14 @@
+.. _exhale_function_schema_8h_1a83885731044ffa1c50dd51eb47dc447d:
+
+Function ifcopenshell::clear_schemas
+====================================
+
+- Defined in :ref:`file_src_ifcparse_schema.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::clear_schemas()
+   :project: IfcOpenShell

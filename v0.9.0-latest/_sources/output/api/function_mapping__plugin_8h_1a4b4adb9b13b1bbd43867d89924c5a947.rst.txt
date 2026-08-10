@@ -1,0 +1,14 @@
+.. _exhale_function_mapping__plugin_8h_1a4b4adb9b13b1bbd43867d89924c5a947:
+
+Function ifcopenshell::geom::impl::load_mapping_plugin
+======================================================
+
+- Defined in :ref:`file_src_ifcgeom_mapping_plugin.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::impl::load_mapping_plugin(mapping_registry&, const std::string&)
+   :project: IfcOpenShell

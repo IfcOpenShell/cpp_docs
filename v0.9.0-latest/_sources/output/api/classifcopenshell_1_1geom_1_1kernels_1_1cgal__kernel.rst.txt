@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1cgal__kernel:
+
+Class cgal_kernel
+=================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_cgal_kernel.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::kernels::abstract_kernel`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1abstract__kernel`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::kernels::cgal_kernel
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

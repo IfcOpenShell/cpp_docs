@@ -1,0 +1,26 @@
+.. _exhale_struct_structifcopenshell_1_1hierarchy__detail_1_1styled__item__accepts__presentation__style:
+
+Template Struct styled_item_accepts_presentation_style
+======================================================
+
+- Defined in :ref:`file_src_ifcparse_hierarchy_helper.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::false_type``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::hierarchy_detail::styled_item_accepts_presentation_style
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

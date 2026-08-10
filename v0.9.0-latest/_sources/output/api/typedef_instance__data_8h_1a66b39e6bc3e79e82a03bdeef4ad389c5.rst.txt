@@ -1,0 +1,14 @@
+.. _exhale_typedef_instance__data_8h_1a66b39e6bc3e79e82a03bdeef4ad389c5:
+
+Typedef ifcopenshell::type_variant_parameter_pack
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_instance_data.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::type_variant_parameter_pack
+   :project: IfcOpenShell

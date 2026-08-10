@@ -1,0 +1,14 @@
+.. _exhale_typedef_storage_8h_1a0ca87e4c3024807607252c47265e3b13:
+
+Typedef ifcopenshell::unresolved_references
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_storage.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::unresolved_references
+   :project: IfcOpenShell

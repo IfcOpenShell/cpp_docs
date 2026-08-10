@@ -1,0 +1,18 @@
+.. _dir_src:
+
+
+Directory src
+=============
+
+
+*Directory path:* ``src``
+
+Subdirectories
+--------------
+
+- :ref:`dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_ifcgeom`
+- :ref:`dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_ifcparse`
+- :ref:`dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_serializers`
+
+
+

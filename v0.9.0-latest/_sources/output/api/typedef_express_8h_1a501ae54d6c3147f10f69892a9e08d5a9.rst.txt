@@ -1,0 +1,14 @@
+.. _exhale_typedef_express_8h_1a501ae54d6c3147f10f69892a9e08d5a9:
+
+Typedef ifcopenshell::shared_pointer_type
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_express.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::shared_pointer_type
+   :project: IfcOpenShell

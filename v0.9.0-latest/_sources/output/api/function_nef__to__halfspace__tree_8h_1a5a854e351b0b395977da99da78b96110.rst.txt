@@ -1,0 +1,14 @@
+.. _exhale_function_nef__to__halfspace__tree_8h_1a5a854e351b0b395977da99da78b96110:
+
+Template Function ifcopenshell::geom::normalized_plane_for_map
+==============================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::normalized_plane_for_map(const typename Kernel::Plane_3&)
+   :project: IfcOpenShell

@@ -1,0 +1,14 @@
+.. _exhale_function_si__prefix_8h_1a67d081555035812620cc7868b34446bf:
+
+Function ifcopenshell::si_prefix_to_value
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_si_prefix.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::si_prefix_to_value(const std::string&)
+   :project: IfcOpenShell

@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1passthrough__kernel:
+
+Class passthrough_kernel
+========================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_passthrough_passthrough_kernel.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::kernels::abstract_kernel`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1abstract__kernel`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::kernels::passthrough_kernel
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1make__union__from__tuple:
+
+Template Struct make_union_from_tuple
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_variant_array.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::make_union_from_tuple
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

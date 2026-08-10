@@ -1,0 +1,14 @@
+.. _exhale_typedef_taxonomy_8h_1a094214072625eacd3b3ab22c1a8f7438:
+
+Typedef ifcopenshell::geom::taxonomy::ptr
+=========================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::taxonomy::ptr
+   :project: IfcOpenShell

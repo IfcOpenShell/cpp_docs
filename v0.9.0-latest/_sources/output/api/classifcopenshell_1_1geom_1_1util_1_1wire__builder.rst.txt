@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1util_1_1wire__builder:
+
+Class wire_builder
+==================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_builder.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::util::wire_builder
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

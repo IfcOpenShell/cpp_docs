@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1taxonomy_1_1topology__error:
+
+Class topology_error
+====================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::runtime_error``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::taxonomy::topology_error
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

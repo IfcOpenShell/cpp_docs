@@ -1,0 +1,252 @@
+
+.. _namespace_ifcopenshell__geom__settings_detail:
+
+Namespace ifcopenshell::geom::settings_detail
+=============================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_apply_default_materials`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_apply_layer_sets`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_apply_offset`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_base_uri`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_boolean_attempt2d`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_building_local_placement`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_cache_shapes`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_cgal_emit_original_edges`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_cgal_smooth_angle_degrees`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_circle_segments`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_compute_curvature`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_context_identifiers`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_context_ids`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_context_priorities`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_context_types`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_convert_back_units`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_debug_boolean_operations`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_defer_processing_first_element`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_disable_boolean_result`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_disable_opening_subtractions`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_dont_emit_normals`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_edge_arrows`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_floating_point_digits`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_force_space_transparency`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_function_step_param`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_function_step_type`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_generate_uvs`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_has_default`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_has_default_3_01_t_00_01decltype_07_07void_080a51f3e3d9944740bd889110438a33b1`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_iterator_output`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_keep_bounding_boxes`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_layerset_first`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_length_unit`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_make_volume`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_max_offset`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_max_offset_deviation`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_max_voids_per_element`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_mesher_angular_deflection`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_mesher_linear_deflection`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_model_offset`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_model_rotation`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_no_parallel_mapping`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_no_wire_intersection_check`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_no_wire_intersection_tolerance`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_occt_no_clean_triangulation`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_output_dimensionality`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_permissive_shape_reuse`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_plane_unit`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_precision`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_precision_factor`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_reorient_shells`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_separate_z_up_node`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_setting_base`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_site_local_placement`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_surface_colour`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_always_project`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_auto_elevation`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_auto_section`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_bounds`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_center`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_door_arcs`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_draw_storey_heights`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_elevation_ref`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_elevation_ref_guid`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_emit_flush_edges`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_mirror_x`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_mirror_y`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_no_css`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_polygonal`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_print_space_areas`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_print_space_names`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_profile_threshold`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_render_crease_edges`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_render_sharp_edges`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_ridge_angle_min_degrees`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_scale`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_section_height`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_section_height_from_storeys`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_section_ref`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_segment_projection`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_space_name_transform`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_storey_height_line_length`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_subtract_before`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_unify_inputs`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_use_edge_classification`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_use_hlr_poly`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_use_namespace`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_use_prefiltering`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_valley_angle_min_degrees`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_svg_without_storeys`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_triangulation_type`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_unify_shapes`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_use_element_guids`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_use_element_hierarchy`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_use_element_names`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_use_element_step_ids`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_use_element_types`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_use_material_names`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_use_world_coords`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_use_y_up`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_validate_quantities`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_weld_vertices`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_wkt_use_section`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_write_gltf_ecef`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_conversion__settings_8h_1a744b91e201d758818a926a8caea5eb20`
+
+- :ref:`exhale_enum_conversion__settings_8h_1a4d7565d5b246c46d59f2c61466fef49e`
+
+- :ref:`exhale_enum_conversion__settings_8h_1a9945aac6aeda8f479e77cdf43ffd54ac`
+
+- :ref:`exhale_enum_conversion__settings_8h_1a3650d62b7f53f3f20524b22efb8327e2`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_conversion__settings_8h_1aff754aa595c49bb68edccdd5c11d2d9f`
+
+- :ref:`exhale_function_conversion__settings_8h_1a3528d763dd3656400bbe1acddc194fe9`
+
+- :ref:`exhale_function_conversion__settings_8h_1a4d70f08cddd46b6857aab3e78ea11228`
+
+- :ref:`exhale_function_conversion__settings_8h_1a48649732f283fd2319c48ddac3f55ebe`

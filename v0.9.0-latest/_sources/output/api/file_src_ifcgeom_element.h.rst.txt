@@ -1,0 +1,93 @@
+
+.. _file_src_ifcgeom_element.h:
+
+File element.h
+==============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/element.h``)
+--------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_element.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/ifc_geom_api.h``
+
+- ``../ifcgeom/representation.h``
+
+- ``../ifcparse/argument.h``
+
+- ``../ifcparse/global_id.h``
+
+- ``../ifcparse/instance_data.h``
+
+- ``../ifcparse/logger.h``
+
+- ``algorithm``
+
+- ``memory``
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_converter.h`
+
+- :ref:`file_src_ifcgeom_geometry_serializer.h`
+
+- :ref:`file_src_ifcgeom_iterator.h`
+
+- :ref:`file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h`
+
+- :ref:`file_src_ifcgeom_kernels_cgal_cgal_kernel.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_opencascade_kernel.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_tree.h`
+
+- :ref:`file_src_ifcgeom_tree.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1element`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1native__element`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1serialized__element`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1transformation`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1triangulation__element`
+

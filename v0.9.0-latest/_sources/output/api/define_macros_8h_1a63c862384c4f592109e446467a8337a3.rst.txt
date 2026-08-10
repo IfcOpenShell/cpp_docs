@@ -1,0 +1,14 @@
+.. _exhale_define_macros_8h_1a63c862384c4f592109e446467a8337a3:
+
+Define POSTFIX_SCHEMA
+=====================
+
+- Defined in :ref:`file_src_ifcparse_macros.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: POSTFIX_SCHEMA
+   :project: IfcOpenShell

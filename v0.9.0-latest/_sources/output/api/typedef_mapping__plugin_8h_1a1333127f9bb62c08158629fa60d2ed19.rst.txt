@@ -1,0 +1,14 @@
+.. _exhale_typedef_mapping__plugin_8h_1a1333127f9bb62c08158629fa60d2ed19:
+
+Typedef ifcopenshell::geom::impl::register_mapping_plugin_fn
+============================================================
+
+- Defined in :ref:`file_src_ifcgeom_mapping_plugin.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::impl::register_mapping_plugin_fn
+   :project: IfcOpenShell

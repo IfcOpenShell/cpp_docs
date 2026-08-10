@@ -1,0 +1,14 @@
+.. _exhale_function_alignment__helper_8h_1a7a96e13cc532137ab1b5f96e58d0f59c:
+
+Function addAlignment
+=====================
+
+- Defined in :ref:`file_src_ifcparse_alignment_helper.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: addAlignment(hierarchy_helper<Ifc4x3_add2>&, const std::string&, const std::vector<std::pair<double, double>>&, const std::vector<double>&, const std::vector<std::pair<double, double>>&, const std::vector<double>&, bool)
+   :project: IfcOpenShell

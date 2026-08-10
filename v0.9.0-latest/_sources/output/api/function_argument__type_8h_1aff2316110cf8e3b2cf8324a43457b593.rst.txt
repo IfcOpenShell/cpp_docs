@@ -1,0 +1,14 @@
+.. _exhale_function_argument__type_8h_1aff2316110cf8e3b2cf8324a43457b593:
+
+Function ifcopenshell::from_parameter_type
+==========================================
+
+- Defined in :ref:`file_src_ifcparse_argument_type.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::from_parameter_type(const ifcopenshell::parameter_type *)
+   :project: IfcOpenShell

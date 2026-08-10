@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1transform__type:
+
+Template Struct transform_type
+==============================
+
+- Defined in :ref:`file_src_ifcparse_variant_array.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::transform_type
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

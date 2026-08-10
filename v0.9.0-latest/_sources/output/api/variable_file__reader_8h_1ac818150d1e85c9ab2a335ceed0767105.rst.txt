@@ -1,0 +1,14 @@
+.. _exhale_variable_file__reader_8h_1ac818150d1e85c9ab2a335ceed0767105:
+
+Variable ifcopenshell::file_reader_dependent_false_v
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_file_reader.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: ifcopenshell::file_reader_dependent_false_v
+   :project: IfcOpenShell

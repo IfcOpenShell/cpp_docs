@@ -1,0 +1,14 @@
+.. _exhale_function_clash__utils_8h_1a110c00024346829e435a8d9fb7d06e35:
+
+Function ifcopenshell::geom::edgeEdgeDist
+=========================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_clash_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::edgeEdgeDist(gp_Vec&, gp_Vec&, const gp_Vec&, const gp_Vec&, const gp_Vec&, const gp_Vec&)
+   :project: IfcOpenShell

@@ -1,0 +1,17 @@
+.. _exhale_class_classutil_1_1string__buffer:
+
+Class string_buffer
+===================
+
+- Defined in :ref:`file_src_serializers_util.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: util::string_buffer
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

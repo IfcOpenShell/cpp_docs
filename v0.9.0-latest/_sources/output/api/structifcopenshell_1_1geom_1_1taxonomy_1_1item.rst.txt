@@ -1,0 +1,32 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1item:
+
+Struct item
+===========
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public ifcopenshell::geom::taxonomy::cartesian_base< 3 >`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1cartesian__base`)
+- ``public ifcopenshell::geom::taxonomy::cartesian_base< N >`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1cartesian__base`)
+- ``public ifcopenshell::geom::taxonomy::colour`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1colour`)
+- ``public ifcopenshell::geom::taxonomy::geom_item`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1geom__item`)
+- ``public ifcopenshell::geom::taxonomy::matrix4`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1matrix4`)
+- ``public ifcopenshell::geom::taxonomy::node`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1node`)
+- ``public ifcopenshell::geom::taxonomy::style`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1style`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::taxonomy::item
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

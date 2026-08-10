@@ -1,0 +1,69 @@
+
+.. _file_src_ifcgeom_representation.h:
+
+File representation.h
+=====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/representation.h``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_representation.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/conversion_result.h``
+
+- ``../ifcgeom/conversion_settings.h``
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_abstract_kernel.h`
+
+- :ref:`file_src_ifcgeom_element.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_opencascade_kernel.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1native`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1representation`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1serialization`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1triangulation`
+

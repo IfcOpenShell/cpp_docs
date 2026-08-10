@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1instance__data:
+
+Class instance_data
+===================
+
+- Defined in :ref:`file_src_ifcparse_instance_data.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::instance_data
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

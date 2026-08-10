@@ -1,0 +1,14 @@
+.. _exhale_typedef_cgal__conversion__result_8h_1a6996c85419869c6a4c9583af79d2cd5a:
+
+Typedef cgal_curve
+==================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: cgal_curve
+   :project: IfcOpenShell

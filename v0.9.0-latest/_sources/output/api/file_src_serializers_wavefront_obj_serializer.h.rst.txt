@@ -1,0 +1,48 @@
+
+.. _file_src_serializers_wavefront_obj_serializer.h:
+
+File wavefront_obj_serializer.h
+===============================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/wavefront_obj_serializer.h``)
+-----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_wavefront_obj_serializer.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/geometry_serializer.h``
+
+- ``../serializers/serializers_api.h``
+
+- ``fstream``
+
+- ``set`` (:ref:`file_src_ifcgeom_conversion_settings.h`)
+
+- ``string``
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classwavefront__obj__serializer`
+

@@ -1,0 +1,14 @@
+.. _exhale_function_utils_8h_1a52e368541ed6b19e916c45f312c6811c:
+
+Function ifcopenshell::path::delete_file
+========================================
+
+- Defined in :ref:`file_src_ifcparse_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::path::delete_file(const std::string&)
+   :project: IfcOpenShell

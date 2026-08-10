@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1opaque__number:
+
+Class opaque_number
+===================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_result.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public ifcopenshell::geom::number_epeck`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1number__epeck`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::opaque_number
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

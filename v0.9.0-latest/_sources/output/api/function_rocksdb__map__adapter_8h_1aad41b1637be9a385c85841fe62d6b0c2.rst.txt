@@ -1,0 +1,14 @@
+.. _exhale_function_rocksdb__map__adapter_8h_1aad41b1637be9a385c85841fe62d6b0c2:
+
+Template Function convert_string
+================================
+
+- Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: convert_string(const std::string&)
+   :project: IfcOpenShell

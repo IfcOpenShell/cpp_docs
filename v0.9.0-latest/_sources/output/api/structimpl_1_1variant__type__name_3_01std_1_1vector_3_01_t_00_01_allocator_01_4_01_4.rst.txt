@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1vector_3_01_t_00_01_allocator_01_4_01_4:
+
+Template Struct variant_type_name< std::vector< T, Allocator > >
+================================================================
+
+- Defined in :ref:`file_src_ifcparse_instance_data.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::variant_type_name< std::vector< T, Allocator > >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

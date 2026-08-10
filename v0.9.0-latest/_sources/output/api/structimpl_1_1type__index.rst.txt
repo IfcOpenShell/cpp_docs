@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1type__index:
+
+Template Struct type_index
+==========================
+
+.. did not find file this was defined in
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::type_index
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

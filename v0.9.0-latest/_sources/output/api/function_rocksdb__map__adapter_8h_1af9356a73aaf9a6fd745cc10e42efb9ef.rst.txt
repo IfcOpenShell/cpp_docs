@@ -1,0 +1,14 @@
+.. _exhale_function_rocksdb__map__adapter_8h_1af9356a73aaf9a6fd745cc10e42efb9ef:
+
+Template Function key_to_string(const std::tuple<Ts...>&)
+=========================================================
+
+- Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: key_to_string(const std::tuple<Ts...>&)
+   :project: IfcOpenShell

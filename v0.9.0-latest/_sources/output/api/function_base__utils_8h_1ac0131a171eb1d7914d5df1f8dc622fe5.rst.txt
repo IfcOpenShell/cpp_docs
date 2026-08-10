@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1ac0131a171eb1d7914d5df1f8dc622fe5:
+
+Function ifcopenshell::geom::util::create_solid_from_faces
+==========================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::create_solid_from_faces(const NCollection_List<TopoDS_Shape>&, TopoDS_Shape&, double, bool)
+   :project: IfcOpenShell

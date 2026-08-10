@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1transformation:
+
+Class transformation
+====================
+
+- Defined in :ref:`file_src_ifcgeom_element.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::transformation
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

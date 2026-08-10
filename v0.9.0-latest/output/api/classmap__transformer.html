@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Template Class map_transformer &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Class map_transformer::iterator" href="classmap__transformer_1_1iterator.html" />
+    <link rel="prev" title="Class storage_type_mismatch" href="classimpl_1_1storage__type__mismatch.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-map-transformer">
+<span id="exhale-class-classmap-transformer"></span><h1>Template Class map_transformer<a class="headerlink" href="#template-class-map-transformer" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_map_transformer.h.html#file-src-ifcparse-map-transformer-h"><span class="std std-ref">File map_transformer.h</span></a></p></li>
+</ul>
+<section id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Link to this heading">¶</a></h2>
+<section id="nested-types">
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="structmap__transformer_1_1back__storage__fallback.html#exhale-struct-structmap-transformer-1-1back-storage-fallback"><span class="std std-ref">Struct map_transformer::back_storage_fallback</span></a></p></li>
+<li><p><a class="reference internal" href="classmap__transformer_1_1iterator.html#exhale-class-classmap-transformer-1-1iterator"><span class="std std-ref">Class map_transformer::iterator</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading">¶</a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I000E15map_transformer">
+<span id="_CPPv3I000E15map_transformer"></span><span id="_CPPv2I000E15map_transformer"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BaseMap</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Transform</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TransformBack</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classmap__transformer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">map_transformer</span></span></span><a class="headerlink" href="#_CPPv4I000E15map_transformer" title="Link to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer8key_typeE">
+<span id="_CPPv3N15map_transformer8key_typeE"></span><span id="_CPPv2N15map_transformer8key_typeE"></span><span class="target" id="classmap__transformer_1a930da0839b8ca5c13e0ddad4d535b10e"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">key_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::BaseMap"><span class="n"><span class="pre">BaseMap</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">key_type</span></span><a class="headerlink" href="#_CPPv4N15map_transformer8key_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer16base_mapped_typeE">
+<span id="_CPPv3N15map_transformer16base_mapped_typeE"></span><span id="_CPPv2N15map_transformer16base_mapped_typeE"></span><span class="target" id="classmap__transformer_1a6c1c3554a97d9d62b16f7b8ab596ac3c"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">base_mapped_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::BaseMap"><span class="n"><span class="pre">BaseMap</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mapped_type</span></span><a class="headerlink" href="#_CPPv4N15map_transformer16base_mapped_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer23transformed_mapped_typeE">
+<span id="_CPPv3N15map_transformer23transformed_mapped_typeE"></span><span id="_CPPv2N15map_transformer23transformed_mapped_typeE"></span><span class="target" id="classmap__transformer_1ac5b31e3faaf93d05bb1cfee298d5527a"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">transformed_mapped_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">invoke_result_t</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer16base_mapped_typeE" title="map_transformer::base_mapped_type"><span class="n"><span class="pre">base_mapped_type</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N15map_transformer23transformed_mapped_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer10value_typeE">
+<span id="_CPPv3N15map_transformer10value_typeE"></span><span id="_CPPv2N15map_transformer10value_typeE"></span><span class="target" id="classmap__transformer_1afe2fdddaaf14a9218073962b54885595"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">value_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">pair</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N15map_transformer8key_typeE" title="map_transformer::key_type"><span class="n"><span class="pre">key_type</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer23transformed_mapped_typeE" title="map_transformer::transformed_mapped_type"><span class="n"><span class="pre">transformed_mapped_type</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N15map_transformer10value_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer11mapped_typeE">
+<span id="_CPPv3N15map_transformer11mapped_typeE"></span><span id="_CPPv2N15map_transformer11mapped_typeE"></span><span class="target" id="classmap__transformer_1a7ace9ea8f40662212b2793f2cf07cb6e"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mapped_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer23transformed_mapped_typeE" title="map_transformer::transformed_mapped_type"><span class="n"><span class="pre">transformed_mapped_type</span></span></a><a class="headerlink" href="#_CPPv4N15map_transformer11mapped_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer12back_storageE">
+<span id="_CPPv3N15map_transformer12back_storageE"></span><span id="_CPPv2N15map_transformer12back_storageE"></span><span class="target" id="classmap__transformer_1aaf1936e793f3305d218ace58dcd7f966"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">back_storage</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">conditional</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N15map_transformer9read_onlyE" title="map_transformer::read_only"><span class="n"><span class="pre">read_only</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer21back_storage_fallbackE" title="map_transformer::back_storage_fallback"><span class="n"><span class="pre">back_storage_fallback</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::TransformBack"><span class="n"><span class="pre">TransformBack</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">type</span></span><a class="headerlink" href="#_CPPv4N15map_transformer12back_storageE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I0_NSt9enable_ifINSt7is_voidI2TBE5valueEiE4typeEEN15map_transformer15map_transformerEP7BaseMap9Transform">
+<span id="_CPPv3I0_NSt9enable_ifINSt7is_voidI2TBE5valueEiE4typeEEN15map_transformer15map_transformerEP7BaseMap9Transform"></span><span id="_CPPv2I0_NSt9enable_ifINSt7is_voidI2TBE5valueEiE4typeEEN15map_transformer15map_transformerEP7BaseMap9Transform"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TB</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::TransformBack"><span class="n"><span class="pre">TransformBack</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">enable_if</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">is_void</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0_NSt9enable_ifINSt7is_voidI2TBE5valueEiE4typeEEN15map_transformer15map_transformerEP7BaseMap9Transform" title="map_transformer::map_transformer::TB"><span class="n"><span class="pre">TB</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">type</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classmap__transformer_1a3e67993b0e969d3c1e0420496cfce2c4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">map_transformer</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::BaseMap"><span class="n"><span class="pre">BaseMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">base_map</span></span>, <a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">transform</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_NSt9enable_ifINSt7is_voidI2TBE5valueEiE4typeEEN15map_transformer15map_transformerEP7BaseMap9Transform" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I0_NSt9enable_ifIXntNSt7is_voidI2TBE5valueEEiE4typeEEN15map_transformer15map_transformerEP7BaseMap9Transform2TB">
+<span id="_CPPv3I0_NSt9enable_ifIXntNSt7is_voidI2TBE5valueEEiE4typeEEN15map_transformer15map_transformerEP7BaseMap9Transform2TB"></span><span id="_CPPv2I0_NSt9enable_ifIX!std::is_void<TB>::valueEiE4typeEEN15map_transformer15map_transformerEP7BaseMap9Transform2TB"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TB</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::TransformBack"><span class="n"><span class="pre">TransformBack</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">enable_if</span></span><span class="p"><span class="pre">&lt;</span></span><span class="o"><span class="pre">!</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">is_void</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0_NSt9enable_ifIXntNSt7is_voidI2TBE5valueEEiE4typeEEN15map_transformer15map_transformerEP7BaseMap9Transform2TB" title="map_transformer::map_transformer::TB"><span class="n"><span class="pre">TB</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">type</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classmap__transformer_1a685386e454b2e9e0247cb30d3ef2722d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">map_transformer</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::BaseMap"><span class="n"><span class="pre">BaseMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">base_map</span></span>, <a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">transform</span></span>, <a class="reference internal" href="#_CPPv4I0_NSt9enable_ifIXntNSt7is_voidI2TBE5valueEEiE4typeEEN15map_transformer15map_transformerEP7BaseMap9Transform2TB" title="map_transformer::map_transformer::TB"><span class="n"><span class="pre">TB</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">transform_back</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_NSt9enable_ifIXntNSt7is_voidI2TBE5valueEEiE4typeEEN15map_transformer15map_transformerEP7BaseMap9Transform2TB" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer5beginEv">
+<span id="_CPPv3N15map_transformer5beginEv"></span><span id="_CPPv2N15map_transformer5beginEv"></span><span id="map_transformer::begin"></span><span class="target" id="classmap__transformer_1ae78a7710280d9c3b6b17d4907ace003a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer8iteratorE" title="map_transformer::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">begin</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15map_transformer5beginEv" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer3endEv">
+<span id="_CPPv3N15map_transformer3endEv"></span><span id="_CPPv2N15map_transformer3endEv"></span><span id="map_transformer::end"></span><span class="target" id="classmap__transformer_1a685d685bb70456084e42e273842a89e2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer8iteratorE" title="map_transformer::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">end</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15map_transformer3endEv" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer4findERK8key_type">
+<span id="_CPPv3N15map_transformer4findERK8key_type"></span><span id="_CPPv2N15map_transformer4findERK8key_type"></span><span id="map_transformer::find__key_typeCR"></span><span class="target" id="classmap__transformer_1aac9e4ffc7cc51a8ffdf41515da09d7c9"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer8iteratorE" title="map_transformer::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">find</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer8key_typeE" title="map_transformer::key_type"><span class="n"><span class="pre">key_type</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15map_transformer4findERK8key_type" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer6insertERK10value_type">
+<span id="_CPPv3N15map_transformer6insertERK10value_type"></span><span id="_CPPv2N15map_transformer6insertERK10value_type"></span><span id="map_transformer::insert__value_typeCR"></span><span class="target" id="classmap__transformer_1a349bde72745e5a63370fe09b9e33389b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">pair</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N15map_transformer8iteratorE" title="map_transformer::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">insert</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer10value_typeE" title="map_transformer::value_type"><span class="n"><span class="pre">value_type</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15map_transformer6insertERK10value_type" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer5eraseERK8key_type">
+<span id="_CPPv3N15map_transformer5eraseERK8key_type"></span><span id="_CPPv2N15map_transformer5eraseERK8key_type"></span><span id="map_transformer::erase__key_typeCR"></span><span class="target" id="classmap__transformer_1a6ba330d519824f8f9f7fd6cb4485d642"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">erase</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer8key_typeE" title="map_transformer::key_type"><span class="n"><span class="pre">key_type</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15map_transformer5eraseERK8key_type" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-attributes">Public Static Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer9read_onlyE">
+<span id="_CPPv3N15map_transformer9read_onlyE"></span><span id="_CPPv2N15map_transformer9read_onlyE"></span><span id="map_transformer::read_only__b"></span><span class="target" id="classmap__transformer_1a8d1040099cc565d38255fd0b6857d0cc"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">constexpr</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">read_only</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">is_void</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::TransformBack"><span class="n"><span class="pre">TransformBack</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">value</span></span><a class="headerlink" href="#_CPPv4N15map_transformer9read_onlyE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer21back_storage_fallbackE">
+<span id="_CPPv3N15map_transformer21back_storage_fallbackE"></span><span id="_CPPv2N15map_transformer21back_storage_fallbackE"></span><span id="map_transformer::back_storage_fallback"></span><span class="target" id="structmap__transformer_1_1back__storage__fallback"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">back_storage_fallback</span></span></span><a class="headerlink" href="#_CPPv4N15map_transformer21back_storage_fallbackE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer8iteratorE">
+<span id="_CPPv3N15map_transformer8iteratorE"></span><span id="_CPPv2N15map_transformer8iteratorE"></span><span id="map_transformer::iterator"></span><span class="target" id="classmap__transformer_1_1iterator"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">iterator</span></span></span><a class="headerlink" href="#_CPPv4N15map_transformer8iteratorE" title="Link to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer8iterator13base_iteratorE">
+<span id="_CPPv3N15map_transformer8iterator13base_iteratorE"></span><span id="_CPPv2N15map_transformer8iterator13base_iteratorE"></span><span class="target" id="classmap__transformer_1_1iterator_1aeb271835b0dca53fbe2f34bc77cb2eeb"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">base_iterator</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::BaseMap"><span class="n"><span class="pre">BaseMap</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">iterator</span></span><a class="headerlink" href="#_CPPv4N15map_transformer8iterator13base_iteratorE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer8iterator17iterator_categoryE">
+<span id="_CPPv3N15map_transformer8iterator17iterator_categoryE"></span><span id="_CPPv2N15map_transformer8iterator17iterator_categoryE"></span><span class="target" id="classmap__transformer_1_1iterator_1a67641f7b5b37b20799156a7207aaacd4"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">iterator_category</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">forward_iterator_tag</span></span><a class="headerlink" href="#_CPPv4N15map_transformer8iterator17iterator_categoryE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer8iterator15difference_typeE">
+<span id="_CPPv3N15map_transformer8iterator15difference_typeE"></span><span id="_CPPv2N15map_transformer8iterator15difference_typeE"></span><span class="target" id="classmap__transformer_1_1iterator_1ae32487530c20cc630920da9927726c7b"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">difference_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">iterator_traits</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N15map_transformer8iterator13base_iteratorE" title="map_transformer::iterator::base_iterator"><span class="n"><span class="pre">base_iterator</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">difference_type</span></span><a class="headerlink" href="#_CPPv4N15map_transformer8iterator15difference_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer8iterator8key_typeE">
+<span id="_CPPv3N15map_transformer8iterator8key_typeE"></span><span id="_CPPv2N15map_transformer8iterator8key_typeE"></span><span class="target" id="classmap__transformer_1_1iterator_1aad0f6531810d81419a0be9d4584a5025"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">key_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::BaseMap"><span class="n"><span class="pre">BaseMap</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">key_type</span></span><a class="headerlink" href="#_CPPv4N15map_transformer8iterator8key_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer8iterator23transformed_mapped_typeE">
+<span id="_CPPv3N15map_transformer8iterator23transformed_mapped_typeE"></span><span id="_CPPv2N15map_transformer8iterator23transformed_mapped_typeE"></span><span class="target" id="classmap__transformer_1_1iterator_1a12879535382d21814f593d1ce0aa4cad"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">transformed_mapped_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">invoke_result_t</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::BaseMap"><span class="n"><span class="pre">BaseMap</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mapped_type</span></span><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N15map_transformer8iterator23transformed_mapped_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer8iterator10value_typeE">
+<span id="_CPPv3N15map_transformer8iterator10value_typeE"></span><span id="_CPPv2N15map_transformer8iterator10value_typeE"></span><span class="target" id="classmap__transformer_1_1iterator_1a8aa8fde85bbd657a8aae86b3953e1ccf"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">value_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">pair</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N15map_transformer8iterator8key_typeE" title="map_transformer::iterator::key_type"><span class="n"><span class="pre">key_type</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer8iterator23transformed_mapped_typeE" title="map_transformer::iterator::transformed_mapped_type"><span class="n"><span class="pre">transformed_mapped_type</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N15map_transformer8iterator10value_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer8iterator8iteratorEv">
+<span id="_CPPv3N15map_transformer8iterator8iteratorEv"></span><span id="_CPPv2N15map_transformer8iterator8iteratorEv"></span><span id="map_transformer::iterator::iterator"></span><span class="target" id="classmap__transformer_1_1iterator_1a114ef524e2c17ac2914057f67449644d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">iterator</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15map_transformer8iterator8iteratorEv" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer8iterator8iteratorE13base_iteratorP9Transform">
+<span id="_CPPv3N15map_transformer8iterator8iteratorE13base_iteratorP9Transform"></span><span id="_CPPv2N15map_transformer8iterator8iteratorE13base_iteratorP9Transform"></span><span id="map_transformer::iterator::iterator__base_iterator.TransformP"></span><span class="target" id="classmap__transformer_1_1iterator_1ac4438e11f6fb2d47b6c98ad8ca5c215c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">iterator</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N15map_transformer8iterator8iteratorE13base_iteratorP9Transform" title="map_transformer::iterator::iterator::base_iterator"><span class="n"><span class="pre">base_iterator</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">base_iterator</span></span>, <a class="reference internal" href="#_CPPv4I000E15map_transformer" title="map_transformer::Transform"><span class="n"><span class="pre">Transform</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">transform</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15map_transformer8iterator8iteratorE13base_iteratorP9Transform" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK15map_transformer8iteratormlEv">
+<span id="_CPPv3NK15map_transformer8iteratormlEv"></span><span id="_CPPv2NK15map_transformer8iteratormlEv"></span><span id="map_transformer::iterator::mul-operatorC"></span><span class="target" id="classmap__transformer_1_1iterator_1a5cd5f7adf53a0d76c0398acca19c70d0"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer8iterator10value_typeE" title="map_transformer::iterator::value_type"><span class="n"><span class="pre">value_type</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">*</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK15map_transformer8iteratormlEv" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK15map_transformer8iteratorptEv">
+<span id="_CPPv3NK15map_transformer8iteratorptEv"></span><span id="_CPPv2NK15map_transformer8iteratorptEv"></span><span id="map_transformer::iterator::pointer-operatorC"></span><span class="target" id="classmap__transformer_1_1iterator_1a654a6e9f9dc64aa06c0b419b4ddacfc1"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer8iterator10value_typeE" title="map_transformer::iterator::value_type"><span class="n"><span class="pre">value_type</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">-&gt;</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK15map_transformer8iteratorptEv" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer8iteratorppEv">
+<span id="_CPPv3N15map_transformer8iteratorppEv"></span><span id="_CPPv2N15map_transformer8iteratorppEv"></span><span id="map_transformer::iterator::inc-operator"></span><span class="target" id="classmap__transformer_1_1iterator_1a442c32141c5173b8d054f19073ce1419"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer8iteratorE" title="map_transformer::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">++</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15map_transformer8iteratorppEv" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15map_transformer8iteratorppEi">
+<span id="_CPPv3N15map_transformer8iteratorppEi"></span><span id="_CPPv2N15map_transformer8iteratorppEi"></span><span id="map_transformer::iterator::inc-operator__i"></span><span class="target" id="classmap__transformer_1_1iterator_1ab47d703d6e382f5a58fc82b3a9d60d70"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer8iteratorE" title="map_transformer::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">++</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15map_transformer8iteratorppEi" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK15map_transformer8iteratoreqERK8iterator">
+<span id="_CPPv3NK15map_transformer8iteratoreqERK8iterator"></span><span id="_CPPv2NK15map_transformer8iteratoreqERK8iterator"></span><span id="map_transformer::iterator::eq-operator__iteratorCRC"></span><span class="target" id="classmap__transformer_1_1iterator_1ac4e6171c145b0c26798962ef14d216e8"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">==</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer8iteratorE" title="map_transformer::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK15map_transformer8iteratoreqERK8iterator" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK15map_transformer8iteratorneERK8iterator">
+<span id="_CPPv3NK15map_transformer8iteratorneERK8iterator"></span><span id="_CPPv2NK15map_transformer8iteratorneERK8iterator"></span><span id="map_transformer::iterator::neq-operator__iteratorCRC"></span><span class="target" id="classmap__transformer_1_1iterator_1a1639246639a6ae49a4afa97a01a47a39"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">!=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N15map_transformer8iteratorE" title="map_transformer::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK15map_transformer8iteratorneERK8iterator" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">IfcOpenShell C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#page-hierarchy">Page Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++ API</a><ul>
+      <li>Previous: <a href="classimpl_1_1storage__type__mismatch.html" title="previous chapter">Class storage_type_mismatch</a></li>
+      <li>Next: <a href="classmap__transformer_1_1iterator.html" title="next chapter">Class map_transformer::iterator</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../_sources/output/api/classmap__transformer.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

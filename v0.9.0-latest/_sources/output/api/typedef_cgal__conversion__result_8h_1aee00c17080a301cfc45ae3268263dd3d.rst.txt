@@ -1,0 +1,14 @@
+.. _exhale_typedef_cgal__conversion__result_8h_1aee00c17080a301cfc45ae3268263dd3d:
+
+Typedef kernel
+==============
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: kernel
+   :project: IfcOpenShell

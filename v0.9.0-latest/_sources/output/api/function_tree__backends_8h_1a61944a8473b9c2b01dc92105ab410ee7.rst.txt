@@ -1,0 +1,14 @@
+.. _exhale_function_tree__backends_8h_1a61944a8473b9c2b01dc92105ab410ee7:
+
+Function ifcopenshell::geom::trees::opencascade_tree_backends::make_box
+=======================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_tree_backends.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::trees::opencascade_tree_backends::make_box(const ifcopenshell::geom::tree_box&)
+   :project: IfcOpenShell

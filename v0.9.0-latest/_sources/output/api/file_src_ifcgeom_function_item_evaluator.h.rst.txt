@@ -1,0 +1,60 @@
+
+.. _file_src_ifcgeom_function_item_evaluator.h:
+
+File function_item_evaluator.h
+==============================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/function_item_evaluator.h``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_function_item_evaluator.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/taxonomy.h``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1fn__evaluator`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1function__item__evaluator`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_function__item__evaluator_8h_1ae2ba363dfd722b9a6761e808656b1eb9`
+
+- :ref:`exhale_function_function__item__evaluator_8h_1ae05d6a0bed30ab6a6a26eff5bcb6e2f3`
+

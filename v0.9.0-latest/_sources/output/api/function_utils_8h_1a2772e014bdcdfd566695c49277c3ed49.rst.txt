@@ -1,0 +1,14 @@
+.. _exhale_function_utils_8h_1a2772e014bdcdfd566695c49277c3ed49:
+
+Function ifcopenshell::sanitate_material_name
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::sanitate_material_name(std::string&)
+   :project: IfcOpenShell

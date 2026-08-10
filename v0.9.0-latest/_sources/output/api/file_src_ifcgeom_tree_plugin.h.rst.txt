@@ -1,0 +1,68 @@
+
+.. _file_src_ifcgeom_tree_plugin.h:
+
+File tree_plugin.h
+==================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/tree_plugin.h``)
+------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_tree_plugin.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``filesystem``
+
+- ``tree_registry.h`` (:ref:`file_src_ifcgeom_tree_registry.h`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__trees`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_tree__plugin_8h_1a95dde31e288adfff2e0ded6e7f88de9e`
+
+- :ref:`exhale_function_tree__plugin_8h_1a45b253d50f901c51ef89c5ba0eeb9def`
+
+- :ref:`exhale_function_tree__plugin_8h_1a9da82eefddad4a062d5e54462c32c9ee`
+
+- :ref:`exhale_function_tree__plugin_8h_1aab7260e00d924948161e2c8bba258509`
+
+- :ref:`exhale_function_tree__plugin_8h_1a60fcb17f173bdc3e5faed1ef92820f60`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_tree__plugin_8h_1a5fdb34b4947fa8da51a5a62f9d71b04f`
+

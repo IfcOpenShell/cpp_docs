@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1util_1_1face__definition:
+
+Class face_definition
+=====================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_face_definition.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::util::face_definition
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

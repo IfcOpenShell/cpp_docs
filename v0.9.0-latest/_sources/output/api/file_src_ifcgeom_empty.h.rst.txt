@@ -1,0 +1,27 @@
+
+.. _file_src_ifcgeom_empty.h:
+
+File empty.h
+============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/empty.h``)
+------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_empty.h.rst
+
+
+
+
+
+
+
+
+

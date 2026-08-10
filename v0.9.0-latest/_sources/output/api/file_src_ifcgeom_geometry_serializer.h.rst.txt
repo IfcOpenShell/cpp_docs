@@ -1,0 +1,69 @@
+
+.. _file_src_ifcgeom_geometry_serializer.h:
+
+File geometry_serializer.h
+==========================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/geometry_serializer.h``)
+--------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_geometry_serializer.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/element.h``
+
+- ``../ifcgeom/serializer.h``
+
+- ``../ifcparse/logger.h``
+
+- ``fstream``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_serializers_geometry_serializer_plugin.h`
+
+- :ref:`file_src_serializers_ttl_wkt_serializer.h`
+
+- :ref:`file_src_serializers_wavefront_obj_serializer.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1geometry__serializer`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1write__only__geometry__serializer`
+
+- :ref:`exhale_class_classstream__or__filename`
+

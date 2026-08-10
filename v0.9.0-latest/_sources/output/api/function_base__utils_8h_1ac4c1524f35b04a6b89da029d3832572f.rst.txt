@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1ac4c1524f35b04a6b89da029d3832572f:
+
+Function ifcopenshell::geom::util::is_compound_of_faces
+=======================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::is_compound_of_faces(const TopoDS_Shape&)
+   :project: IfcOpenShell

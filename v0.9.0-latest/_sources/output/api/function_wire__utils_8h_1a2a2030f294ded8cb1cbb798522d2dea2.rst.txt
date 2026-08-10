@@ -1,0 +1,14 @@
+.. _exhale_function_wire__utils_8h_1a2a2030f294ded8cb1cbb798522d2dea2:
+
+Function ifcopenshell::geom::util::remove_collinear_points_from_loop
+====================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::remove_collinear_points_from_loop(NCollection_Sequence<gp_Pnt>&, bool, double)
+   :project: IfcOpenShell

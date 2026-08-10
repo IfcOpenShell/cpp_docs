@@ -1,0 +1,53 @@
+
+.. _file_src_ifcgeom_hybrid_kernel.h:
+
+File hybrid_kernel.h
+====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/hybrid_kernel.h``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_hybrid_kernel.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``abstract_kernel.h`` (:ref:`file_src_ifcgeom_abstract_kernel.h`)
+
+- ``kernel_registry.h`` (:ref:`file_src_ifcgeom_kernel_registry.h`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__kernels`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1hybrid__kernel`
+

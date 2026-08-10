@@ -1,0 +1,14 @@
+.. _exhale_function_sweep__utils_8h_1a53fe24dfe0a6f283e93662817f0ac800:
+
+Function ifcopenshell::geom::util::is_single_circular_edge
+==========================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_sweep_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::is_single_circular_edge(const TopoDS_Wire&)
+   :project: IfcOpenShell

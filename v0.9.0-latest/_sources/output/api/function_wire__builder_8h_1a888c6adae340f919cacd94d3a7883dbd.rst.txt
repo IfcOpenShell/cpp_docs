@@ -1,0 +1,14 @@
+.. _exhale_function_wire__builder_8h_1a888c6adae340f919cacd94d3a7883dbd:
+
+Function ifcopenshell::geom::util::adjust
+=========================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_builder.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::adjust(const TopoDS_Wire&, const TopoDS_Vertex&, const gp_Pnt&)
+   :project: IfcOpenShell

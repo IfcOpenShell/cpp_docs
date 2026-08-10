@@ -1,0 +1,14 @@
+.. _exhale_function_wire__builder_8h_1a0f75813b1dcdfd7f176479f733456361:
+
+Function ifcopenshell::geom::util::first_edge
+=============================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_builder.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::first_edge(const TopoDS_Wire&)
+   :project: IfcOpenShell

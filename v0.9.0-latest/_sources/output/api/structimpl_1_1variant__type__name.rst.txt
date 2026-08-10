@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1variant__type__name:
+
+Template Struct variant_type_name
+=================================
+
+.. did not find file this was defined in
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::variant_type_name
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,93 @@
+
+.. _file_src_ifcgeom_mapping_mapping.h:
+
+File mapping.h
+==============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/mapping/mapping.h``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_mapping_mapping.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../ifcparse/file.h``
+
+- ``../../ifcparse/logger.h``
+
+- ``../../ifcparse/macros.h``
+
+- ``../abstract_mapping.h``
+
+- ``INCLUDE_SCHEMA(../../ifcparse/schemas, IfcSchema)``
+
+- ``INCLUDE_SCHEMA_DEFINITIONS(../../ifcparse/schemas, IfcSchema)``
+
+- ``bind_convert_decl.i``
+
+- ``cstdint``
+
+- ``mutex``
+
+- ``unordered_set``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1element__type`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1element__type_3_01taxonomy_1_1boolean__result_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1element__type_3_01taxonomy_1_1collection_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1element__type_3_01taxonomy_1_1loop_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1element__type_3_01taxonomy_1_1shell_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1element__type_3_01taxonomy_1_1solid_01_4`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1mapping___schema`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_mapping_8h_1a688504f0d50e4a04d8b51c1a1a83ad99`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_abstract__mapping_8h_1a65aac35d731dc63939c30648bec8054d`
+

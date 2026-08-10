@@ -1,0 +1,334 @@
+
+.. _namespace_ifcopenshell__geom:
+
+Namespace ifcopenshell::geom
+============================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell__geom__@49`
+
+- :ref:`namespace_ifcopenshell__geom__impl`
+
+- :ref:`namespace_ifcopenshell__geom__kernels`
+
+- :ref:`namespace_ifcopenshell__geom__settings_detail`
+
+- :ref:`namespace_ifcopenshell__geom__taxonomy`
+
+- :ref:`namespace_ifcopenshell__geom__trees`
+
+- :ref:`namespace_ifcopenshell__geom__util`
+
+- :ref:`namespace_ifcopenshell__geom__utils`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1attribute__filter`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1box`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1clash`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1cross__section`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1element__type`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1element__type_3_01taxonomy_1_1boolean__result_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1element__type_3_01taxonomy_1_1collection_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1element__type_3_01taxonomy_1_1loop_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1element__type_3_01taxonomy_1_1shell_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1element__type_3_01taxonomy_1_1solid_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1entity__filter`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1filter`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1fn__evaluator`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1geometry__conversion__result`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1geometry__conversion__task`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1halffacet__collector`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1instance__id__filter`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1layer__filter`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1layerset__information`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1manifold__part`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1number__epeck_1_1model`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1opaque__coordinate`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1opencascade__geometry__ifc__writer__registry_1_1entry`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1passthrough__part`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1plane__hash`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1plane__less`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1point__d__4d__less`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1profile__point`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1profile__point__with__edges`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1profile__point__with__edges__3d`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1ray`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1ray__intersection__result`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1segment__collector`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1vertex__properties`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1wildcard__filter`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1abstract__mapping`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1cgal__shape`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1cgal__shape__half__space__decomposition`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1conversion__result`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1conversion__result__shape`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1converter`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1convex__subcomponent__visitor`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1element`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1function__item__evaluator`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1geometry__exception`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1geometry__serializer`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1halfspace__tree`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1halfspace__tree__nary__branch`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1halfspace__tree__plane`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1iterator`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1manifold__shape`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1mapping___schema`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1native`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1native__element`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1number__epeck`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1opaque__number`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1open__cascade__kernel`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1open__cascade__kernel_1_1faceset__helper`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1open__cascade__shape`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1opencascade__geometry__ifc__writer__registry`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1opencascade__tree`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1passthrough__shape`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1polysoup__builder`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1representation`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1serialization`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1serialized__element`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1serializer`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1settings`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1settings__container`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1too__many__faces__exception`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1transformation`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1tree`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1triangulation`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1triangulation__element`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1write__only__geometry__serializer`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_taxonomy_8h_1aea927900c5d5ddf852cce25503f6be39`
+
+- :ref:`exhale_enum_nef__to__halfspace__tree_8h_1a1ad4f22871f4691d3346ac3656007431`
+
+- :ref:`exhale_enum_nef__to__halfspace__tree_8h_1a365ed94b164a52c2ef9bdc6e77e60f17`
+
+- :ref:`exhale_enum_nef__to__halfspace__tree_8h_1abb9851c57f53c8af7792847ec63138ca`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_taxonomy_8h_1a97c8564a3430d1e5026c207b8ce13775`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1ac903e7eb05bf7de3d82919b2a5ab308c`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1ad57d27e24eda5843f194974a9ab19d16`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1adb8a9d8d3bdf401608a1753ae080b1dd`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1af4b92daab8ac67025c32951e43d4b0c9`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a65eec376263409e336a374540c5e8472`
+
+- :ref:`exhale_function_function__item__evaluator_8h_1ae2ba363dfd722b9a6761e808656b1eb9`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a11482bae433790c061ed9dcc35e2291c`
+
+- :ref:`exhale_function_taxonomy_8h_1ae4d347cb6bde622c30e6cbd5388b3915`
+
+- :ref:`exhale_function_taxonomy_8h_1a4944743c5e82be1fa9e04a40ff10c127`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1afdf9462deb462071a2fc5774158f2e06`
+
+- :ref:`exhale_function_clash__utils_8h_1a19a992d93152d3315804c7335faec9d0`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a91ad981d1720b8220b5ed7487b4d6e1c`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a380171e5bdc4a38358c45eb6bdbab1f4`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a63650b5d18191d13cbb025a855b3eb36`
+
+- :ref:`exhale_function_clash__utils_8h_1a110c00024346829e435a8d9fb7d06e35`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a33cf263f3c5494ec271251cea7d8cacf`
+
+- :ref:`exhale_function_profile__helper_8h_1a43d5b6fe72cdd4e915873d1d99dd2ebc`
+
+- :ref:`exhale_function_taxonomy_8h_1ac0edf55f9197bbf40650a214163f34d6`
+
+- :ref:`exhale_function_taxonomy_8h_1a4b5a317f8eaf3e651fb77251f8e9ae5f`
+
+- :ref:`exhale_function_taxonomy_8h_1ae3e49e73ca029d8bf657446983c70bfa`
+
+- :ref:`exhale_function_render__styles_8h_1a643907d808211d57816ed1feaa6e67d1`
+
+- :ref:`exhale_function_function__item__evaluator_8h_1ae05d6a0bed30ab6a6a26eff5bcb6e2f3`
+
+- :ref:`exhale_function_clash__utils_8h_1a3029b216d770791a7b05b9d775a459eb`
+
+- :ref:`exhale_function_clash__utils_8h_1a6a10f54156bf2598be06633263976986`
+
+- :ref:`exhale_function_opencascade__geometry__ifc__writer__plugin_8h_1a3507a0fb050fd6a76bd4043a98e1aeaf`
+
+- :ref:`exhale_function_opencascade__geometry__ifc__writer__plugin_8h_1ad6657fe94ec1eab66dc8f88286c4db2a`
+
+- :ref:`exhale_function_infra__sweep__helper_8h_1ac0b1629f4ffc108774544e1e7054cee9`
+
+- :ref:`exhale_function_mapping_8h_1a688504f0d50e4a04d8b51c1a1a83ad99`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a5a854e351b0b395977da99da78b96110`
+
+- :ref:`exhale_function_opencascade__geometry__ifc__writer__plugin_8h_1a55418674b13cb1261e2507fb5142c05e`
+
+- :ref:`exhale_function_opencascade__geometry__ifc__writer__plugin_8h_1a641d5cc912c3e578694ba99b226929c0`
+
+- :ref:`exhale_function_opencascade__geometry__ifc__writer__plugin_8h_1ae26b8f704860dc76a0f97ec1d9c872db`
+
+- :ref:`exhale_function_serialization_8h_1a7a4bdc3362d92d7bb9a7d724adf4fbf3`
+
+- :ref:`exhale_function_profile__helper_8h_1a2b9a7634c6eeae3ef8dd6be024a32cce`
+
+- :ref:`exhale_function_profile__helper_8h_1aeeca4891686c5641602d9831f70d479d`
+
+- :ref:`exhale_function_profile__helper_8h_1aa89951add8ec677c29eff2fa2d93b6df`
+
+- :ref:`exhale_function_profile__helper_8h_1a3906fa675025be8425243ff148b00989`
+
+- :ref:`exhale_function_serialization_8h_1a7526ba15347f72c353bf3327258f6cdb`
+
+- :ref:`exhale_function_serialization_8h_1ae48bb4d0ef583008e7fbd1d8ca699bac`
+
+- :ref:`exhale_function_opencascade__kernel_8h_1ae777a9a5ddffc995ac598be2b3488a20`
+
+- :ref:`exhale_function_render__styles_8h_1adc345e2134209e7184e55da8bc3b17e1`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1afd73a76bb45d792820d47d2064d292ca`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1affd19a0365167775273dc98a081c1db0`
+
+- :ref:`exhale_function_serialization_8h_1a2c07b294dd4b28b4d773433a8c141073`
+
+- :ref:`exhale_function_serialization_8h_1aedc3e6b247a58db4b0c5b3a08166bbb3`
+
+- :ref:`exhale_function_opencascade__kernel_8h_1a9fc2eda3186022b43b21d001500c0185`
+
+- :ref:`exhale_function_clash__utils_8h_1aac81253b62a4c78d544bd96100af7196`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a00aeb8fab414b8ea67e17f0d261af128`
+
+- :ref:`exhale_function_render__styles_8h_1a09d9f81553d3c777c4acbc5a560828df`
+
+- :ref:`exhale_function_taxonomy_8h_1a1a9a608129900fa59b509417b42bd1a7`
+
+- :ref:`exhale_function_taxonomy_8h_1a3b0d0fbbb95d57b18f10eab889159f64`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a7147421023c113236ed985856d6de166`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_taxonomy_8h_1ae2282b55c19a77e52aad60cf6429689e`
+
+- :ref:`exhale_typedef_abstract__mapping_8h_1a65aac35d731dc63939c30648bec8054d`
+
+- :ref:`exhale_typedef_conversion__settings_8h_1a6aa182a8d0f936d52c9d0ac0142b9fb8`
+
+- :ref:`exhale_typedef_nef__to__halfspace__tree_8h_1a1d20f1dedc8e5ac7a2f4086a76fb4c86`
+
+- :ref:`exhale_typedef_nef__to__halfspace__tree_8h_1abd559649454663417169e56ee29e633f`
+
+- :ref:`exhale_typedef_opencascade__geometry__ifc__writer__plugin_8h_1ae6d77ef85457f159173558acb60afea0`
+
+- :ref:`exhale_typedef_tree_8h_1a99e78a64daa273f605a74fba8b8a6eb2`
+
+- :ref:`exhale_typedef_tree_8h_1ab4c65bf04913c611e36380626cbbad89`

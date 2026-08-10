@@ -1,0 +1,14 @@
+.. _exhale_function_taxonomy_8h_1a89da4c1a020a201e0de30e1184c23347:
+
+Function ifcopenshell::geom::taxonomy::less
+===========================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::taxonomy::less(item::const_ptr, item::const_ptr)
+   :project: IfcOpenShell

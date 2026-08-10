@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1file__reader:
+
+Template Class file_reader
+==========================
+
+- Defined in :ref:`file_src_ifcparse_file_reader.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::file_reader
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,17 @@
+.. _exhale_class_classrocksdb_1_1_read_options:
+
+Class ReadOptions
+=================
+
+- Defined in :ref:`file_src_ifcparse_storage.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: rocksdb::ReadOptions
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

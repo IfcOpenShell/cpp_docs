@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1tuple__prepend:
+
+Template Struct tuple_prepend
+=============================
+
+.. did not find file this was defined in
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::tuple_prepend
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

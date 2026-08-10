@@ -1,0 +1,14 @@
+.. _exhale_function_serialization_8h_1a7a4bdc3362d92d7bb9a7d724adf4fbf3:
+
+Function ifcopenshell::geom::opencascade_geometry_ifc_writer_registry_instance
+==============================================================================
+
+- Defined in :ref:`file_src_ifcgeom_serialization_serialization.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::opencascade_geometry_ifc_writer_registry_instance()
+   :project: IfcOpenShell

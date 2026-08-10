@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1pack__to__variant__array_3_01parameter__pack_3_01_args_8_8_8_01_4_01_4:
+
+Template Struct pack_to_variant_array< parameter_pack< Args... > >
+==================================================================
+
+- Defined in :ref:`file_src_ifcparse_instance_data.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::pack_to_variant_array< parameter_pack< Args... > >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

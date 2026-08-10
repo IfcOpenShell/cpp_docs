@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1a80be83664b2e52c3f2e0f897a342bda4:
+
+Function ifcopenshell::geom::util::validate_shape
+=================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::validate_shape(const TopoDS_Shape&)
+   :project: IfcOpenShell

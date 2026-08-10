@@ -1,0 +1,23 @@
+.. _exhale_class_classset__to__map__transformer_1_1iterator:
+
+Class set_to_map_transformer::iterator
+======================================
+
+- Defined in :ref:`file_src_ifcparse_set_to_map_transformer.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_classset__to__map__transformer`.
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: set_to_map_transformer::iterator
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

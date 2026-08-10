@@ -1,0 +1,14 @@
+.. _exhale_typedef_document__serializer__plugin_8h_1ad5b176af723ed9c867a5ec24f9931d01:
+
+Typedef ifcopenshell::serializers::register_document_serializer_plugin_fn
+=========================================================================
+
+- Defined in :ref:`file_src_serializers_document_serializer_plugin.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::serializers::register_document_serializer_plugin_fn
+   :project: IfcOpenShell

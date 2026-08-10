@@ -1,0 +1,92 @@
+
+.. _namespace_impl:
+
+Namespace impl
+==============
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structimpl_1_1is__small__object`
+
+- :ref:`exhale_struct_structimpl_1_1is__unique__ptr`
+
+- :ref:`exhale_struct_structimpl_1_1is__unique__ptr_3_01std_1_1unique__ptr_3_01_t_00_01_args_8_8_8_01_4_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1make__union__from__tuple`
+
+- :ref:`exhale_struct_structimpl_1_1make__union__from__tuple_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1map__types`
+
+- :ref:`exhale_struct_structimpl_1_1map__types_3_01_first_type_00_01_rest_types_8_8_8_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1map__types_3_4`
+
+- :ref:`exhale_struct_structimpl_1_1transform__type`
+
+- :ref:`exhale_struct_structimpl_1_1tuple__prepend`
+
+- :ref:`exhale_struct_structimpl_1_1tuple__prepend_3_01_t_00_01std_1_1tuple_3_01_types_8_8_8_01_4_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1type__index`
+
+- :ref:`exhale_struct_structimpl_1_1type__index_3_01_t_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1type__index_3_01_t_00_01_u_00_01_ts_8_8_8_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01bool_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01boost_1_1dynamic__bitset_3_4_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01boost_1_1logic_1_1tribool_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01double_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01express_1_1base_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1blank_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1derived_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1empty__aggregate_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1empty__aggregate__of__aggregate_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1enumeration__reference_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01int_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01int64__t_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1string_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1vector_3_01_t_00_01_allocator_01_4_01_4`
+
+- :ref:`exhale_class_classimpl_1_1storage__type__mismatch`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_variant__array_8h_1a4dbddf8da6686f907398368bc0fa3846`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_variant__array_8h_1ab3345021844a962cbccdab071dfb2342`

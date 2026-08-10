@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1pack__to__variant__array:
+
+Template Struct pack_to_variant_array
+=====================================
+
+.. did not find file this was defined in
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::pack_to_variant_array
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

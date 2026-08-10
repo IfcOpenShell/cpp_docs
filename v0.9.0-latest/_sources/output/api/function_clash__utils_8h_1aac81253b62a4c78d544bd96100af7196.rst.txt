@@ -1,0 +1,14 @@
+.. _exhale_function_clash__utils_8h_1aac81253b62a4c78d544bd96100af7196:
+
+Function ifcopenshell::geom::trianglesIntersect
+===============================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_clash_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::trianglesIntersect(const gp_Vec&, const gp_Vec&, const gp_Vec&, const gp_Vec&, const gp_Vec&, const gp_Vec&, gp_Vec&, gp_Vec&, bool)
+   :project: IfcOpenShell

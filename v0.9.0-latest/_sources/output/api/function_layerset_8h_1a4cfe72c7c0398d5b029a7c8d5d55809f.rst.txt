@@ -1,0 +1,14 @@
+.. _exhale_function_layerset_8h_1a4cfe72c7c0398d5b029a7c8d5d55809f:
+
+Function ifcopenshell::geom::util::apply_folded_layerset
+========================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_layerset.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::apply_folded_layerset(const std::vector<conversion_result>&, const std::vector<std::vector<opencascade::handle<Geom_Surface>>>&, const std::vector<ifcopenshell::geom::taxonomy::style::ptr>&, std::vector<conversion_result>&, double)
+   :project: IfcOpenShell

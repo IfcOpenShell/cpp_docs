@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Program Listing for File base_utils.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="program-listing-for-file-base-utils-h">
+<span id="program-listing-file-src-ifcgeom-kernels-opencascade-base-utils-h"></span><h1>Program Listing for File base_utils.h<a class="headerlink" href="#program-listing-for-file-base-utils-h" title="Link to this heading">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcgeom_kernels_opencascade_base_utils.h.html#file-src-ifcgeom-kernels-opencascade-base-utils-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/kernels/opencascade/base_utils.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef BASE_UTILS_H</span>
+<span class="cp">#define BASE_UTILS_H</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/conversion_result.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifc_geomlibrary_api.h&quot;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gp_Pln.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gp_Pnt.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gp_Ax3.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gp_Ax2d.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gp_Trsf2d.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gp_GTrsf2d.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gp_Trsf.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gp_GTrsf.hxx&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Standard_Macro.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;NCollection_List.hxx&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;TopoDS_Wire.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;TopoDS_Face.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;TopoDS_Shape.hxx&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Geom_Curve.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Geom_Surface.hxx&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">ifcopenshell</span><span class="o">::</span><span class="nn">geom</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">namespace</span><span class="w"> </span><span class="nn">util</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span><span class="w"> </span><span class="n">TopAbs_ShapeEnum</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">unique</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">surface_genus</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_manifold</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// For axis placements detect equality early in order for the</span>
+<span class="w">        </span><span class="c1">// relatively computionaly expensive gp_Trsf calculation to be skipped</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">axis_equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Ax3</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Ax3</span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">tolerance</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">axis_equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Ax2d</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Ax2d</span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">tolerance</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_identity</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Trsf2d</span><span class="o">&amp;</span><span class="w"> </span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">tolerance</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_identity</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_GTrsf2d</span><span class="o">&amp;</span><span class="w"> </span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">tolerance</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_identity</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Trsf</span><span class="o">&amp;</span><span class="w"> </span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">tolerance</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_identity</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_GTrsf</span><span class="o">&amp;</span><span class="w"> </span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">tolerance</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">gp_Trsf</span><span class="w"> </span><span class="n">combine_offset_and_rotation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Vec</span><span class="w"> </span><span class="o">&amp;</span><span class="n">offset</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Quaternion</span><span class="o">&amp;</span><span class="w"> </span><span class="n">rotation</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_nested_compound_of_solid</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">depth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Creates a solid from a compound of faces. When there are multiple connected components,</span>
+<span class="w">        </span><span class="c1">// a compound of solids is returned.</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">create_solid_from_compound</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">compound</span><span class="p">,</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">solid</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">tol</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">shape_to_face_list</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">NCollection_List</span><span class="o">&lt;</span><span class="n">TopoDS_Shape</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">li</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">create_solid_from_faces</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">NCollection_List</span><span class="o">&lt;</span><span class="n">TopoDS_Shape</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">face_list</span><span class="p">,</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">solid</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">tol</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">force_sewing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_compound_of_faces</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">shape</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_convex</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Wire</span><span class="o">&amp;</span><span class="w"> </span><span class="n">wire</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">tol</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="w"> </span><span class="n">halfspace_from_plane</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pln</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pln</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="w"> </span><span class="n">cent</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">gp_Pln</span><span class="w"> </span><span class="n">plane_from_face</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Face</span><span class="o">&amp;</span><span class="w"> </span><span class="n">face</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">gp_Pnt</span><span class="w"> </span><span class="n">point_above_plane</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pln</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pln</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">agree</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">fit_halfspace</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">box</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="n">height</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">tol</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Curve</span><span class="o">&gt;</span><span class="w"> </span><span class="n">intersect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Surface</span><span class="o">&gt;&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Surface</span><span class="o">&gt;&amp;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Curve</span><span class="o">&gt;</span><span class="w"> </span><span class="n">intersect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Surface</span><span class="o">&gt;&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Face</span><span class="o">&amp;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Curve</span><span class="o">&gt;</span><span class="w"> </span><span class="n">intersect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Face</span><span class="o">&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Surface</span><span class="o">&gt;&amp;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">intersect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Curve</span><span class="o">&gt;&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Surface</span><span class="o">&gt;&amp;</span><span class="p">,</span><span class="w"> </span><span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">intersect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Curve</span><span class="o">&gt;&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Face</span><span class="o">&amp;</span><span class="p">,</span><span class="w"> </span><span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">intersect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Curve</span><span class="o">&gt;&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">gp_Pnt</span><span class="o">&gt;&amp;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">intersect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Surface</span><span class="o">&gt;&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Surface</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Curve</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;&amp;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">closest</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">gp_Pnt</span><span class="o">&gt;&amp;</span><span class="p">,</span><span class="w"> </span><span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">project</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Curve</span><span class="o">&gt;&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="p">,</span><span class="w"> </span><span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="n">d</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">project</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">Geom_Surface</span><span class="o">&gt;&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="n">u1</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="n">v1</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="n">u2</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="n">v2</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">widen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">shape_volume</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">s</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">face_area</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Face</span><span class="o">&amp;</span><span class="w"> </span><span class="n">f</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="w"> </span><span class="n">apply_transformation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">taxonomy</span><span class="o">::</span><span class="n">matrix4</span><span class="o">&amp;</span><span class="w"> </span><span class="n">t</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="w"> </span><span class="n">apply_transformation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Trsf</span><span class="o">&amp;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="w"> </span><span class="n">apply_transformation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">gp_GTrsf</span><span class="o">&amp;</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">flatten_shape_list</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">conversion_result</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">shapes</span><span class="p">,</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">fuse</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">create_shell</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">tol</span><span class="p">);</span>
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">validate_shape</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="w"> </span><span class="n">unify</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">tolerance</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++ API</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../_sources/output/api/program_listing_file_src_ifcgeom_kernels_opencascade_base_utils.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

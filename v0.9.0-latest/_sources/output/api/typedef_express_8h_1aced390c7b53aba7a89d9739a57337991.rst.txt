@@ -1,0 +1,14 @@
+.. _exhale_typedef_express_8h_1aced390c7b53aba7a89d9739a57337991:
+
+Typedef express::Entity
+=======================
+
+- Defined in :ref:`file_src_ifcparse_express.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: express::Entity
+   :project: IfcOpenShell

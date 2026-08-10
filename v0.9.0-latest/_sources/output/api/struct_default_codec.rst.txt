@@ -1,0 +1,17 @@
+.. _exhale_struct_struct_default_codec:
+
+Template Struct DefaultCodec
+============================
+
+.. did not find file this was defined in
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: DefaultCodec
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

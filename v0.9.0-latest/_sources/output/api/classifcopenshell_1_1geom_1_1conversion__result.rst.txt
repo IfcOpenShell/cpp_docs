@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1conversion__result:
+
+Class conversion_result
+=======================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_result.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::conversion_result
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

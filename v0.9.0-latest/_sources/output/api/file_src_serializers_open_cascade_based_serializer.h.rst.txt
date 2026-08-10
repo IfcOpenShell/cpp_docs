@@ -1,0 +1,27 @@
+
+.. _file_src_serializers_open_cascade_based_serializer.h:
+
+File open_cascade_based_serializer.h
+====================================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/open_cascade_based_serializer.h``)
+----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_open_cascade_based_serializer.h.rst
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_sweep_utils.h:
+
+File sweep_utils.h
+==================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/sweep_utils.h``)
+--------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_sweep_utils.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``TopoDS_Edge.hxx``
+
+- ``TopoDS_Wire.hxx``
+
+- ``vector``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__util`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_sweep__utils_8h_1a3c782939ca4e3d4efcc7fc38a4e47242`
+
+- :ref:`exhale_function_sweep__utils_8h_1a53fe24dfe0a6f283e93662817f0ac800`
+
+- :ref:`exhale_function_sweep__utils_8h_1afa4020ce2728e3aadda2ae1b766b95d2`
+
+- :ref:`exhale_function_sweep__utils_8h_1af0762dcd39cd615ee7fdc779d322ade3`
+
+- :ref:`exhale_function_sweep__utils_8h_1ae33c81738ec393530904286534529707`
+
+- :ref:`exhale_function_sweep__utils_8h_1ad5a3422935ecd6610488d15a72f781e0`
+
+- :ref:`exhale_function_sweep__utils_8h_1a10032f262bb1314b4ca959e7e8baa093`
+
+- :ref:`exhale_function_sweep__utils_8h_1a7502656c4815f5b33aa9b45fb39c3455`
+
+- :ref:`exhale_function_sweep__utils_8h_1a8f9083780122089c6745de4eb0e9bd4c`
+
+- :ref:`exhale_function_sweep__utils_8h_1a41a75d81b0fc9c8d108975ac97a2d86d`
+
+- :ref:`exhale_function_sweep__utils_8h_1a44097f874f69ecb019a2057c35b99a30`
+

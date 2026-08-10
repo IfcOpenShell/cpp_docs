@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1native__element:
+
+Class native_element
+====================
+
+- Defined in :ref:`file_src_ifcgeom_element.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::element`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1element`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::native_element
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

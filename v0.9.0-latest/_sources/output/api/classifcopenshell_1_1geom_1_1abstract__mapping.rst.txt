@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1abstract__mapping:
+
+Class abstract_mapping
+======================
+
+- Defined in :ref:`file_src_ifcgeom_abstract_mapping.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public ifcopenshell::geom::mapping_Schema`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1mapping___schema`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::abstract_mapping
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

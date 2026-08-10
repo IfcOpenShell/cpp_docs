@@ -1,0 +1,14 @@
+.. _exhale_function_wire__builder_8h_1afa13445918b627b3b7bdf02d99e7a7bd:
+
+Function ifcopenshell::geom::util::deflection_for_approximating_circle
+======================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_builder.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::deflection_for_approximating_circle(double, double)
+   :project: IfcOpenShell

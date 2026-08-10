@@ -1,0 +1,70 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_tree_backends.h:
+
+File tree_backends.h
+====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/tree_backends.h``)
+----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_tree_backends.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../../ifcparse/exception.h``
+
+- ``../../kernel_registry.h``
+
+- ``../../tree_registry.h``
+
+- ``tree.h`` (:ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__trees`
+
+- :ref:`namespace_ifcopenshell__geom__trees__opencascade_tree_backends`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1trees_1_1opencascade__tree__backends_1_1brep__tree`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1trees_1_1opencascade__tree__backends_1_1trianglebvh__tree`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_tree__backends_8h_1a61944a8473b9c2b01dc92105ab410ee7`
+
+- :ref:`exhale_function_tree__backends_8h_1a474f2e28a9917beb353a23a7063d56b6`
+

@@ -1,0 +1,14 @@
+.. _exhale_function_sweep__utils_8h_1afa4020ce2728e3aadda2ae1b766b95d2:
+
+Function ifcopenshell::geom::util::is_single_linear_edge
+========================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_sweep_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::is_single_linear_edge(const TopoDS_Wire&)
+   :project: IfcOpenShell

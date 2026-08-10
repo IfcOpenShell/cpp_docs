@@ -1,0 +1,180 @@
+
+.. _file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h:
+
+File nef_to_halfspace_tree.h
+============================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/cgal/nef_to_halfspace_tree.h``)
+-----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``CGAL/Epick_d.h``
+
+- ``CGAL/Fuzzy_sphere.h``
+
+- ``CGAL/Kd_tree.h``
+
+- ``CGAL/Nef_nary_intersection_3.h``
+
+- ``CGAL/Nef_nary_union_3.h``
+
+- ``CGAL/Nef_polyhedron_3.h``
+
+- ``CGAL/Polygon_2.h``
+
+- ``CGAL/Polygon_mesh_processing/polygon_soup_to_polygon_mesh.h``
+
+- ``CGAL/Polygon_mesh_processing/triangulate_hole.h``
+
+- ``CGAL/Polygon_triangulation_decomposition_2.h``
+
+- ``CGAL/Polygon_with_holes_2.h``
+
+- ``CGAL/Search_traits_d.h``
+
+- ``CGAL/convex_decomposition_3.h``
+
+- ``boost/graph/adjacency_list.hpp``
+
+- ``boost/graph/breadth_first_search.hpp``
+
+- ``boost/graph/connected_components.hpp``
+
+- ``boost/graph/copy.hpp``
+
+- ``boost/graph/graphviz.hpp``
+
+- ``boost/iterator/indirect_iterator.hpp``
+
+- ``boost/iterator/transform_iterator.hpp``
+
+- ``cstddef``
+
+- ``functional``
+
+- ``list``
+
+- ``memory``
+
+- ``queue``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1halffacet__collector`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1plane__hash`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1plane__less`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1point__d__4d__less`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1segment__collector`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1vertex__properties`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1convex__subcomponent__visitor`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1halfspace__tree`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1halfspace__tree__nary__branch`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1halfspace__tree__plane`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1polysoup__builder`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_nef__to__halfspace__tree_8h_1a1ad4f22871f4691d3346ac3656007431`
+
+- :ref:`exhale_enum_nef__to__halfspace__tree_8h_1a365ed94b164a52c2ef9bdc6e77e60f17`
+
+- :ref:`exhale_enum_nef__to__halfspace__tree_8h_1abb9851c57f53c8af7792847ec63138ca`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1ac903e7eb05bf7de3d82919b2a5ab308c`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1ad57d27e24eda5843f194974a9ab19d16`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1adb8a9d8d3bdf401608a1753ae080b1dd`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1af4b92daab8ac67025c32951e43d4b0c9`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a65eec376263409e336a374540c5e8472`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a11482bae433790c061ed9dcc35e2291c`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1afdf9462deb462071a2fc5774158f2e06`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a91ad981d1720b8220b5ed7487b4d6e1c`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a380171e5bdc4a38358c45eb6bdbab1f4`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a63650b5d18191d13cbb025a855b3eb36`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a33cf263f3c5494ec271251cea7d8cacf`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a5a854e351b0b395977da99da78b96110`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1afd73a76bb45d792820d47d2064d292ca`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1affd19a0365167775273dc98a081c1db0`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a00aeb8fab414b8ea67e17f0d261af128`
+
+- :ref:`exhale_function_nef__to__halfspace__tree_8h_1a7147421023c113236ed985856d6de166`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_nef__to__halfspace__tree_8h_1a1d20f1dedc8e5ac7a2f4086a76fb4c86`
+
+- :ref:`exhale_typedef_nef__to__halfspace__tree_8h_1abd559649454663417169e56ee29e633f`
+

@@ -1,0 +1,14 @@
+.. _exhale_function_wire__utils_8h_1a8868e39ffcdde51af4a4d1ce7c83e860:
+
+Function ifcopenshell::geom::util::wire_intersections
+=====================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::wire_intersections(const TopoDS_Wire&, NCollection_List<TopoDS_Shape>&, const wire_tolerance_settings&)
+   :project: IfcOpenShell

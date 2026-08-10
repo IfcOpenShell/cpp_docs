@@ -1,0 +1,14 @@
+.. _exhale_function_document__serializer__plugin_8h_1ad4cd346783cd0b686d75d90f5e34facc:
+
+Function ifcopenshell::serializers::document_serializer_plugin_metadata
+=======================================================================
+
+- Defined in :ref:`file_src_serializers_document_serializer_plugin.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::serializers::document_serializer_plugin_metadata(const std::string&, const std::string&)
+   :project: IfcOpenShell

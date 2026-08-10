@@ -1,0 +1,130 @@
+
+.. _file_src_ifcparse_file.h:
+
+File file.h
+===========
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/file.h``)
+------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_file.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``boost/circular_buffer.hpp``
+
+- ``boost/multi_index/ordered_index.hpp``
+
+- ``boost/multi_index/random_access_index.hpp``
+
+- ``boost/multi_index/sequenced_index.hpp``
+
+- ``boost/multi_index_container.hpp``
+
+- ``cstdint``
+
+- ``file_open_status.h`` (:ref:`file_src_ifcparse_file_open_status.h`)
+
+- ``functional``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``iterator`` (:ref:`file_src_ifcgeom_iterator.h`)
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``memory``
+
+- ``parse.h`` (:ref:`file_src_ifcparse_parse.h`)
+
+- ``schema.h`` (:ref:`file_src_ifcparse_schema.h`)
+
+- ``spf_header.h`` (:ref:`file_src_ifcparse_spf_header.h`)
+
+- ``storage.h`` (:ref:`file_src_ifcparse_storage.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_converter.h`
+
+- :ref:`file_src_ifcgeom_filter.h`
+
+- :ref:`file_src_ifcgeom_iterator.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_tree.h`
+
+- :ref:`file_src_ifcgeom_mapping_mapping.h`
+
+- :ref:`file_src_ifcgeom_serializer.h`
+
+- :ref:`file_src_ifcparse_hierarchy_helper.h`
+
+- :ref:`file_src_serializers_document_serializer_plugin.h`
+
+- :ref:`file_src_serializers_xml_serializer.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__impl`
+
+- :ref:`namespace_std`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structstd_1_1iterator__traits_3_01ifcopenshell_1_1file_1_1type__iterator_01_4`
+
+- :ref:`exhale_class_classifcopenshell_1_1file`
+
+- :ref:`exhale_class_classifcopenshell_1_1instance__streamer`
+
+- :ref:`exhale_class_classifcopenshell_1_1uninitialized__tag`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_file_8h_1a8349a4a0c47a32926cdabd33778787a2`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_file_8h_1a46fc3f1816a25e4790155d381c52388f`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_file_8h_1a697ee5ad1fb83f0370ff738e4166f68f`
+

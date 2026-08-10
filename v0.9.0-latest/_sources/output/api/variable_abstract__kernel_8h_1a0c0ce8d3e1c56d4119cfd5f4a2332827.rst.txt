@@ -1,0 +1,14 @@
+.. _exhale_variable_abstract__kernel_8h_1a0c0ce8d3e1c56d4119cfd5f4a2332827:
+
+Variable ALMOST_ZERO
+====================
+
+- Defined in :ref:`file_src_ifcgeom_abstract_kernel.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: ALMOST_ZERO
+   :project: IfcOpenShell

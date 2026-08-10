@@ -1,0 +1,14 @@
+.. _exhale_enum_conversion__settings_8h_1a4d7565d5b246c46d59f2c61466fef49e:
+
+Enum IteratorOutputOptions
+==========================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_settings.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ifcopenshell::geom::settings_detail::IteratorOutputOptions
+   :project: IfcOpenShell

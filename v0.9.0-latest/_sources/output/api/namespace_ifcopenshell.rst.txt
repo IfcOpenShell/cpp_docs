@@ -1,0 +1,233 @@
+
+.. _namespace_ifcopenshell:
+
+Namespace ifcopenshell
+======================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell__detail`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__hierarchy_detail`
+
+- :ref:`namespace_ifcopenshell__impl`
+
+- :ref:`namespace_ifcopenshell__path`
+
+- :ref:`namespace_ifcopenshell__serializers`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1caller__fed__tag`
+
+- :ref:`exhale_struct_structifcopenshell_1_1file__reader__page`
+
+- :ref:`exhale_struct_structifcopenshell_1_1instance__reference`
+
+- :ref:`exhale_struct_structifcopenshell_1_1pack__to__variant__array`
+
+- :ref:`exhale_struct_structifcopenshell_1_1pack__to__variant__array_3_01parameter__pack_3_01_args_8_8_8_01_4_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1parameter__pack`
+
+- :ref:`exhale_struct_structifcopenshell_1_1rocks__db__attribute__storage`
+
+- :ref:`exhale_struct_structifcopenshell_1_1schema__registry_1_1entry`
+
+- :ref:`exhale_struct_structifcopenshell_1_1type__encoder__impl`
+
+- :ref:`exhale_struct_structifcopenshell_1_1type__encoder__impl_3_01parameter__pack_3_01_types_8_8_8_01_4_01_4`
+
+- :ref:`exhale_class_classifcopenshell_1_1aggregation__type`
+
+- :ref:`exhale_class_classifcopenshell_1_1attribute`
+
+- :ref:`exhale_class_classifcopenshell_1_1attribute__out__of__range__exception`
+
+- :ref:`exhale_class_classifcopenshell_1_1attribute__value`
+
+- :ref:`exhale_class_classifcopenshell_1_1blank`
+
+- :ref:`exhale_class_classifcopenshell_1_1character__decoder`
+
+- :ref:`exhale_class_classifcopenshell_1_1character__encoder`
+
+- :ref:`exhale_class_classifcopenshell_1_1declaration`
+
+- :ref:`exhale_class_classifcopenshell_1_1derived`
+
+- :ref:`exhale_class_classifcopenshell_1_1empty__aggregate`
+
+- :ref:`exhale_class_classifcopenshell_1_1empty__aggregate__of__aggregate`
+
+- :ref:`exhale_class_classifcopenshell_1_1entity`
+
+- :ref:`exhale_class_classifcopenshell_1_1enumeration__reference`
+
+- :ref:`exhale_class_classifcopenshell_1_1enumeration__type`
+
+- :ref:`exhale_class_classifcopenshell_1_1exception`
+
+- :ref:`exhale_class_classifcopenshell_1_1file`
+
+- :ref:`exhale_class_classifcopenshell_1_1file__open__status`
+
+- :ref:`exhale_class_classifcopenshell_1_1file__reader`
+
+- :ref:`exhale_class_classifcopenshell_1_1full__buffer__impl`
+
+- :ref:`exhale_class_classifcopenshell_1_1global__id`
+
+- :ref:`exhale_class_classifcopenshell_1_1instance__data`
+
+- :ref:`exhale_class_classifcopenshell_1_1instance__streamer`
+
+- :ref:`exhale_class_classifcopenshell_1_1invalid__token__exception`
+
+- :ref:`exhale_class_classifcopenshell_1_1inverse__attribute`
+
+- :ref:`exhale_class_classifcopenshell_1_1log__message`
+
+- :ref:`exhale_class_classifcopenshell_1_1logger`
+
+- :ref:`exhale_class_classifcopenshell_1_1mutable__attribute__value`
+
+- :ref:`exhale_class_classifcopenshell_1_1named__type`
+
+- :ref:`exhale_class_classifcopenshell_1_1not__implemented__error`
+
+- :ref:`exhale_class_classifcopenshell_1_1not__supported__error`
+
+- :ref:`exhale_class_classifcopenshell_1_1paged__file__impl`
+
+- :ref:`exhale_class_classifcopenshell_1_1parameter__type`
+
+- :ref:`exhale_class_classifcopenshell_1_1pushed__sequential__impl`
+
+- :ref:`exhale_class_classifcopenshell_1_1schema__definition`
+
+- :ref:`exhale_class_classifcopenshell_1_1schema__definition_1_1declaration__by__index__sort`
+
+- :ref:`exhale_class_classifcopenshell_1_1schema__definition_1_1declaration__by__name__cmp`
+
+- :ref:`exhale_class_classifcopenshell_1_1schema__registry`
+
+- :ref:`exhale_class_classifcopenshell_1_1select__type`
+
+- :ref:`exhale_class_classifcopenshell_1_1simple__type`
+
+- :ref:`exhale_class_classifcopenshell_1_1spf__header`
+
+- :ref:`exhale_class_classifcopenshell_1_1spf__lexer`
+
+- :ref:`exhale_class_classifcopenshell_1_1type__declaration`
+
+- :ref:`exhale_class_classifcopenshell_1_1uninitialized__tag`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_argument__type_8h_1ac8ef6c1402f8474deddd9b40beedd419`
+
+- :ref:`exhale_enum_file_8h_1a8349a4a0c47a32926cdabd33778787a2`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_argument_8h_1ad7413bb5ad2defb7f7de763394583c64`
+
+- :ref:`exhale_function_schema_8h_1a83885731044ffa1c50dd51eb47dc447d`
+
+- :ref:`exhale_function_character__decoder_8h_1ae0ec258350946b4a8f487c2179b3668c`
+
+- :ref:`exhale_function_character__decoder_8h_1a69e8e68ba0bb027732e43bcefb0616f2`
+
+- :ref:`exhale_function_character__decoder_8h_1aacb036a44fc72837346c54e676806cd4`
+
+- :ref:`exhale_function_utils_8h_1a6c2b57f981ccb3a243fa6472cafb9d96`
+
+- :ref:`exhale_function_argument__type_8h_1aff2316110cf8e3b2cf8324a43457b593`
+
+- :ref:`exhale_function_si__prefix_8h_1a11beb662ad6af8973ec4f862a305520c`
+
+- :ref:`exhale_function_file_8h_1a46fc3f1816a25e4790155d381c52388f`
+
+- :ref:`exhale_function_schema_8h_1a73ec47c8a22edaee429582ec57fc5f90`
+
+- :ref:`exhale_function_logger_8h_1ac328ce96a654c9d181bdd1a138038b27`
+
+- :ref:`exhale_function_argument__type_8h_1aeded9a8c0649a91dab15f91ab995f52b`
+
+- :ref:`exhale_function_express_8h_1a064e15e13259ab8d693e2673c06d69f7`
+
+- :ref:`exhale_function_schema_8h_1a9cafababeb3757258a77db47762bc341`
+
+- :ref:`exhale_function_utils_8h_1a2772e014bdcdfd566695c49277c3ed49`
+
+- :ref:`exhale_function_schema_8h_1a4f9bdfdd794137fe1a97d2b66ae4e494`
+
+- :ref:`exhale_function_schema_8h_1a063074be4ef30cde3459a04cf6e96178`
+
+- :ref:`exhale_function_schema_8h_1a50b5dff7be007b8c7ac1560b8131c9c2`
+
+- :ref:`exhale_function_schema_8h_1a1d66050254b96369e12a845c421b0482`
+
+- :ref:`exhale_function_schema_8h_1aa4ad835a577ee6c09d8dd0eb5eeafa72`
+
+- :ref:`exhale_function_schema_8h_1ac80feb8936574c9a4b430852a455e27e`
+
+- :ref:`exhale_function_si__prefix_8h_1a67d081555035812620cc7868b34446bf`
+
+- :ref:`exhale_function_parse_8h_1a596ed8cc0868e8ba266691fa1dc1a6d3`
+
+- :ref:`exhale_function_parse_8h_1aef4f6615104c983873ca7dc7fc9bef9e`
+
+- :ref:`exhale_function_utils_8h_1aaf53525eab5e07215f940bb366a43689`
+
+- :ref:`exhale_function_argument_8h_1a22bf2bb6d95279c768c683c197e61be9`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_instance__data_8h_1a4b0a9710dc58c45738bfc0c6b2238a07`
+
+- :ref:`exhale_typedef_express_8h_1a2b86c5e65f39db2354a6bc1b2d265e52`
+
+- :ref:`exhale_typedef_storage_8h_1a609012d06350c725b68d448c5e3c06ea`
+
+- :ref:`exhale_typedef_express_8h_1a501ae54d6c3147f10f69892a9e08d5a9`
+
+- :ref:`exhale_typedef_instance__data_8h_1aede234cee79438273facc7fd916a1658`
+
+- :ref:`exhale_typedef_instance__data_8h_1a66b39e6bc3e79e82a03bdeef4ad389c5`
+
+- :ref:`exhale_typedef_storage_8h_1a0ca87e4c3024807607252c47265e3b13`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_file__reader_8h_1ac818150d1e85c9ab2a335ceed0767105`

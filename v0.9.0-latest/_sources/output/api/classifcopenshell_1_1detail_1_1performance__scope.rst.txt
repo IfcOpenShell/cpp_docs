@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1detail_1_1performance__scope:
+
+Class performance_scope
+=======================
+
+- Defined in :ref:`file_src_ifcparse_logger.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::detail::performance_scope
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

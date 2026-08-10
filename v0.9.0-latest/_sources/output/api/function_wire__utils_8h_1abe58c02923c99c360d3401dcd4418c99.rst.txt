@@ -1,0 +1,14 @@
+.. _exhale_function_wire__utils_8h_1abe58c02923c99c360d3401dcd4418c99:
+
+Function ifcopenshell::geom::util::flatten_wire
+===============================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::flatten_wire(TopoDS_Wire&, double)
+   :project: IfcOpenShell

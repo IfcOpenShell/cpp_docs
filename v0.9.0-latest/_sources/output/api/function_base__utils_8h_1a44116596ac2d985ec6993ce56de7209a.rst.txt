@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1a44116596ac2d985ec6993ce56de7209a:
+
+Function ifcopenshell::geom::util::unify
+========================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::unify(const TopoDS_Shape&, double)
+   :project: IfcOpenShell

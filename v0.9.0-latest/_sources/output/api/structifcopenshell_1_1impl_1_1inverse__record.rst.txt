@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1impl_1_1inverse__record:
+
+Struct inverse_record
+=====================
+
+- Defined in :ref:`file_src_ifcparse_storage.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::impl::inverse_record
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

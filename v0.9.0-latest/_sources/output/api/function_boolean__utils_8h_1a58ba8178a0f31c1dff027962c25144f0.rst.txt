@@ -1,0 +1,14 @@
+.. _exhale_function_boolean__utils_8h_1a58ba8178a0f31c1dff027962c25144f0:
+
+Function ifcopenshell::geom::util::min_vertex_edge_distance
+===========================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::min_vertex_edge_distance(const TopoDS_Shape&, double, double)
+   :project: IfcOpenShell

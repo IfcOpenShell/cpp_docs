@@ -1,0 +1,14 @@
+.. _exhale_function_schema_8h_1ac80feb8936574c9a4b430852a455e27e:
+
+Function ifcopenshell::schema_registry_instance
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_schema.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::schema_registry_instance()
+   :project: IfcOpenShell

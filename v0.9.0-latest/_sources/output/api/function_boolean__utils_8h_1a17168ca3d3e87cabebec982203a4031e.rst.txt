@@ -1,0 +1,14 @@
+.. _exhale_function_boolean__utils_8h_1a17168ca3d3e87cabebec982203a4031e:
+
+Function ifcopenshell::geom::util::min_edge_length
+==================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::min_edge_length(const TopoDS_Shape&)
+   :project: IfcOpenShell

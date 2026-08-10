@@ -1,0 +1,14 @@
+.. _exhale_function_character__decoder_8h_1ae0ec258350946b4a8f487c2179b3668c:
+
+Function ifcopenshell::convert_codepage
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_character_decoder.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::convert_codepage(int, int)
+   :project: IfcOpenShell

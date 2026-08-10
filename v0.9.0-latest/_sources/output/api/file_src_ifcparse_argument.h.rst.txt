@@ -1,0 +1,71 @@
+
+.. _file_src_ifcparse_argument.h:
+
+File argument.h
+===============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/argument.h``)
+----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_argument.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``argument_type.h`` (:ref:`file_src_ifcparse_argument_type.h`)
+
+- ``boost/dynamic_bitset.hpp``
+
+- ``boost/logic/tribool.hpp``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``memory``
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_element.h`
+
+- :ref:`file_src_ifcparse_express.h`
+
+- :ref:`file_src_ifcparse_parse.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_argument_8h_1ad7413bb5ad2defb7f7de763394583c64`
+
+- :ref:`exhale_function_argument_8h_1a22bf2bb6d95279c768c683c197e61be9`
+

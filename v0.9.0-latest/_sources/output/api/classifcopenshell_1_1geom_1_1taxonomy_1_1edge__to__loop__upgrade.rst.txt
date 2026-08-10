@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1taxonomy_1_1edge__to__loop__upgrade:
+
+Template Class edge_to_loop_upgrade
+===================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::taxonomy::edge_to_loop_upgrade
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

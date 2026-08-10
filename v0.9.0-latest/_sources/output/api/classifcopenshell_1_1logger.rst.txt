@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1logger:
+
+Class logger
+============
+
+- Defined in :ref:`file_src_ifcparse_logger.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::logger
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

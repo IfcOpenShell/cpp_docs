@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1aea7c3ae3a0cd5cebfc4b78e8f5d6adb6:
+
+Function ifcopenshell::geom::util::is_convex
+============================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::is_convex(const TopoDS_Wire&, double)
+   :project: IfcOpenShell

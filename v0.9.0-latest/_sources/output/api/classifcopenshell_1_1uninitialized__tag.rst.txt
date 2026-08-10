@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1uninitialized__tag:
+
+Class uninitialized_tag
+=======================
+
+- Defined in :ref:`file_src_ifcparse_file.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::uninitialized_tag
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

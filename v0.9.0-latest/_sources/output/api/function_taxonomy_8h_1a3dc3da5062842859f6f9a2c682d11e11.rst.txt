@@ -1,0 +1,14 @@
+.. _exhale_function_taxonomy_8h_1a3dc3da5062842859f6f9a2c682d11e11:
+
+Template Function ifcopenshell::geom::taxonomy::dcast
+=====================================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::taxonomy::dcast(const std::shared_ptr<U>&)
+   :project: IfcOpenShell

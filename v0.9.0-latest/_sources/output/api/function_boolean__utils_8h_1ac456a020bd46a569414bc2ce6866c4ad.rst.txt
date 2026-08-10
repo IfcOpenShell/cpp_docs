@@ -1,0 +1,14 @@
+.. _exhale_function_boolean__utils_8h_1ac456a020bd46a569414bc2ce6866c4ad:
+
+Function ifcopenshell::geom::util::bounding_box_overlap
+=======================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::bounding_box_overlap(double, const TopoDS_Shape&, const NCollection_List<TopoDS_Shape>&, NCollection_List<TopoDS_Shape>&)
+   :project: IfcOpenShell

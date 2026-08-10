@@ -1,0 +1,14 @@
+.. _exhale_function_wire__builder_8h_1afdb2d484da5c9bd9f723167da191c6f6:
+
+Function ifcopenshell::geom::util::create_edge_over_curve_with_log_messages
+===========================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_builder.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::create_edge_over_curve_with_log_messages(const opencascade::handle<Geom_Curve>&, const double, const gp_Pnt&, const gp_Pnt&, TopoDS_Edge&)
+   :project: IfcOpenShell

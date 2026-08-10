@@ -1,0 +1,14 @@
+.. _exhale_function_opencascade__kernel_8h_1ae777a9a5ddffc995ac598be2b3488a20:
+
+Function ifcopenshell::geom::serialise__Schema
+==============================================
+
+.. did not find file this was defined in
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::serialise__Schema(const TopoDS_Shape&, bool)
+   :project: IfcOpenShell

@@ -1,0 +1,14 @@
+.. _exhale_function_sweep__utils_8h_1a7502656c4815f5b33aa9b45fb39c3455:
+
+Function ifcopenshell::geom::util::segment_adjacent_non_linear
+==============================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_sweep_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::segment_adjacent_non_linear(const TopoDS_Wire&, std::vector<TopoDS_Wire>&)
+   :project: IfcOpenShell

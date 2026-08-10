@@ -1,0 +1,14 @@
+.. _exhale_function_opencascade__geometry__ifc__writer__plugin_8h_1a55418674b13cb1261e2507fb5142c05e:
+
+Function ifcopenshell::geom::opencascade_geometry_ifc_writer_plugin_directory
+=============================================================================
+
+- Defined in :ref:`file_src_ifcgeom_serialization_opencascade_geometry_ifc_writer_plugin.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::opencascade_geometry_ifc_writer_plugin_directory()
+   :project: IfcOpenShell

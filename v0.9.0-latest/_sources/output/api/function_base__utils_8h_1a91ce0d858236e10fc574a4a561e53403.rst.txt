@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1a91ce0d858236e10fc574a4a561e53403:
+
+Function ifcopenshell::geom::util::flatten_shape_list
+=====================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::flatten_shape_list(const std::vector<ifcopenshell::geom::conversion_result>&, TopoDS_Shape&, bool, bool, double)
+   :project: IfcOpenShell

@@ -1,0 +1,165 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_base_utils.h:
+
+File base_utils.h
+=================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/base_utils.h``)
+-------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_base_utils.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../../ifcgeom/conversion_result.h``
+
+- ``../ifc_geomlibrary_api.h``
+
+- ``Geom_Curve.hxx``
+
+- ``Geom_Surface.hxx``
+
+- ``NCollection_List.hxx``
+
+- ``Standard_Macro.hxx``
+
+- ``TopoDS_Face.hxx``
+
+- ``TopoDS_Shape.hxx``
+
+- ``TopoDS_Wire.hxx``
+
+- ``gp_Ax2d.hxx``
+
+- ``gp_Ax3.hxx``
+
+- ``gp_GTrsf.hxx``
+
+- ``gp_GTrsf2d.hxx``
+
+- ``gp_Pln.hxx``
+
+- ``gp_Pnt.hxx``
+
+- ``gp_Trsf.hxx``
+
+- ``gp_Trsf2d.hxx``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_tree.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__util`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_base__utils_8h_1ac9d89e4e1259271befbf6cc6439d64fa`
+
+- :ref:`exhale_function_base__utils_8h_1aa30c2ce9a6fd67b40c356cd70808ceeb`
+
+- :ref:`exhale_function_base__utils_8h_1ad4664208e7b92a730347dcb7ac1a60ee`
+
+- :ref:`exhale_function_base__utils_8h_1a6fb6d44b65cb19c1664a7ae18787468f`
+
+- :ref:`exhale_function_base__utils_8h_1a2d3c9debef6d0cbe77c862d2cc0c3cd7`
+
+- :ref:`exhale_function_base__utils_8h_1a6b49d97fd5fb6121967c40c96200781b`
+
+- :ref:`exhale_function_base__utils_8h_1a330eda5b4c339c371bbbfdc102fd7fb0`
+
+- :ref:`exhale_function_base__utils_8h_1a6d0949f3951706c4398569140f1f4f6d`
+
+- :ref:`exhale_function_base__utils_8h_1a796fc5bf015174a383d9340379c82508`
+
+- :ref:`exhale_function_base__utils_8h_1ac0131a171eb1d7914d5df1f8dc622fe5`
+
+- :ref:`exhale_function_base__utils_8h_1a2ba45873fc831d8d6169fdaf36ca1e39`
+
+- :ref:`exhale_function_base__utils_8h_1a04e8310b84579885a32b177d04525198`
+
+- :ref:`exhale_function_base__utils_8h_1a91ce0d858236e10fc574a4a561e53403`
+
+- :ref:`exhale_function_base__utils_8h_1a41f3519657b0f302d1c79dc713ff2e04`
+
+- :ref:`exhale_function_base__utils_8h_1ade8483f7620caa67d249f6f3ed8b2c80`
+
+- :ref:`exhale_function_base__utils_8h_1a8daabd430f9de682d1b2b332e4e2dd7a`
+
+- :ref:`exhale_function_base__utils_8h_1ae92fd5aadc7c418347fa916158f3841b`
+
+- :ref:`exhale_function_base__utils_8h_1a6b7579cd6cf89511bdc32f1ad2b7cdb8`
+
+- :ref:`exhale_function_base__utils_8h_1aaebb5215cfefc5015109acd2efbfdf37`
+
+- :ref:`exhale_function_base__utils_8h_1aaf2098c23fc02519dd2cd214658e037a`
+
+- :ref:`exhale_function_base__utils_8h_1ad1b12a6d4c8ed888d758757ddff17016`
+
+- :ref:`exhale_function_base__utils_8h_1ac4c1524f35b04a6b89da029d3832572f`
+
+- :ref:`exhale_function_base__utils_8h_1aea7c3ae3a0cd5cebfc4b78e8f5d6adb6`
+
+- :ref:`exhale_function_base__utils_8h_1aa65e4f1a4a01343d04fc129ae9224fa8`
+
+- :ref:`exhale_function_base__utils_8h_1a3a3cbc939649ba409f2bd9344b769760`
+
+- :ref:`exhale_function_base__utils_8h_1a433767951d906f9176be1740fafb1078`
+
+- :ref:`exhale_function_base__utils_8h_1a5907a59d3e1025ebce2dfa27f07cb317`
+
+- :ref:`exhale_function_base__utils_8h_1abf6b398f1d45ab2da43a015f1858964f`
+
+- :ref:`exhale_function_base__utils_8h_1a1e61a852f2d55eb941a09862363f1cc1`
+
+- :ref:`exhale_function_base__utils_8h_1a70514b58c24d8b234574ae15997349a7`
+
+- :ref:`exhale_function_base__utils_8h_1aefa36564cdce1003243f4f32016f434d`
+
+- :ref:`exhale_function_base__utils_8h_1a040caaf5c85080f47b90b1ddc1434e98`
+
+- :ref:`exhale_function_base__utils_8h_1af38a076bbf68b47fde66100f4e2e1b1c`
+
+- :ref:`exhale_function_base__utils_8h_1a0fe2a5db9b13c16ec912556a9334b86c`
+
+- :ref:`exhale_function_base__utils_8h_1ab1c2816240df7d35bbdbe7008973406a`
+
+- :ref:`exhale_function_base__utils_8h_1ace9e1739afb8499bccb9214ae5a6fd8e`
+
+- :ref:`exhale_function_base__utils_8h_1a44116596ac2d985ec6993ce56de7209a`
+
+- :ref:`exhale_function_base__utils_8h_1a80be83664b2e52c3f2e0f897a342bda4`
+

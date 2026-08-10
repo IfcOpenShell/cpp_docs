@@ -1,0 +1,59 @@
+
+.. _namespace_ifcopenshell__geom__trees:
+
+Namespace ifcopenshell::geom::trees
+===================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell__geom__trees__opencascade_tree_backends`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1trees_1_1tree__info`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1trees_1_1tree__registry_1_1entry`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1trees_1_1abstract__tree`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1trees_1_1tree__registry`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_tree__registry_8h_1abbbc68983191014cf2bb89b5d6962b95`
+
+- :ref:`exhale_function_tree__plugin_8h_1a95dde31e288adfff2e0ded6e7f88de9e`
+
+- :ref:`exhale_function_tree__plugin_8h_1a45b253d50f901c51ef89c5ba0eeb9def`
+
+- :ref:`exhale_function_tree__plugin_8h_1a9da82eefddad4a062d5e54462c32c9ee`
+
+- :ref:`exhale_function_tree__plugin_8h_1aab7260e00d924948161e2c8bba258509`
+
+- :ref:`exhale_function_tree__plugin_8h_1a60fcb17f173bdc3e5faed1ef92820f60`
+
+- :ref:`exhale_function_tree__registry_8h_1a4f5de081305c42c45a913c90b3a44abb`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_tree__plugin_8h_1a5fdb34b4947fa8da51a5a62f9d71b04f`

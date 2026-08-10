@@ -1,0 +1,34 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1sweep:
+
+Struct sweep
+============
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::taxonomy::geom_item`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1geom__item`)
+
+
+Derived Types
+*************
+
+- ``public ifcopenshell::geom::taxonomy::extrusion`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1extrusion`)
+- ``public ifcopenshell::geom::taxonomy::revolve`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1revolve`)
+- ``public ifcopenshell::geom::taxonomy::sweep_along_curve`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1sweep__along__curve`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::taxonomy::sweep
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

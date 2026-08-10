@@ -1,0 +1,14 @@
+.. _exhale_typedef_cgal__conversion__result_8h_1a68fcffa4e5a672546bca836004ae1c48:
+
+Typedef cgal_direction
+======================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: cgal_direction
+   :project: IfcOpenShell

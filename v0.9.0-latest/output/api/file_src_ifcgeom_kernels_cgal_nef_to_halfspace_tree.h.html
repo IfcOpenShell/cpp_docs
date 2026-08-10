@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>File nef_to_halfspace_tree.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="file-nef-to-halfspace-tree-h">
+<span id="file-src-ifcgeom-kernels-cgal-nef-to-halfspace-tree-h"></span><h1>File nef_to_halfspace_tree.h<a class="headerlink" href="#file-nef-to-halfspace-tree-h" title="Link to this heading">¶</a></h1>
+<nav class="contents local" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-src-ifcgeom-kernels-cgal-nef-to-halfspace-tree-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/kernels/cgal/nef_to_halfspace_tree.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#enums" id="id6">Enums</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id7">Functions</a></p></li>
+<li><p><a class="reference internal" href="#typedefs" id="id8">Typedefs</a></p></li>
+</ul>
+</nav>
+<section id="definition-src-ifcgeom-kernels-cgal-nef-to-halfspace-tree-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/kernels/cgal/nef_to_halfspace_tree.h</span></code>)<a class="headerlink" href="#definition-src-ifcgeom-kernels-cgal-nef-to-halfspace-tree-h" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h.html">Program Listing for File nef_to_halfspace_tree.h</a></li>
+</ul>
+</div>
+</section>
+<section id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CGAL/Epick_d.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CGAL/Fuzzy_sphere.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CGAL/Kd_tree.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CGAL/Nef_nary_intersection_3.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CGAL/Nef_nary_union_3.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CGAL/Nef_polyhedron_3.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CGAL/Polygon_2.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CGAL/Polygon_mesh_processing/polygon_soup_to_polygon_mesh.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CGAL/Polygon_mesh_processing/triangulate_hole.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CGAL/Polygon_triangulation_decomposition_2.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CGAL/Polygon_with_holes_2.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CGAL/Search_traits_d.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CGAL/convex_decomposition_3.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">boost/graph/adjacency_list.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">boost/graph/breadth_first_search.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">boost/graph/connected_components.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">boost/graph/copy.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">boost/graph/graphviz.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">boost/iterator/indirect_iterator.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">boost/iterator/transform_iterator.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cstddef</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">functional</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">list</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">memory</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">queue</span></code></p></li>
+</ul>
+</section>
+<section id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h.html#file-src-ifcgeom-kernels-cgal-cgal-conversion-result-h"><span class="std std-ref">File cgal_conversion_result.h</span></a></p></li>
+</ul>
+</section>
+<section id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_ifcopenshell.html#namespace-ifcopenshell"><span class="std std-ref">Namespace ifcopenshell</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_ifcopenshell__geom.html#namespace-ifcopenshell-geom"><span class="std std-ref">Namespace ifcopenshell::geom</span></a></p></li>
+</ul>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1halffacet__collector.html#exhale-struct-structifcopenshell-1-1geom-1-1halffacet-collector"><span class="std std-ref">Template Struct halffacet_collector</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1plane__hash.html#exhale-struct-structifcopenshell-1-1geom-1-1plane-hash"><span class="std std-ref">Template Struct plane_hash</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1plane__less.html#exhale-struct-structifcopenshell-1-1geom-1-1plane-less"><span class="std std-ref">Template Struct plane_less</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1point__d__4d__less.html#exhale-struct-structifcopenshell-1-1geom-1-1point-d-4d-less"><span class="std std-ref">Struct point_d_4d_less</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1segment__collector.html#exhale-struct-structifcopenshell-1-1geom-1-1segment-collector"><span class="std std-ref">Template Struct segment_collector</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1vertex__properties.html#exhale-struct-structifcopenshell-1-1geom-1-1vertex-properties"><span class="std std-ref">Template Struct vertex_properties</span></a></p></li>
+<li><p><a class="reference internal" href="classifcopenshell_1_1geom_1_1convex__subcomponent__visitor.html#exhale-class-classifcopenshell-1-1geom-1-1convex-subcomponent-visitor"><span class="std std-ref">Template Class convex_subcomponent_visitor</span></a></p></li>
+<li><p><a class="reference internal" href="classifcopenshell_1_1geom_1_1halfspace__tree.html#exhale-class-classifcopenshell-1-1geom-1-1halfspace-tree"><span class="std std-ref">Template Class halfspace_tree</span></a></p></li>
+<li><p><a class="reference internal" href="classifcopenshell_1_1geom_1_1halfspace__tree__nary__branch.html#exhale-class-classifcopenshell-1-1geom-1-1halfspace-tree-nary-branch"><span class="std std-ref">Template Class halfspace_tree_nary_branch</span></a></p></li>
+<li><p><a class="reference internal" href="classifcopenshell_1_1geom_1_1halfspace__tree__plane.html#exhale-class-classifcopenshell-1-1geom-1-1halfspace-tree-plane"><span class="std std-ref">Template Class halfspace_tree_plane</span></a></p></li>
+<li><p><a class="reference internal" href="classifcopenshell_1_1geom_1_1polysoup__builder.html#exhale-class-classifcopenshell-1-1geom-1-1polysoup-builder"><span class="std std-ref">Template Class polysoup_builder</span></a></p></li>
+</ul>
+</section>
+<section id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="enum_nef__to__halfspace__tree_8h_1a1ad4f22871f4691d3346ac3656007431.html#exhale-enum-nef-to-halfspace-tree-8h-1a1ad4f22871f4691d3346ac3656007431"><span class="std std-ref">Enum EdgeType</span></a></p></li>
+<li><p><a class="reference internal" href="enum_nef__to__halfspace__tree_8h_1a365ed94b164a52c2ef9bdc6e77e60f17.html#exhale-enum-nef-to-halfspace-tree-8h-1a365ed94b164a52c2ef9bdc6e77e60f17"><span class="std std-ref">Enum halfspace_operation</span></a></p></li>
+<li><p><a class="reference internal" href="enum_nef__to__halfspace__tree_8h_1abb9851c57f53c8af7792847ec63138ca.html#exhale-enum-nef-to-halfspace-tree-8h-1abb9851c57f53c8af7792847ec63138ca"><span class="std std-ref">Enum tree_type</span></a></p></li>
+</ul>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1ac903e7eb05bf7de3d82919b2a5ab308c.html#exhale-function-nef-to-halfspace-tree-8h-1ac903e7eb05bf7de3d82919b2a5ab308c"><span class="std std-ref">Template Function ifcopenshell::geom::bfs</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1ad57d27e24eda5843f194974a9ab19d16.html#exhale-function-nef-to-halfspace-tree-8h-1ad57d27e24eda5843f194974a9ab19d16"><span class="std std-ref">Template Function ifcopenshell::geom::build_facet_edge_graph</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1adb8a9d8d3bdf401608a1753ae080b1dd.html#exhale-function-nef-to-halfspace-tree-8h-1adb8a9d8d3bdf401608a1753ae080b1dd"><span class="std std-ref">Template Function ifcopenshell::geom::build_halfspace_tree</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1af4b92daab8ac67025c32951e43d4b0c9.html#exhale-function-nef-to-halfspace-tree-8h-1af4b92daab8ac67025c32951e43d4b0c9"><span class="std std-ref">Template Function ifcopenshell::geom::build_halfspace_tree_decomposed</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1a65eec376263409e336a374540c5e8472.html#exhale-function-nef-to-halfspace-tree-8h-1a65eec376263409e336a374540c5e8472"><span class="std std-ref">Template Function ifcopenshell::geom::build_halfspace_tree_is_decomposed</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1a11482bae433790c061ed9dcc35e2291c.html#exhale-function-nef-to-halfspace-tree-8h-1a11482bae433790c061ed9dcc35e2291c"><span class="std std-ref">Template Function ifcopenshell::geom::convert_to_polyhedron</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1afdf9462deb462071a2fc5774158f2e06.html#exhale-function-nef-to-halfspace-tree-8h-1afdf9462deb462071a2fc5774158f2e06"><span class="std std-ref">Template Function ifcopenshell::geom::createCube</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1a91ad981d1720b8220b5ed7487b4d6e1c.html#exhale-function-nef-to-halfspace-tree-8h-1a91ad981d1720b8220b5ed7487b4d6e1c"><span class="std std-ref">Template Function ifcopenshell::geom::dump_facet</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1a380171e5bdc4a38358c45eb6bdbab1f4.html#exhale-function-nef-to-halfspace-tree-8h-1a380171e5bdc4a38358c45eb6bdbab1f4"><span class="std std-ref">Template Function ifcopenshell::geom::dump_facets</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1a63650b5d18191d13cbb025a855b3eb36.html#exhale-function-nef-to-halfspace-tree-8h-1a63650b5d18191d13cbb025a855b3eb36"><span class="std std-ref">Template Function ifcopenshell::geom::edge_contract</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1a33cf263f3c5494ec271251cea7d8cacf.html#exhale-function-nef-to-halfspace-tree-8h-1a33cf263f3c5494ec271251cea7d8cacf"><span class="std std-ref">Template Function ifcopenshell::geom::extrude</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1a5a854e351b0b395977da99da78b96110.html#exhale-function-nef-to-halfspace-tree-8h-1a5a854e351b0b395977da99da78b96110"><span class="std std-ref">Template Function ifcopenshell::geom::normalized_plane_for_map</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1afd73a76bb45d792820d47d2064d292ca.html#exhale-function-nef-to-halfspace-tree-8h-1afd73a76bb45d792820d47d2064d292ca"><span class="std std-ref">Template Function ifcopenshell::geom::snap_halfspaces</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1affd19a0365167775273dc98a081c1db0.html#exhale-function-nef-to-halfspace-tree-8h-1affd19a0365167775273dc98a081c1db0"><span class="std std-ref">Template Function ifcopenshell::geom::snap_halfspaces_2</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1a00aeb8fab414b8ea67e17f0d261af128.html#exhale-function-nef-to-halfspace-tree-8h-1a00aeb8fab414b8ea67e17f0d261af128"><span class="std std-ref">Template Function ifcopenshell::geom::triangulate_nef_facet</span></a></p></li>
+<li><p><a class="reference internal" href="function_nef__to__halfspace__tree_8h_1a7147421023c113236ed985856d6de166.html#exhale-function-nef-to-halfspace-tree-8h-1a7147421023c113236ed985856d6de166"><span class="std std-ref">Template Function ifcopenshell::geom::write_to_obj</span></a></p></li>
+</ul>
+</section>
+<section id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="typedef_nef__to__halfspace__tree_8h_1a1d20f1dedc8e5ac7a2f4086a76fb4c86.html#exhale-typedef-nef-to-halfspace-tree-8h-1a1d20f1dedc8e5ac7a2f4086a76fb4c86"><span class="std std-ref">Typedef ifcopenshell::geom::graph</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_nef__to__halfspace__tree_8h_1abd559649454663417169e56ee29e633f.html#exhale-typedef-nef-to-halfspace-tree-8h-1abd559649454663417169e56ee29e633f"><span class="std std-ref">Typedef ifcopenshell::geom::plane_map</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++ API</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../_sources/output/api/file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

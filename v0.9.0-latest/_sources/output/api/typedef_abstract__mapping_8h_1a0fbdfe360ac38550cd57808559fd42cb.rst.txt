@@ -1,0 +1,14 @@
+.. _exhale_typedef_abstract__mapping_8h_1a0fbdfe360ac38550cd57808559fd42cb:
+
+Typedef ifcopenshell::geom::impl::mapping_fn
+============================================
+
+- Defined in :ref:`file_src_ifcgeom_abstract_mapping.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::impl::mapping_fn
+   :project: IfcOpenShell

@@ -1,0 +1,17 @@
+.. _exhale_struct_structstd_1_1hash_3_01express_1_1entity_01_4:
+
+Template Struct hash< express::entity >
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_express.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: std::hash< express::entity >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

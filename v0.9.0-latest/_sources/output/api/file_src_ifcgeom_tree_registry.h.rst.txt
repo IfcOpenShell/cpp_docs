@@ -1,0 +1,86 @@
+
+.. _file_src_ifcgeom_tree_registry.h:
+
+File tree_registry.h
+====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/tree_registry.h``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_tree_registry.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../plugin/plugin.h``
+
+- ``functional``
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``memory``
+
+- ``string``
+
+- ``string_view``
+
+- ``tree.h`` (:ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_tree_backends.h`
+
+- :ref:`file_src_ifcgeom_tree_plugin.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__trees`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1trees_1_1tree__info`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1trees_1_1tree__registry_1_1entry`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1trees_1_1abstract__tree`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1trees_1_1tree__registry`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_tree__registry_8h_1abbbc68983191014cf2bb89b5d6962b95`
+
+- :ref:`exhale_function_tree__registry_8h_1a4f5de081305c42c45a913c90b3a44abb`
+

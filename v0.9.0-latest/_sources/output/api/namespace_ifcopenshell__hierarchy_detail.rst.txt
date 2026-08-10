@@ -1,0 +1,48 @@
+
+.. _namespace_ifcopenshell__hierarchy_detail:
+
+Namespace ifcopenshell::hierarchy_detail
+========================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1hierarchy__detail_1_1styled__item__accepts__presentation__style`
+
+- :ref:`exhale_struct_structifcopenshell_1_1hierarchy__detail_1_1styled__item__accepts__presentation__style_3_01_schemb7d37195e8be26d031f5bd24b4afb684`
+
+- :ref:`exhale_struct_structifcopenshell_1_1hierarchy__detail_1_1surface__style__type__selector`
+
+- :ref:`exhale_struct_structifcopenshell_1_1hierarchy__detail_1_1surface__style__type__selector_3_01_schema_00_01true_01_4`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_hierarchy__helper_8h_1ad9842b7a050ae49637b5f5a1ccbee950`
+
+- :ref:`exhale_function_hierarchy__helper_8h_1ac0da8e6b5d8fe4ad47329a5b5819ad02`
+
+- :ref:`exhale_function_hierarchy__helper_8h_1aa7785d033017ec0a0520e4143957c51a`
+
+- :ref:`exhale_function_hierarchy__helper_8h_1a7b15274d12577d280a5237d7bd8fc317`
+
+- :ref:`exhale_function_hierarchy__helper_8h_1ac25baaa12302d12501c24cf7b4a3419a`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_hierarchy__helper_8h_1ab313422829af4cac7758d3b5d1ea8bd3`

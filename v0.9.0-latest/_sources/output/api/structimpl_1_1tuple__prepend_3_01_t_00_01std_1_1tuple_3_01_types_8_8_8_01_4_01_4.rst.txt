@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1tuple__prepend_3_01_t_00_01std_1_1tuple_3_01_types_8_8_8_01_4_01_4:
+
+Template Struct tuple_prepend< T, std::tuple< Types... > >
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_variant_array.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::tuple_prepend< T, std::tuple< Types... > >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

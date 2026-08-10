@@ -1,0 +1,103 @@
+
+.. _file_src_serializers_document_serializer_plugin.h:
+
+File document_serializer_plugin.h
+=================================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/document_serializer_plugin.h``)
+-------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_document_serializer_plugin.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/serializer.h``
+
+- ``../ifcparse/file.h``
+
+- ``../plugin/plugin.h``
+
+- ``../serializers/serializers_api.h``
+
+- ``filesystem``
+
+- ``functional``
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``memory``
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_serializers_xml_serializer.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__serializers`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1serializers_1_1document__serializer__context`
+
+- :ref:`exhale_struct_structifcopenshell_1_1serializers_1_1document__serializer__info`
+
+- :ref:`exhale_struct_structifcopenshell_1_1serializers_1_1document__serializer__registry_1_1entry`
+
+- :ref:`exhale_class_classifcopenshell_1_1serializers_1_1document__serializer__registry`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_document__serializer__plugin_8h_1a31cefce83c4cff397b75e6feb7e24161`
+
+- :ref:`exhale_function_document__serializer__plugin_8h_1ad4cd346783cd0b686d75d90f5e34facc`
+
+- :ref:`exhale_function_document__serializer__plugin_8h_1a459df07c93dfe662df73dc743a406ae8`
+
+- :ref:`exhale_function_document__serializer__plugin_8h_1af45d4ba056af6a2a6ba4a70b7d38eb57`
+
+- :ref:`exhale_function_document__serializer__plugin_8h_1afbe48b6343e35e4e3ff13460b073a813`
+
+- :ref:`exhale_function_document__serializer__plugin_8h_1a0b82d782da53a89f7097d8c9e12298dc`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_document__serializer__plugin_8h_1ad5b176af723ed9c867a5ec24f9931d01`
+

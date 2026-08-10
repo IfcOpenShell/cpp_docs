@@ -1,0 +1,14 @@
+.. _exhale_function_utils_8h_1a6cb2bd270b758ec370382d1439024b8c:
+
+Function ifcopenshell::path::atomic_rename_file
+===============================================
+
+- Defined in :ref:`file_src_ifcparse_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::path::atomic_rename_file(const std::string&, const std::string&)
+   :project: IfcOpenShell

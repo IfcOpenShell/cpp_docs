@@ -1,0 +1,14 @@
+.. _exhale_typedef_abstract__mapping_8h_1a65aac35d731dc63939c30648bec8054d:
+
+Typedef ifcopenshell::geom::filter_function
+===========================================
+
+- Defined in :ref:`file_src_ifcgeom_abstract_mapping.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::filter_function
+   :project: IfcOpenShell

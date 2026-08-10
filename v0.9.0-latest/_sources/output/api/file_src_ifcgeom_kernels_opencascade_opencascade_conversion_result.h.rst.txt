@@ -1,0 +1,75 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_opencascade_conversion_result.h:
+
+File opencascade_conversion_result.h
+====================================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/opencascade_conversion_result.h``)
+--------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_opencascade_conversion_result.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../../ifcgeom/conversion_result.h``
+
+- ``../../../ifcgeom/kernels/ifc_geomlibrary_api.h``
+
+- ``BRepAdaptor_Curve.hxx``
+
+- ``BRepGProp_Face.hxx``
+
+- ``BRepMesh_IncrementalMesh.hxx``
+
+- ``BRepTools.hxx``
+
+- ``GCPnts_QuasiUniformDeflection.hxx``
+
+- ``Poly_Triangulation.hxx``
+
+- ``TopExp_Explorer.hxx``
+
+- ``gp_GTrsf.hxx``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_opencascade_kernel.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_tree.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1open__cascade__shape`
+

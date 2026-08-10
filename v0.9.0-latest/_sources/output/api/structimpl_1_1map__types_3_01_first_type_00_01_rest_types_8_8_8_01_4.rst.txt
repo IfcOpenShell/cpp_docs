@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1map__types_3_01_first_type_00_01_rest_types_8_8_8_01_4:
+
+Template Struct map_types< FirstType, RestTypes... >
+====================================================
+
+- Defined in :ref:`file_src_ifcparse_variant_array.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::map_types< FirstType, RestTypes... >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

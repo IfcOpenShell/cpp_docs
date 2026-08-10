@@ -1,0 +1,23 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1open__cascade__kernel_1_1faceset__helper:
+
+Class open_cascade_kernel::faceset_helper
+=========================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_opencascade_kernel.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_classifcopenshell_1_1geom_1_1open__cascade__kernel`.
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::open_cascade_kernel::faceset_helper
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1util_1_1points__on__planar__face__generator:
+
+Class points_on_planar_face_generator
+=====================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::util::points_on_planar_face_generator
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

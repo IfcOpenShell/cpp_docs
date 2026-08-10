@@ -1,0 +1,14 @@
+.. _exhale_function_serialization_8h_1ae48bb4d0ef583008e7fbd1d8ca699bac:
+
+Function ifcopenshell::geom::serialise(ifcopenshell::file&, const conversion_result_shape&, bool)
+=================================================================================================
+
+- Defined in :ref:`file_src_ifcgeom_serialization_serialization.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::serialise(ifcopenshell::file&, const conversion_result_shape&, bool)
+   :project: IfcOpenShell

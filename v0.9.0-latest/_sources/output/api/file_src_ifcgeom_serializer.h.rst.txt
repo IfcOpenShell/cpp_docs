@@ -1,0 +1,61 @@
+
+.. _file_src_ifcgeom_serializer.h:
+
+File serializer.h
+=================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/serializer.h``)
+-----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_serializer.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcparse/file.h``
+
+- ``ifc_geom_api.h`` (:ref:`file_src_ifcgeom_ifc_geom_api.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_geometry_serializer.h`
+
+- :ref:`file_src_serializers_document_serializer_plugin.h`
+
+- :ref:`file_src_serializers_xml_serializer.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1serializer`
+

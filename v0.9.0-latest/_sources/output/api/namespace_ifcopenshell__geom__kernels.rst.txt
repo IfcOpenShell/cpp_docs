@@ -1,0 +1,60 @@
+
+.. _namespace_ifcopenshell__geom__kernels:
+
+Namespace ifcopenshell::geom::kernels
+=====================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1kernels_1_1kernel__info`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1kernels_1_1kernel__registry_1_1entry`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1abstract__kernel`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1cgal__kernel`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1hybrid__kernel`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1kernel__registry`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1manifold__kernel`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1passthrough__kernel`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_kernel__registry_8h_1a0202ba6ecfa6a371d67423e1f50e560c`
+
+- :ref:`exhale_function_kernel__plugin_8h_1a0340610dfa19ff6cd22d452f1bb64406`
+
+- :ref:`exhale_function_kernel__plugin_8h_1ad474116e0b2e775b923195ac45445045`
+
+- :ref:`exhale_function_kernel__plugin_8h_1a722645a71eb703324ab562d044e9d8e6`
+
+- :ref:`exhale_function_kernel__registry_8h_1a99892f871751353ca61627a53d7ed7c9`
+
+- :ref:`exhale_function_kernel__plugin_8h_1a1999fbe8cc261ad0479217aeefe625fd`
+
+- :ref:`exhale_function_kernel__plugin_8h_1a7609986144656a3109c7f77a1d0d3bdc`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_kernel__plugin_8h_1a3c22ff790fb015f7acf9c62dfc508e98`

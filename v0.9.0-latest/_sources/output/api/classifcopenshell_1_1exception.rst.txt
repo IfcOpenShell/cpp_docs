@@ -1,0 +1,33 @@
+.. _exhale_class_classifcopenshell_1_1exception:
+
+Class exception
+===============
+
+- Defined in :ref:`file_src_ifcparse_exception.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::exception``
+
+
+Derived Types
+*************
+
+- ``public ifcopenshell::attribute_out_of_range_exception`` (:ref:`exhale_class_classifcopenshell_1_1attribute__out__of__range__exception`)
+- ``public ifcopenshell::invalid_token_exception`` (:ref:`exhale_class_classifcopenshell_1_1invalid__token__exception`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::exception
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

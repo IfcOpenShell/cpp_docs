@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1a040caaf5c85080f47b90b1ddc1434e98:
+
+Function ifcopenshell::geom::util::project(const opencascade::handle<Geom_Curve>&, const gp_Pnt&, gp_Pnt&, double&, double&)
+============================================================================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::project(const opencascade::handle<Geom_Curve>&, const gp_Pnt&, gp_Pnt&, double&, double&)
+   :project: IfcOpenShell

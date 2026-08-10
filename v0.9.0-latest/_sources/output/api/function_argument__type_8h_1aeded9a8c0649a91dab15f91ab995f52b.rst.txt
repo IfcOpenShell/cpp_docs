@@ -1,0 +1,14 @@
+.. _exhale_function_argument__type_8h_1aeded9a8c0649a91dab15f91ab995f52b:
+
+Function ifcopenshell::make_aggregate
+=====================================
+
+- Defined in :ref:`file_src_ifcparse_argument_type.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::make_aggregate(argument_type)
+   :project: IfcOpenShell

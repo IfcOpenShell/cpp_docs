@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1a41f3519657b0f302d1c79dc713ff2e04:
+
+Function ifcopenshell::geom::util::halfspace_from_plane
+=======================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::halfspace_from_plane(const gp_Pln&, const gp_Pnt&)
+   :project: IfcOpenShell

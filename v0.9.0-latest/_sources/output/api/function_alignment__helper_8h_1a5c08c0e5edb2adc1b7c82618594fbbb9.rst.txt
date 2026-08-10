@@ -1,0 +1,14 @@
+.. _exhale_function_alignment__helper_8h_1a5c08c0e5edb2adc1b7c82618594fbbb9:
+
+Function mapAlignmentCantSegment
+================================
+
+- Defined in :ref:`file_src_ifcparse_alignment_helper.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: mapAlignmentCantSegment(hierarchy_helper<Ifc4x3_add2>&, const Ifc4x3_add2::IfcAlignmentCantSegment&, ifcopenshell::logger&)
+   :project: IfcOpenShell

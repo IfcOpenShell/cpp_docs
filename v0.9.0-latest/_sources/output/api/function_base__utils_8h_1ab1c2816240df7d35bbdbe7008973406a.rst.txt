@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1ab1c2816240df7d35bbdbe7008973406a:
+
+Function ifcopenshell::geom::util::shape_volume
+===============================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::shape_volume(const TopoDS_Shape&)
+   :project: IfcOpenShell

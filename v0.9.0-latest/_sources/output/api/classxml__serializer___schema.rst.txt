@@ -1,0 +1,26 @@
+.. _exhale_class_classxml__serializer___schema:
+
+Class xml_serializer_Schema
+===========================
+
+- Defined in :ref:`file_src_serializers_schema_dependent_xml_serializer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public xml_serializer`` (:ref:`exhale_class_classxml__serializer`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: xml_serializer_Schema
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

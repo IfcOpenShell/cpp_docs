@@ -1,0 +1,67 @@
+
+.. _file_src_ifcgeom_converter.h:
+
+File converter.h
+================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/converter.h``)
+----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_converter.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/abstract_kernel.h``
+
+- ``../ifcgeom/abstract_mapping.h``
+
+- ``../ifcgeom/conversion_result.h``
+
+- ``../ifcgeom/conversion_settings.h``
+
+- ``../ifcgeom/element.h``
+
+- ``../ifcparse/file.h``
+
+- ``memory``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_iterator.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1converter`
+

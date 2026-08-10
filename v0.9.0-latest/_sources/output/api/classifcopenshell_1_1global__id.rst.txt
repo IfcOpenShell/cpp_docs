@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1global__id:
+
+Class global_id
+===============
+
+- Defined in :ref:`file_src_ifcparse_global_id.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::global_id
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

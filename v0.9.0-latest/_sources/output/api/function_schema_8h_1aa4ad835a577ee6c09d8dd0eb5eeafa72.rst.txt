@@ -1,0 +1,14 @@
+.. _exhale_function_schema_8h_1aa4ad835a577ee6c09d8dd0eb5eeafa72:
+
+Function ifcopenshell::schema_plugin_registration_symbol
+========================================================
+
+- Defined in :ref:`file_src_ifcparse_schema.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::schema_plugin_registration_symbol()
+   :project: IfcOpenShell

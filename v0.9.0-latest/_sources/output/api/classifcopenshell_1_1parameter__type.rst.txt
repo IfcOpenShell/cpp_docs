@@ -1,0 +1,28 @@
+.. _exhale_class_classifcopenshell_1_1parameter__type:
+
+Class parameter_type
+====================
+
+- Defined in :ref:`file_src_ifcparse_schema.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public ifcopenshell::aggregation_type`` (:ref:`exhale_class_classifcopenshell_1_1aggregation__type`)
+- ``public ifcopenshell::named_type`` (:ref:`exhale_class_classifcopenshell_1_1named__type`)
+- ``public ifcopenshell::simple_type`` (:ref:`exhale_class_classifcopenshell_1_1simple__type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::parameter_type
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

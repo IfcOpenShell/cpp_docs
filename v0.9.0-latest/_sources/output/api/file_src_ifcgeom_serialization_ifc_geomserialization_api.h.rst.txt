@@ -1,0 +1,40 @@
+
+.. _file_src_ifcgeom_serialization_ifc_geomserialization_api.h:
+
+File ifc_geomserialization_api.h
+================================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/serialization/ifc_geomserialization_api.h``)
+----------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_serialization_ifc_geomserialization_api.h.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_serialization_serialization.h`
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_ifc__geomserialization__api_8h_1a18cc991f6693db234fbc0dc880b51692`
+

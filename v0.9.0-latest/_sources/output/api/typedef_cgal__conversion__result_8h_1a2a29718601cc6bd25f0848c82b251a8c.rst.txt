@@ -1,0 +1,14 @@
+.. _exhale_typedef_cgal__conversion__result_8h_1a2a29718601cc6bd25f0848c82b251a8c:
+
+Typedef cgal_point
+==================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: cgal_point
+   :project: IfcOpenShell

@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1profile__point:
+
+Struct profile_point
+====================
+
+- Defined in :ref:`file_src_ifcgeom_profile_helper.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::profile_point
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

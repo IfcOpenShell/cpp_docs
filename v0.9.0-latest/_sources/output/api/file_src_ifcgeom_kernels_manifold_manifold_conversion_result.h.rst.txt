@@ -1,0 +1,63 @@
+
+.. _file_src_ifcgeom_kernels_manifold_manifold_conversion_result.h:
+
+File manifold_conversion_result.h
+=================================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/manifold/manifold_conversion_result.h``)
+--------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_manifold_manifold_conversion_result.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../../ifcgeom/conversion_result.h``
+
+- ``../../../ifcgeom/kernels/ifc_geomlibrary_api.h``
+
+- ``manifold/manifold.h``
+
+- ``optional``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_kernels_manifold_manifold_kernel.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1manifold__part`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1manifold__shape`
+

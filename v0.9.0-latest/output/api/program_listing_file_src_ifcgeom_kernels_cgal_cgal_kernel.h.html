@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Program Listing for File cgal_kernel.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="program-listing-for-file-cgal-kernel-h">
+<span id="program-listing-file-src-ifcgeom-kernels-cgal-cgal-kernel-h"></span><h1>Program Listing for File cgal_kernel.h<a class="headerlink" href="#program-listing-for-file-cgal-kernel-h" title="Link to this heading">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcgeom_kernels_cgal_cgal_kernel.h.html#file-src-ifcgeom-kernels-cgal-cgal-kernel-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/kernels/cgal/cgal_kernel.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/********************************************************************************</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* This file is part of IfcOpenShell.                                           *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* IfcOpenShell is free software: you can redistribute it and/or modify         *</span>
+<span class="cm">* it under the terms of the Lesser GNU General Public License as published by  *</span>
+<span class="cm">* the Free Software Foundation, either version 3.0 of the License, or          *</span>
+<span class="cm">* (at your option) any later version.                                          *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* IfcOpenShell is distributed in the hope that it will be useful,              *</span>
+<span class="cm">* but WITHOUT ANY WARRANTY; without even the implied warranty of               *</span>
+<span class="cm">* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *</span>
+<span class="cm">* Lesser GNU General Public License for more details.                          *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* You should have received a copy of the Lesser GNU General Public License     *</span>
+<span class="cm">* along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.         *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">********************************************************************************/</span>
+
+<span class="cp">#ifndef CGAL_KERNEL_H</span>
+<span class="cp">#define CGAL_KERNEL_H</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcparse/logger.h&quot;</span>
+
+<span class="cm">/*</span>
+<span class="cm">#ifdef NO_CACHE</span>
+
+<span class="cm">#define IN_CACHE(T,E,t,e)</span>
+<span class="cm">#define CACHE(T,E,e)</span>
+
+<span class="cm">#else</span>
+
+<span class="cm">#define IN_CACHE(T,E,t,e) std::map&lt;int,t&gt;::const_iterator it = cache.T.find(E-&gt;entity-&gt;id());\</span>
+<span class="cm">if ( it != cache.T.end() ) { e = it-&gt;second; return true; }</span>
+<span class="cm">#define CACHE(T,E,e) cache.T[E-&gt;entity-&gt;id()] = e;</span>
+
+<span class="cm">#endif</span>
+<span class="cm">*/</span>
+
+<span class="cp">#ifdef IFOPSH_SIMPLE_KERNEL</span>
+<span class="cp">#define cgal_kernel SimpleCgalKernel</span>
+<span class="cp">#define create_cube create_cube_simple</span>
+<span class="cp">#define create_polyhedron create_polyhedron_simple</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcparse/macros.h&quot;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/abstract_kernel.h&quot;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/element.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/kernels/cgal/cgal_conversion_result.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/kernels/ifc_geomlibrary_api.h&quot;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;CGAL/Polygon_2.h&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cmath&gt;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">ifcopenshell</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">namespace</span><span class="w"> </span><span class="nn">geom</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">namespace</span><span class="w"> </span><span class="nn">utils</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;</span><span class="w"> </span><span class="n">create_cube</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="p">);</span>
+<span class="w">            </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;</span><span class="w"> </span><span class="n">create_cube</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">kernel_</span><span class="o">::</span><span class="n">Point_3</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lower</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">kernel_</span><span class="o">::</span><span class="n">Point_3</span><span class="o">&amp;</span><span class="w"> </span><span class="n">upper</span><span class="p">);</span>
+<span class="w">            </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;</span><span class="w"> </span><span class="n">create_polyhedron</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">cgal_face</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">face_list</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">stitch_borders</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">,</span><span class="w"> </span><span class="n">logger</span><span class="o">&amp;</span><span class="w"> </span><span class="n">logger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">::</span><span class="n">root</span><span class="p">());</span>
+
+<span class="cp">#ifndef IFOPSH_SIMPLE_KERNEL</span>
+<span class="w">            </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;</span><span class="w"> </span><span class="n">create_polyhedron</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Nef_polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nef_polyhedron</span><span class="p">,</span><span class="w"> </span><span class="n">logger</span><span class="o">&amp;</span><span class="w"> </span><span class="n">logger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">::</span><span class="n">root</span><span class="p">());</span>
+<span class="w">            </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Nef_polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;</span><span class="w"> </span><span class="n">create_nef_polyhedron</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">cgal_face</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">face_list</span><span class="p">,</span><span class="w"> </span><span class="n">logger</span><span class="o">&amp;</span><span class="w"> </span><span class="n">logger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">::</span><span class="n">root</span><span class="p">());</span>
+<span class="w">            </span><span class="n">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Nef_polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;</span><span class="w"> </span><span class="n">create_nef_polyhedron</span><span class="p">(</span><span class="n">CGAL</span><span class="o">::</span><span class="n">Polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">polyhedron</span><span class="p">,</span><span class="w"> </span><span class="n">logger</span><span class="o">&amp;</span><span class="w"> </span><span class="n">logger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">::</span><span class="n">root</span><span class="p">());</span>
+<span class="cp">#endif</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">namespace</span><span class="w"> </span><span class="nn">kernels</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">            </span><span class="k">class</span><span class="w"> </span><span class="nc">IFC_GEOMLIBRARY_API</span><span class="w"> </span><span class="n">cgal_kernel</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">abstract_kernel</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">private</span><span class="o">:</span>
+<span class="cp">#ifndef IFOPSH_SIMPLE_KERNEL</span>
+<span class="w">                </span><span class="k">enum</span><span class="w"> </span><span class="nc">boolean_operand_preprocess</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">PP_MINKOWSKY_DILATE</span><span class="p">,</span>
+<span class="w">                    </span><span class="n">PP_SNAP_POINTS_TO_FIRST_OPERAND</span><span class="p">,</span>
+<span class="w">                    </span><span class="n">PP_SNAP_PLANES_TO_FIRST_OPERAND</span><span class="p">,</span>
+<span class="w">                    </span><span class="n">PP_UNIFY_PLANES_INTERNALLY</span><span class="p">,</span>
+<span class="w">                    </span><span class="n">PP_NONE</span>
+<span class="w">                </span><span class="p">};</span>
+
+<span class="w">                </span><span class="kt">bool</span><span class="w"> </span><span class="nf">preprocess_boolean_operand</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="o">&amp;</span><span class="w"> </span><span class="n">log_reference</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">cgal_polyhedron</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">first_operands</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">CGAL</span><span class="o">::</span><span class="n">Nef_polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;&gt;&amp;</span><span class="w"> </span><span class="n">first_operands_nef</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">::</span><span class="n">Plane_3</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">all_operand_planes</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">cgal_polyhedron</span><span class="o">&amp;</span><span class="w"> </span><span class="n">shape_const</span><span class="p">,</span><span class="w"> </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Nef_polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="n">boolean_operand_preprocess</span><span class="w"> </span><span class="n">proc</span><span class="p">);</span>
+
+<span class="w">                </span><span class="kt">bool</span><span class="w"> </span><span class="nf">thin_solid</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Nef_polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Nef_polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">result</span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Nef_polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;</span><span class="w"> </span><span class="n">create_precision_cube_</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="k">auto</span><span class="w"> </span><span class="n">cc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">utils</span><span class="o">::</span><span class="n">create_cube</span><span class="p">(</span><span class="n">settings_</span><span class="p">.</span><span class="n">get</span><span class="o">&lt;</span><span class="n">settings</span><span class="o">::</span><span class="n">Precision</span><span class="o">&gt;</span><span class="p">().</span><span class="n">get</span><span class="p">());</span>
+<span class="w">                    </span><span class="k">return</span><span class="w"> </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Nef_polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;</span><span class="p">(</span><span class="n">cc</span><span class="p">);</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="cp">#endif</span>
+<span class="w">            </span><span class="k">public</span><span class="o">:</span>
+
+<span class="w">                </span><span class="n">cgal_kernel</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">settings</span><span class="o">&amp;</span><span class="w"> </span><span class="n">settings</span><span class="p">,</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">&amp;</span><span class="w"> </span><span class="n">logger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">::</span><span class="n">root</span><span class="p">())</span>
+<span class="w">                    </span><span class="o">:</span><span class="w"> </span><span class="n">abstract_kernel</span><span class="p">(</span><span class="s">&quot;cgal&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">settings</span><span class="p">,</span><span class="w"> </span><span class="n">logger</span><span class="p">)</span>
+<span class="w">                </span><span class="p">{}</span>
+
+<span class="w">                </span><span class="k">virtual</span><span class="w"> </span><span class="n">abstract_kernel</span><span class="o">*</span><span class="w"> </span><span class="n">clone</span><span class="p">(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">&amp;</span><span class="w"> </span><span class="n">logger</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">cgal_kernel</span><span class="p">(</span><span class="n">settings</span><span class="p">(),</span><span class="w"> </span><span class="n">logger</span><span class="p">);</span>
+<span class="w">                </span><span class="p">}</span>
+
+<span class="w">                </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">supports_boolean_operations</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="cp">#ifndef IFOPSH_SIMPLE_KERNEL</span>
+<span class="w">                    </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="cp">#else</span>
+<span class="w">                    </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="cp">#endif</span>
+<span class="w">                </span><span class="p">}</span>
+
+<span class="w">                </span><span class="kt">bool</span><span class="w"> </span><span class="n">convert</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">taxonomy</span><span class="o">::</span><span class="n">extrusion</span><span class="o">::</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="n">cgal_polyhedron</span><span class="o">&amp;</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">bool</span><span class="w"> </span><span class="nf">convert</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">taxonomy</span><span class="o">::</span><span class="n">face</span><span class="o">::</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">cgal_face</span><span class="o">&gt;&amp;</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">bool</span><span class="w"> </span><span class="nf">convert</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">taxonomy</span><span class="o">::</span><span class="n">loop</span><span class="o">::</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="n">cgal_wire</span><span class="o">&amp;</span><span class="p">);</span>
+<span class="w">                </span><span class="c1">// bool convert(const taxonomy::matrix4::ptr, cgal_placement&amp;);</span>
+<span class="w">                </span><span class="kt">bool</span><span class="w"> </span><span class="nf">convert</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">taxonomy</span><span class="o">::</span><span class="n">shell</span><span class="o">::</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="n">cgal_polyhedron</span><span class="o">&amp;</span><span class="p">);</span>
+
+<span class="w">                </span><span class="kt">bool</span><span class="w"> </span><span class="nf">process_extrusion</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">cgal_face</span><span class="o">&amp;</span><span class="w"> </span><span class="n">bottom_face</span><span class="p">,</span><span class="w"> </span><span class="n">taxonomy</span><span class="o">::</span><span class="n">direction3</span><span class="o">::</span><span class="n">ptr</span><span class="w"> </span><span class="n">direction</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">height</span><span class="p">,</span><span class="w"> </span><span class="n">cgal_polyhedron</span><span class="o">&amp;</span><span class="w"> </span><span class="n">shape</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">bool</span><span class="w"> </span><span class="nf">process_as_2d_polygon</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">taxonomy</span><span class="o">::</span><span class="n">boolean_result</span><span class="o">::</span><span class="n">ptr</span><span class="w"> </span><span class="n">br</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">CGAL</span><span class="o">::</span><span class="n">Polygon_2</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;&gt;&amp;</span><span class="w"> </span><span class="n">loops</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="n">z0</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="n">z1</span><span class="p">);</span>
+<span class="w">                </span><span class="kt">bool</span><span class="w"> </span><span class="nf">process_as_2d_polygon</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">,</span><span class="w"> </span><span class="n">cgal_polyhedron</span><span class="o">&gt;&gt;&gt;&amp;</span><span class="w"> </span><span class="n">operands</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">CGAL</span><span class="o">::</span><span class="n">Polygon_2</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;&gt;&amp;</span><span class="w"> </span><span class="n">loops</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="n">z0</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&amp;</span><span class="w"> </span><span class="n">z1</span><span class="p">);</span>
+
+<span class="w">                </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">convert_impl</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">taxonomy</span><span class="o">::</span><span class="n">shell</span><span class="o">::</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">conversion_result</span><span class="o">&gt;&amp;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">convert_impl</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">taxonomy</span><span class="o">::</span><span class="n">extrusion</span><span class="o">::</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">conversion_result</span><span class="o">&gt;&amp;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">convert_impl</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">taxonomy</span><span class="o">::</span><span class="n">boolean_result</span><span class="o">::</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">conversion_result</span><span class="o">&gt;&amp;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">convert_impl</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">taxonomy</span><span class="o">::</span><span class="n">solid</span><span class="o">::</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">conversion_result</span><span class="o">&gt;&amp;</span><span class="p">);</span>
+
+<span class="w">                </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">convert_openings</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="o">&amp;</span><span class="w"> </span><span class="n">entity</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">taxonomy</span><span class="o">::</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">taxonomy</span><span class="o">::</span><span class="n">matrix4</span><span class="o">&gt;&gt;&amp;</span><span class="w"> </span><span class="n">openings</span><span class="p">,</span>
+<span class="w">                    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">conversion_result</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">entity_shapes</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">taxonomy</span><span class="o">::</span><span class="n">matrix4</span><span class="o">&amp;</span><span class="w"> </span><span class="n">entity_trsf</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">conversion_result</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">cut_shapes</span><span class="p">);</span>
+
+<span class="cp">#ifndef IFOPSH_SIMPLE_KERNEL</span>
+<span class="w">                </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Nef_polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;</span><span class="w"> </span><span class="n">precision_cube</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">create_precision_cube_</span><span class="p">();</span><span class="w"> </span><span class="p">}</span>
+<span class="cp">#endif</span>
+<span class="w">            </span><span class="p">};</span>
+
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++ API</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../_sources/output/api/program_listing_file_src_ifcgeom_kernels_cgal_cgal_kernel.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

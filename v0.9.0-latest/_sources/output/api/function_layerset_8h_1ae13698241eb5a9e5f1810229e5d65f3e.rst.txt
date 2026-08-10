@@ -1,0 +1,14 @@
+.. _exhale_function_layerset_8h_1ae13698241eb5a9e5f1810229e5d65f3e:
+
+Function ifcopenshell::geom::util::split_solid_by_shell
+=======================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_layerset.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::split_solid_by_shell(const TopoDS_Shape&, const TopoDS_Shape&, TopoDS_Shape&, TopoDS_Shape&, double)
+   :project: IfcOpenShell

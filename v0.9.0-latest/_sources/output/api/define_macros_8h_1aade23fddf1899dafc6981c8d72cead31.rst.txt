@@ -1,0 +1,14 @@
+.. _exhale_define_macros_8h_1aade23fddf1899dafc6981c8d72cead31:
+
+Define INCLUDE_SCHEMA
+=====================
+
+- Defined in :ref:`file_src_ifcparse_macros.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: INCLUDE_SCHEMA
+   :project: IfcOpenShell

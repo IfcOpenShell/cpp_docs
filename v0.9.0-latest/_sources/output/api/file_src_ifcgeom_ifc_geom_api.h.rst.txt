@@ -1,0 +1,52 @@
+
+.. _file_src_ifcgeom_ifc_geom_api.h:
+
+File ifc_geom_api.h
+===================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/ifc_geom_api.h``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_ifc_geom_api.h.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_abstract_kernel.h`
+
+- :ref:`file_src_ifcgeom_conversion_settings.h`
+
+- :ref:`file_src_ifcgeom_element.h`
+
+- :ref:`file_src_ifcgeom_infra_sweep_helper.h`
+
+- :ref:`file_src_ifcgeom_profile_helper.h`
+
+- :ref:`file_src_ifcgeom_render_styles.h`
+
+- :ref:`file_src_ifcgeom_serializer.h`
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_ifc__geom__api_8h_1abc8ede59c16ebd92a33f9d38302da335`
+

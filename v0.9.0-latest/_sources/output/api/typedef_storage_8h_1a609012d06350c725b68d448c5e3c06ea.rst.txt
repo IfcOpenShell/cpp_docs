@@ -1,0 +1,14 @@
+.. _exhale_typedef_storage_8h_1a609012d06350c725b68d448c5e3c06ea:
+
+Typedef ifcopenshell::reference_or_simple_type
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_storage.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::reference_or_simple_type
+   :project: IfcOpenShell

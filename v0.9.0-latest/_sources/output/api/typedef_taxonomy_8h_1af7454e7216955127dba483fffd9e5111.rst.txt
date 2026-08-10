@@ -1,0 +1,14 @@
+.. _exhale_typedef_taxonomy_8h_1af7454e7216955127dba483fffd9e5111:
+
+Typedef ifcopenshell::geom::taxonomy::impl::upgrades_tuple
+==========================================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::taxonomy::impl::upgrades_tuple
+   :project: IfcOpenShell

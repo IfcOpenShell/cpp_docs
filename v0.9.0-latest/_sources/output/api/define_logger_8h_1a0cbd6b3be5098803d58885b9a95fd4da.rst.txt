@@ -1,0 +1,14 @@
+.. _exhale_define_logger_8h_1a0cbd6b3be5098803d58885b9a95fd4da:
+
+Define IFCOPENSHELL_PERF_NAME_IMPL
+==================================
+
+- Defined in :ref:`file_src_ifcparse_logger.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: IFCOPENSHELL_PERF_NAME_IMPL
+   :project: IfcOpenShell

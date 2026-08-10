@@ -1,0 +1,20 @@
+
+.. _namespace_ifcopenshell__detail:
+
+Namespace ifcopenshell::detail
+==============================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1detail_1_1performance__scope`

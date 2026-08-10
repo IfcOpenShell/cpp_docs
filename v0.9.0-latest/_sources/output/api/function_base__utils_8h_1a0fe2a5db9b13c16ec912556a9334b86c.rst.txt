@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1a0fe2a5db9b13c16ec912556a9334b86c:
+
+Function ifcopenshell::geom::util::shape_to_face_list
+=====================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::shape_to_face_list(const TopoDS_Shape&, NCollection_List<TopoDS_Shape>&)
+   :project: IfcOpenShell

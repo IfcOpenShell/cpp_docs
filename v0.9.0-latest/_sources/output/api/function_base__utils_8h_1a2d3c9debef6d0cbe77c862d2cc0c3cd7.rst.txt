@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1a2d3c9debef6d0cbe77c862d2cc0c3cd7:
+
+Function ifcopenshell::geom::util::axis_equal(const gp_Ax2d&, const gp_Ax2d&, double)
+=====================================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::axis_equal(const gp_Ax2d&, const gp_Ax2d&, double)
+   :project: IfcOpenShell

@@ -1,0 +1,14 @@
+.. _exhale_function_wire__utils_8h_1ac903ecb7737e43d17600ff61d79853c1:
+
+Function ifcopenshell::geom::util::fill_nonmanifold_wires_with_planar_faces
+===========================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::fill_nonmanifold_wires_with_planar_faces(TopoDS_Shape&, double)
+   :project: IfcOpenShell

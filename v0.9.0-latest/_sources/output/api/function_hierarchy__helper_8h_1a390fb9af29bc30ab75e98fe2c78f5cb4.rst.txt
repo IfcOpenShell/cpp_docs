@@ -1,0 +1,14 @@
+.. _exhale_function_hierarchy__helper_8h_1a390fb9af29bc30ab75e98fe2c78f5cb4:
+
+Template Function setSurfaceColour(hierarchy_helper<Schema>&, const typename Schema::IfcProductRepresentation&, const ifcopenshell::hierarchy_detail::surface_style_type<Schema>&)
+==================================================================================================================================================================================
+
+- Defined in :ref:`file_src_ifcparse_hierarchy_helper.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: setSurfaceColour(hierarchy_helper<Schema>&, const typename Schema::IfcProductRepresentation&, const ifcopenshell::hierarchy_detail::surface_style_type<Schema>&)
+   :project: IfcOpenShell

@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1geometry__conversion__result:
+
+Struct geometry_conversion_result
+=================================
+
+- Defined in :ref:`file_src_ifcgeom_iterator.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::geometry_conversion_result
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

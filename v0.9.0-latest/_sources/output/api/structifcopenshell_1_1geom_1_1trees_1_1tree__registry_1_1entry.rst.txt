@@ -1,0 +1,23 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1trees_1_1tree__registry_1_1entry:
+
+Struct tree_registry::entry
+===========================
+
+- Defined in :ref:`file_src_ifcgeom_tree_registry.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classifcopenshell_1_1geom_1_1trees_1_1tree__registry`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::trees::tree_registry::entry
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

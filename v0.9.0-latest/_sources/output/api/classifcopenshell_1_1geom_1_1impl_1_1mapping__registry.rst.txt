@@ -1,0 +1,27 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1impl_1_1mapping__registry:
+
+Class mapping_registry
+======================
+
+- Defined in :ref:`file_src_ifcgeom_abstract_mapping.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1mapping__registry_1_1entry`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::impl::mapping_registry
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

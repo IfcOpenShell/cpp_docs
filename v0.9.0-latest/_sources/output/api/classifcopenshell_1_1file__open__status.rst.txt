@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1file__open__status:
+
+Class file_open_status
+======================
+
+- Defined in :ref:`file_src_ifcparse_file_open_status.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::file_open_status
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

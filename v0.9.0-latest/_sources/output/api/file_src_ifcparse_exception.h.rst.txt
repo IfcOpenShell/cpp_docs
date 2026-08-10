@@ -1,0 +1,65 @@
+
+.. _file_src_ifcparse_exception.h:
+
+File exception.h
+================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/exception.h``)
+-----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_exception.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``boost/lexical_cast.hpp``
+
+- ``exception`` (:ref:`file_src_ifcparse_exception.h`)
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_tree_backends.h`
+
+- :ref:`file_src_ifcparse_schema.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1attribute__out__of__range__exception`
+
+- :ref:`exhale_class_classifcopenshell_1_1exception`
+
+- :ref:`exhale_class_classifcopenshell_1_1invalid__token__exception`
+

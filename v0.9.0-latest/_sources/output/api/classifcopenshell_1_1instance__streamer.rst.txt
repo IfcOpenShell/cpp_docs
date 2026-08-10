@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1instance__streamer:
+
+Template Class instance_streamer
+================================
+
+- Defined in :ref:`file_src_ifcparse_file.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::instance_streamer
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

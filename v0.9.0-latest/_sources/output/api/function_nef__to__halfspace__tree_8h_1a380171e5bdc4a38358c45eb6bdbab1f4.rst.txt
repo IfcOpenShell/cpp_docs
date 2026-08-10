@@ -1,0 +1,14 @@
+.. _exhale_function_nef__to__halfspace__tree_8h_1a380171e5bdc4a38358c45eb6bdbab1f4:
+
+Template Function ifcopenshell::geom::dump_facets
+=================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::dump_facets(graph<Kernel>&)
+   :project: IfcOpenShell

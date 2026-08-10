@@ -1,0 +1,14 @@
+.. _exhale_function_profile__helper_8h_1a2b9a7634c6eeae3ef8dd6be024a32cce:
+
+Function ifcopenshell::geom::polygon_from_points
+================================================
+
+- Defined in :ref:`file_src_ifcgeom_profile_helper.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::polygon_from_points(const std::vector<taxonomy::point3::ptr>&, bool)
+   :project: IfcOpenShell

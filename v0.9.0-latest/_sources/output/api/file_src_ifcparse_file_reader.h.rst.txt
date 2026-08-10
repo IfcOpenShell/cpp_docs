@@ -1,0 +1,96 @@
+
+.. _file_src_ifcparse_file_reader.h:
+
+File file_reader.h
+==================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/file_reader.h``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_file_reader.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstddef``
+
+- ``cstdint``
+
+- ``cstdio``
+
+- ``deque``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``list``
+
+- ``memory``
+
+- ``stdexcept``
+
+- ``string``
+
+- ``type_traits``
+
+- ``unordered_map``
+
+- ``utility``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_character_decoder.h`
+
+- :ref:`file_src_ifcparse_parse.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1caller__fed__tag`
+
+- :ref:`exhale_struct_structifcopenshell_1_1file__reader__page`
+
+- :ref:`exhale_class_classifcopenshell_1_1file__reader`
+
+- :ref:`exhale_class_classifcopenshell_1_1full__buffer__impl`
+
+- :ref:`exhale_class_classifcopenshell_1_1paged__file__impl`
+
+- :ref:`exhale_class_classifcopenshell_1_1pushed__sequential__impl`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_file__reader_8h_1ac818150d1e85c9ab2a335ceed0767105`
+

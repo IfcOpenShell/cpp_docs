@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1instance__reference:
+
+Struct instance_reference
+=========================
+
+- Defined in :ref:`file_src_ifcparse_storage.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::instance_reference
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

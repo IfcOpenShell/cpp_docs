@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1map__types:
+
+Template Struct map_types
+=========================
+
+.. did not find file this was defined in
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::map_types
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

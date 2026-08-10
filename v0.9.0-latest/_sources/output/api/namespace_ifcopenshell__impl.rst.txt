@@ -1,0 +1,33 @@
+
+.. _namespace_ifcopenshell__impl:
+
+Namespace ifcopenshell::impl
+============================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1impl_1_1in__memory__file__storage`
+
+- :ref:`exhale_struct_structifcopenshell_1_1impl_1_1inverse__record`
+
+- :ref:`exhale_class_classifcopenshell_1_1impl_1_1inverse__index`
+
+- :ref:`exhale_class_classifcopenshell_1_1impl_1_1rocks__db__file__storage`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_file_8h_1a697ee5ad1fb83f0370ff738e4166f68f`

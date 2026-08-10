@@ -1,0 +1,14 @@
+.. _exhale_function_clash__utils_8h_1a6a10f54156bf2598be06633263976986:
+
+Function ifcopenshell::geom::is_intersect_ray_box
+=================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_clash_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::is_intersect_ray_box(const struct ray *, const struct box *)
+   :project: IfcOpenShell

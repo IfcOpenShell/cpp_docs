@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1impl_1_1rocks__db__file__storage:
+
+Class rocks_db_file_storage
+===========================
+
+- Defined in :ref:`file_src_ifcparse_storage.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::impl::rocks_db_file_storage
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

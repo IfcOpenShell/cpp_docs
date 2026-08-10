@@ -1,0 +1,14 @@
+.. _exhale_function_abstract__mapping_8h_1afdec582d2050987fdf12547f58565c2d:
+
+Function ifcopenshell::geom::impl::mapping_registry_instance
+============================================================
+
+- Defined in :ref:`file_src_ifcgeom_abstract_mapping.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::impl::mapping_registry_instance()
+   :project: IfcOpenShell

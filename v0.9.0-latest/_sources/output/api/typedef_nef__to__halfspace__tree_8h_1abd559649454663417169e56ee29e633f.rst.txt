@@ -1,0 +1,14 @@
+.. _exhale_typedef_nef__to__halfspace__tree_8h_1abd559649454663417169e56ee29e633f:
+
+Typedef ifcopenshell::geom::plane_map
+=====================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::plane_map
+   :project: IfcOpenShell

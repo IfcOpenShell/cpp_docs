@@ -1,0 +1,26 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1plane:
+
+Struct plane
+============
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::taxonomy::surface`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1surface`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::taxonomy::plane
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

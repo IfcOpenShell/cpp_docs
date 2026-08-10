@@ -1,0 +1,14 @@
+.. _exhale_function_sweep__utils_8h_1a41a75d81b0fc9c8d108975ac97a2d86d:
+
+Function ifcopenshell::geom::util::wire_is_c1_continuous
+========================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_sweep_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::wire_is_c1_continuous(const TopoDS_Wire&, double)
+   :project: IfcOpenShell

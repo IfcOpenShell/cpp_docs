@@ -1,0 +1,17 @@
+.. _exhale_struct_struct_default_codec_3_01std_1_1string_01_4:
+
+Template Struct DefaultCodec< std::string >
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: DefaultCodec< std::string >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

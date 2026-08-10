@@ -1,0 +1,14 @@
+.. _exhale_function_character__decoder_8h_1a69e8e68ba0bb027732e43bcefb0616f2:
+
+Function ifcopenshell::convert_utf8(const std::u32string&)
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_character_decoder.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::convert_utf8(const std::u32string&)
+   :project: IfcOpenShell

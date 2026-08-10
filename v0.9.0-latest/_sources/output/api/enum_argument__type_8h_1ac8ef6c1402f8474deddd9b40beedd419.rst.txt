@@ -1,0 +1,14 @@
+.. _exhale_enum_argument__type_8h_1ac8ef6c1402f8474deddd9b40beedd419:
+
+Enum argument_type
+==================
+
+- Defined in :ref:`file_src_ifcparse_argument_type.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ifcopenshell::argument_type
+   :project: IfcOpenShell

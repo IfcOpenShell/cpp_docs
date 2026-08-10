@@ -1,0 +1,14 @@
+.. _exhale_typedef_express_8h_1a2b86c5e65f39db2354a6bc1b2d265e52:
+
+Typedef ifcopenshell::pointer_type
+==================================
+
+- Defined in :ref:`file_src_ifcparse_express.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::pointer_type
+   :project: IfcOpenShell

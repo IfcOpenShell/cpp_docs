@@ -1,0 +1,70 @@
+
+.. _file_src_ifcparse_ifc_parse_api.h:
+
+File ifc_parse_api.h
+====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/ifc_parse_api.h``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_ifc_parse_api.h.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_alignment_helper.h`
+
+- :ref:`file_src_ifcparse_argument.h`
+
+- :ref:`file_src_ifcparse_argument_type.h`
+
+- :ref:`file_src_ifcparse_exception.h`
+
+- :ref:`file_src_ifcparse_express.h`
+
+- :ref:`file_src_ifcparse_file.h`
+
+- :ref:`file_src_ifcparse_file_open_status.h`
+
+- :ref:`file_src_ifcparse_file_reader.h`
+
+- :ref:`file_src_ifcparse_global_id.h`
+
+- :ref:`file_src_ifcparse_hierarchy_helper.h`
+
+- :ref:`file_src_ifcparse_logger.h`
+
+- :ref:`file_src_ifcparse_parse.h`
+
+- :ref:`file_src_ifcparse_si_prefix.h`
+
+- :ref:`file_src_ifcparse_spf_header.h`
+
+- :ref:`file_src_ifcparse_utils.h`
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_ifc__parse__api_8h_1a11a3f1e12045b6ad67c21caf943399bb`
+
+- :ref:`exhale_define_ifc__parse__api_8h_1afd7061c32ffd8d36834d3bf6a9a973bc`
+

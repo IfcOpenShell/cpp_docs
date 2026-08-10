@@ -1,0 +1,103 @@
+
+.. _file_src_ifcgeom_abstract_kernel.h:
+
+File abstract_kernel.h
+======================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/abstract_kernel.h``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_abstract_kernel.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/abstract_mapping.h``
+
+- ``../ifcgeom/conversion_settings.h``
+
+- ``../ifcgeom/ifc_geom_api.h``
+
+- ``../ifcgeom/representation.h``
+
+- ``../ifcgeom/taxonomy.h``
+
+- ``../ifcparse/logger.h``
+
+- ``../ifcparse/macros.h``
+
+- ``string_view``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_converter.h`
+
+- :ref:`file_src_ifcgeom_filter.h`
+
+- :ref:`file_src_ifcgeom_hybrid_kernel.h`
+
+- :ref:`file_src_ifcgeom_kernel_registry.h`
+
+- :ref:`file_src_ifcgeom_kernels_cgal_cgal_kernel.h`
+
+- :ref:`file_src_ifcgeom_kernels_manifold_manifold_kernel.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_opencascade_kernel.h`
+
+- :ref:`file_src_ifcgeom_kernels_passthrough_passthrough_kernel.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__kernels`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1abstract__kernel`
+
+- :ref:`exhale_class_classifcopenshell_1_1not__implemented__error`
+
+- :ref:`exhale_class_classifcopenshell_1_1not__supported__error`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_abstract__kernel_8h_1a08a6d29ead2c50b1ee6bb3c322eea3ff`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_abstract__kernel_8h_1a0c0ce8d3e1c56d4119cfd5f4a2332827`
+

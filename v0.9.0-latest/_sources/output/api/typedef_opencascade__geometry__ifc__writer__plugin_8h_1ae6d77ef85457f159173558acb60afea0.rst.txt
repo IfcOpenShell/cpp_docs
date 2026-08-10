@@ -1,0 +1,14 @@
+.. _exhale_typedef_opencascade__geometry__ifc__writer__plugin_8h_1ae6d77ef85457f159173558acb60afea0:
+
+Typedef ifcopenshell::geom::register_opencascade_geometry_ifc_writer_plugin_fn
+==============================================================================
+
+- Defined in :ref:`file_src_ifcgeom_serialization_opencascade_geometry_ifc_writer_plugin.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::register_opencascade_geometry_ifc_writer_plugin_fn
+   :project: IfcOpenShell

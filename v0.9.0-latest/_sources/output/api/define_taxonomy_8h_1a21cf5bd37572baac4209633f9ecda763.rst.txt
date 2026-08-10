@@ -1,0 +1,14 @@
+.. _exhale_define_taxonomy_8h_1a21cf5bd37572baac4209633f9ecda763:
+
+Define DECLARE_PTR
+==================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DECLARE_PTR
+   :project: IfcOpenShell

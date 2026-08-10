@@ -1,0 +1,27 @@
+.. _exhale_class_classrocksdb__set__view:
+
+Template Class rocksdb_set_view
+===============================
+
+- Defined in :ref:`file_src_ifcparse_rocksdb_set_view.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_class_classrocksdb__set__view_1_1iterator`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: rocksdb_set_view
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

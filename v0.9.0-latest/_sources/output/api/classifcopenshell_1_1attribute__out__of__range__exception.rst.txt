@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1attribute__out__of__range__exception:
+
+Class attribute_out_of_range_exception
+======================================
+
+- Defined in :ref:`file_src_ifcparse_exception.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::exception`` (:ref:`exhale_class_classifcopenshell_1_1exception`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::attribute_out_of_range_exception
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

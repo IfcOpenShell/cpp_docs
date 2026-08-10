@@ -1,0 +1,51 @@
+
+.. _file_src_ifcparse_si_prefix.h:
+
+File si_prefix.h
+================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/si_prefix.h``)
+-----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_si_prefix.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``string``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_si__prefix_8h_1a11beb662ad6af8973ec4f862a305520c`
+
+- :ref:`exhale_function_si__prefix_8h_1a67d081555035812620cc7868b34446bf`
+

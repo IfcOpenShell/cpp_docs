@@ -1,0 +1,65 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_layerset.h:
+
+File layerset.h
+===============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/layerset.h``)
+-----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_layerset.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../conversion_result.h``
+
+- ``Geom_Surface.hxx``
+
+- ``TopoDS_Shape.hxx``
+
+- ``list``
+
+- ``vector``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__util`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_layerset_8h_1a4cfe72c7c0398d5b029a7c8d5d55809f`
+
+- :ref:`exhale_function_layerset_8h_1ad1f0391284948997bd50806ee32e3fb5`
+
+- :ref:`exhale_function_layerset_8h_1ae13698241eb5a9e5f1810229e5d65f3e`
+
+- :ref:`exhale_function_layerset_8h_1ab055c8f81d936a28cb143b97327ed843`
+

@@ -1,0 +1,14 @@
+.. _exhale_function_argument_8h_1ad7413bb5ad2defb7f7de763394583c64:
+
+Function ifcopenshell::argument_type_to_string
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_argument.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::argument_type_to_string(argument_type)
+   :project: IfcOpenShell

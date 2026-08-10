@@ -1,0 +1,14 @@
+.. _exhale_function_sweep__utils_8h_1a10032f262bb1314b4ca959e7e8baa093:
+
+Function ifcopenshell::geom::util::process_sweep_as_revolution
+==============================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_sweep_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::process_sweep_as_revolution(const TopoDS_Wire&, const TopoDS_Wire&, TopoDS_Shape&)
+   :project: IfcOpenShell

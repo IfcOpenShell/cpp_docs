@@ -1,0 +1,14 @@
+.. _exhale_enum_conversion__settings_8h_1a744b91e201d758818a926a8caea5eb20:
+
+Enum FunctionStepMethod
+=======================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_settings.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ifcopenshell::geom::settings_detail::FunctionStepMethod
+   :project: IfcOpenShell

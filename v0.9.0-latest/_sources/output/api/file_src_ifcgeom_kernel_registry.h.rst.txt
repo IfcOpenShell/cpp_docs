@@ -1,0 +1,86 @@
+
+.. _file_src_ifcgeom_kernel_registry.h:
+
+File kernel_registry.h
+======================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernel_registry.h``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernel_registry.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/abstract_kernel.h``
+
+- ``../plugin/plugin.h``
+
+- ``functional``
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``memory``
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_hybrid_kernel.h`
+
+- :ref:`file_src_ifcgeom_kernel_plugin.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_tree_backends.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__kernels`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1kernels_1_1kernel__info`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1kernels_1_1kernel__registry_1_1entry`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1kernel__registry`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_kernel__registry_8h_1a0202ba6ecfa6a371d67423e1f50e560c`
+
+- :ref:`exhale_function_kernel__registry_8h_1a99892f871751353ca61627a53d7ed7c9`
+

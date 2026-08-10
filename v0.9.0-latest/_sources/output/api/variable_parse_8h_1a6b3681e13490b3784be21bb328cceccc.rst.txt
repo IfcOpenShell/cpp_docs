@@ -1,0 +1,14 @@
+.. _exhale_variable_parse_8h_1a6b3681e13490b3784be21bb328cceccc:
+
+Variable IFCOPENSHELL_VERSION
+=============================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: IFCOPENSHELL_VERSION
+   :project: IfcOpenShell

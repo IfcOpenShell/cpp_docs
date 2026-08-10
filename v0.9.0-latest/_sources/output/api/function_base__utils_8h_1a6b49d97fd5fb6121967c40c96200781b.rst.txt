@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1a6b49d97fd5fb6121967c40c96200781b:
+
+Function ifcopenshell::geom::util::closest
+==========================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::closest(const gp_Pnt&, const std::vector<gp_Pnt>&, gp_Pnt&)
+   :project: IfcOpenShell

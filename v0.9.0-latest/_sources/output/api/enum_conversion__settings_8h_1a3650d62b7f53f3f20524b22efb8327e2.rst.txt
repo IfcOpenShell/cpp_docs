@@ -1,0 +1,14 @@
+.. _exhale_enum_conversion__settings_8h_1a3650d62b7f53f3f20524b22efb8327e2:
+
+Enum TriangulationMethod
+========================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_settings.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ifcopenshell::geom::settings_detail::TriangulationMethod
+   :project: IfcOpenShell

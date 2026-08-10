@@ -1,0 +1,17 @@
+.. _exhale_struct_structedge__key:
+
+Struct edge_key
+===============
+
+- Defined in :ref:`file_src_ifcgeom_conversion_result.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: edge_key
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

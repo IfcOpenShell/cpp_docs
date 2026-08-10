@@ -1,0 +1,87 @@
+
+.. _file_src_ifcparse_rocksdb_map_adapter.h:
+
+File rocksdb_map_adapter.h
+==========================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/rocksdb_map_adapter.h``)
+---------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_rocksdb_map_adapter.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstddef``
+
+- ``cstdint``
+
+- ``cstring``
+
+- ``iterator`` (:ref:`file_src_ifcgeom_iterator.h`)
+
+- ``memory``
+
+- ``string``
+
+- ``utility``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_storage.h`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_struct_default_codec_3_01size__t_01_4`
+
+- :ref:`exhale_struct_struct_default_codec_3_01std_1_1string_01_4`
+
+- :ref:`exhale_struct_struct_default_codec_3_01std_1_1vector_3_01uint32__t_01_4_01_4`
+
+- :ref:`exhale_struct_struct_default_codec_3_01uint32__t_01_4`
+
+- :ref:`exhale_struct_structis__std__tuple`
+
+- :ref:`exhale_struct_structis__std__tuple_3_01std_1_1tuple_3_01_ts_8_8_8_01_4_01_4`
+
+- :ref:`exhale_class_classrocksdb__map__adapter`
+
+- :ref:`exhale_class_classrocksdb__map__adapter_1_1iterator`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1aad41b1637be9a385c85841fe62d6b0c2`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1af9356a73aaf9a6fd745cc10e42efb9ef`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1ad0db5cf73cc183adfdeee6cf674a7e41`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1a9d88b377159850138e167adf798038a9`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1a1df8a75d5f782ccb39772ec2b3a119bb`
+

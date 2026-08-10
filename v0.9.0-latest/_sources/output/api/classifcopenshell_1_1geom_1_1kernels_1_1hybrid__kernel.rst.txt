@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1hybrid__kernel:
+
+Class hybrid_kernel
+===================
+
+- Defined in :ref:`file_src_ifcgeom_hybrid_kernel.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::kernels::abstract_kernel`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1abstract__kernel`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::kernels::hybrid_kernel
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

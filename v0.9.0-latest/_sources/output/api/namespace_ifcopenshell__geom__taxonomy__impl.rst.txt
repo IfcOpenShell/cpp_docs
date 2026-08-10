@@ -1,0 +1,26 @@
+
+.. _namespace_ifcopenshell__geom__taxonomy__impl:
+
+Namespace ifcopenshell::geom::taxonomy::impl
+============================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_taxonomy_8h_1ab5d72ed20ca8087ac6431796e4f251fa`
+
+- :ref:`exhale_typedef_taxonomy_8h_1a8b081bff5e1ed5ff4a07189fd2e7c95f`
+
+- :ref:`exhale_typedef_taxonomy_8h_1ad302ec4da0b73bcee458726323b13ede`
+
+- :ref:`exhale_typedef_taxonomy_8h_1af7454e7216955127dba483fffd9e5111`

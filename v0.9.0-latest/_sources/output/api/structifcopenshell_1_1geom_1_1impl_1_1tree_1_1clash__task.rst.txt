@@ -1,0 +1,23 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1tree_1_1clash__task:
+
+Struct tree::clash_task
+=======================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_tree.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1tree`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::impl::tree::clash_task
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

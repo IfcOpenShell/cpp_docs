@@ -1,0 +1,14 @@
+.. _exhale_function_utils_8h_1a70b588bcf2c7c4c0c0999e8c234df15b:
+
+Function ifcopenshell::path::from_utf8
+======================================
+
+- Defined in :ref:`file_src_ifcparse_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::path::from_utf8(const std::string&)
+   :project: IfcOpenShell

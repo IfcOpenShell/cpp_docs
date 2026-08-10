@@ -1,0 +1,28 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1representation:
+
+Class representation
+====================
+
+- Defined in :ref:`file_src_ifcgeom_representation.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public ifcopenshell::geom::native`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1native`)
+- ``public ifcopenshell::geom::serialization`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1serialization`)
+- ``public ifcopenshell::geom::triangulation`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1triangulation`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::representation
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

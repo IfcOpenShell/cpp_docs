@@ -1,0 +1,63 @@
+
+.. _file_src_serializers_xml_serializer.h:
+
+File xml_serializer.h
+=====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/xml_serializer.h``)
+-------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_xml_serializer.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/serializer.h``
+
+- ``../ifcparse/file.h``
+
+- ``../plugin/plugin.h``
+
+- ``../serializers/document_serializer_plugin.h``
+
+- ``../serializers/serializers_api.h``
+
+- ``memory``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_serializers_schema_dependent_xml_serializer.h`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classxml__serializer`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_xml__serializer_8h_1a10c1c3f889882ed56b5b23820b56dcf0`
+

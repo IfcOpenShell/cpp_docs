@@ -1,0 +1,136 @@
+
+.. _file_src_ifcparse_storage.h:
+
+File storage.h
+==============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/storage.h``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_storage.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``cstdint``
+
+- ``cstring``
+
+- ``deque``
+
+- ``file_open_status.h`` (:ref:`file_src_ifcparse_file_open_status.h`)
+
+- ``functional``
+
+- ``iostream``
+
+- ``iterator`` (:ref:`file_src_ifcgeom_iterator.h`)
+
+- ``list``
+
+- ``logger.h`` (:ref:`file_src_ifcparse_logger.h`)
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``map_transformer.h`` (:ref:`file_src_ifcparse_map_transformer.h`)
+
+- ``map_variant.h`` (:ref:`file_src_ifcparse_map_variant.h`)
+
+- ``memory``
+
+- ``mutex``
+
+- ``rocksdb_map_adapter.h`` (:ref:`file_src_ifcparse_rocksdb_map_adapter.h`)
+
+- ``rocksdb_set_view.h`` (:ref:`file_src_ifcparse_rocksdb_set_view.h`)
+
+- ``set`` (:ref:`file_src_ifcgeom_conversion_settings.h`)
+
+- ``set_to_map_transformer.h`` (:ref:`file_src_ifcparse_set_to_map_transformer.h`)
+
+- ``type_traits``
+
+- ``unordered_map``
+
+- ``variant`` (:ref:`file_src_ifcparse_map_variant.h`)
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_file.h`
+
+- :ref:`file_src_ifcparse_instance_data.h`
+
+- :ref:`file_src_ifcparse_parse.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__impl`
+
+- :ref:`namespace_rocksdb`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1impl_1_1in__memory__file__storage`
+
+- :ref:`exhale_struct_structifcopenshell_1_1impl_1_1inverse__record`
+
+- :ref:`exhale_struct_structifcopenshell_1_1instance__reference`
+
+- :ref:`exhale_class_classifcopenshell_1_1impl_1_1inverse__index`
+
+- :ref:`exhale_class_classifcopenshell_1_1impl_1_1rocks__db__file__storage`
+
+- :ref:`exhale_class_classrocksdb_1_1_d_b`
+
+- :ref:`exhale_class_classrocksdb_1_1_iterator`
+
+- :ref:`exhale_class_classrocksdb_1_1_options`
+
+- :ref:`exhale_class_classrocksdb_1_1_read_options`
+
+- :ref:`exhale_class_classrocksdb_1_1status`
+
+- :ref:`exhale_class_classrocksdb_1_1_write_options`
+
+- :ref:`exhale_class_classvariant__iterator`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_storage_8h_1a609012d06350c725b68d448c5e3c06ea`
+
+- :ref:`exhale_typedef_storage_8h_1a0ca87e4c3024807607252c47265e3b13`
+

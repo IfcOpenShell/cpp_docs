@@ -1,0 +1,14 @@
+.. _exhale_function_taxonomy_8h_1a1629e4bc611d112b08d7e9ce4e2b4a73:
+
+Function ifcopenshell::geom::taxonomy::curve_to_face_upgrade_impl
+=================================================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::taxonomy::curve_to_face_upgrade_impl(ptr)
+   :project: IfcOpenShell

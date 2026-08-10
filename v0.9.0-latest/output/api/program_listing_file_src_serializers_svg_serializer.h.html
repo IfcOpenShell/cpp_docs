@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Program Listing for File svg_serializer.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="program-listing-for-file-svg-serializer-h">
+<span id="program-listing-file-src-serializers-svg-serializer-h"></span><h1>Program Listing for File svg_serializer.h<a class="headerlink" href="#program-listing-for-file-svg-serializer-h" title="Link to this heading">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_serializers_svg_serializer.h.html#file-src-serializers-svg-serializer-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/serializers/svg_serializer.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/********************************************************************************</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * Copyright 2015 IfcOpenShell and ROOT B.V.                                    *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * This file is part of IfcOpenShell.                                           *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is free software: you can redistribute it and/or modify         *</span>
+<span class="cm"> * it under the terms of the Lesser GNU General Public License as published by  *</span>
+<span class="cm"> * the Free Software Foundation, either version 3.0 of the License, or          *</span>
+<span class="cm"> * (at your option) any later version.                                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * IfcOpenShell is distributed in the hope that it will be useful,              *</span>
+<span class="cm"> * but WITHOUT ANY WARRANTY; without even the implied warranty of               *</span>
+<span class="cm"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *</span>
+<span class="cm"> * Lesser GNU General Public License for more details.                          *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> * You should have received a copy of the Lesser GNU General Public License     *</span>
+<span class="cm"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.         *</span>
+<span class="cm"> *                                                                              *</span>
+<span class="cm"> ********************************************************************************/</span>
+
+<span class="cp">#ifdef IFOPSH_WITH_OPENCASCADE</span>
+
+<span class="cp">#ifndef SVGSERIALIZER_H</span>
+<span class="cp">#define SVGSERIALIZER_H</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/geometry_serializer.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/kernels/opencascade/base_utils.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../serializers/serializers_api.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../serializers/util.h&quot;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcparse/utils.h&quot;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;HLRBRep_Algo.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;HLRBRep_HLRToShape.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;HLRBRep_PolyAlgo.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;HLRAlgo_Projector.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gp_Pln.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Bnd_Box.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Standard_Version.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BRep_Builder.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;HLRBRep_PolyHLRToShape.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BRepTopAdaptor_FClass2d.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Geom_Plane.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BRepBndLib.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BRepMesh_IncrementalMesh.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;TopExp_Explorer.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;TopoDS.hxx&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BRepGProp_Face.hxx&gt;</span>
+
+<span class="cp">#if OCC_VERSION_HEX &gt;= 0x70300</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Bnd_OBB.hxx&gt;</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sstream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;limits&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;array&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;tuple&gt;</span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">drawing_key</span><span class="p">;</span>
+
+<span class="k">struct</span><span class="w"> </span><span class="nc">storey_sorter</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">operator</span><span class="p">()(</span><span class="k">const</span><span class="w"> </span><span class="n">drawing_key</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ad</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">drawing_key</span><span class="o">&amp;</span><span class="w"> </span><span class="n">bd</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">ad</span><span class="p">.</span><span class="n">first</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">bd</span><span class="p">.</span><span class="n">first</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">bd</span><span class="p">.</span><span class="n">first</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">ad</span><span class="p">.</span><span class="n">first</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">ad</span><span class="p">.</span><span class="n">first</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">!</span><span class="n">bd</span><span class="p">.</span><span class="n">first</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">less</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">()(</span><span class="n">ad</span><span class="p">.</span><span class="n">second</span><span class="p">,</span><span class="w"> </span><span class="n">bd</span><span class="p">.</span><span class="n">second</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ad</span><span class="p">.</span><span class="n">first</span><span class="p">;</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bd</span><span class="p">.</span><span class="n">first</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">a_is_storey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">declaration</span><span class="p">().</span><span class="n">is</span><span class="p">(</span><span class="s">&quot;IfcBuildingStorey&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">b_is_storey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">declaration</span><span class="p">().</span><span class="n">is</span><span class="p">(</span><span class="s">&quot;IfcBuildingStorey&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a_is_storey</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">b_is_storey</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">a_elev</span><span class="p">,</span><span class="w"> </span><span class="n">b_elev</span><span class="p">;</span>
+<span class="w">            </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">a_elev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">as</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">entity</span><span class="o">&gt;</span><span class="p">().</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;Elevation&quot;</span><span class="p">));</span>
+<span class="w">                </span><span class="n">b_elev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">as</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">entity</span><span class="o">&gt;</span><span class="p">().</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;Elevation&quot;</span><span class="p">));</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">{};</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a_elev</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">b_elev</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal_to</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">()(</span><span class="o">*</span><span class="n">a_elev</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">b_elev</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">less</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="p">()(</span><span class="n">a</span><span class="p">.</span><span class="n">id</span><span class="p">(),</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">id</span><span class="p">());</span>
+<span class="w">                </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">less</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">()(</span><span class="o">*</span><span class="n">a_elev</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">b_elev</span><span class="p">);</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">a_name</span><span class="p">,</span><span class="w"> </span><span class="n">b_name</span><span class="p">;</span>
+<span class="w">            </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">a_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">as</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">entity</span><span class="o">&gt;</span><span class="p">().</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;Name&quot;</span><span class="p">));</span>
+<span class="w">                </span><span class="n">b_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">as</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">entity</span><span class="o">&gt;</span><span class="p">().</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;Name&quot;</span><span class="p">));</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">{};</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a_name</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">b_name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">equal_to</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">()(</span><span class="o">*</span><span class="n">a_name</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">b_name</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">less</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="p">()(</span><span class="n">a</span><span class="p">.</span><span class="n">id</span><span class="p">(),</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">id</span><span class="p">());</span>
+<span class="w">                </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">less</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">()(</span><span class="o">*</span><span class="n">a_name</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">b_name</span><span class="p">);</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">less</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="o">&gt;</span><span class="p">()(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">struct</span><span class="w"> </span><span class="nc">horizontal_plan</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="w"> </span><span class="n">storey</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">elevation</span><span class="p">,</span><span class="w"> </span><span class="n">offset</span><span class="p">,</span><span class="w"> </span><span class="n">next_elevation</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">struct</span><span class="w"> </span><span class="nc">horizontal_plan_at_element</span><span class="w"> </span><span class="p">{};</span>
+
+<span class="k">struct</span><span class="w"> </span><span class="nc">vertical_section</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">gp_Pln</span><span class="w"> </span><span class="n">plane</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">with_projection</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">scale</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">size</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="n">boost</span><span class="o">::</span><span class="n">variant</span><span class="o">&lt;</span><span class="n">horizontal_plan</span><span class="p">,</span><span class="w"> </span><span class="n">horizontal_plan_at_element</span><span class="p">,</span><span class="w"> </span><span class="n">vertical_section</span><span class="o">&gt;</span><span class="w"> </span><span class="n">section_data</span><span class="p">;</span>
+
+<span class="k">struct</span><span class="w"> </span><span class="nc">geometry_data</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">TopoDS_Shape</span><span class="w"> </span><span class="n">compound_local</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">dash_arrays</span><span class="p">;</span>
+<span class="w">    </span><span class="n">gp_Trsf</span><span class="w"> </span><span class="n">trsf</span><span class="p">;</span>
+<span class="w">    </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="w"> </span><span class="n">product</span><span class="p">;</span>
+<span class="w">    </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="w"> </span><span class="n">storey</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">storey_elevation</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">ifc_name</span><span class="p">,</span><span class="w"> </span><span class="n">svg_name</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">struct</span><span class="w"> </span><span class="nc">drawing_meta</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">gp_Pln</span><span class="w"> </span><span class="n">pln_3d</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="o">&gt;</span><span class="w"> </span><span class="n">matrix_3</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">enum</span><span class="w"> </span><span class="nc">subtract_before_project</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ON_SLABS_AT_FLOORPLANS</span><span class="p">,</span>
+<span class="w">    </span><span class="n">ON_SLABS_AND_WALLS</span><span class="p">,</span>
+<span class="w">    </span><span class="n">ALWAYS</span>
+<span class="p">};</span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="n">boost</span><span class="o">::</span><span class="n">variant</span><span class="o">&lt;</span>
+<span class="w">    </span><span class="n">boost</span><span class="o">::</span><span class="n">blank</span><span class="p">,</span>
+<span class="w">    </span><span class="n">Handle</span><span class="p">(</span><span class="n">HLRBRep_Algo</span><span class="p">),</span>
+<span class="w">    </span><span class="n">Handle</span><span class="p">(</span><span class="n">HLRBRep_PolyAlgo</span><span class="p">)</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="n">hlr_brep_or_poly_t</span><span class="p">;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">hlr_writer</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">shape_</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">public</span><span class="o">:</span>
+<span class="w">        </span><span class="k">typedef</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">result_type</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">hlr_writer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">shape</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">shape_</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{}</span>
+
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="k">operator</span><span class="p">()(</span><span class="n">boost</span><span class="o">::</span><span class="n">blank</span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="k">operator</span><span class="p">()(</span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">HLRBRep_Algo</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">algo</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">algo</span><span class="o">-&gt;</span><span class="n">Add</span><span class="p">(</span><span class="n">shape_</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="k">operator</span><span class="p">()(</span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">HLRBRep_PolyAlgo</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">algo</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">BRepMesh_IncrementalMesh</span><span class="p">(</span><span class="n">shape_</span><span class="p">,</span><span class="w"> </span><span class="mf">0.10</span><span class="p">);</span>
+<span class="w">            </span><span class="n">algo</span><span class="o">-&gt;</span><span class="n">Load</span><span class="p">(</span><span class="n">shape_</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="n">TopoDS_Compound</span><span class="w"> </span><span class="n">occt_join</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">t</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">BRep_Builder</span><span class="w"> </span><span class="n">B</span><span class="p">;</span>
+<span class="w">        </span><span class="n">TopoDS_Compound</span><span class="w"> </span><span class="n">C</span><span class="p">;</span>
+<span class="w">        </span><span class="n">B</span><span class="p">.</span><span class="n">MakeCompound</span><span class="p">(</span><span class="n">C</span><span class="p">);</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">t</span><span class="p">.</span><span class="n">IsNull</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">TopoDS_Iterator</span><span class="w"> </span><span class="nf">it</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(;</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">More</span><span class="p">();</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">Next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">B</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">Value</span><span class="p">());</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">C</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span><span class="p">...</span><span class="w"> </span><span class="n">Ts</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="n">TopoDS_Compound</span><span class="w"> </span><span class="n">occt_join</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">Ts</span><span class="p">...</span><span class="w"> </span><span class="n">tss</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">BRep_Builder</span><span class="w"> </span><span class="n">B</span><span class="p">;</span>
+<span class="w">        </span><span class="n">TopoDS_Compound</span><span class="w"> </span><span class="n">C</span><span class="p">;</span>
+<span class="w">        </span><span class="n">B</span><span class="p">.</span><span class="n">MakeCompound</span><span class="p">(</span><span class="n">C</span><span class="p">);</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">t</span><span class="p">.</span><span class="n">IsNull</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">TopoDS_Iterator</span><span class="w"> </span><span class="nf">it</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(;</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">More</span><span class="p">();</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">Next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">B</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">Value</span><span class="p">());</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">rest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">occt_join</span><span class="p">(</span><span class="n">tss</span><span class="p">...);</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">rest</span><span class="p">.</span><span class="n">IsNull</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">TopoDS_Iterator</span><span class="w"> </span><span class="nf">it</span><span class="p">(</span><span class="n">rest</span><span class="p">);</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(;</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">More</span><span class="p">();</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">Next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">B</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="n">Value</span><span class="p">());</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">C</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">hlr_calc</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">private</span><span class="o">:</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">HLRAlgo_Projector</span><span class="o">&amp;</span><span class="w"> </span><span class="n">projector_</span><span class="p">;</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">,</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&gt;&gt;*</span><span class="w"> </span><span class="n">product_shapes_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">;</span>
+<span class="w">        </span><span class="c1">// SVG edge classification (issue #3668): per-(product, class) edge-only sub-shapes,</span>
+<span class="w">        </span><span class="c1">// classified pre-HLR on the original (real-face) topology. Empty class string means</span>
+<span class="w">        </span><span class="c1">// &quot;unclassified&quot; (used for the two fallback cases below).</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&gt;&gt;*</span><span class="w"> </span><span class="n">classified_shapes_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">public</span><span class="o">:</span>
+<span class="w">        </span><span class="k">typedef</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">result_type</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">hlr_calc</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">HLRAlgo_Projector</span><span class="o">&amp;</span><span class="w"> </span><span class="n">projector</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">projector_</span><span class="p">(</span><span class="n">projector</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{}</span>
+
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="n">set_product_shape</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">,</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&gt;&gt;*</span><span class="w"> </span><span class="n">product_shapes</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">product_shapes_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">product_shapes</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="n">set_classified_shapes</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&gt;&gt;*</span><span class="w"> </span><span class="n">classified_shapes</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">classified_shapes_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">classified_shapes</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">HlrToShapeT</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="n">result_type</span><span class="w"> </span><span class="n">extract</span><span class="p">(</span><span class="n">HlrToShapeT</span><span class="o">&amp;</span><span class="w"> </span><span class="n">hlr_shapes</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">result_type</span><span class="w"> </span><span class="n">r</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">classified_shapes_</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">!</span><span class="n">classified_shapes_</span><span class="o">-&gt;</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="n">classified_shapes_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">r</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">&gt;</span><span class="p">(</span><span class="n">t</span><span class="p">),</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="mi">1</span><span class="o">&gt;</span><span class="p">(</span><span class="n">t</span><span class="p">),</span><span class="w"> </span><span class="n">occt_join</span><span class="p">(</span><span class="n">hlr_shapes</span><span class="p">.</span><span class="n">OutLineVCompound</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="mi">2</span><span class="o">&gt;</span><span class="p">(</span><span class="n">t</span><span class="p">)),</span><span class="w"> </span><span class="n">hlr_shapes</span><span class="p">.</span><span class="n">VCompound</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="mi">2</span><span class="o">&gt;</span><span class="p">(</span><span class="n">t</span><span class="p">)))</span><span class="w"> </span><span class="p">});</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">product_shapes_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="n">product_shapes_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">r</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(),</span><span class="w"> </span><span class="n">occt_join</span><span class="p">(</span><span class="n">hlr_shapes</span><span class="p">.</span><span class="n">OutLineVCompound</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">second</span><span class="p">),</span><span class="w"> </span><span class="n">hlr_shapes</span><span class="p">.</span><span class="n">VCompound</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">second</span><span class="p">))</span><span class="w"> </span><span class="p">});</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">r</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="w"> </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">{},</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(),</span><span class="w"> </span><span class="n">occt_join</span><span class="p">(</span><span class="n">hlr_shapes</span><span class="p">.</span><span class="n">OutLineVCompound</span><span class="p">(),</span><span class="w"> </span><span class="n">hlr_shapes</span><span class="p">.</span><span class="n">VCompound</span><span class="p">())</span><span class="w"> </span><span class="p">});</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">r</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">result_type</span><span class="w"> </span><span class="k">operator</span><span class="p">()(</span><span class="n">boost</span><span class="o">::</span><span class="n">blank</span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">result_type</span><span class="w"> </span><span class="k">operator</span><span class="p">()(</span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">HLRBRep_Algo</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">algo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">algo</span><span class="o">-&gt;</span><span class="n">Projector</span><span class="p">(</span><span class="n">projector_</span><span class="p">);</span>
+<span class="w">            </span><span class="n">algo</span><span class="o">-&gt;</span><span class="n">Update</span><span class="p">();</span>
+<span class="w">            </span><span class="n">algo</span><span class="o">-&gt;</span><span class="n">Hide</span><span class="p">();</span>
+<span class="w">            </span><span class="n">HLRBRep_HLRToShape</span><span class="w"> </span><span class="nf">hlr_shapes</span><span class="p">(</span><span class="n">algo</span><span class="p">);</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">extract</span><span class="p">(</span><span class="n">hlr_shapes</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">result_type</span><span class="w"> </span><span class="k">operator</span><span class="p">()(</span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">HLRBRep_PolyAlgo</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">algo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">algo</span><span class="o">-&gt;</span><span class="n">Projector</span><span class="p">(</span><span class="n">projector_</span><span class="p">);</span>
+<span class="w">            </span><span class="n">algo</span><span class="o">-&gt;</span><span class="n">Update</span><span class="p">();</span>
+<span class="w">            </span><span class="n">HLRBRep_PolyHLRToShape</span><span class="w"> </span><span class="n">hlr_shapes</span><span class="p">;</span>
+<span class="w">            </span><span class="n">hlr_shapes</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">algo</span><span class="p">);</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">extract</span><span class="p">(</span><span class="n">hlr_shapes</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">prefiltered_hlr</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">        </span><span class="k">class</span><span class="w"> </span><span class="nc">face_info</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">private</span><span class="o">:</span>
+<span class="w">            </span><span class="n">gp_XYZ</span><span class="w"> </span><span class="n">dxyz</span><span class="p">,</span><span class="w"> </span><span class="n">xdir</span><span class="p">,</span><span class="w"> </span><span class="n">ydir</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">public</span><span class="o">:</span>
+<span class="w">            </span><span class="n">TopoDS_Shape</span><span class="o">*</span><span class="w"> </span><span class="n">item</span><span class="p">;</span>
+<span class="w">            </span><span class="n">TopoDS_Face</span><span class="w"> </span><span class="n">face</span><span class="p">;</span>
+<span class="w">            </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_convex</span><span class="p">;</span>
+<span class="w">            </span><span class="c1">// @note copying the BRepTopAdaptor_FClass2d didn&#39;t work so it&#39;s a pointer</span>
+<span class="w">            </span><span class="n">BRepTopAdaptor_FClass2d</span><span class="o">*</span><span class="w"> </span><span class="n">fclass</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">face_info</span><span class="p">(</span><span class="n">TopoDS_Shape</span><span class="o">*</span><span class="w"> </span><span class="n">it</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Face</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fa</span><span class="p">)</span>
+<span class="w">                </span><span class="o">:</span><span class="w"> </span><span class="n">item</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+<span class="w">                </span><span class="p">,</span><span class="w"> </span><span class="n">face</span><span class="p">(</span><span class="n">fa</span><span class="p">)</span>
+<span class="w">                </span><span class="p">,</span><span class="w"> </span><span class="n">fclass</span><span class="p">(</span><span class="nb">nullptr</span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="n">TopExp_Explorer</span><span class="w"> </span><span class="nf">exp</span><span class="p">(</span><span class="n">face</span><span class="p">,</span><span class="w"> </span><span class="n">TopAbs_WIRE</span><span class="p">);</span>
+<span class="w">                </span><span class="n">is_convex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">exp</span><span class="p">.</span><span class="n">More</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">util</span><span class="o">::</span><span class="n">is_convex</span><span class="p">(</span><span class="n">TopoDS</span><span class="o">::</span><span class="n">Wire</span><span class="p">(</span><span class="n">exp</span><span class="p">.</span><span class="n">Current</span><span class="p">()),</span><span class="w"> </span><span class="mf">1.</span><span class="n">e</span><span class="mi">-5</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">([</span><span class="o">&amp;</span><span class="n">exp</span><span class="p">]()</span><span class="w"> </span><span class="p">{</span><span class="n">exp</span><span class="p">.</span><span class="n">Next</span><span class="p">();</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"> </span><span class="p">})()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">!</span><span class="n">exp</span><span class="p">.</span><span class="n">More</span><span class="p">();</span>
+
+<span class="w">                </span><span class="k">auto</span><span class="w"> </span><span class="n">surf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BRep_Tool</span><span class="o">::</span><span class="n">Surface</span><span class="p">(</span><span class="n">fa</span><span class="p">);</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">surf</span><span class="o">-&gt;</span><span class="n">DynamicType</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">STANDARD_TYPE</span><span class="p">(</span><span class="n">Geom_Plane</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;Not implemented&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="p">}</span>
+
+<span class="w">                </span><span class="k">auto</span><span class="w"> </span><span class="n">pln</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Handle</span><span class="p">(</span><span class="n">Geom_Plane</span><span class="p">)</span><span class="o">::</span><span class="n">DownCast</span><span class="p">(</span><span class="n">surf</span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">dxyz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pln</span><span class="o">-&gt;</span><span class="n">Position</span><span class="p">().</span><span class="n">Location</span><span class="p">().</span><span class="n">XYZ</span><span class="p">();</span>
+<span class="w">                </span><span class="n">xdir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pln</span><span class="o">-&gt;</span><span class="n">Position</span><span class="p">().</span><span class="n">XDirection</span><span class="p">().</span><span class="n">XYZ</span><span class="p">();</span>
+<span class="w">                </span><span class="n">ydir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pln</span><span class="o">-&gt;</span><span class="n">Position</span><span class="p">().</span><span class="n">YDirection</span><span class="p">().</span><span class="n">XYZ</span><span class="p">();</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="o">~</span><span class="n">face_info</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">delete</span><span class="w"> </span><span class="n">fclass</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="n">project</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="w"> </span><span class="n">xyz</span><span class="p">,</span><span class="w"> </span><span class="n">gp_Pnt2d</span><span class="o">&amp;</span><span class="w"> </span><span class="n">uv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Vec</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">xyz</span><span class="p">.</span><span class="n">XYZ</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">dxyz</span><span class="p">;</span>
+<span class="w">                </span><span class="n">uv</span><span class="p">.</span><span class="n">SetX</span><span class="p">(</span><span class="n">d</span><span class="p">.</span><span class="n">Dot</span><span class="p">(</span><span class="n">xdir</span><span class="p">));</span>
+<span class="w">                </span><span class="n">uv</span><span class="p">.</span><span class="n">SetY</span><span class="p">(</span><span class="n">d</span><span class="p">.</span><span class="n">Dot</span><span class="p">(</span><span class="n">ydir</span><span class="p">));</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="n">interp</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pnt2d</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pnt2d</span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">gp_Pnt2d</span><span class="o">&amp;</span><span class="w"> </span><span class="n">out</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">out</span><span class="p">.</span><span class="n">SetCoord</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">X</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">X</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">X</span><span class="p">())</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">Y</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">Y</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">Y</span><span class="p">())</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">d</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="kt">bool</span><span class="w"> </span><span class="n">contains</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="w"> </span><span class="n">bottomleft</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="w"> </span><span class="n">topright</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">gp_Pnt2d</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">                </span><span class="n">project</span><span class="p">(</span><span class="n">bottomleft</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">);</span>
+<span class="w">                </span><span class="n">project</span><span class="p">(</span><span class="n">topright</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">contains</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="kt">bool</span><span class="w"> </span><span class="n">contains</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pnt2d</span><span class="o">&amp;</span><span class="w"> </span><span class="n">bottomleft</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pnt2d</span><span class="o">&amp;</span><span class="w"> </span><span class="n">topright</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">fclass</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">fclass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BRepTopAdaptor_FClass2d</span><span class="p">(</span><span class="n">face</span><span class="p">,</span><span class="w"> </span><span class="mf">1.</span><span class="n">e</span><span class="mi">-5</span><span class="p">);</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">                </span><span class="c1">// @todo unify with the 2d boolean algo</span>
+<span class="w">                </span><span class="n">gp_Pnt2d</span><span class="w"> </span><span class="n">bottomright</span><span class="p">(</span><span class="n">topright</span><span class="p">.</span><span class="n">X</span><span class="p">(),</span><span class="w"> </span><span class="n">bottomleft</span><span class="p">.</span><span class="n">Y</span><span class="p">());</span>
+<span class="w">                </span><span class="n">gp_Pnt2d</span><span class="w"> </span><span class="nf">topleft</span><span class="p">(</span><span class="n">bottomleft</span><span class="p">.</span><span class="n">X</span><span class="p">(),</span><span class="w"> </span><span class="n">topright</span><span class="p">.</span><span class="n">Y</span><span class="p">());</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">gp_Pnt2d</span><span class="w"> </span><span class="k">const</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="o">&gt;</span><span class="w"> </span><span class="n">loop</span><span class="p">{</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="o">&amp;</span><span class="n">bottomleft</span><span class="p">,</span>
+<span class="w">                    </span><span class="o">&amp;</span><span class="n">bottomright</span><span class="p">,</span>
+<span class="w">                    </span><span class="o">&amp;</span><span class="n">topright</span><span class="p">,</span>
+<span class="w">                    </span><span class="o">&amp;</span><span class="n">topleft</span>
+<span class="w">                </span><span class="p">}</span><span class="w"> </span><span class="p">};</span>
+
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">is_convex</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fclass</span><span class="o">-&gt;</span><span class="n">Perform</span><span class="p">(</span><span class="o">*</span><span class="n">loop</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">TopAbs_OUT</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                            </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">                        </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">gp_Pnt2d</span><span class="w"> </span><span class="n">tmp</span><span class="p">;</span>
+<span class="w">                    </span><span class="c1">// 0,1,2,3 -&gt; interp over bounding box edges (i%4, (i+1)%4)</span>
+<span class="w">                    </span><span class="c1">// 4,5 -&gt; interp over bounding box diagonals (i%4, (i+2)%4)</span>
+<span class="w">                    </span><span class="c1">// @todo use boolean_utils.h points_on_planar_face_generator?</span>
+<span class="w">                    </span><span class="c1">// ... or skip faces with inner bounds all together ?</span>
+<span class="w">                    </span><span class="c1">// ... ?</span>
+<span class="w">                    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="c1">// @todo proper edge intersection</span>
+<span class="w">                        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">j</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                            </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pnt2d</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">loop</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">4</span><span class="p">];</span>
+<span class="w">                            </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pnt2d</span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">loop</span><span class="p">[(</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">4</span><span class="p">];</span>
+<span class="w">                            </span><span class="n">interp</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">16.0</span><span class="p">,</span><span class="w"> </span><span class="n">tmp</span><span class="p">);</span>
+<span class="w">                            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fclass</span><span class="o">-&gt;</span><span class="n">Perform</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">TopAbs_OUT</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                                </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">                            </span><span class="p">}</span>
+<span class="w">                        </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">}</span>
+
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="n">hlr_brep_or_poly_t</span><span class="w"> </span><span class="n">engine_</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="n">use_prefiltering_</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="n">use_hlr_poly_</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="n">segment_projection_</span><span class="p">;</span>
+<span class="w">        </span><span class="n">gp_Ax1</span><span class="w"> </span><span class="n">view_direction_</span><span class="p">;</span>
+<span class="w">        </span><span class="n">HLRAlgo_Projector</span><span class="w"> </span><span class="n">projector_</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">multimap</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="n">face_info</span><span class="o">&gt;</span><span class="w"> </span><span class="n">large_ortho_faces_</span><span class="p">;</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">,</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">items_</span><span class="p">;</span>
+<span class="w">        </span><span class="c1">// SVG edge classification (issue #3668): see add_classified_edges().</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">classified_items_</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">&amp;</span><span class="w"> </span><span class="n">logger_</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">public</span><span class="o">:</span>
+
+<span class="w">        </span><span class="n">prefiltered_hlr</span><span class="p">(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">&amp;</span><span class="w"> </span><span class="n">logger</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">use_prefiltering</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">use_hlr_poly</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">segment_projection</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pln</span><span class="o">&amp;</span><span class="w"> </span><span class="n">view_direction</span><span class="p">)</span>
+<span class="w">            </span><span class="o">:</span><span class="w"> </span><span class="n">use_prefiltering_</span><span class="p">(</span><span class="n">use_prefiltering</span><span class="p">)</span>
+<span class="w">            </span><span class="p">,</span><span class="w"> </span><span class="n">use_hlr_poly_</span><span class="p">(</span><span class="n">use_hlr_poly</span><span class="p">)</span>
+<span class="w">            </span><span class="p">,</span><span class="w"> </span><span class="n">segment_projection_</span><span class="p">(</span><span class="n">segment_projection</span><span class="p">)</span>
+<span class="w">            </span><span class="c1">// @nb negative z in accordance with occt projector convention (and opengl)</span>
+<span class="w">            </span><span class="p">,</span><span class="w"> </span><span class="n">view_direction_</span><span class="p">(</span><span class="n">view_direction</span><span class="p">.</span><span class="n">Axis</span><span class="p">())</span>
+<span class="w">            </span><span class="p">,</span><span class="w"> </span><span class="n">logger_</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">use_hlr_poly_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">engine_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HLRBRep_PolyAlgo</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">engine_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HLRBRep_Algo</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">gp_Trsf</span><span class="w"> </span><span class="n">trsf</span><span class="p">;</span>
+<span class="w">            </span><span class="n">trsf</span><span class="p">.</span><span class="n">SetTransformation</span><span class="p">(</span><span class="n">view_direction</span><span class="p">.</span><span class="n">Position</span><span class="p">());</span>
+<span class="w">            </span><span class="n">projector_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">HLRAlgo_Projector</span><span class="p">(</span><span class="n">trsf</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">,</span><span class="w"> </span><span class="mf">1.</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// SVG edge classification (issue #3668): register an edge-only sub-shape of `product`&#39;s</span>
+<span class="w">        </span><span class="c1">// original (pre-HLR, real-face) geometry under a given class name. The full shape must</span>
+<span class="w">        </span><span class="c1">// still be added via add() as usual for correct occlusion.</span>
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="n">add_classified_edges</span><span class="p">(</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="w"> </span><span class="n">product</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">cls</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">edges</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">classified_items_</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="w"> </span><span class="n">product</span><span class="p">,</span><span class="w"> </span><span class="n">cls</span><span class="p">,</span><span class="w"> </span><span class="n">edges</span><span class="w"> </span><span class="p">});</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_obscured_</span><span class="p">(</span><span class="n">TopoDS_Shape</span><span class="o">*</span><span class="w"> </span><span class="n">sit</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">sit</span><span class="p">;</span>
+
+<span class="w">            </span><span class="kt">double</span><span class="w"> </span><span class="n">min_d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">infinity</span><span class="p">();</span>
+
+<span class="w">            </span><span class="n">TopExp_Explorer</span><span class="w"> </span><span class="nf">exp</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">TopAbs_VERTEX</span><span class="p">);</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(;</span><span class="w"> </span><span class="n">exp</span><span class="p">.</span><span class="n">More</span><span class="p">();</span><span class="w"> </span><span class="n">exp</span><span class="p">.</span><span class="n">Next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TopoDS</span><span class="o">::</span><span class="n">Vertex</span><span class="p">(</span><span class="n">exp</span><span class="p">.</span><span class="n">Current</span><span class="p">());</span>
+<span class="w">                </span><span class="k">auto</span><span class="w"> </span><span class="n">pnt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BRep_Tool</span><span class="o">::</span><span class="n">Pnt</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
+<span class="w">                </span><span class="k">auto</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="p">(</span><span class="n">pnt</span><span class="p">.</span><span class="n">XYZ</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">view_direction_</span><span class="p">.</span><span class="n">Location</span><span class="p">().</span><span class="n">XYZ</span><span class="p">()).</span><span class="n">Dot</span><span class="p">(</span><span class="n">view_direction_</span><span class="p">.</span><span class="n">Direction</span><span class="p">().</span><span class="n">XYZ</span><span class="p">());</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">d</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">min_d</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">min_d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">Bnd_Box</span><span class="w"> </span><span class="n">box</span><span class="p">;</span>
+<span class="w">            </span><span class="n">BRepBndLib</span><span class="o">::</span><span class="n">AddClose</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">box</span><span class="p">);</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">box</span><span class="p">.</span><span class="n">IsVoid</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="c1">// false or true, it doesn&#39;t really matter, just don&#39;t</span>
+<span class="w">                </span><span class="c1">// proceed because asking for a corner of a void box</span>
+<span class="w">                </span><span class="c1">// throws an exception.</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">auto</span><span class="w"> </span><span class="n">lower</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">large_ortho_faces_</span><span class="p">.</span><span class="n">lower_bound</span><span class="p">(</span><span class="mf">0.</span><span class="p">);</span>
+<span class="w">            </span><span class="k">auto</span><span class="w"> </span><span class="n">upper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">large_ortho_faces_</span><span class="p">.</span><span class="n">upper_bound</span><span class="p">(</span><span class="n">min_d</span><span class="p">);</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lower</span><span class="p">;</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">upper</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">it</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">.</span><span class="n">item</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">sit</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="k">continue</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">.</span><span class="n">contains</span><span class="p">(</span><span class="n">box</span><span class="p">.</span><span class="n">CornerMin</span><span class="p">(),</span><span class="w"> </span><span class="n">box</span><span class="p">.</span><span class="n">CornerMax</span><span class="p">()))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="n">add</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="w"> </span><span class="n">product</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">use_prefiltering_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">items_</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">items_</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="p">{</span><span class="n">product</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p">});</span>
+<span class="w">                </span><span class="k">return</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">TopoDS_Compound</span><span class="w"> </span><span class="n">C</span><span class="p">;</span>
+<span class="w">            </span><span class="n">BRep_Builder</span><span class="w"> </span><span class="n">BB</span><span class="p">;</span>
+<span class="w">            </span><span class="n">BB</span><span class="p">.</span><span class="n">MakeCompound</span><span class="p">(</span><span class="n">C</span><span class="p">);</span>
+
+<span class="w">            </span><span class="n">gp_Pnt</span><span class="w"> </span><span class="n">P</span><span class="p">;</span>
+<span class="w">            </span><span class="n">gp_Vec</span><span class="w"> </span><span class="n">V</span><span class="p">;</span>
+<span class="w">            </span><span class="n">gp_Dir</span><span class="w"> </span><span class="n">D</span><span class="p">;</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">util</span><span class="o">::</span><span class="n">is_manifold</span><span class="p">(</span><span class="n">s</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="kt">size_t</span><span class="w"> </span><span class="n">n_faces_included</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">n_total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">TopExp_Explorer</span><span class="w"> </span><span class="nf">exp</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">TopAbs_FACE</span><span class="p">);</span>
+<span class="w">                    </span><span class="k">for</span><span class="w"> </span><span class="p">(;</span><span class="w"> </span><span class="n">exp</span><span class="p">.</span><span class="n">More</span><span class="p">();</span><span class="w"> </span><span class="n">exp</span><span class="p">.</span><span class="n">Next</span><span class="p">(),</span><span class="w"> </span><span class="n">n_total</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">face</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TopoDS</span><span class="o">::</span><span class="n">Face</span><span class="p">(</span><span class="n">exp</span><span class="p">.</span><span class="n">Current</span><span class="p">());</span>
+<span class="w">                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">BRep_Tool</span><span class="o">::</span><span class="n">Surface</span><span class="p">(</span><span class="n">face</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">DynamicType</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">STANDARD_TYPE</span><span class="p">(</span><span class="n">Geom_Plane</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                            </span><span class="n">BRepGProp_Face</span><span class="w"> </span><span class="nf">prop</span><span class="p">(</span><span class="n">face</span><span class="p">);</span>
+
+<span class="w">                            </span><span class="n">prop</span><span class="p">.</span><span class="n">Normal</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span><span class="w"> </span><span class="mf">0.</span><span class="p">,</span><span class="w"> </span><span class="n">P</span><span class="p">,</span><span class="w"> </span><span class="n">V</span><span class="p">);</span>
+<span class="w">                            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">V</span><span class="p">.</span><span class="n">SquareMagnitude</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">1.</span><span class="n">e</span><span class="mi">-9</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                                </span><span class="n">D</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">V</span><span class="p">;</span>
+<span class="w">                                </span><span class="c1">// keep only front-facing</span>
+<span class="w">                                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">D</span><span class="p">.</span><span class="n">Dot</span><span class="p">(</span><span class="n">view_direction_</span><span class="p">.</span><span class="n">Direction</span><span class="p">())</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">1.</span><span class="n">e</span><span class="mi">-3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                                    </span><span class="n">BB</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">face</span><span class="p">);</span>
+<span class="w">                                    </span><span class="n">n_faces_included</span><span class="o">++</span><span class="p">;</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">}</span>
+<span class="w">                        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                            </span><span class="n">BB</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">face</span><span class="p">);</span>
+<span class="w">                            </span><span class="n">n_faces_included</span><span class="o">++</span><span class="p">;</span>
+<span class="w">                        </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">}</span>
+
+<span class="w">                </span><span class="n">logger_</span><span class="p">.</span><span class="n">notice</span><span class="p">(</span><span class="s">&quot;SER&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">34</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Included &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">n_faces_included</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; faces out of &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">n_total</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; after prefiltering&quot;</span><span class="p">);</span>
+
+<span class="w">                </span><span class="k">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">items_</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">items_</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">product</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="w"> </span><span class="p">});</span>
+
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">TopExp_Explorer</span><span class="w"> </span><span class="nf">exp</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">TopAbs_FACE</span><span class="p">);</span>
+<span class="w">                    </span><span class="k">for</span><span class="w"> </span><span class="p">(;</span><span class="w"> </span><span class="n">exp</span><span class="p">.</span><span class="n">More</span><span class="p">();</span><span class="w"> </span><span class="n">exp</span><span class="p">.</span><span class="n">Next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">face</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TopoDS</span><span class="o">::</span><span class="n">Face</span><span class="p">(</span><span class="n">exp</span><span class="p">.</span><span class="n">Current</span><span class="p">());</span>
+<span class="w">                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">BRep_Tool</span><span class="o">::</span><span class="n">Surface</span><span class="p">(</span><span class="n">face</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">DynamicType</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">STANDARD_TYPE</span><span class="p">(</span><span class="n">Geom_Plane</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">                            </span><span class="c1">// find large faces orthogonal to view dir</span>
+<span class="w">                            </span><span class="n">BRepGProp_Face</span><span class="w"> </span><span class="nf">prop</span><span class="p">(</span><span class="n">face</span><span class="p">);</span>
+<span class="w">                            </span><span class="n">prop</span><span class="p">.</span><span class="n">Normal</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span><span class="w"> </span><span class="mf">0.</span><span class="p">,</span><span class="w"> </span><span class="n">P</span><span class="p">,</span><span class="w"> </span><span class="n">V</span><span class="p">);</span>
+<span class="w">                            </span><span class="n">D</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">V</span><span class="p">;</span>
+
+<span class="w">                            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">D</span><span class="p">.</span><span class="n">Dot</span><span class="p">(</span><span class="n">view_direction_</span><span class="p">.</span><span class="n">Direction</span><span class="p">())</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="p">(</span><span class="mf">1.</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1.</span><span class="n">e</span><span class="mi">-3</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">util</span><span class="o">::</span><span class="n">face_area</span><span class="p">(</span><span class="n">face</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">2.</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                                    </span><span class="c1">// arbitrary vertex, is ok because orthogonal to view dir</span>
+<span class="w">                                    </span><span class="n">TopExp_Explorer</span><span class="w"> </span><span class="nf">expv</span><span class="p">(</span><span class="n">face</span><span class="p">,</span><span class="w"> </span><span class="n">TopAbs_VERTEX</span><span class="p">);</span>
+<span class="w">                                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">expv</span><span class="p">.</span><span class="n">More</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                                        </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TopoDS</span><span class="o">::</span><span class="n">Vertex</span><span class="p">(</span><span class="n">expv</span><span class="p">.</span><span class="n">Current</span><span class="p">());</span>
+<span class="w">                                        </span><span class="k">auto</span><span class="w"> </span><span class="n">pnt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BRep_Tool</span><span class="o">::</span><span class="n">Pnt</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
+
+<span class="w">                                        </span><span class="k">auto</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="p">(</span><span class="n">pnt</span><span class="p">.</span><span class="n">XYZ</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">view_direction_</span><span class="p">.</span><span class="n">Location</span><span class="p">().</span><span class="n">XYZ</span><span class="p">()).</span><span class="n">Dot</span><span class="p">(</span><span class="n">view_direction_</span><span class="p">.</span><span class="n">Direction</span><span class="p">().</span><span class="n">XYZ</span><span class="p">());</span>
+
+<span class="w">                                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">d</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">1.</span><span class="n">e</span><span class="mi">-5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                                            </span><span class="n">large_ortho_faces_</span><span class="p">.</span><span class="n">insert</span><span class="p">({</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">face_info</span><span class="p">(</span><span class="o">&amp;</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">,</span><span class="w"> </span><span class="n">face</span><span class="p">)</span><span class="w"> </span><span class="p">});</span>
+<span class="w">                                        </span><span class="p">}</span>
+<span class="w">                                    </span><span class="p">}</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">}</span>
+<span class="w">                        </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">items_</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">items_</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">product</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="p">});</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">build</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kt">size_t</span><span class="w"> </span><span class="n">n_included</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">items_</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">items_</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="w"> </span><span class="o">++</span><span class="n">it</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">use_prefiltering_</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">!</span><span class="n">is_obscured_</span><span class="p">(</span><span class="o">&amp;</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">hlr_writer</span><span class="w"> </span><span class="nf">vis</span><span class="p">(</span><span class="n">it</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">);</span>
+<span class="w">                    </span><span class="n">boost</span><span class="o">::</span><span class="n">apply_visitor</span><span class="p">(</span><span class="n">vis</span><span class="p">,</span><span class="w"> </span><span class="n">engine_</span><span class="p">);</span>
+<span class="w">                    </span><span class="n">n_included</span><span class="o">++</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">use_prefiltering_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">logger_</span><span class="p">.</span><span class="n">notice</span><span class="p">(</span><span class="s">&quot;SER&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">35</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Included &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">n_included</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; elements out of &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">items_</span><span class="p">.</span><span class="n">size</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; after prefiltering&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">hlr_calc</span><span class="w"> </span><span class="n">vis</span><span class="p">(</span><span class="n">projector_</span><span class="p">);</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">segment_projection_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">vis</span><span class="p">.</span><span class="n">set_product_shape</span><span class="p">(</span><span class="o">&amp;</span><span class="n">items_</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">vis</span><span class="p">.</span><span class="n">set_classified_shapes</span><span class="p">(</span><span class="o">&amp;</span><span class="n">classified_items_</span><span class="p">);</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">boost</span><span class="o">::</span><span class="n">apply_visitor</span><span class="p">(</span><span class="n">vis</span><span class="p">,</span><span class="w"> </span><span class="n">engine_</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="p">}</span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="n">prefiltered_hlr</span><span class="w"> </span><span class="n">hlr_engine</span><span class="p">;</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">SERIALIZERS_API</span><span class="w"> </span><span class="n">svg_serializer</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">write_only_geometry_serializer</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="k">typedef</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">util</span><span class="o">::</span><span class="n">string_buffer</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">path_object</span><span class="p">;</span>
+<span class="w">    </span><span class="k">typedef</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">util</span><span class="o">::</span><span class="n">string_buffer</span><span class="o">::</span><span class="n">float_item</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">float_item_list</span><span class="p">;</span>
+<span class="w">    </span><span class="k">enum</span><span class="w"> </span><span class="nc">storey_height_display_types</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">SH_NONE</span><span class="p">,</span><span class="w"> </span><span class="n">SH_FULL</span><span class="p">,</span><span class="w"> </span><span class="n">SH_LEFT</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="k">protected</span><span class="o">:</span>
+<span class="w">    </span><span class="n">stream_or_filename</span><span class="w"> </span><span class="n">svg_file</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">xmin</span><span class="p">,</span><span class="w"> </span><span class="n">ymin</span><span class="p">,</span><span class="w"> </span><span class="n">xmax</span><span class="p">,</span><span class="w"> </span><span class="n">ymax</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">section_data</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">section_data_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">section_data</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">deferred_section_data_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">scale_</span><span class="p">,</span><span class="w"> </span><span class="n">calculated_scale_</span><span class="p">,</span><span class="w"> </span><span class="n">center_x_</span><span class="p">,</span><span class="w"> </span><span class="n">center_y_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">storey_height_line_length_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">size_</span><span class="p">,</span><span class="w"> </span><span class="n">offset_2d_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">space_name_transform_</span><span class="p">;</span>
+
+<span class="cp">#if OCC_VERSION_HEX &gt;= 0x70300</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">Bnd_OBB</span><span class="o">&gt;</span><span class="w"> </span><span class="n">view_box_3d_</span><span class="p">;</span>
+<span class="cp">#endif</span>
+
+
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">with_section_heights_from_storey_</span><span class="p">,</span><span class="w"> </span><span class="n">print_space_names_</span><span class="p">,</span><span class="w"> </span><span class="n">print_space_areas_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">storey_height_display_types</span><span class="w"> </span><span class="n">storey_height_display_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">draw_door_arcs_</span><span class="p">,</span><span class="w"> </span><span class="n">is_floor_plan_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">auto_section_</span><span class="p">,</span><span class="w"> </span><span class="n">auto_elevation_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">use_namespace_</span><span class="p">,</span><span class="w"> </span><span class="n">use_hlr_poly_</span><span class="p">,</span><span class="w"> </span><span class="n">use_prefiltering_</span><span class="p">,</span><span class="w"> </span><span class="n">segment_projection_</span><span class="p">,</span><span class="w"> </span><span class="n">always_project_</span><span class="p">,</span><span class="w"> </span><span class="n">polygonal_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">emit_building_storeys_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">no_css_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">unify_inputs_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">mirror_y_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">mirror_x_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">only_valid_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">profile_threshold_</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// SVG edge classification (issue #3668): see classify_edge_from_faces() in svg_serializer.cpp.</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">svg_ridge_angle_min_deg_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">svg_valley_angle_min_deg_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">svg_emit_flush_edges_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">svg_use_edge_classification_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">svg_render_crease_edges_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">svg_render_sharp_edges_</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">file</span><span class="o">*</span><span class="w"> </span><span class="n">file</span><span class="p">;</span>
+<span class="w">    </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="w"> </span><span class="n">storey_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">multimap</span><span class="o">&lt;</span><span class="n">drawing_key</span><span class="p">,</span><span class="w"> </span><span class="n">path_object</span><span class="p">,</span><span class="w"> </span><span class="n">storey_sorter</span><span class="o">&gt;</span><span class="w"> </span><span class="n">paths</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">drawing_key</span><span class="p">,</span><span class="w"> </span><span class="n">drawing_meta</span><span class="o">&gt;</span><span class="w"> </span><span class="n">drawing_metadata</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">,</span><span class="w"> </span><span class="n">hlr_engine</span><span class="o">&gt;</span><span class="w"> </span><span class="n">storey_hlr</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">float_item_list</span><span class="w"> </span><span class="n">xcoords</span><span class="p">,</span><span class="w"> </span><span class="n">ycoords</span><span class="p">,</span><span class="w"> </span><span class="n">radii</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">xcoords_begin</span><span class="p">,</span><span class="w"> </span><span class="n">ycoords_begin</span><span class="p">,</span><span class="w"> </span><span class="n">radii_begin</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">section_ref_</span><span class="p">,</span><span class="w"> </span><span class="n">elevation_ref_</span><span class="p">,</span><span class="w"> </span><span class="n">elevation_ref_guid_</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">geometry_data</span><span class="o">&gt;</span><span class="w"> </span><span class="n">element_buffer_</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">hlr_engine</span><span class="o">*</span><span class="w"> </span><span class="n">hlr</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">namespace_prefix_</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Used for drawing the storey elevation heights</span>
+<span class="w">    </span><span class="c1">// @todo maybe better to rely on a screen-space bounding box</span>
+<span class="w">    </span><span class="n">Bnd_Box</span><span class="w"> </span><span class="n">bnd_</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">draw_hlr</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pln</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pln</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">drawing_key</span><span class="o">&amp;</span><span class="w"> </span><span class="n">drawing_name</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">apply_settings</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">subtract_before_project</span><span class="w"> </span><span class="n">subtraction_settings_</span><span class="p">;</span>
+
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">svg_serializer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">stream_or_filename</span><span class="o">&amp;</span><span class="w"> </span><span class="n">out_filename</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">settings</span><span class="o">&amp;</span><span class="w"> </span><span class="n">settings</span><span class="p">,</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">*</span><span class="w"> </span><span class="n">logger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">)</span>
+<span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">write_only_geometry_serializer</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span><span class="w"> </span><span class="n">logger</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">svg_file</span><span class="p">(</span><span class="n">out_filename</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">xmin</span><span class="p">(</span><span class="o">+</span><span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">infinity</span><span class="p">())</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">ymin</span><span class="p">(</span><span class="o">+</span><span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">infinity</span><span class="p">())</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">xmax</span><span class="p">(</span><span class="o">-</span><span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">infinity</span><span class="p">())</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">ymax</span><span class="p">(</span><span class="o">-</span><span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">infinity</span><span class="p">())</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">with_section_heights_from_storey_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">print_space_names_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">print_space_areas_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">storey_height_display_</span><span class="p">(</span><span class="n">SH_NONE</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">draw_door_arcs_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">is_floor_plan_</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">auto_section_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">auto_elevation_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">use_namespace_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">use_hlr_poly_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">use_prefiltering_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">segment_projection_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">always_project_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">polygonal_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">emit_building_storeys_</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">no_css_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">unify_inputs_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">mirror_y_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">mirror_x_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">profile_threshold_</span><span class="p">(</span><span class="mi">-1</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">svg_ridge_angle_min_deg_</span><span class="p">(</span><span class="mf">45.</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">svg_valley_angle_min_deg_</span><span class="p">(</span><span class="mf">12.</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">svg_emit_flush_edges_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">svg_use_edge_classification_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">svg_render_crease_edges_</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">svg_render_sharp_edges_</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">xcoords_begin</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">ycoords_begin</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">radii_begin</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">hlr</span><span class="p">(</span><span class="nb">nullptr</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">namespace_prefix_</span><span class="p">(</span><span class="s">&quot;data-&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">subtraction_settings_</span><span class="p">(</span><span class="n">ON_SLABS_AT_FLOORPLANS</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">apply_settings</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">addXCoordinate</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">util</span><span class="o">::</span><span class="n">string_buffer</span><span class="o">::</span><span class="n">float_item</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">fi</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">xcoords</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">fi</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">addYCoordinate</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">util</span><span class="o">::</span><span class="n">string_buffer</span><span class="o">::</span><span class="n">float_item</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">fi</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">ycoords</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">fi</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">addSizeComponent</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">util</span><span class="o">::</span><span class="n">string_buffer</span><span class="o">::</span><span class="n">float_item</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">fi</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">radii</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">fi</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">growBoundingBox</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">xmin</span><span class="p">)</span><span class="w"> </span><span class="n">xmin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">xmax</span><span class="p">)</span><span class="w"> </span><span class="n">xmax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">ymin</span><span class="p">)</span><span class="w"> </span><span class="n">ymin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">ymax</span><span class="p">)</span><span class="w"> </span><span class="n">ymax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">writeHeader</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">doWriteHeader</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">ready</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">write</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">triangulation_element</span><span class="o">*</span><span class="w"> </span><span class="cm">/*o*/</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">write</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">native_element</span><span class="o">*</span><span class="w"> </span><span class="n">o</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">write</span><span class="p">(</span><span class="n">path_object</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">wire</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">dash_array</span><span class="o">=</span><span class="n">std</span><span class="o">::</span><span class="n">nullopt</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">css_class</span><span class="o">=</span><span class="n">std</span><span class="o">::</span><span class="n">nullopt</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">write</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry_data</span><span class="o">&amp;</span><span class="w"> </span><span class="n">data</span><span class="p">);</span>
+<span class="w">    </span><span class="n">path_object</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">start_path</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pln</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="o">&amp;</span><span class="w"> </span><span class="n">storey</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">id</span><span class="p">);</span>
+<span class="w">    </span><span class="n">path_object</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">start_path</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pln</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">drawing_name</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">id</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">isTesselated</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">finalize</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setUnitNameAndMagnitude</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="cm">/*name*/</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="cm">/*magnitude*/</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setFile</span><span class="p">(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">file</span><span class="o">&amp;</span><span class="w"> </span><span class="n">f</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setBoundingRectangle</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">height</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setSectionHeight</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">h</span><span class="p">,</span><span class="w"> </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="w"> </span><span class="n">storey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">());</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setSectionHeightsFromStoreys</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">offset</span><span class="o">=</span><span class="mf">1.2</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setPrintSpaceNames</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">print_space_names_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setPrintSpaceAreas</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">print_space_areas_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setDrawStoreyHeights</span><span class="p">(</span><span class="n">storey_height_display_types</span><span class="w"> </span><span class="n">sh</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">storey_height_display_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sh</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setDrawDoorArcs</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">draw_door_arcs_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setStoreyHeightLineLength</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">storey_height_line_length_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setSpaceNameTransform</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">space_name_transform_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">addTextAnnotations</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">drawing_key</span><span class="o">&amp;</span><span class="w"> </span><span class="n">k</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="o">&gt;</span><span class="w"> </span><span class="n">resize</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">resetScale</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setSectionRef</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">section_ref_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setElevationRef</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">elevation_ref_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
+<span class="w">        </span><span class="n">elevation_ref_guid_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">nullopt</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setElevationRefGuid</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">elevation_ref_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">nullopt</span><span class="p">;</span>
+<span class="w">        </span><span class="n">elevation_ref_guid_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setAutoSection</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">auto_section_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setAutoElevation</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">auto_elevation_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setUseNamespace</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">use_namespace_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">        </span><span class="n">namespace_prefix_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">use_namespace_</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s">&quot;ifc:&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s">&quot;data-&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setUseHlrPoly</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">use_hlr_poly_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setUsePrefiltering</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">use_prefiltering_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">getUsePrefiltering</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">use_prefiltering_</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setSegmentProjection</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">segment_projection_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">getSegmentProjection</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">segment_projection_</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setPolygonal</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">polygonal_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setAlwaysProject</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">always_project_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setWithoutStoreys</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">emit_building_storeys_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setNoCSS</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">no_css_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setUnifyInputs</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">unify_inputs_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">getUnifyInputs</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">unify_inputs_</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setOnlyValid</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">only_valid_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">getOnlyValid</span><span class="p">(</span><span class="kt">bool</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">only_valid_</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setScale</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">scale_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setDrawingCenter</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">center_x_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="n">center_y_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">nameElement</span><span class="p">(</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="w"> </span><span class="n">storey</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">element</span><span class="o">*</span><span class="w"> </span><span class="n">elem</span><span class="p">);</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">nameElement</span><span class="p">(</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="w"> </span><span class="n">elem</span><span class="p">);</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">idElement</span><span class="p">(</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="w"> </span><span class="n">elem</span><span class="p">);</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">object_id</span><span class="p">(</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="w"> </span><span class="n">storey</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">element</span><span class="o">*</span><span class="w"> </span><span class="n">o</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">storey</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">idElement</span><span class="p">(</span><span class="n">storey</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;-&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">geometry_serializer</span><span class="o">::</span><span class="n">object_id</span><span class="p">(</span><span class="n">o</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">geometry_serializer</span><span class="o">::</span><span class="n">object_id</span><span class="p">(</span><span class="n">o</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">addDrawing</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">gp_Pnt</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Dir</span><span class="o">&amp;</span><span class="w"> </span><span class="n">dir</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">gp_Dir</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ref</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">include_projection</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">deferred_section_data_</span><span class="p">.</span><span class="n">emplace</span><span class="p">();</span>
+<span class="w">        </span><span class="n">deferred_section_data_</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="n">vertical_section</span><span class="p">{</span><span class="w"> </span><span class="n">gp_Pln</span><span class="p">(</span><span class="n">gp_Ax3</span><span class="p">(</span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">dir</span><span class="p">,</span><span class="w"> </span><span class="n">ref</span><span class="p">)),</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">include_projection</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">nullopt</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">nullopt</span><span class="w"> </span><span class="p">});</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setSubtractionSettings</span><span class="p">(</span><span class="n">subtract_before_project</span><span class="w"> </span><span class="n">sbp</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">subtraction_settings_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sbp</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">subtract_before_project</span><span class="w"> </span><span class="nf">getSubtractionSettings</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">subtraction_settings_</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setProfileThreshold</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">profile_threshold_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="nf">getProfileThreshold</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">profile_threshold_</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setMirrorY</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">mirror_y_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">getMirrorY</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">mirror_y_</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setMirrorX</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">mirror_x_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">getMirrorX</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">mirror_x_</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="k">protected</span><span class="o">:</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">writeMetadata</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">drawing_meta</span><span class="o">&amp;</span><span class="w"> </span><span class="n">m</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="cp">#endif</span>
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++ API</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../_sources/output/api/program_listing_file_src_serializers_svg_serializer.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

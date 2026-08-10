@@ -1,0 +1,14 @@
+.. _exhale_function_taxonomy_8h_1a799d870c60a3a51e8432c2a110cf0c43:
+
+Function ifcopenshell::geom::taxonomy::edge_to_loop_upgrade_impl
+================================================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::taxonomy::edge_to_loop_upgrade_impl(ptr)
+   :project: IfcOpenShell

@@ -1,0 +1,91 @@
+
+.. _file_src_ifcgeom_iterator.h:
+
+File iterator.h
+===============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/iterator.h``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_iterator.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/abstract_mapping.h``
+
+- ``../ifcgeom/conversion_result.h``
+
+- ``../ifcgeom/converter.h``
+
+- ``../ifcgeom/element.h``
+
+- ``../ifcgeom/filter.h``
+
+- ``../ifcgeom/taxonomy.h``
+
+- ``../ifcparse/file.h``
+
+- ``algorithm``
+
+- ``atomic``
+
+- ``boost/algorithm/string.hpp``
+
+- ``chrono``
+
+- ``future``
+
+- ``limits``
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``memory``
+
+- ``set`` (:ref:`file_src_ifcgeom_conversion_settings.h`)
+
+- ``thread``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_tree.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1geometry__conversion__result`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1iterator`
+

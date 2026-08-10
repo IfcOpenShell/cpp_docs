@@ -1,0 +1,64 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_face_definition.h:
+
+File face_definition.h
+======================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/face_definition.h``)
+------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_face_definition.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``Geom_Surface.hxx``
+
+- ``TopoDS_Wire.hxx``
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``vector``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__util`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1util_1_1face__definition`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_face__definition_8h_1a17d21a8eb6ab979ec5c57fef24c1e6d9`
+

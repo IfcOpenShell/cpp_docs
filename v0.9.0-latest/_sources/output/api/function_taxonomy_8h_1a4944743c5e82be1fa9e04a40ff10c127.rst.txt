@@ -1,0 +1,14 @@
+.. _exhale_function_taxonomy_8h_1a4944743c5e82be1fa9e04a40ff10c127:
+
+Function ifcopenshell::geom::create_box(double, double, double, double, double, double)
+=======================================================================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::create_box(double, double, double, double, double, double)
+   :project: IfcOpenShell

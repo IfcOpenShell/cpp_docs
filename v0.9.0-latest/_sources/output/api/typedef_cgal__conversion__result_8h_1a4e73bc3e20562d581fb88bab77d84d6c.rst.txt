@@ -1,0 +1,14 @@
+.. _exhale_typedef_cgal__conversion__result_8h_1a4e73bc3e20562d581fb88bab77d84d6c:
+
+Typedef cgal_wire
+=================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: cgal_wire
+   :project: IfcOpenShell

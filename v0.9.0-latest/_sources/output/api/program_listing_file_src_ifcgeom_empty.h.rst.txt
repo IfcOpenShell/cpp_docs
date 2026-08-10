@@ -1,0 +1,14 @@
+
+.. _program_listing_file_src_ifcgeom_empty.h:
+
+Program Listing for File empty.h
+================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_src_ifcgeom_empty.h>` (``src/ifcgeom/empty.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // A purposely empty file so that the unrolled loop
+   // can overflow into an existing empty include file.

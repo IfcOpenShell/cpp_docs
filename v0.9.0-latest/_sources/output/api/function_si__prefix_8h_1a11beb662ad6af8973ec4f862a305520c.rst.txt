@@ -1,0 +1,14 @@
+.. _exhale_function_si__prefix_8h_1a11beb662ad6af8973ec4f862a305520c:
+
+Template Function ifcopenshell::get_SI_equivalent
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_si_prefix.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::get_SI_equivalent(const typename Schema::IfcNamedUnit&)
+   :project: IfcOpenShell

@@ -1,0 +1,14 @@
+.. _exhale_function_face__definition_8h_1a17d21a8eb6ab979ec5c57fef24c1e6d9:
+
+Function ifcopenshell::geom::util::is_polyhedron
+================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_face_definition.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::is_polyhedron(const TopoDS_Wire&)
+   :project: IfcOpenShell

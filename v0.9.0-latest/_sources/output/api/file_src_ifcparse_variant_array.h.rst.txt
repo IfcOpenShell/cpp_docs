@@ -1,0 +1,111 @@
+
+.. _file_src_ifcparse_variant_array.h:
+
+File variant_array.h
+====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/variant_array.h``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_variant_array.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstddef``
+
+- ``cstdint``
+
+- ``cstring``
+
+- ``exception`` (:ref:`file_src_ifcparse_exception.h`)
+
+- ``iostream``
+
+- ``limits``
+
+- ``memory``
+
+- ``stdexcept``
+
+- ``tuple``
+
+- ``type_traits``
+
+- ``utility``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_instance_data.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_impl`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structimpl_1_1is__small__object`
+
+- :ref:`exhale_struct_structimpl_1_1is__unique__ptr`
+
+- :ref:`exhale_struct_structimpl_1_1is__unique__ptr_3_01std_1_1unique__ptr_3_01_t_00_01_args_8_8_8_01_4_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1make__union__from__tuple`
+
+- :ref:`exhale_struct_structimpl_1_1make__union__from__tuple_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1map__types_3_01_first_type_00_01_rest_types_8_8_8_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1map__types_3_4`
+
+- :ref:`exhale_struct_structimpl_1_1transform__type`
+
+- :ref:`exhale_struct_structimpl_1_1tuple__prepend_3_01_t_00_01std_1_1tuple_3_01_types_8_8_8_01_4_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1type__index_3_01_t_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1type__index_3_01_t_00_01_u_00_01_ts_8_8_8_01_4`
+
+- :ref:`exhale_class_classimpl_1_1storage__type__mismatch`
+
+- :ref:`exhale_class_classvariant__array`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_variant__array_8h_1a4dbddf8da6686f907398368bc0fa3846`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_variant__array_8h_1ab3345021844a962cbccdab071dfb2342`
+

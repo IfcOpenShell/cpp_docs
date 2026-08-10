@@ -1,0 +1,14 @@
+.. _exhale_function_wire__utils_8h_1a191421cf3944eaa53a9892d06284bc67:
+
+Function ifcopenshell::geom::util::wire_to_sequence_of_point
+============================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::wire_to_sequence_of_point(const TopoDS_Wire&, NCollection_Sequence<gp_Pnt>&)
+   :project: IfcOpenShell

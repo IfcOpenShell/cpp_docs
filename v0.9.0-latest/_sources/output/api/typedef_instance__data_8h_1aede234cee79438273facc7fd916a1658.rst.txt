@@ -1,0 +1,14 @@
+.. _exhale_typedef_instance__data_8h_1aede234cee79438273facc7fd916a1658:
+
+Typedef ifcopenshell::type_encoder
+==================================
+
+- Defined in :ref:`file_src_ifcparse_instance_data.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::type_encoder
+   :project: IfcOpenShell

@@ -1,0 +1,70 @@
+
+.. _file_src_ifcparse_character_decoder.h:
+
+File character_decoder.h
+========================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/character_decoder.h``)
+-------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_character_decoder.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``file_reader.h`` (:ref:`file_src_ifcparse_file_reader.h`)
+
+- ``logger.h`` (:ref:`file_src_ifcparse_logger.h`)
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_parse.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1character__decoder`
+
+- :ref:`exhale_class_classifcopenshell_1_1character__encoder`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_character__decoder_8h_1ae0ec258350946b4a8f487c2179b3668c`
+
+- :ref:`exhale_function_character__decoder_8h_1a69e8e68ba0bb027732e43bcefb0616f2`
+
+- :ref:`exhale_function_character__decoder_8h_1aacb036a44fc72837346c54e676806cd4`
+

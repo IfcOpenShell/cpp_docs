@@ -1,0 +1,29 @@
+.. _exhale_class_classifcopenshell_1_1declaration:
+
+Class declaration
+=================
+
+- Defined in :ref:`file_src_ifcparse_schema.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public ifcopenshell::entity`` (:ref:`exhale_class_classifcopenshell_1_1entity`)
+- ``public ifcopenshell::enumeration_type`` (:ref:`exhale_class_classifcopenshell_1_1enumeration__type`)
+- ``public ifcopenshell::select_type`` (:ref:`exhale_class_classifcopenshell_1_1select__type`)
+- ``public ifcopenshell::type_declaration`` (:ref:`exhale_class_classifcopenshell_1_1type__declaration`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::declaration
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,84 @@
+
+.. _namespace_ifcopenshell__geom__impl:
+
+Namespace ifcopenshell::geom::impl
+==================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1mapping__registry_1_1entry`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01bool_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01double_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01int_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01settings__detail_1_1_function_step_method_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01settings__detail_1_1_iterator_output_options_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01settings__detail_1_1_output_dimensionality_types_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01settings__detail_1_1_triangulation_method_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01std_1_1set_3_01int_01_4_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01std_1_1set_3_01std_1_1string_01_4_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01std_1_1string_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01std_1_1vector_3_01double_01_4_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01std_1_1vector_3_01std_1_1string_01_4_01_4`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1tree_1_1clash__task`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1mapping__factory__implementation`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1mapping__registry`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1tree`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1tree_1_1selector`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_mapping__plugin_8h_1a4b4adb9b13b1bbd43867d89924c5a947`
+
+- :ref:`exhale_function_mapping__plugin_8h_1a7c3622c6f9f0dd3710da04b0b8d89666`
+
+- :ref:`exhale_function_abstract__mapping_8h_1a2da56ddf474c767e6343684c6b49ebdd`
+
+- :ref:`exhale_function_mapping__plugin_8h_1ae8b9fb0401c68b0fc5d67a4a50a0269c`
+
+- :ref:`exhale_function_mapping__plugin_8h_1a37cf9a272b9005a0a30a0b71ed6ac5e6`
+
+- :ref:`exhale_function_mapping__plugin_8h_1ac62cc6a92be27a5f8f134cddd3cc4cf7`
+
+- :ref:`exhale_function_abstract__mapping_8h_1afdec582d2050987fdf12547f58565c2d`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_abstract__mapping_8h_1a0fbdfe360ac38550cd57808559fd42cb`
+
+- :ref:`exhale_typedef_mapping__plugin_8h_1a1333127f9bb62c08158629fa60d2ed19`

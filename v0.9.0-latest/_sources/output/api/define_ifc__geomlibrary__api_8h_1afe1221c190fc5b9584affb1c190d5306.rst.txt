@@ -1,0 +1,14 @@
+.. _exhale_define_ifc__geomlibrary__api_8h_1afe1221c190fc5b9584affb1c190d5306:
+
+Define IFC_GEOMLIBRARY_API
+==========================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_ifc_geomlibrary_api.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: IFC_GEOMLIBRARY_API
+   :project: IfcOpenShell

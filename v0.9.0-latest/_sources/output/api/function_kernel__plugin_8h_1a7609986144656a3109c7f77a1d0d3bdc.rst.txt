@@ -1,0 +1,14 @@
+.. _exhale_function_kernel__plugin_8h_1a7609986144656a3109c7f77a1d0d3bdc:
+
+Function ifcopenshell::geom::kernels::load_kernel_plugins
+=========================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernel_plugin.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::kernels::load_kernel_plugins(kernel_registry&)
+   :project: IfcOpenShell

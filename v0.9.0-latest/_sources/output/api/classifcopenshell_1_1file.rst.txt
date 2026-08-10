@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1file:
+
+Class file
+==========
+
+- Defined in :ref:`file_src_ifcparse_file.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public hierarchy_helper< Schema >`` (:ref:`exhale_class_classhierarchy__helper`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::file
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

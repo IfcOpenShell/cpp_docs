@@ -1,0 +1,84 @@
+
+.. _file_src_ifcgeom_kernels_cgal_cgal_kernel.h:
+
+File cgal_kernel.h
+==================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/cgal/cgal_kernel.h``)
+-------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_cgal_cgal_kernel.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../../ifcgeom/abstract_kernel.h``
+
+- ``../../../ifcgeom/element.h``
+
+- ``../../../ifcgeom/kernels/cgal/cgal_conversion_result.h``
+
+- ``../../../ifcgeom/kernels/ifc_geomlibrary_api.h``
+
+- ``../../../ifcparse/logger.h``
+
+- ``../../../ifcparse/macros.h``
+
+- ``CGAL/Polygon_2.h``
+
+- ``cmath``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__kernels`
+
+- :ref:`namespace_ifcopenshell__geom__utils`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1cgal__kernel`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_cgal__kernel_8h_1af11c8bd1cae7c970408a7ed372426d72`
+
+- :ref:`exhale_function_cgal__kernel_8h_1a8830e814bb0fe3892d067c45fb864f3a`
+
+- :ref:`exhale_function_cgal__kernel_8h_1a61ef81b96c3842828edf6e338fa1d42e`
+
+- :ref:`exhale_function_cgal__kernel_8h_1a8aaa882114384f26c6a825f3860442ef`
+
+- :ref:`exhale_function_cgal__kernel_8h_1a7e7493bda577177246b961dfcef71a9a`
+
+- :ref:`exhale_function_cgal__kernel_8h_1abeadcf0bf5599556b321b0189e440f0c`
+

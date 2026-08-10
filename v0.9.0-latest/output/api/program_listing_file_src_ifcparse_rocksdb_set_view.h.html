@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Program Listing for File rocksdb_set_view.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="program-listing-for-file-rocksdb-set-view-h">
+<span id="program-listing-file-src-ifcparse-rocksdb-set-view-h"></span><h1>Program Listing for File rocksdb_set_view.h<a class="headerlink" href="#program-listing-for-file-rocksdb-set-view-h" title="Link to this heading">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_src_ifcparse_rocksdb_set_view.h.html#file-src-ifcparse-rocksdb-set-view-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/ifcparse/rocksdb_set_view.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/********************************************************************************</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* This file is part of IfcOpenShell.                                           *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* IfcOpenShell is free software: you can redistribute it and/or modify         *</span>
+<span class="cm">* it under the terms of the Lesser GNU General Public License as published by  *</span>
+<span class="cm">* the Free Software Foundation, either version 3.0 of the License, or          *</span>
+<span class="cm">* (at your option) any later version.                                          *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* IfcOpenShell is distributed in the hope that it will be useful,              *</span>
+<span class="cm">* but WITHOUT ANY WARRANTY; without even the implied warranty of               *</span>
+<span class="cm">* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 *</span>
+<span class="cm">* Lesser GNU General Public License for more details.                          *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">* You should have received a copy of the Lesser GNU General Public License     *</span>
+<span class="cm">* along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.         *</span>
+<span class="cm">*                                                                              *</span>
+<span class="cm">********************************************************************************/</span>
+
+<span class="cp">#ifndef ROCKSDB_SET_VIEW_H</span>
+<span class="cp">#define ROCKSDB_SET_VIEW_H</span>
+
+<span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;rocksdb/db.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;rocksdb/options.h&gt;</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iterator&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstddef&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstring&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdexcept&gt;</span>
+
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">KeyT</span><span class="o">&gt;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">rocksdb_set_view</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="n">key_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">KeyT</span><span class="p">;</span>
+<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">key_type</span><span class="p">;</span>
+
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="n">rocksdb</span><span class="o">::</span><span class="n">DB</span><span class="o">*</span><span class="w"> </span><span class="n">db_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">prefix_</span><span class="p">;</span>
+
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="c1">// Constructor: provide a pointer to an open RocksDB instance and the key-space prefix,</span>
+<span class="w">    </span><span class="c1">// e.g. &quot;i|&quot;</span>
+<span class="w">    </span><span class="n">rocksdb_set_view</span><span class="p">(</span><span class="n">rocksdb</span><span class="o">::</span><span class="n">DB</span><span class="o">*</span><span class="w"> </span><span class="n">db</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">prefix</span><span class="p">)</span>
+<span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="n">db_</span><span class="p">(</span><span class="n">db</span><span class="p">),</span><span class="w"> </span><span class="n">prefix_</span><span class="p">(</span><span class="n">prefix</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+
+<span class="w">    </span><span class="c1">// --- Iterator ---</span>
+<span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">iterator</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">public</span><span class="o">:</span>
+<span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">key_type</span><span class="p">;</span>
+<span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="n">difference_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">ptrdiff_t</span><span class="p">;</span>
+<span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="n">iterator_category</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">forward_iterator_tag</span><span class="p">;</span>
+<span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="n">pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="o">*</span><span class="p">;</span>
+<span class="w">        </span><span class="k">using</span><span class="w"> </span><span class="n">reference</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="o">&amp;</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">private</span><span class="o">:</span>
+<span class="w">        </span><span class="n">rocksdb</span><span class="o">::</span><span class="n">DB</span><span class="o">*</span><span class="w"> </span><span class="n">db_</span><span class="p">;</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">prefix_</span><span class="p">;</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">rocksdb</span><span class="o">::</span><span class="n">Iterator</span><span class="o">&gt;</span><span class="w"> </span><span class="n">it_</span><span class="p">;</span>
+<span class="w">        </span><span class="k">mutable</span><span class="w"> </span><span class="n">value_type</span><span class="w"> </span><span class="n">cached_value_</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Helper: extract the key (i.e. the value) from the current RocksDB key.</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="nf">extract_current_value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">full_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">ToString</span><span class="p">();</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">remainder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">full_key</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="n">prefix_</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+<span class="w">            </span><span class="kt">size_t</span><span class="w"> </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">remainder</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="sc">&#39;|&#39;</span><span class="p">);</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">key_str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">pos</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">::</span><span class="n">npos</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">remainder</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">remainder</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">key_from_string</span><span class="o">&lt;</span><span class="n">key_type</span><span class="o">&gt;</span><span class="p">(</span><span class="n">key_str</span><span class="p">);</span>
+<span class="cp">#else</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">cached_value_</span><span class="p">;</span>
+<span class="cp">#endif</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Validates the current iterator state.</span>
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">check_valid</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">it_</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">!</span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">Valid</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">!</span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">starts_with</span><span class="p">(</span><span class="n">prefix_</span><span class="p">))</span>
+<span class="w">                </span><span class="n">it_</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+<span class="cp">#endif</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">public</span><span class="o">:</span>
+<span class="w">        </span><span class="n">iterator</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">db_</span><span class="p">(</span><span class="nb">nullptr</span><span class="p">),</span><span class="w"> </span><span class="n">prefix_</span><span class="p">(),</span><span class="w"> </span><span class="n">it_</span><span class="p">(</span><span class="nb">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+
+<span class="w">        </span><span class="n">iterator</span><span class="p">(</span><span class="n">rocksdb</span><span class="o">::</span><span class="n">DB</span><span class="o">*</span><span class="w"> </span><span class="n">db</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">prefix</span><span class="p">,</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">rocksdb</span><span class="o">::</span><span class="n">Iterator</span><span class="o">&gt;</span><span class="w"> </span><span class="n">iterator</span><span class="p">)</span>
+<span class="w">            </span><span class="o">:</span><span class="w"> </span><span class="n">db_</span><span class="p">(</span><span class="n">db</span><span class="p">),</span><span class="w"> </span><span class="n">prefix_</span><span class="p">(</span><span class="n">prefix</span><span class="p">),</span><span class="w"> </span><span class="n">it_</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">iterator</span><span class="p">))</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">check_valid</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">iterator</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">iterator</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span>
+<span class="w">            </span><span class="o">:</span><span class="w"> </span><span class="n">db_</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">db_</span><span class="p">),</span><span class="w"> </span><span class="n">prefix_</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">prefix_</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">it_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">curr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">other</span><span class="p">.</span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">ToString</span><span class="p">();</span>
+<span class="w">                </span><span class="n">it_</span><span class="p">.</span><span class="n">reset</span><span class="p">(</span><span class="n">db_</span><span class="o">-&gt;</span><span class="n">NewIterator</span><span class="p">(</span><span class="n">rocksdb</span><span class="o">::</span><span class="n">ReadOptions</span><span class="p">{}));</span>
+<span class="w">                </span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">Seek</span><span class="p">(</span><span class="n">curr</span><span class="p">);</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">Valid</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">ToString</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">curr</span><span class="p">)</span>
+<span class="w">                    </span><span class="n">it_</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="cp">#endif</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">iterator</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">iterator</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">db_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">other</span><span class="p">.</span><span class="n">db_</span><span class="p">;</span>
+<span class="w">                </span><span class="n">prefix_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">other</span><span class="p">.</span><span class="n">prefix_</span><span class="p">;</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">it_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">curr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">other</span><span class="p">.</span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">ToString</span><span class="p">();</span>
+<span class="w">                    </span><span class="n">it_</span><span class="p">.</span><span class="n">reset</span><span class="p">(</span><span class="n">db_</span><span class="o">-&gt;</span><span class="n">NewIterator</span><span class="p">(</span><span class="n">rocksdb</span><span class="o">::</span><span class="n">ReadOptions</span><span class="p">{}));</span>
+<span class="w">                    </span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">Seek</span><span class="p">(</span><span class="n">curr</span><span class="p">);</span>
+<span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">Valid</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">ToString</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">curr</span><span class="p">)</span>
+<span class="w">                        </span><span class="n">it_</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+<span class="w">                </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">it_</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="cp">#endif</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Dereference: extract the key part from the RocksDB key.</span>
+<span class="w">        </span><span class="n">value_type</span><span class="w"> </span><span class="k">operator</span><span class="o">*</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">extract_current_value</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Pointer access (via a cached value)</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">value_type</span><span class="o">*</span><span class="w"> </span><span class="k">operator</span><span class="o">-&gt;</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">cached_value_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">**</span><span class="k">this</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cached_value_</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Pre-increment: advance the iterator and skip over any duplicate keys.</span>
+<span class="w">        </span><span class="n">iterator</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">++</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="c1">// Record the current key value.</span>
+<span class="w">                </span><span class="n">value_type</span><span class="w"> </span><span class="n">curr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">extract_current_value</span><span class="p">();</span>
+<span class="w">                </span><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">Next</span><span class="p">();</span>
+<span class="w">                </span><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">it_</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">Valid</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">starts_with</span><span class="p">(</span><span class="n">prefix_</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">                    </span><span class="p">(</span><span class="n">extract_current_value</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">curr</span><span class="p">));</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">it_</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">!</span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">Valid</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">!</span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">starts_with</span><span class="p">(</span><span class="n">prefix_</span><span class="p">))</span>
+<span class="w">                    </span><span class="n">it_</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="cp">#endif</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">iterator</span><span class="w"> </span><span class="k">operator</span><span class="o">++</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">iterator</span><span class="w"> </span><span class="nf">tmp</span><span class="p">(</span><span class="o">*</span><span class="k">this</span><span class="p">);</span>
+<span class="w">            </span><span class="o">++</span><span class="p">(</span><span class="o">*</span><span class="k">this</span><span class="p">);</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">tmp</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="k">operator</span><span class="o">==</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">iterator</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="cp">#ifndef IFOPSH_WITH_ROCKSDB</span>
+<span class="w">            </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">other</span><span class="p">;</span>
+<span class="cp">#endif</span>
+<span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">it_</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">!</span><span class="n">other</span><span class="p">.</span><span class="n">it_</span><span class="p">)</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it_</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">.</span><span class="n">it_</span><span class="p">)</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">ToString</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">other</span><span class="p">.</span><span class="n">it_</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">ToString</span><span class="p">();</span>
+<span class="cp">#endif</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="k">operator</span><span class="o">!=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">iterator</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="o">!</span><span class="p">(</span><span class="o">*</span><span class="k">this</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">other</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="c1">// Returns an iterator to the first element in the key-space (or end() if none exist).</span>
+<span class="w">    </span><span class="n">iterator</span><span class="w"> </span><span class="nf">begin</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">iter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">rocksdb</span><span class="o">::</span><span class="n">Iterator</span><span class="o">&gt;</span><span class="p">(</span><span class="n">db_</span><span class="o">-&gt;</span><span class="n">NewIterator</span><span class="p">(</span><span class="n">rocksdb</span><span class="o">::</span><span class="n">ReadOptions</span><span class="p">{}));</span>
+<span class="w">        </span><span class="n">iter</span><span class="o">-&gt;</span><span class="n">Seek</span><span class="p">(</span><span class="n">prefix_</span><span class="p">);</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">iter</span><span class="o">-&gt;</span><span class="n">Valid</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">iter</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">starts_with</span><span class="p">(</span><span class="n">prefix_</span><span class="p">))</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">iterator</span><span class="p">(</span><span class="n">db_</span><span class="p">,</span><span class="w"> </span><span class="n">prefix_</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">iter</span><span class="p">));</span>
+<span class="cp">#endif</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">end</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Returns an iterator representing the end of the key-space.</span>
+<span class="w">    </span><span class="n">iterator</span><span class="w"> </span><span class="nf">end</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">iterator</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Read-only find: returns an iterator to the element with the given key if it exists.</span>
+<span class="w">    </span><span class="n">iterator</span><span class="w"> </span><span class="nf">find</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">key_type</span><span class="o">&amp;</span><span class="w"> </span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">key_str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">key_to_string</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Construct the search key: prefix + key_str + separator.</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">start_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prefix_</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">key_str</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;|&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">iter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">rocksdb</span><span class="o">::</span><span class="n">Iterator</span><span class="o">&gt;</span><span class="p">(</span><span class="n">db_</span><span class="o">-&gt;</span><span class="n">NewIterator</span><span class="p">(</span><span class="n">rocksdb</span><span class="o">::</span><span class="n">ReadOptions</span><span class="p">{}));</span>
+<span class="w">        </span><span class="n">iter</span><span class="o">-&gt;</span><span class="n">Seek</span><span class="p">(</span><span class="n">start_key</span><span class="p">);</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">iter</span><span class="o">-&gt;</span><span class="n">Valid</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">iter</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">starts_with</span><span class="p">(</span><span class="n">prefix_</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">full_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iter</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">ToString</span><span class="p">();</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">remainder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">full_key</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="n">prefix_</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+<span class="w">            </span><span class="kt">size_t</span><span class="w"> </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">remainder</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="sc">&#39;|&#39;</span><span class="p">);</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">found_key_str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">pos</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">::</span><span class="n">npos</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">remainder</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">remainder</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">key_from_string</span><span class="o">&lt;</span><span class="n">key_type</span><span class="o">&gt;</span><span class="p">(</span><span class="n">found_key_str</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">key</span><span class="p">)</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">iterator</span><span class="p">(</span><span class="n">db_</span><span class="p">,</span><span class="w"> </span><span class="n">prefix_</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">iter</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="cp">#endif</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">end</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">erase</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">key_type</span><span class="o">&amp;</span><span class="w"> </span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// @todo</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++ API</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../_sources/output/api/program_listing_file_src_ifcparse_rocksdb_set_view.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

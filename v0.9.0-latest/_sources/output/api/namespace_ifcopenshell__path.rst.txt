@@ -1,0 +1,28 @@
+
+.. _namespace_ifcopenshell__path:
+
+Namespace ifcopenshell::path
+============================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_utils_8h_1a6cb2bd270b758ec370382d1439024b8c`
+
+- :ref:`exhale_function_utils_8h_1a52e368541ed6b19e916c45f312c6811c`
+
+- :ref:`exhale_function_utils_8h_1a70b588bcf2c7c4c0c0999e8c234df15b`
+
+- :ref:`exhale_function_utils_8h_1af2eab241abda09c744e29cb3dcff40b7`
+
+- :ref:`exhale_function_utils_8h_1a967b1e105199de4ca1078032a6ec8e03`

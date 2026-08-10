@@ -1,0 +1,13 @@
+
+.. _namespace_spatial_tree:
+
+Namespace spatial_tree
+======================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+

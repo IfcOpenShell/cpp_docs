@@ -1,0 +1,14 @@
+.. _exhale_enum_conversion__settings_8h_1a9945aac6aeda8f479e77cdf43ffd54ac:
+
+Enum OutputDimensionalityTypes
+==============================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_settings.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ifcopenshell::geom::settings_detail::OutputDimensionalityTypes
+   :project: IfcOpenShell

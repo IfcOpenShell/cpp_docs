@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1cross__section:
+
+Struct cross_section
+====================
+
+- Defined in :ref:`file_src_ifcgeom_infra_sweep_helper.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::cross_section
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

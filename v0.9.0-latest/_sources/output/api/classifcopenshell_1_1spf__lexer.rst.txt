@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1spf__lexer:
+
+Template Class spf_lexer
+========================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::spf_lexer
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

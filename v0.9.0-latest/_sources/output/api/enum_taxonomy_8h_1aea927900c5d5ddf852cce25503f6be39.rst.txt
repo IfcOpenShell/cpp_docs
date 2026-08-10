@@ -1,0 +1,14 @@
+.. _exhale_enum_taxonomy_8h_1aea927900c5d5ddf852cce25503f6be39:
+
+Enum connection_type
+====================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ifcopenshell::geom::connection_type
+   :project: IfcOpenShell

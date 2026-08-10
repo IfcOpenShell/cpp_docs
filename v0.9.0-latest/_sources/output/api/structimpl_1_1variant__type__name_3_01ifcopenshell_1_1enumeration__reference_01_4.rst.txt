@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1enumeration__reference_01_4:
+
+Template Struct variant_type_name< ifcopenshell::enumeration_reference >
+========================================================================
+
+- Defined in :ref:`file_src_ifcparse_instance_data.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::variant_type_name< ifcopenshell::enumeration_reference >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

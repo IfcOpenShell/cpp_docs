@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1not__supported__error:
+
+Class not_supported_error
+=========================
+
+- Defined in :ref:`file_src_ifcgeom_abstract_kernel.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::exception``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::not_supported_error
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

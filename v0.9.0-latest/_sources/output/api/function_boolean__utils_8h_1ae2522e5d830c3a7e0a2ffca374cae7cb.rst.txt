@@ -1,0 +1,14 @@
+.. _exhale_function_boolean__utils_8h_1ae2522e5d830c3a7e0a2ffca374cae7cb:
+
+Function ifcopenshell::geom::util::eliminate_touching_operands
+==============================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::eliminate_touching_operands(double, const TopoDS_Shape&, const NCollection_List<TopoDS_Shape>&, NCollection_List<TopoDS_Shape>&)
+   :project: IfcOpenShell

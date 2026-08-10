@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1full__buffer__impl:
+
+Class full_buffer_impl
+======================
+
+- Defined in :ref:`file_src_ifcparse_file_reader.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::full_buffer_impl
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

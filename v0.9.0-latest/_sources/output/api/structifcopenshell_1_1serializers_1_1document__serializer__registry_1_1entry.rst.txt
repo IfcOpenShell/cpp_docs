@@ -1,0 +1,23 @@
+.. _exhale_struct_structifcopenshell_1_1serializers_1_1document__serializer__registry_1_1entry:
+
+Struct document_serializer_registry::entry
+==========================================
+
+- Defined in :ref:`file_src_serializers_document_serializer_plugin.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classifcopenshell_1_1serializers_1_1document__serializer__registry`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::serializers::document_serializer_registry::entry
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

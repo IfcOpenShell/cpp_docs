@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1abf6b398f1d45ab2da43a015f1858964f:
+
+Function ifcopenshell::geom::util::is_manifold
+==============================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::is_manifold(const TopoDS_Shape&)
+   :project: IfcOpenShell

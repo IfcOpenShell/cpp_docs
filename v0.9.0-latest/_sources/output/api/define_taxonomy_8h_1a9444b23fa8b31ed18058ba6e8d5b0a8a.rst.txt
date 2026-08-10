@@ -1,0 +1,14 @@
+.. _exhale_define_taxonomy_8h_1a9444b23fa8b31ed18058ba6e8d5b0a8a:
+
+Define TAXONOMY_USE_SHARED_PTR
+==============================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: TAXONOMY_USE_SHARED_PTR
+   :project: IfcOpenShell

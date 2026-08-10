@@ -1,0 +1,70 @@
+
+.. _file_src_ifcgeom_profile_helper.h:
+
+File profile_helper.h
+=====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/profile_helper.h``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_profile_helper.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``ifc_geom_api.h`` (:ref:`file_src_ifcgeom_ifc_geom_api.h`)
+
+- ``taxonomy.h`` (:ref:`file_src_ifcgeom_taxonomy.h`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1profile__point`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1profile__point__with__edges`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1profile__point__with__edges__3d`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_profile__helper_8h_1a43d5b6fe72cdd4e915873d1d99dd2ebc`
+
+- :ref:`exhale_function_profile__helper_8h_1a2b9a7634c6eeae3ef8dd6be024a32cce`
+
+- :ref:`exhale_function_profile__helper_8h_1aeeca4891686c5641602d9831f70d479d`
+
+- :ref:`exhale_function_profile__helper_8h_1aa89951add8ec677c29eff2fa2d93b6df`
+
+- :ref:`exhale_function_profile__helper_8h_1a3906fa675025be8425243ff148b00989`
+

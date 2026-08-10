@@ -1,0 +1,62 @@
+
+.. _file_src_ifcgeom_kernels_ifc_geomlibrary_api.h:
+
+File ifc_geomlibrary_api.h
+==========================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/ifc_geomlibrary_api.h``)
+----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_ifc_geomlibrary_api.h.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h`
+
+- :ref:`file_src_ifcgeom_kernels_cgal_cgal_kernel.h`
+
+- :ref:`file_src_ifcgeom_kernels_manifold_manifold_conversion_result.h`
+
+- :ref:`file_src_ifcgeom_kernels_manifold_manifold_kernel.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_clash_utils.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_opencascade_conversion_result.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_opencascade_kernel.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
+
+- :ref:`file_src_ifcgeom_kernels_passthrough_passthrough_conversion_result.h`
+
+- :ref:`file_src_ifcgeom_kernels_passthrough_passthrough_kernel.h`
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_ifc__geomlibrary__api_8h_1afe1221c190fc5b9584affb1c190d5306`
+

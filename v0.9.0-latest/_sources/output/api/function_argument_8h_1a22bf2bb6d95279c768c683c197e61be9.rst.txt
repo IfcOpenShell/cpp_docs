@@ -1,0 +1,14 @@
+.. _exhale_function_argument_8h_1a22bf2bb6d95279c768c683c197e61be9:
+
+Function ifcopenshell::valid_binary_string
+==========================================
+
+- Defined in :ref:`file_src_ifcparse_argument.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::valid_binary_string(const std::string&)
+   :project: IfcOpenShell

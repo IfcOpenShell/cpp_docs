@@ -1,0 +1,26 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_has_default_3_01_t_00_01decltype_07_07void_080a51f3e3d9944740bd889110438a33b1:
+
+Template Struct HasDefault< T, decltype((void) T::defaultvalue, 0) >
+====================================================================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_settings.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::true_type``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::settings_detail::HasDefault< T, decltype((void) T::defaultvalue, 0)>
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

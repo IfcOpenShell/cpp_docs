@@ -1,0 +1,14 @@
+.. _exhale_define_ifc__parse__api_8h_1afd7061c32ffd8d36834d3bf6a9a973bc:
+
+Define IFC_SCHEMA_API
+=====================
+
+- Defined in :ref:`file_src_ifcparse_ifc_parse_api.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: IFC_SCHEMA_API
+   :project: IfcOpenShell

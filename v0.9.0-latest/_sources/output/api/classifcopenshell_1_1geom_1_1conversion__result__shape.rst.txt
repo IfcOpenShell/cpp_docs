@@ -1,0 +1,30 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1conversion__result__shape:
+
+Class conversion_result_shape
+=============================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_result.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public ifcopenshell::geom::cgal_shape`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1cgal__shape`)
+- ``public ifcopenshell::geom::cgal_shape_half_space_decomposition`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1cgal__shape__half__space__decomposition`)
+- ``public ifcopenshell::geom::manifold_shape`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1manifold__shape`)
+- ``public ifcopenshell::geom::open_cascade_shape`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1open__cascade__shape`)
+- ``public ifcopenshell::geom::passthrough_shape`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1passthrough__shape`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::conversion_result_shape
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

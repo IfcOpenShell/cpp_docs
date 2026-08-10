@@ -1,0 +1,14 @@
+.. _exhale_function_boolean__utils_8h_1af5061f5193f1dfebaf2dcae950cc0357:
+
+Function ifcopenshell::geom::util::boolean_operation(const boolean_settings&, const TopoDS_Shape&, const NCollection_List<TopoDS_Shape>&, BOPAlgo_Operation, TopoDS_Shape&, double)
+===================================================================================================================================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::boolean_operation(const boolean_settings&, const TopoDS_Shape&, const NCollection_List<TopoDS_Shape>&, BOPAlgo_Operation, TopoDS_Shape&, double)
+   :project: IfcOpenShell

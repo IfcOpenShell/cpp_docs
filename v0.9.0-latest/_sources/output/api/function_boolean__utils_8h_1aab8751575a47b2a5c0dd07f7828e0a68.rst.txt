@@ -1,0 +1,14 @@
+.. _exhale_function_boolean__utils_8h_1aab8751575a47b2a5c0dd07f7828e0a68:
+
+Function ifcopenshell::geom::util::copy_operand(const NCollection_List<TopoDS_Shape>&, NCollection_List<TopoDS_Shape>&)
+=======================================================================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::copy_operand(const NCollection_List<TopoDS_Shape>&, NCollection_List<TopoDS_Shape>&)
+   :project: IfcOpenShell

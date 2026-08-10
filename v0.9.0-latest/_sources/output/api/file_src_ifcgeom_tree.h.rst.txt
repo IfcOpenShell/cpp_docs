@@ -1,0 +1,80 @@
+
+.. _file_src_ifcgeom_tree.h:
+
+File tree.h
+===========
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/tree.h``)
+-----------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_tree.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``array`` (:ref:`file_src_ifcparse_variant_array.h`)
+
+- ``cstdint``
+
+- ``element.h`` (:ref:`file_src_ifcgeom_element.h`)
+
+- ``memory``
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_tree.h`
+
+- :ref:`file_src_ifcgeom_tree_registry.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1clash`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1ray__intersection__result`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1tree`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_tree_8h_1a99e78a64daa273f605a74fba8b8a6eb2`
+
+- :ref:`exhale_typedef_tree_8h_1ab4c65bf04913c611e36380626cbbad89`
+

@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1spf__header:
+
+Class spf_header
+================
+
+- Defined in :ref:`file_src_ifcparse_spf_header.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::spf_header
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

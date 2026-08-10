@@ -1,0 +1,14 @@
+.. _exhale_function_hierarchy__helper_8h_1ad5113eb264c3525b87a6b49b8038b992:
+
+Template Function addStyleAssignment
+====================================
+
+- Defined in :ref:`file_src_ifcparse_hierarchy_helper.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: addStyleAssignment(hierarchy_helper<Schema>&, double, double, double, double)
+   :project: IfcOpenShell

@@ -1,0 +1,27 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1serializer:
+
+Class serializer
+================
+
+- Defined in :ref:`file_src_ifcgeom_serializer.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public ifcopenshell::geom::geometry_serializer`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1geometry__serializer`)
+- ``public xml_serializer`` (:ref:`exhale_class_classxml__serializer`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::serializer
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

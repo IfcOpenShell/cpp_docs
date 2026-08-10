@@ -1,0 +1,14 @@
+.. _exhale_function_boolean__utils_8h_1aba2ea295874d1d3ca3c732e8ca8cd653:
+
+Function ifcopenshell::geom::util::eliminate_narrow_operands
+============================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::eliminate_narrow_operands(double, const NCollection_List<TopoDS_Shape>&, NCollection_List<TopoDS_Shape>&, ifcopenshell::logger&)
+   :project: IfcOpenShell

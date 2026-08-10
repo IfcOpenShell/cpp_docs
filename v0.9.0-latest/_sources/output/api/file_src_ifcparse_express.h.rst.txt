@@ -1,0 +1,123 @@
+
+.. _file_src_ifcparse_express.h:
+
+File express.h
+==============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/express.h``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_express.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``argument.h`` (:ref:`file_src_ifcparse_argument.h`)
+
+- ``atomic``
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``memory``
+
+- ``schema.h`` (:ref:`file_src_ifcparse_schema.h`)
+
+- ``utils.h`` (:ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_abstract_mapping.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_wire_builder.h`
+
+- :ref:`file_src_ifcgeom_serialization_serialization.h`
+
+- :ref:`file_src_ifcgeom_taxonomy.h`
+
+- :ref:`file_src_ifcparse_instance_data.h`
+
+- :ref:`file_src_ifcparse_logger.h`
+
+- :ref:`file_src_ifcparse_parse.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_boost`
+
+- :ref:`namespace_express`
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__impl`
+
+- :ref:`namespace_std`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structboost_1_1hash_3_01express_1_1base_01_4`
+
+- :ref:`exhale_struct_structboost_1_1hash_3_01express_1_1entity_01_4`
+
+- :ref:`exhale_struct_structstd_1_1hash_3_01express_1_1base_01_4`
+
+- :ref:`exhale_struct_structstd_1_1hash_3_01express_1_1entity_01_4`
+
+- :ref:`exhale_class_classexpress_1_1base`
+
+- :ref:`exhale_class_classexpress_1_1declared__type`
+
+- :ref:`exhale_class_classexpress_1_1entity`
+
+- :ref:`exhale_class_classexpress_1_1select`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_express_8h_1a2f66f68cc2f6bad5405797e1fee4b7f9`
+
+- :ref:`exhale_function_express_8h_1a064e15e13259ab8d693e2673c06d69f7`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_express_8h_1a5e70d3f5847d8026278a89b4d5b1d258`
+
+- :ref:`exhale_typedef_express_8h_1ad90cd297559532dc2c12bd4d0429cd98`
+
+- :ref:`exhale_typedef_express_8h_1aced390c7b53aba7a89d9739a57337991`
+
+- :ref:`exhale_typedef_express_8h_1a5e376b340b3cca2fd7384bda7ef3bd5d`
+
+- :ref:`exhale_typedef_express_8h_1a2b86c5e65f39db2354a6bc1b2d265e52`
+
+- :ref:`exhale_typedef_express_8h_1a501ae54d6c3147f10f69892a9e08d5a9`
+

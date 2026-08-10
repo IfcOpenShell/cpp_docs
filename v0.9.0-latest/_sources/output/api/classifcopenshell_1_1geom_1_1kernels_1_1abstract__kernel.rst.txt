@@ -1,0 +1,30 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1abstract__kernel:
+
+Class abstract_kernel
+=====================
+
+- Defined in :ref:`file_src_ifcgeom_abstract_kernel.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public ifcopenshell::geom::kernels::cgal_kernel`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1cgal__kernel`)
+- ``public ifcopenshell::geom::kernels::hybrid_kernel`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1hybrid__kernel`)
+- ``public ifcopenshell::geom::kernels::manifold_kernel`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1manifold__kernel`)
+- ``public ifcopenshell::geom::kernels::passthrough_kernel`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1passthrough__kernel`)
+- ``public ifcopenshell::geom::open_cascade_kernel`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1open__cascade__kernel`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::kernels::abstract_kernel
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,14 @@
+.. _exhale_function_wire__utils_8h_1ae7df1b018f7a4e0d553957230400a8d1:
+
+Function ifcopenshell::geom::util::select_largest
+=================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::select_largest(const NCollection_List<TopoDS_Shape>&, TopoDS_Shape&)
+   :project: IfcOpenShell

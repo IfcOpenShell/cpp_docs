@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1ray__intersection__result:
+
+Struct ray_intersection_result
+==============================
+
+- Defined in :ref:`file_src_ifcgeom_tree.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::ray_intersection_result
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

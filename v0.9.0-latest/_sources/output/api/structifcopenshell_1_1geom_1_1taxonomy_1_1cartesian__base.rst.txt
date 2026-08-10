@@ -1,0 +1,27 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1cartesian__base:
+
+Template Struct cartesian_base
+==============================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Types
+**********
+
+- ``public ifcopenshell::geom::taxonomy::item`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1item`)
+- ``public ifcopenshell::geom::taxonomy::eigen_base< Eigen::Vector3d >`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1eigen__base`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::taxonomy::cartesian_base
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

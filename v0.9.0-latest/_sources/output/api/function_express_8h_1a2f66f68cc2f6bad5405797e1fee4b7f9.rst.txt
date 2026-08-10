@@ -1,0 +1,14 @@
+.. _exhale_function_express_8h_1a2f66f68cc2f6bad5405797e1fee4b7f9:
+
+Template Function cast_vector
+=============================
+
+- Defined in :ref:`file_src_ifcparse_express.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: cast_vector(const std::vector<U>&)
+   :project: IfcOpenShell

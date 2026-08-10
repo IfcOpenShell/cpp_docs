@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1opencascade__tree:
+
+Class opencascade_tree
+======================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_tree.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::impl::tree< express::entity >`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1tree`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::opencascade_tree
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

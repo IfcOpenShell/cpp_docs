@@ -1,0 +1,26 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_has_default:
+
+Template Struct HasDefault
+==========================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_settings.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::false_type``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::settings_detail::HasDefault
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

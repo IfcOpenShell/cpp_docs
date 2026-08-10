@@ -1,0 +1,23 @@
+.. _exhale_struct_structifcopenshell_1_1schema__registry_1_1entry:
+
+Struct schema_registry::entry
+=============================
+
+- Defined in :ref:`file_src_ifcparse_schema.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classifcopenshell_1_1schema__registry`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::schema_registry::entry
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

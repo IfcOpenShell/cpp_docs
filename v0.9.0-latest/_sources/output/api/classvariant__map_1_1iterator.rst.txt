@@ -1,0 +1,23 @@
+.. _exhale_class_classvariant__map_1_1iterator:
+
+Class variant_map::iterator
+===========================
+
+- Defined in :ref:`file_src_ifcparse_map_variant.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_classvariant__map`.
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: variant_map::iterator
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

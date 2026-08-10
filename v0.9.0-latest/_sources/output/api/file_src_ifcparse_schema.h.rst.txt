@@ -1,0 +1,136 @@
+
+.. _file_src_ifcparse_schema.h:
+
+File schema.h
+=============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/schema.h``)
+--------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_schema.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../plugin/plugin.h``
+
+- ``algorithm``
+
+- ``boost/algorithm/string.hpp``
+
+- ``cctype``
+
+- ``cstdint``
+
+- ``exception.h`` (:ref:`file_src_ifcparse_exception.h`)
+
+- ``iterator`` (:ref:`file_src_ifcgeom_iterator.h`)
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``memory``
+
+- ``mutex``
+
+- ``optional``
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_argument_type.h`
+
+- :ref:`file_src_ifcparse_express.h`
+
+- :ref:`file_src_ifcparse_file.h`
+
+- :ref:`file_src_ifcparse_instance_data.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1schema__registry_1_1entry`
+
+- :ref:`exhale_class_classifcopenshell_1_1aggregation__type`
+
+- :ref:`exhale_class_classifcopenshell_1_1attribute`
+
+- :ref:`exhale_class_classifcopenshell_1_1declaration`
+
+- :ref:`exhale_class_classifcopenshell_1_1entity`
+
+- :ref:`exhale_class_classifcopenshell_1_1enumeration__type`
+
+- :ref:`exhale_class_classifcopenshell_1_1inverse__attribute`
+
+- :ref:`exhale_class_classifcopenshell_1_1named__type`
+
+- :ref:`exhale_class_classifcopenshell_1_1parameter__type`
+
+- :ref:`exhale_class_classifcopenshell_1_1schema__definition`
+
+- :ref:`exhale_class_classifcopenshell_1_1schema__definition_1_1declaration__by__index__sort`
+
+- :ref:`exhale_class_classifcopenshell_1_1schema__definition_1_1declaration__by__name__cmp`
+
+- :ref:`exhale_class_classifcopenshell_1_1schema__registry`
+
+- :ref:`exhale_class_classifcopenshell_1_1select__type`
+
+- :ref:`exhale_class_classifcopenshell_1_1simple__type`
+
+- :ref:`exhale_class_classifcopenshell_1_1type__declaration`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_schema_8h_1a83885731044ffa1c50dd51eb47dc447d`
+
+- :ref:`exhale_function_schema_8h_1a73ec47c8a22edaee429582ec57fc5f90`
+
+- :ref:`exhale_function_schema_8h_1a9cafababeb3757258a77db47762bc341`
+
+- :ref:`exhale_function_schema_8h_1a4f9bdfdd794137fe1a97d2b66ae4e494`
+
+- :ref:`exhale_function_schema_8h_1a063074be4ef30cde3459a04cf6e96178`
+
+- :ref:`exhale_function_schema_8h_1a50b5dff7be007b8c7ac1560b8131c9c2`
+
+- :ref:`exhale_function_schema_8h_1a1d66050254b96369e12a845c421b0482`
+
+- :ref:`exhale_function_schema_8h_1aa4ad835a577ee6c09d8dd0eb5eeafa72`
+
+- :ref:`exhale_function_schema_8h_1ac80feb8936574c9a4b430852a455e27e`
+

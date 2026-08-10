@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1a330eda5b4c339c371bbbfdc102fd7fb0:
+
+Function ifcopenshell::geom::util::combine_offset_and_rotation
+==============================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::combine_offset_and_rotation(const gp_Vec&, const gp_Quaternion&)
+   :project: IfcOpenShell

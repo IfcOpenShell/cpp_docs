@@ -1,0 +1,14 @@
+.. _exhale_typedef_taxonomy_8h_1ad302ec4da0b73bcee458726323b13ede:
+
+Typedef ifcopenshell::geom::taxonomy::impl::surfaces_tuple
+==========================================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::taxonomy::impl::surfaces_tuple
+   :project: IfcOpenShell

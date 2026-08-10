@@ -1,0 +1,14 @@
+.. _exhale_function_conversion__settings_8h_1a48649732f283fd2319c48ddac3f55ebe:
+
+Function ifcopenshell::geom::settings_detail::operator>>(std::istream&, TriangulationMethod&)
+=============================================================================================
+
+.. did not find file this was defined in
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::settings_detail::operator>>(std::istream&, TriangulationMethod&)
+   :project: IfcOpenShell

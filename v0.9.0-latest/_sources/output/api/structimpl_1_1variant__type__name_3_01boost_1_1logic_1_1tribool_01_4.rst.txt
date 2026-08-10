@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1variant__type__name_3_01boost_1_1logic_1_1tribool_01_4:
+
+Template Struct variant_type_name< boost::logic::tribool >
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_instance_data.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::variant_type_name< boost::logic::tribool >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

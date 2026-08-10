@@ -1,0 +1,119 @@
+
+.. _file_src_ifcparse_logger.h:
+
+File logger.h
+=============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/logger.h``)
+--------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_logger.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstddef``
+
+- ``cstdint``
+
+- ``exception`` (:ref:`file_src_ifcparse_exception.h`)
+
+- ``express.h`` (:ref:`file_src_ifcparse_express.h`)
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``mutex``
+
+- ``optional``
+
+- ``sstream``
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_abstract_kernel.h`
+
+- :ref:`file_src_ifcgeom_element.h`
+
+- :ref:`file_src_ifcgeom_geometry_serializer.h`
+
+- :ref:`file_src_ifcgeom_kernels_cgal_cgal_kernel.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
+
+- :ref:`file_src_ifcgeom_mapping_mapping.h`
+
+- :ref:`file_src_ifcgeom_taxonomy.h`
+
+- :ref:`file_src_ifcparse_alignment_helper.h`
+
+- :ref:`file_src_ifcparse_character_decoder.h`
+
+- :ref:`file_src_ifcparse_global_id.h`
+
+- :ref:`file_src_ifcparse_hierarchy_helper.h`
+
+- :ref:`file_src_ifcparse_storage.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__detail`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1detail_1_1performance__scope`
+
+- :ref:`exhale_class_classifcopenshell_1_1log__message`
+
+- :ref:`exhale_class_classifcopenshell_1_1logger`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_logger_8h_1ac328ce96a654c9d181bdd1a138038b27`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_logger_8h_1a201de63672a6456f8fba9d9e4dc5eaf5`
+
+- :ref:`exhale_define_logger_8h_1a0cbd6b3be5098803d58885b9a95fd4da`
+
+- :ref:`exhale_define_logger_8h_1a5838bc4dee627a21157427703e89c1da`
+

@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1serializers_1_1document__serializer__context:
+
+Struct document_serializer_context
+==================================
+
+- Defined in :ref:`file_src_serializers_document_serializer_plugin.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::serializers::document_serializer_context
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,28 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1filter:
+
+Struct filter
+=============
+
+- Defined in :ref:`file_src_ifcgeom_filter.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public ifcopenshell::geom::entity_filter`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1entity__filter`)
+- ``public ifcopenshell::geom::instance_id_filter`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1instance__id__filter`)
+- ``public ifcopenshell::geom::wildcard_filter`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1wildcard__filter`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::filter
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

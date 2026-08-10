@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1trees_1_1opencascade__tree__backends_1_1trianglebvh__tree:
+
+Class trianglebvh_tree
+======================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_tree_backends.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::trees::abstract_tree`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1trees_1_1abstract__tree`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::trees::opencascade_tree_backends::trianglebvh_tree
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

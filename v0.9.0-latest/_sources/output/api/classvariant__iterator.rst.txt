@@ -1,0 +1,17 @@
+.. _exhale_class_classvariant__iterator:
+
+Template Class variant_iterator
+===============================
+
+- Defined in :ref:`file_src_ifcparse_storage.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: variant_iterator
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1convex__subcomponent__visitor:
+
+Template Class convex_subcomponent_visitor
+==========================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public boost::default_bfs_visitor``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::convex_subcomponent_visitor
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

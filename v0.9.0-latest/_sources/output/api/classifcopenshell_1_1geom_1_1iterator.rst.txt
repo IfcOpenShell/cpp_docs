@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1iterator:
+
+Class iterator
+==============
+
+- Defined in :ref:`file_src_ifcgeom_iterator.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::iterator
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

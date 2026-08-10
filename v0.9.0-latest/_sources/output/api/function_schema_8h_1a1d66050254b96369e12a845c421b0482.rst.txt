@@ -1,0 +1,14 @@
+.. _exhale_function_schema_8h_1a1d66050254b96369e12a845c421b0482:
+
+Function ifcopenshell::schema_plugin_metadata
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_schema.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::schema_plugin_metadata(const std::string&)
+   :project: IfcOpenShell

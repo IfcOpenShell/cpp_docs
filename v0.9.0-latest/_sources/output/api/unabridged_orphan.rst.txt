@@ -1,0 +1,552 @@
+:orphan:
+
+
+Full API
+========
+
+Directories
+***********
+
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_ifcgeom.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_ifcgeom_kernels.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_ifcgeom_kernels_cgal.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_ifcgeom_kernels_manifold.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_ifcgeom_kernels_opencascade.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_ifcgeom_kernels_passthrough.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_ifcgeom_mapping.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_ifcgeom_serialization.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_ifcparse.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_serializers.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_runner_work_IfcOpenShell_IfcOpenShell_src_serializers_schema_dependent.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir_src.rst
+
+Files
+*****
+
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_abstract_kernel.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_abstract_mapping.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_alignment_helper.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_argument.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_argument_type.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_opencascade_base_utils.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_opencascade_boolean_utils.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_cgal_cgal_kernel.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_character_decoder.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_opencascade_clash_utils.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_collada_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_conversion_result.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_conversion_settings.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_converter.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_document_serializer_plugin.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_element.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_empty.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_exception.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_express.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_opencascade_face_definition.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_file.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_file_open_status.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_file_reader.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_filter.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_function_item_evaluator.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_geometry_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_geometry_serializer_plugin.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_global_id.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_gltf_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_hierarchy_helper.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_hybrid_kernel.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_ifc_geom_api.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_ifc_geomlibrary_api.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_serialization_ifc_geomserialization_api.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_ifc_parse_api.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_iges_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_infra_sweep_helper.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_instance_data.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_iterator.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_json_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_schema_dependent_json_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernel_plugin.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernel_registry.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_opencascade_layerset.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_logger.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_macros.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_manifold_manifold_conversion_result.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_manifold_manifold_kernel.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_map_transformer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_map_variant.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_mapping_mapping.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_mapping_plugin.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_open_cascade_based_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_opencascade_opencascade_conversion_result.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_serialization_opencascade_geometry_ifc_writer_plugin.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_opencascade_opencascade_kernel.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_parse.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_passthrough_passthrough_conversion_result.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_passthrough_passthrough_kernel.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_profile_helper.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_render_styles.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_representation.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_rocks_db_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_rocksdb_map_adapter.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_rocksdb_set_view.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_schema.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_serialization_serialization.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_serializers_api.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_set_to_map_transformer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_si_prefix.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_spf_header.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_step_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_storage.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_svg_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_opencascade_sweep_utils.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_taxonomy.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_opencascade_tree.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_tree.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_opencascade_tree_backends.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_tree_plugin.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_tree_registry.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_ttl_wkt_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_usd_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_util.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_utils.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcparse_variant_array.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_wavefront_obj_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_opencascade_wire_builder.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_opencascade_wire_utils.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_schema_dependent_xml_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_serializers_xml_serializer.h.rst
+
+Pages
+*****
+
+
+.. toctree::
+   :maxdepth: 5
+
+   page_todo.rst

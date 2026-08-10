@@ -1,0 +1,14 @@
+.. _exhale_function_conversion__settings_8h_1aff754aa595c49bb68edccdd5c11d2d9f:
+
+Function ifcopenshell::geom::settings_detail::operator>>(std::istream&, OutputDimensionalityTypes&)
+===================================================================================================
+
+.. did not find file this was defined in
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::settings_detail::operator>>(std::istream&, OutputDimensionalityTypes&)
+   :project: IfcOpenShell

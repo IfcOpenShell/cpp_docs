@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1paged__file__impl:
+
+Class paged_file_impl
+=====================
+
+- Defined in :ref:`file_src_ifcparse_file_reader.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::paged_file_impl
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

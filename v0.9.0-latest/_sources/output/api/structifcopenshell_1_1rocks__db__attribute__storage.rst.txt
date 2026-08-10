@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1rocks__db__attribute__storage:
+
+Struct rocks_db_attribute_storage
+=================================
+
+- Defined in :ref:`file_src_ifcparse_instance_data.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::rocks_db_attribute_storage
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,71 @@
+
+.. _file_src_ifcgeom_render_styles.h:
+
+File render_styles.h
+====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/render_styles.h``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_render_styles.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/ifc_geom_api.h``
+
+- ``../ifcgeom/taxonomy.h``
+
+- ``boost/algorithm/string/case_conv.hpp``
+
+- ``boost/algorithm/string/replace.hpp``
+
+- ``boost/optional.hpp``
+
+- ``memory``
+
+- ``sstream``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_conversion_result.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_render__styles_8h_1a643907d808211d57816ed1feaa6e67d1`
+
+- :ref:`exhale_function_render__styles_8h_1adc345e2134209e7184e55da8bc3b17e1`
+
+- :ref:`exhale_function_render__styles_8h_1a09d9f81553d3c777c4acbc5a560828df`
+

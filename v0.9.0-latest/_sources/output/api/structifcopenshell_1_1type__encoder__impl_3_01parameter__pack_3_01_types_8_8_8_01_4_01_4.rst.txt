@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1type__encoder__impl_3_01parameter__pack_3_01_types_8_8_8_01_4_01_4:
+
+Template Struct type_encoder_impl< parameter_pack< Types... > >
+===============================================================
+
+- Defined in :ref:`file_src_ifcparse_instance_data.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::type_encoder_impl< parameter_pack< Types... > >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

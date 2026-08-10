@@ -1,0 +1,78 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_wire_builder.h:
+
+File wire_builder.h
+===================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/wire_builder.h``)
+---------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_wire_builder.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../../ifcparse/express.h``
+
+- ``BRepBuilderAPI_MakeWire.hxx``
+
+- ``Extrema_ExtPC.hxx``
+
+- ``Geom_Curve.hxx``
+
+- ``TopoDS_Edge.hxx``
+
+- ``TopoDS_Vertex.hxx``
+
+- ``TopoDS_Wire.hxx``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__util`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1util_1_1wire__builder`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_wire__builder_8h_1a888c6adae340f919cacd94d3a7883dbd`
+
+- :ref:`exhale_function_wire__builder_8h_1afdb2d484da5c9bd9f723167da191c6f6`
+
+- :ref:`exhale_function_wire__builder_8h_1afa13445918b627b3b7bdf02d99e7a7bd`
+
+- :ref:`exhale_function_wire__builder_8h_1a0f75813b1dcdfd7f176479f733456361`
+
+- :ref:`exhale_function_wire__builder_8h_1a6be5a932e5d79683aa43da2094440d3a`
+

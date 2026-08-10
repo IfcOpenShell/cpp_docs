@@ -1,0 +1,26 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_use_element_step_ids:
+
+Struct UseElementStepIds
+========================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_settings.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::settings_detail::SettingBase< UseElementStepIds, bool >`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_setting_base`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::settings_detail::UseElementStepIds
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,14 @@
+.. _exhale_typedef_tree_8h_1ab4c65bf04913c611e36380626cbbad89:
+
+Typedef ifcopenshell::geom::tree_point
+======================================
+
+- Defined in :ref:`file_src_ifcgeom_tree.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::tree_point
+   :project: IfcOpenShell

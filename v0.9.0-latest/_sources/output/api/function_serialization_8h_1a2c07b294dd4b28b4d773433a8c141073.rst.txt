@@ -1,0 +1,14 @@
+.. _exhale_function_serialization_8h_1a2c07b294dd4b28b4d773433a8c141073:
+
+Function ifcopenshell::geom::tesselate(ifcopenshell::file&, const TopoDS_Shape&, double)
+========================================================================================
+
+- Defined in :ref:`file_src_ifcgeom_serialization_serialization.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::tesselate(ifcopenshell::file&, const TopoDS_Shape&, double)
+   :project: IfcOpenShell

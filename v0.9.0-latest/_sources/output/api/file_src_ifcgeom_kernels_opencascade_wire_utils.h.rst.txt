@@ -1,0 +1,111 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_wire_utils.h:
+
+File wire_utils.h
+=================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/wire_utils.h``)
+-------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_wire_utils.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifc_geomlibrary_api.h``
+
+- ``Geom_Curve.hxx``
+
+- ``NCollection_List.hxx``
+
+- ``NCollection_Sequence.hxx``
+
+- ``TopoDS_Compound.hxx``
+
+- ``TopoDS_Face.hxx``
+
+- ``TopoDS_Shape.hxx``
+
+- ``TopoDS_Wire.hxx``
+
+- ``gp_Pln.hxx``
+
+- ``gp_Pnt.hxx``
+
+- ``vector``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__util`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1util_1_1wire__tolerance__settings`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_wire__utils_8h_1a3dea9e0675bded3bd94d4e25f026ebaa`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_wire__utils_8h_1a62cf3a76e2f7c3d907cf2ded159a28b0`
+
+- :ref:`exhale_function_wire__utils_8h_1a70112aea84c86077e6a0b25d01dca00b`
+
+- :ref:`exhale_function_wire__utils_8h_1aac4381b1b61a14442ffc2048d872d739`
+
+- :ref:`exhale_function_wire__utils_8h_1af2e37389330f103b1c326d741475756e`
+
+- :ref:`exhale_function_wire__utils_8h_1a608081b5da92e52135633f68ae281e96`
+
+- :ref:`exhale_function_wire__utils_8h_1ac903ecb7737e43d17600ff61d79853c1`
+
+- :ref:`exhale_function_wire__utils_8h_1abe58c02923c99c360d3401dcd4418c99`
+
+- :ref:`exhale_function_wire__utils_8h_1a2a2030f294ded8cb1cbb798522d2dea2`
+
+- :ref:`exhale_function_wire__utils_8h_1ae9217242ec5a1d23c838f3e77954c08c`
+
+- :ref:`exhale_function_wire__utils_8h_1ae7df1b018f7a4e0d553957230400a8d1`
+
+- :ref:`exhale_function_wire__utils_8h_1aef8bf4ec2b06ce293f12a455abf7ba3d`
+
+- :ref:`exhale_function_wire__utils_8h_1a4fac8cf21dff02e1967b0ebb9f7c7a1c`
+
+- :ref:`exhale_function_wire__utils_8h_1a8868e39ffcdde51af4a4d1ce7c83e860`
+
+- :ref:`exhale_function_wire__utils_8h_1a191421cf3944eaa53a9892d06284bc67`
+

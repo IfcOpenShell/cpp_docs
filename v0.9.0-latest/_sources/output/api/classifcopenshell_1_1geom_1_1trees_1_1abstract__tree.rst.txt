@@ -1,0 +1,27 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1trees_1_1abstract__tree:
+
+Class abstract_tree
+===================
+
+- Defined in :ref:`file_src_ifcgeom_tree_registry.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public ifcopenshell::geom::trees::opencascade_tree_backends::brep_tree`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1trees_1_1opencascade__tree__backends_1_1brep__tree`)
+- ``public ifcopenshell::geom::trees::opencascade_tree_backends::trianglebvh_tree`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1trees_1_1opencascade__tree__backends_1_1trianglebvh__tree`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::trees::abstract_tree
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

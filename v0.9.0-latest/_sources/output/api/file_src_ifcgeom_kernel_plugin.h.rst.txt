@@ -1,0 +1,68 @@
+
+.. _file_src_ifcgeom_kernel_plugin.h:
+
+File kernel_plugin.h
+====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernel_plugin.h``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernel_plugin.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/kernel_registry.h``
+
+- ``filesystem``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__kernels`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_kernel__plugin_8h_1a0340610dfa19ff6cd22d452f1bb64406`
+
+- :ref:`exhale_function_kernel__plugin_8h_1ad474116e0b2e775b923195ac45445045`
+
+- :ref:`exhale_function_kernel__plugin_8h_1a722645a71eb703324ab562d044e9d8e6`
+
+- :ref:`exhale_function_kernel__plugin_8h_1a1999fbe8cc261ad0479217aeefe625fd`
+
+- :ref:`exhale_function_kernel__plugin_8h_1a7609986144656a3109c7f77a1d0d3bdc`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_kernel__plugin_8h_1a3c22ff790fb015f7acf9c62dfc508e98`
+

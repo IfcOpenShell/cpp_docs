@@ -1,0 +1,57 @@
+
+.. _file_src_ifcgeom_kernels_manifold_manifold_kernel.h:
+
+File manifold_kernel.h
+======================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/manifold/manifold_kernel.h``)
+---------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_manifold_manifold_kernel.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../../ifcgeom/abstract_kernel.h``
+
+- ``../../../ifcgeom/kernels/ifc_geomlibrary_api.h``
+
+- ``../../../ifcgeom/kernels/manifold/manifold_conversion_result.h``
+
+- ``manifold/manifold.h``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__kernels`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1kernels_1_1manifold__kernel`
+

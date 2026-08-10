@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1settings__container:
+
+Template Class settings_container
+=================================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_settings.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::settings_container
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

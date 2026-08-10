@@ -1,0 +1,14 @@
+.. _exhale_function_schema_8h_1a73ec47c8a22edaee429582ec57fc5f90:
+
+Function ifcopenshell::load_schema_plugins
+==========================================
+
+- Defined in :ref:`file_src_ifcparse_schema.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::load_schema_plugins(schema_registry&)
+   :project: IfcOpenShell

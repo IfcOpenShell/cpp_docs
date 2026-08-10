@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Template Class rocksdb_map_adapter &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Class rocksdb_map_adapter::iterator" href="classrocksdb__map__adapter_1_1iterator.html" />
+    <link rel="prev" title="Class WriteOptions" href="classrocksdb_1_1_write_options.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-rocksdb-map-adapter">
+<span id="exhale-class-classrocksdb-map-adapter"></span><h1>Template Class rocksdb_map_adapter<a class="headerlink" href="#template-class-rocksdb-map-adapter" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_src_ifcparse_rocksdb_map_adapter.h.html#file-src-ifcparse-rocksdb-map-adapter-h"><span class="std std-ref">File rocksdb_map_adapter.h</span></a></p></li>
+</ul>
+<section id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Link to this heading">¶</a></h2>
+<section id="nested-types">
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="classrocksdb__map__adapter_1_1iterator.html#exhale-class-classrocksdb-map-adapter-1-1iterator"><span class="std std-ref">Class rocksdb_map_adapter::iterator</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading">¶</a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I000E19rocksdb_map_adapter">
+<span id="_CPPv3I000E19rocksdb_map_adapter"></span><span id="_CPPv2I000E19rocksdb_map_adapter"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">KeyT</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MappedT</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Codec</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="struct_default_codec.html#_CPPv4I0E12DefaultCodec" title="DefaultCodec"><span class="n"><span class="pre">DefaultCodec</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I000E19rocksdb_map_adapter" title="rocksdb_map_adapter::MappedT"><span class="n"><span class="pre">MappedT</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classrocksdb__map__adapter"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rocksdb_map_adapter</span></span></span><a class="headerlink" href="#_CPPv4I000E19rocksdb_map_adapter" title="Link to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter8key_typeE">
+<span id="_CPPv3N19rocksdb_map_adapter8key_typeE"></span><span id="_CPPv2N19rocksdb_map_adapter8key_typeE"></span><span class="target" id="classrocksdb__map__adapter_1a94879e90b3bd89f8823e7b99ff43c249"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">key_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I000E19rocksdb_map_adapter" title="rocksdb_map_adapter::KeyT"><span class="n"><span class="pre">KeyT</span></span></a><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter8key_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter11mapped_typeE">
+<span id="_CPPv3N19rocksdb_map_adapter11mapped_typeE"></span><span id="_CPPv2N19rocksdb_map_adapter11mapped_typeE"></span><span class="target" id="classrocksdb__map__adapter_1aed2750a13cb17e6bce86bffaeb4cd59f"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mapped_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I000E19rocksdb_map_adapter" title="rocksdb_map_adapter::MappedT"><span class="n"><span class="pre">MappedT</span></span></a><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter11mapped_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter10value_typeE">
+<span id="_CPPv3N19rocksdb_map_adapter10value_typeE"></span><span id="_CPPv2N19rocksdb_map_adapter10value_typeE"></span><span class="target" id="classrocksdb__map__adapter_1a05f53a704a131f8acea4d1aa15fb271c"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">value_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">pair</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8key_typeE" title="rocksdb_map_adapter::key_type"><span class="n"><span class="pre">key_type</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter11mapped_typeE" title="rocksdb_map_adapter::mapped_type"><span class="n"><span class="pre">mapped_type</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter10value_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter19rocksdb_map_adapterEPN7rocksdb2DBERKNSt6stringE">
+<span id="_CPPv3N19rocksdb_map_adapter19rocksdb_map_adapterEPN7rocksdb2DBERKNSt6stringE"></span><span id="_CPPv2N19rocksdb_map_adapter19rocksdb_map_adapterEPN7rocksdb2DBERKNSt6stringE"></span><span id="rocksdb_map_adapter::rocksdb_map_adapter__rocksdb::DBP.ssCR"></span><span class="target" id="classrocksdb__map__adapter_1a3b30943b008423d9cb640d586fa049f6"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rocksdb_map_adapter</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">rocksdb</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classrocksdb_1_1_d_b.html#_CPPv4N7rocksdb2DBE" title="rocksdb::DB"><span class="n"><span class="pre">DB</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">db</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">prefix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter19rocksdb_map_adapterEPN7rocksdb2DBERKNSt6stringE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19rocksdb_map_adapter5beginEv">
+<span id="_CPPv3NK19rocksdb_map_adapter5beginEv"></span><span id="_CPPv2NK19rocksdb_map_adapter5beginEv"></span><span id="rocksdb_map_adapter::beginC"></span><span class="target" id="classrocksdb__map__adapter_1aa44ce8e26c6789ee9ef65766e1fef60d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iteratorE" title="rocksdb_map_adapter::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">begin</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19rocksdb_map_adapter5beginEv" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19rocksdb_map_adapter3endEv">
+<span id="_CPPv3NK19rocksdb_map_adapter3endEv"></span><span id="_CPPv2NK19rocksdb_map_adapter3endEv"></span><span id="rocksdb_map_adapter::endC"></span><span class="target" id="classrocksdb__map__adapter_1a40e9ced4782517aaae8981419ad4d522"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iteratorE" title="rocksdb_map_adapter::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">end</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19rocksdb_map_adapter3endEv" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19rocksdb_map_adapter4findERK8key_type">
+<span id="_CPPv3NK19rocksdb_map_adapter4findERK8key_type"></span><span id="_CPPv2NK19rocksdb_map_adapter4findERK8key_type"></span><span id="rocksdb_map_adapter::find__key_typeCRC"></span><span class="target" id="classrocksdb__map__adapter_1a84b4ae66cf0096d6bf2272ebb2c174ed"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iteratorE" title="rocksdb_map_adapter::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">find</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8key_typeE" title="rocksdb_map_adapter::key_type"><span class="n"><span class="pre">key_type</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">key</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19rocksdb_map_adapter4findERK8key_type" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter5eraseERK8key_type">
+<span id="_CPPv3N19rocksdb_map_adapter5eraseERK8key_type"></span><span id="_CPPv2N19rocksdb_map_adapter5eraseERK8key_type"></span><span id="rocksdb_map_adapter::erase__key_typeCR"></span><span class="target" id="classrocksdb__map__adapter_1af191a38b62afb38c6264e33ab8df0f8c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">erase</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8key_typeE" title="rocksdb_map_adapter::key_type"><span class="n"><span class="pre">key_type</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter5eraseERK8key_type" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter6insertERK10value_type">
+<span id="_CPPv3N19rocksdb_map_adapter6insertERK10value_type"></span><span id="_CPPv2N19rocksdb_map_adapter6insertERK10value_type"></span><span id="rocksdb_map_adapter::insert__value_typeCR"></span><span class="target" id="classrocksdb__map__adapter_1a4da63556ac58ee83863236e2abf8b851"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">pair</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iteratorE" title="rocksdb_map_adapter::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">insert</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter10value_typeE" title="rocksdb_map_adapter::value_type"><span class="n"><span class="pre">value_type</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter6insertERK10value_type" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter8iteratorE">
+<span id="_CPPv3N19rocksdb_map_adapter8iteratorE"></span><span id="_CPPv2N19rocksdb_map_adapter8iteratorE"></span><span id="rocksdb_map_adapter::iterator"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">iterator</span></span></span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter8iteratorE" title="Link to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter8iterator10value_typeE">
+<span id="_CPPv3N19rocksdb_map_adapter8iterator10value_typeE"></span><span id="_CPPv2N19rocksdb_map_adapter8iterator10value_typeE"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1af62a49be8540c8a99dc69a84a570886f"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">value_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">pair</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8key_typeE" title="rocksdb_map_adapter::key_type"><span class="n"><span class="pre">key_type</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter11mapped_typeE" title="rocksdb_map_adapter::mapped_type"><span class="n"><span class="pre">mapped_type</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter8iterator10value_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter8iterator15difference_typeE">
+<span id="_CPPv3N19rocksdb_map_adapter8iterator15difference_typeE"></span><span id="_CPPv2N19rocksdb_map_adapter8iterator15difference_typeE"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1a5efbe7031e96f0a71ff0530b7f770ed1"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">difference_type</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ptrdiff_t</span></span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter8iterator15difference_typeE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter8iterator17iterator_categoryE">
+<span id="_CPPv3N19rocksdb_map_adapter8iterator17iterator_categoryE"></span><span id="_CPPv2N19rocksdb_map_adapter8iterator17iterator_categoryE"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1aafd6319ff262e8b4f49955c9fdde9439"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">iterator_category</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">forward_iterator_tag</span></span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter8iterator17iterator_categoryE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter8iterator7pointerE">
+<span id="_CPPv3N19rocksdb_map_adapter8iterator7pointerE"></span><span id="_CPPv2N19rocksdb_map_adapter8iterator7pointerE"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1a3268046126c50bb9db058e31d9353670"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pointer</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iterator10value_typeE" title="rocksdb_map_adapter::iterator::value_type"><span class="n"><span class="pre">value_type</span></span></a><span class="p"><span class="pre">*</span></span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter8iterator7pointerE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter8iterator9referenceE">
+<span id="_CPPv3N19rocksdb_map_adapter8iterator9referenceE"></span><span id="_CPPv2N19rocksdb_map_adapter8iterator9referenceE"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1a2ed72863a8a133f75df7c89ce93a9ede"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reference</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iterator10value_typeE" title="rocksdb_map_adapter::iterator::value_type"><span class="n"><span class="pre">value_type</span></span></a><span class="p"><span class="pre">&amp;</span></span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter8iterator9referenceE" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter8iterator8iteratorEv">
+<span id="_CPPv3N19rocksdb_map_adapter8iterator8iteratorEv"></span><span id="_CPPv2N19rocksdb_map_adapter8iterator8iteratorEv"></span><span id="rocksdb_map_adapter::iterator::iterator"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1a775e346ee7fc838a4474a36875dd03be"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">iterator</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter8iterator8iteratorEv" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter8iterator8iteratorEPN7rocksdb2DBERKNSt6stringENSt10unique_ptrIN7rocksdb8IteratorEEE5Codec">
+<span id="_CPPv3N19rocksdb_map_adapter8iterator8iteratorEPN7rocksdb2DBERKNSt6stringENSt10unique_ptrIN7rocksdb8IteratorEEE5Codec"></span><span id="_CPPv2N19rocksdb_map_adapter8iterator8iteratorEPN7rocksdb2DBERKNSt6stringENSt10unique_ptrIN7rocksdb8IteratorEEE5Codec"></span><span id="rocksdb_map_adapter::iterator::iterator__rocksdb::DBP.ssCR.std::unique_ptr:rocksdb::Iterator:.Codec"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1ae2c92abaecf5da48eb1321f9a888a729"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">iterator</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">rocksdb</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classrocksdb_1_1_d_b.html#_CPPv4N7rocksdb2DBE" title="rocksdb::DB"><span class="n"><span class="pre">DB</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">db</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">rocksdb</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classrocksdb_1_1_iterator.html#_CPPv4N7rocksdb8IteratorE" title="rocksdb::Iterator"><span class="n"><span class="pre">Iterator</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">iterator</span></span>, <a class="reference internal" href="#_CPPv4I000E19rocksdb_map_adapter" title="rocksdb_map_adapter::Codec"><span class="n"><span class="pre">Codec</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">codec</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I000E19rocksdb_map_adapter" title="rocksdb_map_adapter::Codec"><span class="n"><span class="pre">Codec</span></span></a><span class="p"><span class="pre">{</span></span><span class="p"><span class="pre">}</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter8iterator8iteratorEPN7rocksdb2DBERKNSt6stringENSt10unique_ptrIN7rocksdb8IteratorEEE5Codec" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter8iterator8iteratorERK8iterator">
+<span id="_CPPv3N19rocksdb_map_adapter8iterator8iteratorERK8iterator"></span><span id="_CPPv2N19rocksdb_map_adapter8iterator8iteratorERK8iterator"></span><span id="rocksdb_map_adapter::iterator::iterator__iteratorCR"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1a74985034f364a4939321a4f65912ac7c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">iterator</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iterator8iteratorERK8iterator" title="rocksdb_map_adapter::iterator::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter8iterator8iteratorERK8iterator" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter8iteratoraSERK8iterator">
+<span id="_CPPv3N19rocksdb_map_adapter8iteratoraSERK8iterator"></span><span id="_CPPv2N19rocksdb_map_adapter8iteratoraSERK8iterator"></span><span id="rocksdb_map_adapter::iterator::assign-operator__iteratorCR"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1af544ba81728634fbff04d91a02d2dbb1"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iteratorE" title="rocksdb_map_adapter::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iteratorE" title="rocksdb_map_adapter::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter8iteratoraSERK8iterator" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19rocksdb_map_adapter8iteratormlEv">
+<span id="_CPPv3NK19rocksdb_map_adapter8iteratormlEv"></span><span id="_CPPv2NK19rocksdb_map_adapter8iteratormlEv"></span><span id="rocksdb_map_adapter::iterator::mul-operatorC"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1aafdab46c7d920d78585da1fbd23f588c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iterator10value_typeE" title="rocksdb_map_adapter::iterator::value_type"><span class="n"><span class="pre">value_type</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">*</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19rocksdb_map_adapter8iteratormlEv" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19rocksdb_map_adapter8iteratorptEv">
+<span id="_CPPv3NK19rocksdb_map_adapter8iteratorptEv"></span><span id="_CPPv2NK19rocksdb_map_adapter8iteratorptEv"></span><span id="rocksdb_map_adapter::iterator::pointer-operatorC"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1af32c7586ce83371f6ec5d877094e9c94"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iterator10value_typeE" title="rocksdb_map_adapter::iterator::value_type"><span class="n"><span class="pre">value_type</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">-&gt;</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19rocksdb_map_adapter8iteratorptEv" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter8iteratorppEv">
+<span id="_CPPv3N19rocksdb_map_adapter8iteratorppEv"></span><span id="_CPPv2N19rocksdb_map_adapter8iteratorppEv"></span><span id="rocksdb_map_adapter::iterator::inc-operator"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1a165d4e27cb33bf9214b41f28650eba9d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iteratorE" title="rocksdb_map_adapter::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">++</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter8iteratorppEv" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19rocksdb_map_adapter8iteratorppEi">
+<span id="_CPPv3N19rocksdb_map_adapter8iteratorppEi"></span><span id="_CPPv2N19rocksdb_map_adapter8iteratorppEi"></span><span id="rocksdb_map_adapter::iterator::inc-operator__i"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1a3ac4bda177a0a51ff557ff9918dd42f5"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iteratorE" title="rocksdb_map_adapter::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">++</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19rocksdb_map_adapter8iteratorppEi" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19rocksdb_map_adapter8iteratoreqERK8iterator">
+<span id="_CPPv3NK19rocksdb_map_adapter8iteratoreqERK8iterator"></span><span id="_CPPv2NK19rocksdb_map_adapter8iteratoreqERK8iterator"></span><span id="rocksdb_map_adapter::iterator::eq-operator__iteratorCRC"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1a213c886c2f9ad18b4166209acaa50d46"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">==</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iteratorE" title="rocksdb_map_adapter::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19rocksdb_map_adapter8iteratoreqERK8iterator" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19rocksdb_map_adapter8iteratorneERK8iterator">
+<span id="_CPPv3NK19rocksdb_map_adapter8iteratorneERK8iterator"></span><span id="_CPPv2NK19rocksdb_map_adapter8iteratorneERK8iterator"></span><span id="rocksdb_map_adapter::iterator::neq-operator__iteratorCRC"></span><span class="target" id="classrocksdb__map__adapter_1_1iterator_1af2c2246b33bd64979b9ba726d41a89e4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">!=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19rocksdb_map_adapter8iteratorE" title="rocksdb_map_adapter::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19rocksdb_map_adapter8iteratorneERK8iterator" title="Link to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">IfcOpenShell C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#page-hierarchy">Page Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="library_root.html">IfcOpenShell C++ API</a><ul>
+      <li>Previous: <a href="classrocksdb_1_1_write_options.html" title="previous chapter">Class WriteOptions</a></li>
+      <li>Next: <a href="classrocksdb__map__adapter_1_1iterator.html" title="next chapter">Class rocksdb_map_adapter::iterator</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../_sources/output/api/classrocksdb__map__adapter.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

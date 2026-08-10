@@ -1,0 +1,14 @@
+.. _exhale_define_serializers__api_8h_1a276a728761ab5082daf0ec6a311f6519:
+
+Define SERIALIZERS_API
+======================
+
+- Defined in :ref:`file_src_serializers_serializers_api.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SERIALIZERS_API
+   :project: IfcOpenShell

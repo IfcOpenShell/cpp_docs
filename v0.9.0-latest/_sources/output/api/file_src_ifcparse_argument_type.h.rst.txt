@@ -1,0 +1,66 @@
+
+.. _file_src_ifcparse_argument_type.h:
+
+File argument_type.h
+====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/argument_type.h``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_argument_type.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``schema.h`` (:ref:`file_src_ifcparse_schema.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_argument.h`
+
+- :ref:`file_src_ifcparse_instance_data.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_argument__type_8h_1ac8ef6c1402f8474deddd9b40beedd419`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_argument__type_8h_1aff2316110cf8e3b2cf8324a43457b593`
+
+- :ref:`exhale_function_argument__type_8h_1aeded9a8c0649a91dab15f91ab995f52b`
+

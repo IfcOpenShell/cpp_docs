@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1vertex__properties:
+
+Template Struct vertex_properties
+=================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::vertex_properties
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,32 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1geometry__exception:
+
+Class geometry_exception
+========================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_settings.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::runtime_error``
+
+
+Derived Type
+************
+
+- ``public ifcopenshell::geom::too_many_faces_exception`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1too__many__faces__exception`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::geometry_exception
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

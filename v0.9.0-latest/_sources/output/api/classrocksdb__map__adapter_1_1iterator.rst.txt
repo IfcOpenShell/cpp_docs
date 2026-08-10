@@ -1,0 +1,23 @@
+.. _exhale_class_classrocksdb__map__adapter_1_1iterator:
+
+Class rocksdb_map_adapter::iterator
+===================================
+
+- Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_classrocksdb__map__adapter`.
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: rocksdb_map_adapter::iterator
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

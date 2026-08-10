@@ -1,0 +1,14 @@
+.. _exhale_function_wire__utils_8h_1a62cf3a76e2f7c3d907cf2ded159a28b0:
+
+Function ifcopenshell::geom::util::approximate_plane_through_wire
+=================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::approximate_plane_through_wire(const TopoDS_Wire&, gp_Pln&, double)
+   :project: IfcOpenShell

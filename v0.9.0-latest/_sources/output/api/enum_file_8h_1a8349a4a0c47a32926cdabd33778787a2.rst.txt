@@ -1,0 +1,14 @@
+.. _exhale_enum_file_8h_1a8349a4a0c47a32926cdabd33778787a2:
+
+Enum filetype
+=============
+
+- Defined in :ref:`file_src_ifcparse_file.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ifcopenshell::filetype
+   :project: IfcOpenShell

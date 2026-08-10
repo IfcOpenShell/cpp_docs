@@ -1,0 +1,14 @@
+.. _exhale_variable_file_8h_1a697ee5ad1fb83f0370ff738e4166f68f:
+
+Variable ifcopenshell::impl::dependent_false_v
+==============================================
+
+- Defined in :ref:`file_src_ifcparse_file.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: ifcopenshell::impl::dependent_false_v
+   :project: IfcOpenShell

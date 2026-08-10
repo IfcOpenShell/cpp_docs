@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1a04e8310b84579885a32b177d04525198:
+
+Function ifcopenshell::geom::util::fit_halfspace
+================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::fit_halfspace(const TopoDS_Shape&, const TopoDS_Shape&, TopoDS_Shape&, double&, double)
+   :project: IfcOpenShell

@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1serializers_1_1geometry__serializer__info:
+
+Struct geometry_serializer_info
+===============================
+
+- Defined in :ref:`file_src_serializers_geometry_serializer_plugin.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::serializers::geometry_serializer_info
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

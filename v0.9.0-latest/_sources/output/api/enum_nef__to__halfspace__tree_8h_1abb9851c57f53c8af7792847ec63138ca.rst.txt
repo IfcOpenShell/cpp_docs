@@ -1,0 +1,14 @@
+.. _exhale_enum_nef__to__halfspace__tree_8h_1abb9851c57f53c8af7792847ec63138ca:
+
+Enum tree_type
+==============
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ifcopenshell::geom::tree_type
+   :project: IfcOpenShell

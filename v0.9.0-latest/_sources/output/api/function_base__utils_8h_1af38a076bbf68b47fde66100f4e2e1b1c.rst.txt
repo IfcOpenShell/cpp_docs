@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1af38a076bbf68b47fde66100f4e2e1b1c:
+
+Function ifcopenshell::geom::util::project(const opencascade::handle<Geom_Surface>&, const TopoDS_Shape&, double&, double&, double&, double&, double)
+=====================================================================================================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::project(const opencascade::handle<Geom_Surface>&, const TopoDS_Shape&, double&, double&, double&, double&, double)
+   :project: IfcOpenShell

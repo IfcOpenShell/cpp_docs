@@ -1,0 +1,14 @@
+.. _exhale_function_taxonomy_8h_1a09aa6a86bdb3fb230adb4b26ceda3f8c:
+
+Template Function ifcopenshell::geom::taxonomy::clone
+=====================================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::taxonomy::clone(T&)
+   :project: IfcOpenShell

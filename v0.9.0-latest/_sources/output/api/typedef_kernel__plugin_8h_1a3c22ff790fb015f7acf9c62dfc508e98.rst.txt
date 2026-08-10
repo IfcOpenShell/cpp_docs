@@ -1,0 +1,14 @@
+.. _exhale_typedef_kernel__plugin_8h_1a3c22ff790fb015f7acf9c62dfc508e98:
+
+Typedef ifcopenshell::geom::kernels::register_kernel_plugin_fn
+==============================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernel_plugin.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::kernels::register_kernel_plugin_fn
+   :project: IfcOpenShell

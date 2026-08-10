@@ -1,0 +1,17 @@
+.. _exhale_struct_structstd_1_1hash_3_01edge__key_01_4:
+
+Template Struct hash< edge_key >
+================================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_result.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: std::hash< edge_key >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

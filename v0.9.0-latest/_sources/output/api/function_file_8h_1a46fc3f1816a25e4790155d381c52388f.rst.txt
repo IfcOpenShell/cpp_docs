@@ -1,0 +1,14 @@
+.. _exhale_function_file_8h_1a46fc3f1816a25e4790155d381c52388f:
+
+Function ifcopenshell::guess_file_type
+======================================
+
+- Defined in :ref:`file_src_ifcparse_file.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::guess_file_type(const std::string&)
+   :project: IfcOpenShell

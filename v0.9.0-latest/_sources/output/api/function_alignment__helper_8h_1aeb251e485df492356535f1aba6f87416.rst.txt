@@ -1,0 +1,14 @@
+.. _exhale_function_alignment__helper_8h_1aeb251e485df492356535f1aba6f87416:
+
+Function addHorizontalAlignment
+===============================
+
+- Defined in :ref:`file_src_ifcparse_alignment_helper.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: addHorizontalAlignment(hierarchy_helper<Ifc4x3_add2>&, const std::string&, const std::vector<std::pair<double, double>>&, const std::vector<double>&, bool)
+   :project: IfcOpenShell

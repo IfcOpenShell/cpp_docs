@@ -1,0 +1,36 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1surface:
+
+Struct surface
+==============
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::taxonomy::geom_item`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1geom__item`)
+
+
+Derived Types
+*************
+
+- ``public ifcopenshell::geom::taxonomy::bspline_surface`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1bspline__surface`)
+- ``public ifcopenshell::geom::taxonomy::cylinder`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1cylinder`)
+- ``public ifcopenshell::geom::taxonomy::plane`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1plane`)
+- ``public ifcopenshell::geom::taxonomy::sphere`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1sphere`)
+- ``public ifcopenshell::geom::taxonomy::torus`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1torus`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::taxonomy::surface
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

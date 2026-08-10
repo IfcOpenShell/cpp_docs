@@ -1,0 +1,56 @@
+
+.. _file_src_ifcparse_alignment_helper.h:
+
+File alignment_helper.h
+=======================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/alignment_helper.h``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_alignment_helper.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``hierarchy_helper.h`` (:ref:`file_src_ifcparse_hierarchy_helper.h`)
+
+- ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
+
+- ``logger.h`` (:ref:`file_src_ifcparse_logger.h`)
+
+- ``schemas/Ifc4x3_add2.h``
+
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_alignment__helper_8h_1a7a96e13cc532137ab1b5f96e58d0f59c`
+
+- :ref:`exhale_function_alignment__helper_8h_1aeb251e485df492356535f1aba6f87416`
+
+- :ref:`exhale_function_alignment__helper_8h_1a5c08c0e5edb2adc1b7c82618594fbbb9`
+
+- :ref:`exhale_function_alignment__helper_8h_1aab93c824c14d36d2a94725a5cf20cc1a`
+
+- :ref:`exhale_function_alignment__helper_8h_1a020f29f16d54b135cc71f5f492ae570c`
+
+- :ref:`exhale_function_alignment__helper_8h_1a012d740c3ea257c4467e63b2af97b3e1`
+

@@ -1,0 +1,46 @@
+
+.. _file_src_serializers_schema_dependent_xml_serializer.h:
+
+File xml_serializer.h
+=====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/schema_dependent/xml_serializer.h``)
+------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_schema_dependent_xml_serializer.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../ifcgeom/abstract_mapping.h``
+
+- ``../../ifcparse/macros.h``
+
+- ``../../serializers/xml_serializer.h``
+
+- ``INCLUDE_PARENT_PARENT_DIR(IfcSchema)``
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classxml__serializer___schema`
+

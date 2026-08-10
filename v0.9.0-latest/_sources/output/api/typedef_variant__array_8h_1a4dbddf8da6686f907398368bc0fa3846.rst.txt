@@ -1,0 +1,14 @@
+.. _exhale_typedef_variant__array_8h_1a4dbddf8da6686f907398368bc0fa3846:
+
+Typedef impl::mapped_types
+==========================
+
+- Defined in :ref:`file_src_ifcparse_variant_array.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: impl::mapped_types
+   :project: IfcOpenShell

@@ -1,0 +1,14 @@
+.. _exhale_function_express_8h_1a064e15e13259ab8d693e2673c06d69f7:
+
+Template Function ifcopenshell::make_pointer_type
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_express.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::make_pointer_type(Args&&...)
+   :project: IfcOpenShell

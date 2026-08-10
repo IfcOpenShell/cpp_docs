@@ -1,0 +1,26 @@
+.. _exhale_class_classexpress_1_1entity:
+
+Class entity
+============
+
+- Defined in :ref:`file_src_ifcparse_express.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public express::base`` (:ref:`exhale_class_classexpress_1_1base`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: express::entity
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

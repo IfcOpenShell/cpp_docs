@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1type__encoder__impl:
+
+Template Struct type_encoder_impl
+=================================
+
+.. did not find file this was defined in
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::type_encoder_impl
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

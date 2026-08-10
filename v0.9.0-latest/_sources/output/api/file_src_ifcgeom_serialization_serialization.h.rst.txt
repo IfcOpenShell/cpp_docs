@@ -1,0 +1,84 @@
+
+.. _file_src_ifcgeom_serialization_serialization.h:
+
+File serialization.h
+====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/serialization/serialization.h``)
+----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_serialization_serialization.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../ifcgeom/conversion_result.h``
+
+- ``../../ifcparse/express.h``
+
+- ``../../plugin/plugin.h``
+
+- ``functional``
+
+- ``ifc_geomserialization_api.h`` (:ref:`file_src_ifcgeom_serialization_ifc_geomserialization_api.h`)
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_serialization_opencascade_geometry_ifc_writer_plugin.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1opencascade__geometry__ifc__writer__registry_1_1entry`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1opencascade__geometry__ifc__writer__registry`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_serialization_8h_1a7a4bdc3362d92d7bb9a7d724adf4fbf3`
+
+- :ref:`exhale_function_serialization_8h_1a7526ba15347f72c353bf3327258f6cdb`
+
+- :ref:`exhale_function_serialization_8h_1ae48bb4d0ef583008e7fbd1d8ca699bac`
+
+- :ref:`exhale_function_serialization_8h_1aedc3e6b247a58db4b0c5b3a08166bbb3`
+
+- :ref:`exhale_function_serialization_8h_1a2c07b294dd4b28b4d773433a8c141073`
+

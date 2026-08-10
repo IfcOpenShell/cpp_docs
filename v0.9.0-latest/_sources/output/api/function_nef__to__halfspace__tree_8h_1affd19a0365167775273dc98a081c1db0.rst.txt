@@ -1,0 +1,14 @@
+.. _exhale_function_nef__to__halfspace__tree_8h_1affd19a0365167775273dc98a081c1db0:
+
+Template Function ifcopenshell::geom::snap_halfspaces_2
+=======================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::snap_halfspaces_2(const std::list<CGAL::Plane_3<Kernel>>&, const std::list<CGAL::Plane_3<Kernel>>&, double)
+   :project: IfcOpenShell

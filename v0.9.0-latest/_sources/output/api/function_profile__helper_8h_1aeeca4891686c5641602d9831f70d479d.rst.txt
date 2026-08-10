@@ -1,0 +1,14 @@
+.. _exhale_function_profile__helper_8h_1aeeca4891686c5641602d9831f70d479d:
+
+Function ifcopenshell::geom::profile_helper
+===========================================
+
+- Defined in :ref:`file_src_ifcgeom_profile_helper.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::profile_helper(const taxonomy::matrix4::ptr&, const std::vector<profile_point>&)
+   :project: IfcOpenShell

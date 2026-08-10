@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_setting_base:
+
+Template Struct SettingBase
+===========================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_settings.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::settings_detail::SettingBase
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

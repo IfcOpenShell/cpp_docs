@@ -1,0 +1,14 @@
+.. _exhale_function_parse_8h_1a596ed8cc0868e8ba266691fa1dc1a6d3:
+
+Function ifcopenshell::traverse
+===============================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::traverse(const express::base&, int)
+   :project: IfcOpenShell

@@ -1,0 +1,26 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_precision_factor:
+
+Struct PrecisionFactor
+======================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_settings.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::settings_detail::SettingBase< PrecisionFactor, double >`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1settings__detail_1_1_setting_base`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::settings_detail::PrecisionFactor
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,14 @@
+.. _exhale_function_rocksdb__map__adapter_8h_1ad0db5cf73cc183adfdeee6cf674a7e41:
+
+Template Function key_to_string(const KeyT&)
+============================================
+
+- Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: key_to_string(const KeyT&)
+   :project: IfcOpenShell

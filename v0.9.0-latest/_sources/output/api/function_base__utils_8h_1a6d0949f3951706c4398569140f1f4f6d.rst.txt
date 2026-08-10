@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1a6d0949f3951706c4398569140f1f4f6d:
+
+Function ifcopenshell::geom::util::count
+========================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::count(const TopoDS_Shape&, TopAbs_ShapeEnum, bool)
+   :project: IfcOpenShell

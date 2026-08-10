@@ -1,0 +1,14 @@
+.. _exhale_function_wire__utils_8h_1aac4381b1b61a14442ffc2048d872d739:
+
+Function ifcopenshell::geom::util::convert_curve_to_wire
+========================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::convert_curve_to_wire(const opencascade::handle<Geom_Curve>&, TopoDS_Wire&)
+   :project: IfcOpenShell

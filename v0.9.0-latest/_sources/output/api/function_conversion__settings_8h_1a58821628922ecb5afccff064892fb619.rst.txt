@@ -1,0 +1,14 @@
+.. _exhale_function_conversion__settings_8h_1a58821628922ecb5afccff064892fb619:
+
+Function std::operator>>(istream&, set<int>&)
+=============================================
+
+.. did not find file this was defined in
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: std::operator>>(istream&, set<int>&)
+   :project: IfcOpenShell

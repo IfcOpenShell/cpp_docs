@@ -1,0 +1,14 @@
+.. _exhale_function_clash__utils_8h_1a3029b216d770791a7b05b9d775a459eb:
+
+Function ifcopenshell::geom::intersectRayTriangle
+=================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_clash_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::intersectRayTriangle(const gp_Vec&, const gp_Vec&, const gp_Vec&, const gp_Vec&, const gp_Vec&, double&, double&, double&, bool, float)
+   :project: IfcOpenShell

@@ -1,0 +1,14 @@
+.. _exhale_function_profile__helper_8h_1aa89951add8ec677c29eff2fa2d93b6df:
+
+Function ifcopenshell::geom::remove_duplicate_points_from_loop(std::vector<taxonomy::point3::ptr>&, bool, double)
+=================================================================================================================
+
+- Defined in :ref:`file_src_ifcgeom_profile_helper.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::remove_duplicate_points_from_loop(std::vector<taxonomy::point3::ptr>&, bool, double)
+   :project: IfcOpenShell

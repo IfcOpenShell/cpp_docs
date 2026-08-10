@@ -1,0 +1,14 @@
+.. _exhale_function_base__utils_8h_1a2ba45873fc831d8d6169fdaf36ca1e39:
+
+Function ifcopenshell::geom::util::face_area
+============================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::face_area(const TopoDS_Face&)
+   :project: IfcOpenShell

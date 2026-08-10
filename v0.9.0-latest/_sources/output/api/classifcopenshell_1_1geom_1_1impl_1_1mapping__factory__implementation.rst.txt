@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1impl_1_1mapping__factory__implementation:
+
+Class mapping_factory_implementation
+====================================
+
+- Defined in :ref:`file_src_ifcgeom_abstract_mapping.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::impl::mapping_factory_implementation
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

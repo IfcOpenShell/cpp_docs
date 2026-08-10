@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1function__item__evaluator:
+
+Class function_item_evaluator
+=============================
+
+- Defined in :ref:`file_src_ifcgeom_function_item_evaluator.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::function_item_evaluator
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

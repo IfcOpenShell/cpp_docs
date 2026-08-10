@@ -1,0 +1,14 @@
+.. _exhale_typedef_instance__data_8h_1a4b0a9710dc58c45738bfc0c6b2238a07:
+
+Typedef ifcopenshell::in_memory_attribute_storage
+=================================================
+
+- Defined in :ref:`file_src_ifcparse_instance_data.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::in_memory_attribute_storage
+   :project: IfcOpenShell

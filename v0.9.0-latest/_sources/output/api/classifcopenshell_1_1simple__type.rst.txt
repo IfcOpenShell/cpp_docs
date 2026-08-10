@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1simple__type:
+
+Class simple_type
+=================
+
+- Defined in :ref:`file_src_ifcparse_schema.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::parameter_type`` (:ref:`exhale_class_classifcopenshell_1_1parameter__type`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::simple_type
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,27 @@
+
+.. _file_src_serializers_svg_serializer.h:
+
+File svg_serializer.h
+=====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/svg_serializer.h``)
+-------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_svg_serializer.h.rst
+
+
+
+
+
+
+
+
+

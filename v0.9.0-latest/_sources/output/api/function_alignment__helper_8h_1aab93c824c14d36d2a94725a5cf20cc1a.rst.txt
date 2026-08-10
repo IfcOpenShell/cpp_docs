@@ -1,0 +1,14 @@
+.. _exhale_function_alignment__helper_8h_1aab93c824c14d36d2a94725a5cf20cc1a:
+
+Function mapAlignmentHorizontalSegment
+======================================
+
+- Defined in :ref:`file_src_ifcparse_alignment_helper.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: mapAlignmentHorizontalSegment(hierarchy_helper<Ifc4x3_add2>&, const Ifc4x3_add2::IfcAlignmentHorizontalSegment&, ifcopenshell::logger&)
+   :project: IfcOpenShell

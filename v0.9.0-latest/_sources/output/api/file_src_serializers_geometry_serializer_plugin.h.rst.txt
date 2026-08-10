@@ -1,0 +1,95 @@
+
+.. _file_src_serializers_geometry_serializer_plugin.h:
+
+File geometry_serializer_plugin.h
+=================================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/geometry_serializer_plugin.h``)
+-------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_geometry_serializer_plugin.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/geometry_serializer.h``
+
+- ``../plugin/plugin.h``
+
+- ``../serializers/serializers_api.h``
+
+- ``filesystem``
+
+- ``functional``
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``memory``
+
+- ``string``
+
+- ``vector``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__serializers`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1serializers_1_1geometry__serializer__context`
+
+- :ref:`exhale_struct_structifcopenshell_1_1serializers_1_1geometry__serializer__info`
+
+- :ref:`exhale_struct_structifcopenshell_1_1serializers_1_1geometry__serializer__registry_1_1entry`
+
+- :ref:`exhale_class_classifcopenshell_1_1serializers_1_1geometry__serializer__registry`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_geometry__serializer__plugin_8h_1a3aa07e60f572f807fd35284bb942e331`
+
+- :ref:`exhale_function_geometry__serializer__plugin_8h_1ae03f74e090c3061dcc53eca3abf52686`
+
+- :ref:`exhale_function_geometry__serializer__plugin_8h_1a8e6af6a9567ac3083d89cfc698b92c49`
+
+- :ref:`exhale_function_geometry__serializer__plugin_8h_1a7e0b361fcbe84eeeb28ea641b335e65f`
+
+- :ref:`exhale_function_geometry__serializer__plugin_8h_1a58c1bf3932e957a3127b8fb621f43ee3`
+
+- :ref:`exhale_function_geometry__serializer__plugin_8h_1a1bfcf86463382f43bcc6fc4ad3ef1951`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_geometry__serializer__plugin_8h_1a204aac2b904b1532c3a7d29b52800179`
+

@@ -1,0 +1,14 @@
+.. _exhale_function_conversion__result_8h_1a2f2d26cf5206ec419aa96051c7470fd5:
+
+Template Function ifcopenshell::geom::util::find_boundary_loops
+===============================================================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_result.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::find_boundary_loops(const std::vector<NT>&, const std::vector<std::tuple<int, int, int>>&)
+   :project: IfcOpenShell

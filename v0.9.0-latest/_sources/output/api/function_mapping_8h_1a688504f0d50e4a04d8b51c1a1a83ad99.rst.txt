@@ -1,0 +1,14 @@
+.. _exhale_function_mapping_8h_1a688504f0d50e4a04d8b51c1a1a83ad99:
+
+Template Function ifcopenshell::geom::map_to_collection
+=======================================================
+
+- Defined in :ref:`file_src_ifcgeom_mapping_mapping.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::map_to_collection(mapping_Schema *, const T&)
+   :project: IfcOpenShell

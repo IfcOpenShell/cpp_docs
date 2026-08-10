@@ -1,0 +1,14 @@
+.. _exhale_function_nef__to__halfspace__tree_8h_1ac903e7eb05bf7de3d82919b2a5ab308c:
+
+Template Function ifcopenshell::geom::bfs
+=========================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::bfs(graph<Kernel>&, size_t, Fn&)
+   :project: IfcOpenShell

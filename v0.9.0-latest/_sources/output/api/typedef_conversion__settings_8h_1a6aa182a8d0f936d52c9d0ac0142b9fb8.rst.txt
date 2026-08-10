@@ -1,0 +1,14 @@
+.. _exhale_typedef_conversion__settings_8h_1a6aa182a8d0f936d52c9d0ac0142b9fb8:
+
+Typedef ifcopenshell::geom::geometry_setting_types
+==================================================
+
+- Defined in :ref:`file_src_ifcgeom_conversion_settings.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::geometry_setting_types
+   :project: IfcOpenShell

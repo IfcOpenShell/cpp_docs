@@ -1,0 +1,14 @@
+.. _exhale_function_infra__sweep__helper_8h_1ac0b1629f4ffc108774544e1e7054cee9:
+
+Function ifcopenshell::geom::make_loft
+======================================
+
+- Defined in :ref:`file_src_ifcgeom_infra_sweep_helper.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::make_loft(const ifcopenshell::geom::settings&, const express::base, const taxonomy::function_item::ptr&, std::vector<cross_section>&, logger&)
+   :project: IfcOpenShell

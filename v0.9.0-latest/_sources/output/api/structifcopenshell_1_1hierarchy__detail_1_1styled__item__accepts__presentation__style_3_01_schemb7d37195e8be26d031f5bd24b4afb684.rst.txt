@@ -1,0 +1,26 @@
+.. _exhale_struct_structifcopenshell_1_1hierarchy__detail_1_1styled__item__accepts__presentation__style_3_01_schemb7d37195e8be26d031f5bd24b4afb684:
+
+Template Struct styled_item_accepts_presentation_style< Schema, std::void_t< decltype(std::declval< typename Schema::IfcStyledItem & >, ().setStyles(std::declval< std::vector< typename Schema::IfcPresentationStyle > >, ())) > >
+===================================================================================================================================================================================================================================
+
+- Defined in :ref:`file_src_ifcparse_hierarchy_helper.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::true_type``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::hierarchy_detail::styled_item_accepts_presentation_style< Schema, std::void_t< decltype(std::declval< typename Schema::IfcStyledItem & >().setStyles(std::declval< std::vector< typename Schema::IfcPresentationStyle > >()))> >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

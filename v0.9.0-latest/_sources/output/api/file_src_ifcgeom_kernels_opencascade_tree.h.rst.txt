@@ -1,0 +1,153 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_tree.h:
+
+File tree.h
+===========
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/tree.h``)
+-------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_tree.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../../ifcgeom/element.h``
+
+- ``../../../ifcgeom/iterator.h``
+
+- ``../../../ifcgeom/tree.h``
+
+- ``../../../ifcparse/file.h``
+
+- ``BRepAlgoAPI_Common.hxx``
+
+- ``BRepAlgoAPI_Cut.hxx``
+
+- ``BRepBndLib.hxx``
+
+- ``BRepBuilderAPI_MakeEdge.hxx``
+
+- ``BRepClass3d_SolidClassifier.hxx``
+
+- ``BRepExtrema_DistShapeShape.hxx``
+
+- ``BRepExtrema_ExtPF.hxx``
+
+- ``BRepExtrema_TriangleSet.hxx``
+
+- ``BRepLProp_SLProps.hxx``
+
+- ``BRep_Builder.hxx``
+
+- ``BVH_BinaryTree.hxx``
+
+- ``BVH_Box.hxx``
+
+- ``BVH_BoxSet.hxx``
+
+- ``BVH_LinearBuilder.hxx``
+
+- ``BVH_Tree.hxx``
+
+- ``BVH_Triangulation.hxx``
+
+- ``BVH_Types.hxx``
+
+- ``Bnd_Box.hxx``
+
+- ``Bnd_OBB.hxx``
+
+- ``GeomAPI_ProjectPointOnSurf.hxx``
+
+- ``Geom_Plane.hxx``
+
+- ``IntTools_FaceFace.hxx``
+
+- ``NCollection_DataMap.hxx``
+
+- ``NCollection_UBTree.hxx``
+
+- ``Standard_Integer.hxx``
+
+- ``Standard_Macro.hxx``
+
+- ``Standard_Version.hxx``
+
+- ``TopTools_ShapeMapHasher.hxx``
+
+- ``TopoDS.hxx``
+
+- ``TopoDS_Face.hxx``
+
+- ``TopoDS_Shape.hxx``
+
+- ``base_utils.h`` (:ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`)
+
+- ``clash_utils.h`` (:ref:`file_src_ifcgeom_kernels_opencascade_clash_utils.h`)
+
+- ``cstdint``
+
+- ``future``
+
+- ``mutex``
+
+- ``opencascade_conversion_result.h`` (:ref:`file_src_ifcgeom_kernels_opencascade_opencascade_conversion_result.h`)
+
+- ``opencascade_kernel.h`` (:ref:`file_src_ifcgeom_kernels_opencascade_opencascade_kernel.h`)
+
+- ``stack``
+
+- ``unordered_map``
+
+- ``unordered_set``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_tree_backends.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__impl`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1tree_1_1clash__task`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1tree`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1tree_1_1selector`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1opencascade__tree`
+

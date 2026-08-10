@@ -1,0 +1,14 @@
+.. _exhale_typedef_nef__to__halfspace__tree_8h_1a1d20f1dedc8e5ac7a2f4086a76fb4c86:
+
+Typedef ifcopenshell::geom::graph
+=================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::graph
+   :project: IfcOpenShell

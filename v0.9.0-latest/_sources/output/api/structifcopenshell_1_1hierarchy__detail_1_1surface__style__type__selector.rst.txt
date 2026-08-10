@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1hierarchy__detail_1_1surface__style__type__selector:
+
+Template Struct surface_style_type_selector
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_hierarchy_helper.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::hierarchy_detail::surface_style_type_selector
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

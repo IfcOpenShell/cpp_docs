@@ -1,0 +1,48 @@
+
+.. _file_src_serializers_serializers_api.h:
+
+File serializers_api.h
+======================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/serializers/serializers_api.h``)
+--------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_serializers_serializers_api.h.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_serializers_document_serializer_plugin.h`
+
+- :ref:`file_src_serializers_geometry_serializer_plugin.h`
+
+- :ref:`file_src_serializers_ttl_wkt_serializer.h`
+
+- :ref:`file_src_serializers_wavefront_obj_serializer.h`
+
+- :ref:`file_src_serializers_xml_serializer.h`
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_serializers__api_8h_1a276a728761ab5082daf0ec6a311f6519`
+

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>File taxonomy.h &#8212; IfcOpenShell  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="file-taxonomy-h">
+<span id="file-src-ifcgeom-taxonomy-h"></span><h1>File taxonomy.h<a class="headerlink" href="#file-taxonomy-h" title="Link to this heading">¶</a></h1>
+<nav class="contents local" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-src-ifcgeom-taxonomy-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/taxonomy.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#enums" id="id6">Enums</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id7">Functions</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id8">Defines</a></p></li>
+<li><p><a class="reference internal" href="#typedefs" id="id9">Typedefs</a></p></li>
+</ul>
+</nav>
+<section id="definition-src-ifcgeom-taxonomy-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">src/ifcgeom/taxonomy.h</span></code>)<a class="headerlink" href="#definition-src-ifcgeom-taxonomy-h" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_src_ifcgeom_taxonomy.h.html">Program Listing for File taxonomy.h</a></li>
+</ul>
+</div>
+</section>
+<section id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">../ifcparse/express.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">../ifcparse/logger.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Eigen/Dense</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">algorithm</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">array</span></code> (<a class="reference internal" href="file_src_ifcparse_variant_array.h.html#file-src-ifcparse-variant-array-h"><span class="std std-ref">File variant_array.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">boost/functional/hash.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">boost/math/constants/constants.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">boost/variant.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cmath</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conversion_settings.h</span></code> (<a class="reference internal" href="file_src_ifcgeom_conversion_settings.h.html#file-src-ifcgeom-conversion-settings-h"><span class="std std-ref">File conversion_settings.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cstdint</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exception</span></code> (<a class="reference internal" href="file_src_ifcparse_exception.h.html#file-src-ifcparse-exception-h"><span class="std std-ref">File exception.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">functional</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">limits</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">map</span></code> (<a class="reference internal" href="file_src_ifcgeom_abstract_mapping.h.html#file-src-ifcgeom-abstract-mapping-h"><span class="std std-ref">File abstract_mapping.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">memory</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">numeric</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stdexcept</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tuple</span></code></p></li>
+</ul>
+</section>
+<section id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_src_ifcgeom_abstract_kernel.h.html#file-src-ifcgeom-abstract-kernel-h"><span class="std std-ref">File abstract_kernel.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_ifcgeom_abstract_mapping.h.html#file-src-ifcgeom-abstract-mapping-h"><span class="std std-ref">File abstract_mapping.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_ifcgeom_conversion_result.h.html#file-src-ifcgeom-conversion-result-h"><span class="std std-ref">File conversion_result.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_ifcgeom_function_item_evaluator.h.html#file-src-ifcgeom-function-item-evaluator-h"><span class="std std-ref">File function_item_evaluator.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_ifcgeom_infra_sweep_helper.h.html#file-src-ifcgeom-infra-sweep-helper-h"><span class="std std-ref">File infra_sweep_helper.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_ifcgeom_iterator.h.html#file-src-ifcgeom-iterator-h"><span class="std std-ref">File iterator.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_ifcgeom_kernels_opencascade_opencascade_kernel.h.html#file-src-ifcgeom-kernels-opencascade-opencascade-kernel-h"><span class="std std-ref">File opencascade_kernel.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_ifcgeom_profile_helper.h.html#file-src-ifcgeom-profile-helper-h"><span class="std std-ref">File profile_helper.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_src_ifcgeom_render_styles.h.html#file-src-ifcgeom-render-styles-h"><span class="std std-ref">File render_styles.h</span></a></p></li>
+</ul>
+</section>
+<section id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_boost.html#namespace-boost"><span class="std std-ref">Namespace boost</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_ifcopenshell.html#namespace-ifcopenshell"><span class="std std-ref">Namespace ifcopenshell</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_ifcopenshell__geom.html#namespace-ifcopenshell-geom"><span class="std std-ref">Namespace ifcopenshell::geom</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_ifcopenshell__geom__taxonomy.html#namespace-ifcopenshell-geom-taxonomy"><span class="std std-ref">Namespace ifcopenshell::geom::taxonomy</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_ifcopenshell__geom__taxonomy__impl.html#namespace-ifcopenshell-geom-taxonomy-impl"><span class="std std-ref">Namespace ifcopenshell::geom::taxonomy::impl</span></a></p></li>
+</ul>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1layerset__information.html#exhale-struct-structifcopenshell-1-1geom-1-1layerset-information"><span class="std std-ref">Struct layerset_information</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1boolean__result.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1boolean-result"><span class="std std-ref">Struct boolean_result</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1bspline__curve.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1bspline-curve"><span class="std std-ref">Struct bspline_curve</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1bspline__surface.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1bspline-surface"><span class="std std-ref">Struct bspline_surface</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1cant__function.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1cant-function"><span class="std std-ref">Struct cant_function</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1cartesian__base.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1cartesian-base"><span class="std std-ref">Template Struct cartesian_base</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1circle.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1circle"><span class="std std-ref">Struct circle</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1collection.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1collection"><span class="std std-ref">Struct collection</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1collection__base.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1collection-base"><span class="std std-ref">Template Struct collection_base</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1colour.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1colour"><span class="std std-ref">Struct colour</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1curve.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1curve"><span class="std std-ref">Struct curve</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1curves.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1curves"><span class="std std-ref">Struct curves</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1cylinder.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1cylinder"><span class="std std-ref">Struct cylinder</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1direction3.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1direction3"><span class="std std-ref">Struct direction3</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1edge.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1edge"><span class="std std-ref">Struct edge</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1eigen__base.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1eigen-base"><span class="std std-ref">Template Struct eigen_base</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1ellipse.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1ellipse"><span class="std std-ref">Struct ellipse</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1equal__functor.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1equal-functor"><span class="std std-ref">Struct equal_functor</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1extrusion.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1extrusion"><span class="std std-ref">Struct extrusion</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1face.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1face"><span class="std std-ref">Struct face</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1function__item.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1function-item"><span class="std std-ref">Struct function_item</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1functor__item.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1functor-item"><span class="std std-ref">Struct functor_item</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1geom__item.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1geom-item"><span class="std std-ref">Struct geom_item</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1gradient__function.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1gradient-function"><span class="std std-ref">Struct gradient_function</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1hash__functor.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1hash-functor"><span class="std std-ref">Struct hash_functor</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1implicit__item.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1implicit-item"><span class="std std-ref">Struct implicit_item</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1item.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1item"><span class="std std-ref">Struct item</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1less__functor.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1less-functor"><span class="std std-ref">Struct less_functor</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1line.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1line"><span class="std std-ref">Struct line</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1loft.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1loft"><span class="std std-ref">Struct loft</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1loop.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1loop"><span class="std std-ref">Struct loop</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1matrix4.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1matrix4"><span class="std std-ref">Struct matrix4</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1node.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1node"><span class="std std-ref">Struct node</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1offset__curve.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1offset-curve"><span class="std std-ref">Struct offset_curve</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1offset__function.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1offset-function"><span class="std std-ref">Struct offset_function</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1piecewise__function.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1piecewise-function"><span class="std std-ref">Struct piecewise_function</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1plane.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1plane"><span class="std std-ref">Struct plane</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1point3.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1point3"><span class="std std-ref">Struct point3</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1revolve.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1revolve"><span class="std std-ref">Struct revolve</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1shell.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1shell"><span class="std std-ref">Struct shell</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1solid.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1solid"><span class="std std-ref">Struct solid</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1sphere.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1sphere"><span class="std std-ref">Struct sphere</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1style.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1style"><span class="std std-ref">Struct style</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1surface.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1surface"><span class="std std-ref">Struct surface</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1surfaces.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1surfaces"><span class="std std-ref">Struct surfaces</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1sweep.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1sweep"><span class="std std-ref">Struct sweep</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1sweep__along__curve.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1sweep-along-curve"><span class="std std-ref">Struct sweep_along_curve</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1torus.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1torus"><span class="std std-ref">Struct torus</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1trimmed__curve.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1trimmed-curve"><span class="std std-ref">Struct trimmed_curve</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1type__by__kind.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1type-by-kind"><span class="std std-ref">Struct type_by_kind</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1geom_1_1taxonomy_1_1upgrades.html#exhale-struct-structifcopenshell-1-1geom-1-1taxonomy-1-1upgrades"><span class="std std-ref">Struct upgrades</span></a></p></li>
+<li><p><a class="reference internal" href="classifcopenshell_1_1geom_1_1taxonomy_1_1curve__to__edge__upgrade.html#exhale-class-classifcopenshell-1-1geom-1-1taxonomy-1-1curve-to-edge-upgrade"><span class="std std-ref">Template Class curve_to_edge_upgrade</span></a></p></li>
+<li><p><a class="reference internal" href="classifcopenshell_1_1geom_1_1taxonomy_1_1curve__to__face__upgrade.html#exhale-class-classifcopenshell-1-1geom-1-1taxonomy-1-1curve-to-face-upgrade"><span class="std std-ref">Template Class curve_to_face_upgrade</span></a></p></li>
+<li><p><a class="reference internal" href="classifcopenshell_1_1geom_1_1taxonomy_1_1curve__to__loop__upgrade.html#exhale-class-classifcopenshell-1-1geom-1-1taxonomy-1-1curve-to-loop-upgrade"><span class="std std-ref">Template Class curve_to_loop_upgrade</span></a></p></li>
+<li><p><a class="reference internal" href="classifcopenshell_1_1geom_1_1taxonomy_1_1edge__to__loop__upgrade.html#exhale-class-classifcopenshell-1-1geom-1-1taxonomy-1-1edge-to-loop-upgrade"><span class="std std-ref">Template Class edge_to_loop_upgrade</span></a></p></li>
+<li><p><a class="reference internal" href="classifcopenshell_1_1geom_1_1taxonomy_1_1loop__to__face__upgrade.html#exhale-class-classifcopenshell-1-1geom-1-1taxonomy-1-1loop-to-face-upgrade"><span class="std std-ref">Template Class loop_to_face_upgrade</span></a></p></li>
+<li><p><a class="reference internal" href="classifcopenshell_1_1geom_1_1taxonomy_1_1loop__to__function__item__upgrade.html#exhale-class-classifcopenshell-1-1geom-1-1taxonomy-1-1loop-to-function-item-upgrade"><span class="std std-ref">Template Class loop_to_function_item_upgrade</span></a></p></li>
+<li><p><a class="reference internal" href="classifcopenshell_1_1geom_1_1taxonomy_1_1topology__error.html#exhale-class-classifcopenshell-1-1geom-1-1taxonomy-1-1topology-error"><span class="std std-ref">Class topology_error</span></a></p></li>
+</ul>
+</section>
+<section id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="enum_taxonomy_8h_1aea927900c5d5ddf852cce25503f6be39.html#exhale-enum-taxonomy-8h-1aea927900c5d5ddf852cce25503f6be39"><span class="std std-ref">Enum connection_type</span></a></p></li>
+<li><p><a class="reference internal" href="enum_taxonomy_8h_1aecc61ecf411355b431422d52a382f0e6.html#exhale-enum-taxonomy-8h-1aecc61ecf411355b431422d52a382f0e6"><span class="std std-ref">Enum kinds</span></a></p></li>
+</ul>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a0a092bf767e9168aa65d43c2ed09e653.html#exhale-function-taxonomy-8h-1a0a092bf767e9168aa65d43c2ed09e653"><span class="std std-ref">Function boost::hash_value</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a97c8564a3430d1e5026c207b8ce13775.html#exhale-function-taxonomy-8h-1a97c8564a3430d1e5026c207b8ce13775"><span class="std std-ref">Template Function ifcopenshell::geom::apply_predicate_to_collection</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1ae4d347cb6bde622c30e6cbd5388b3915.html#exhale-function-taxonomy-8h-1ae4d347cb6bde622c30e6cbd5388b3915"><span class="std std-ref">Function ifcopenshell::geom::create_box(double, double, double)</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a4944743c5e82be1fa9e04a40ff10c127.html#exhale-function-taxonomy-8h-1a4944743c5e82be1fa9e04a40ff10c127"><span class="std std-ref">Function ifcopenshell::geom::create_box(double, double, double, double, double, double)</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1ac0edf55f9197bbf40650a214163f34d6.html#exhale-function-taxonomy-8h-1ac0edf55f9197bbf40650a214163f34d6"><span class="std std-ref">Template Function ifcopenshell::geom::filter</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a4b5a317f8eaf3e651fb77251f8e9ae5f.html#exhale-function-taxonomy-8h-1a4b5a317f8eaf3e651fb77251f8e9ae5f"><span class="std std-ref">Template Function ifcopenshell::geom::filter_in_place</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1ae3e49e73ca029d8bf657446983c70bfa.html#exhale-function-taxonomy-8h-1ae3e49e73ca029d8bf657446983c70bfa"><span class="std std-ref">Function ifcopenshell::geom::flatten</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1abb8007d880eb612d7b655ed239273bb0.html#exhale-function-taxonomy-8h-1abb8007d880eb612d7b655ed239273bb0"><span class="std std-ref">Template Function ifcopenshell::geom::taxonomy::cast</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a09aa6a86bdb3fb230adb4b26ceda3f8c.html#exhale-function-taxonomy-8h-1a09aa6a86bdb3fb230adb4b26ceda3f8c"><span class="std std-ref">Template Function ifcopenshell::geom::taxonomy::clone</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1afd517afc771fd589ba79d751ce36c12e.html#exhale-function-taxonomy-8h-1afd517afc771fd589ba79d751ce36c12e"><span class="std std-ref">Function ifcopenshell::geom::taxonomy::curve_to_edge_upgrade_impl</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a1629e4bc611d112b08d7e9ce4e2b4a73.html#exhale-function-taxonomy-8h-1a1629e4bc611d112b08d7e9ce4e2b4a73"><span class="std std-ref">Function ifcopenshell::geom::taxonomy::curve_to_face_upgrade_impl</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a62a903bc9dd83e3e62a07c9affd3fa86.html#exhale-function-taxonomy-8h-1a62a903bc9dd83e3e62a07c9affd3fa86"><span class="std std-ref">Function ifcopenshell::geom::taxonomy::curve_to_loop_upgrade_impl</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a3dc3da5062842859f6f9a2c682d11e11.html#exhale-function-taxonomy-8h-1a3dc3da5062842859f6f9a2c682d11e11"><span class="std std-ref">Template Function ifcopenshell::geom::taxonomy::dcast</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a799d870c60a3a51e8432c2a110cf0c43.html#exhale-function-taxonomy-8h-1a799d870c60a3a51e8432c2a110cf0c43"><span class="std std-ref">Function ifcopenshell::geom::taxonomy::edge_to_loop_upgrade_impl</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1afb5052318df8711059126d226b855552.html#exhale-function-taxonomy-8h-1afb5052318df8711059126d226b855552"><span class="std std-ref">Function ifcopenshell::geom::taxonomy::kind_to_string</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a89da4c1a020a201e0de30e1184c23347.html#exhale-function-taxonomy-8h-1a89da4c1a020a201e0de30e1184c23347"><span class="std std-ref">Function ifcopenshell::geom::taxonomy::less</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a8baf34646c8894bb726ae1c240ee47f3.html#exhale-function-taxonomy-8h-1a8baf34646c8894bb726ae1c240ee47f3"><span class="std std-ref">Function ifcopenshell::geom::taxonomy::loop_to_face_upgrade_impl</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a4ed3377c4f8fb32116e5f21fb014a68d.html#exhale-function-taxonomy-8h-1a4ed3377c4f8fb32116e5f21fb014a68d"><span class="std std-ref">Function ifcopenshell::geom::taxonomy::loop_to_function_item_upgrade_impl</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1acac8f0c844db223db006cbad0684396b.html#exhale-function-taxonomy-8h-1acac8f0c844db223db006cbad0684396b"><span class="std std-ref">Template Function ifcopenshell::geom::taxonomy::make</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a1a9a608129900fa59b509417b42bd1a7.html#exhale-function-taxonomy-8h-1a1a9a608129900fa59b509417b42bd1a7"><span class="std std-ref">Template Function ifcopenshell::geom::visit</span></a></p></li>
+<li><p><a class="reference internal" href="function_taxonomy_8h_1a3b0d0fbbb95d57b18f10eab889159f64.html#exhale-function-taxonomy-8h-1a3b0d0fbbb95d57b18f10eab889159f64"><span class="std std-ref">Template Function ifcopenshell::geom::visit_2</span></a></p></li>
+</ul>
+</section>
+<section id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define_taxonomy_8h_1a21cf5bd37572baac4209633f9ecda763.html#exhale-define-taxonomy-8h-1a21cf5bd37572baac4209633f9ecda763"><span class="std std-ref">Define DECLARE_PTR</span></a></p></li>
+<li><p><a class="reference internal" href="define_taxonomy_8h_1a9444b23fa8b31ed18058ba6e8d5b0a8a.html#exhale-define-taxonomy-8h-1a9444b23fa8b31ed18058ba6e8d5b0a8a"><span class="std std-ref">Define TAXONOMY_USE_SHARED_PTR</span></a></p></li>
+</ul>
+</section>
+<section id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="typedef_taxonomy_8h_1ae2282b55c19a77e52aad60cf6429689e.html#exhale-typedef-taxonomy-8h-1ae2282b55c19a77e52aad60cf6429689e"><span class="std std-ref">Typedef ifcopenshell::geom::endpoint_connection</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_taxonomy_8h_1aea36969aa7c65c9d20610fed0af11298.html#exhale-typedef-taxonomy-8h-1aea36969aa7c65c9d20610fed0af11298"><span class="std std-ref">Typedef ifcopenshell::geom::taxonomy::const_ptr</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_taxonomy_8h_1ab5d72ed20ca8087ac6431796e4f251fa.html#exhale-typedef-taxonomy-8h-1ab5d72ed20ca8087ac6431796e4f251fa"><span class="std std-ref">Typedef ifcopenshell::geom::taxonomy::impl::curves_tuple</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_taxonomy_8h_1a8b081bff5e1ed5ff4a07189fd2e7c95f.html#exhale-typedef-taxonomy-8h-1a8b081bff5e1ed5ff4a07189fd2e7c95f"><span class="std std-ref">Typedef ifcopenshell::geom::taxonomy::impl::kinds_tuple</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_taxonomy_8h_1ad302ec4da0b73bcee458726323b13ede.html#exhale-typedef-taxonomy-8h-1ad302ec4da0b73bcee458726323b13ede"><span class="std std-ref">Typedef ifcopenshell::geom::taxonomy::impl::surfaces_tuple</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_taxonomy_8h_1af7454e7216955127dba483fffd9e5111.html#exhale-typedef-taxonomy-8h-1af7454e7216955127dba483fffd9e5111"><span class="std std-ref">Typedef ifcopenshell::geom::taxonomy::impl::upgrades_tuple</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_taxonomy_8h_1a094214072625eacd3b3ab22c1a8f7438.html#exhale-typedef-taxonomy-8h-1a094214072625eacd3b3ab22c1a8f7438"><span class="std std-ref">Typedef ifcopenshell::geom::taxonomy::ptr</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">IfcOpenShell</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">IfcOpenShell C++ API</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2020, IfcOpenShell.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../_sources/output/api/file_src_ifcgeom_taxonomy.h.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

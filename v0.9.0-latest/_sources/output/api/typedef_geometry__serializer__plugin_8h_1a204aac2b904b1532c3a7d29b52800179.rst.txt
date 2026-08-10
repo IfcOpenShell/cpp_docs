@@ -1,0 +1,14 @@
+.. _exhale_typedef_geometry__serializer__plugin_8h_1a204aac2b904b1532c3a7d29b52800179:
+
+Typedef ifcopenshell::serializers::register_geometry_serializer_plugin_fn
+=========================================================================
+
+- Defined in :ref:`file_src_serializers_geometry_serializer_plugin.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::serializers::register_geometry_serializer_plugin_fn
+   :project: IfcOpenShell

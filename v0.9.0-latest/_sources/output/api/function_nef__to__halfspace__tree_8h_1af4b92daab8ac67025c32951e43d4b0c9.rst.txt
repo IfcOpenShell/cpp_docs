@@ -1,0 +1,14 @@
+.. _exhale_function_nef__to__halfspace__tree_8h_1af4b92daab8ac67025c32951e43d4b0c9:
+
+Template Function ifcopenshell::geom::build_halfspace_tree_decomposed
+=====================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::build_halfspace_tree_decomposed(const CGAL::Nef_polyhedron_3<Kernel>&, std::list<CGAL::Plane_3<Kernel>>&)
+   :project: IfcOpenShell

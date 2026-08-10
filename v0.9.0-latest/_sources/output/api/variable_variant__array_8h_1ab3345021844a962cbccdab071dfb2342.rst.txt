@@ -1,0 +1,14 @@
+.. _exhale_variable_variant__array_8h_1ab3345021844a962cbccdab071dfb2342:
+
+Variable impl::TypeIndex_v
+==========================
+
+- Defined in :ref:`file_src_ifcparse_variant_array.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: impl::TypeIndex_v
+   :project: IfcOpenShell

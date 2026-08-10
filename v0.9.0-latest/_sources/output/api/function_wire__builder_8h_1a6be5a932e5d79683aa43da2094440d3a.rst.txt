@@ -1,0 +1,14 @@
+.. _exhale_function_wire__builder_8h_1a6be5a932e5d79683aa43da2094440d3a:
+
+Template Function ifcopenshell::geom::util::shape_pair_enumerate
+================================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_builder.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::shape_pair_enumerate(NCollection_List<TopoDS_Shape>::Iterator&, Fn&, bool)
+   :project: IfcOpenShell

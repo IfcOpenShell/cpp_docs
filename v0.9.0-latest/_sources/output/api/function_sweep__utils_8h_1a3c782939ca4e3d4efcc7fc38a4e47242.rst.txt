@@ -1,0 +1,14 @@
+.. _exhale_function_sweep__utils_8h_1a3c782939ca4e3d4efcc7fc38a4e47242:
+
+Function ifcopenshell::geom::util::break_closed
+===============================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_sweep_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::break_closed(const TopoDS_Wire&, std::vector<TopoDS_Wire>&)
+   :project: IfcOpenShell

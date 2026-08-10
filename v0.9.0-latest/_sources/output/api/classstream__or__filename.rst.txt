@@ -1,0 +1,17 @@
+.. _exhale_class_classstream__or__filename:
+
+Class stream_or_filename
+========================
+
+- Defined in :ref:`file_src_ifcgeom_geometry_serializer.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: stream_or_filename
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

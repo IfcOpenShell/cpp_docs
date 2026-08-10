@@ -1,0 +1,17 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1taxonomy_1_1loop__to__function__item__upgrade:
+
+Template Class loop_to_function_item_upgrade
+============================================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::taxonomy::loop_to_function_item_upgrade
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

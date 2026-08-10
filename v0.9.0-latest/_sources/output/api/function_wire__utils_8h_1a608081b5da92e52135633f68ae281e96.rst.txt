@@ -1,0 +1,14 @@
+.. _exhale_function_wire__utils_8h_1a608081b5da92e52135633f68ae281e96:
+
+Function ifcopenshell::geom::util::convert_wire_to_faces
+========================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::convert_wire_to_faces(const TopoDS_Wire&, TopoDS_Compound&, const ifcopenshell::geom::util::wire_tolerance_settings&)
+   :project: IfcOpenShell

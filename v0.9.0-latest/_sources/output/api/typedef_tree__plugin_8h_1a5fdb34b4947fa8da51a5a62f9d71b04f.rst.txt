@@ -1,0 +1,14 @@
+.. _exhale_typedef_tree__plugin_8h_1a5fdb34b4947fa8da51a5a62f9d71b04f:
+
+Typedef ifcopenshell::geom::trees::register_tree_plugin_fn
+==========================================================
+
+- Defined in :ref:`file_src_ifcgeom_tree_plugin.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::geom::trees::register_tree_plugin_fn
+   :project: IfcOpenShell

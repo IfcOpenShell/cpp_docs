@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1curves:
+
+Struct curves
+=============
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::taxonomy::curves
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

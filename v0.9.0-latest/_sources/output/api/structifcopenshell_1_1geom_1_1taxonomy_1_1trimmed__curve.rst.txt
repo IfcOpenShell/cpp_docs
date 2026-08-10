@@ -1,0 +1,32 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1trimmed__curve:
+
+Struct trimmed_curve
+====================
+
+- Defined in :ref:`file_src_ifcgeom_taxonomy.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::taxonomy::geom_item`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1geom__item`)
+
+
+Derived Type
+************
+
+- ``public ifcopenshell::geom::taxonomy::edge`` (:ref:`exhale_struct_structifcopenshell_1_1geom_1_1taxonomy_1_1edge`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::taxonomy::trimmed_curve
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

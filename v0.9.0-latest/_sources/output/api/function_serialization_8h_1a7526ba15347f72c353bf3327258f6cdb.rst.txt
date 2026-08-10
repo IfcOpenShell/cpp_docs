@@ -1,0 +1,14 @@
+.. _exhale_function_serialization_8h_1a7526ba15347f72c353bf3327258f6cdb:
+
+Function ifcopenshell::geom::serialise(ifcopenshell::file&, const TopoDS_Shape&, bool)
+======================================================================================
+
+- Defined in :ref:`file_src_ifcgeom_serialization_serialization.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::serialise(ifcopenshell::file&, const TopoDS_Shape&, bool)
+   :project: IfcOpenShell

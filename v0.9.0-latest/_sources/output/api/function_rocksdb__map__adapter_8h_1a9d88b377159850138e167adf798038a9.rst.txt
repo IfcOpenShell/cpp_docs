@@ -1,0 +1,14 @@
+.. _exhale_function_rocksdb__map__adapter_8h_1a9d88b377159850138e167adf798038a9:
+
+Template Function tuple_from_string_impl
+========================================
+
+- Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: tuple_from_string_impl(const std::vector<std::string>&, std::index_sequence<Is...>)
+   :project: IfcOpenShell

@@ -1,0 +1,14 @@
+.. _exhale_typedef_cgal__conversion__result_8h_1a3245d34ea804260f9790be66e0323cc7:
+
+Typedef cgal_vector
+===================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: cgal_vector
+   :project: IfcOpenShell

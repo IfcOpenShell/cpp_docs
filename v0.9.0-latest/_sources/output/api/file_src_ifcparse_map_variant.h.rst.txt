@@ -1,0 +1,60 @@
+
+.. _file_src_ifcparse_map_variant.h:
+
+File map_variant.h
+==================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcparse/map_variant.h``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcparse_map_variant.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstddef``
+
+- ``iostream``
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``string``
+
+- ``tuple``
+
+- ``utility``
+
+- ``variant`` (:ref:`file_src_ifcparse_map_variant.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcparse_storage.h`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classvariant__map`
+
+- :ref:`exhale_class_classvariant__map_1_1iterator`
+

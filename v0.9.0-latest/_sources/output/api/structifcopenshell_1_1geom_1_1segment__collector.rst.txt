@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1geom_1_1segment__collector:
+
+Template Struct segment_collector
+=================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::geom::segment_collector
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

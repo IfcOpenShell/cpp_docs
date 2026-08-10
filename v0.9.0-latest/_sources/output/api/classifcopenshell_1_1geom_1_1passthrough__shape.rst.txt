@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1passthrough__shape:
+
+Class passthrough_shape
+=======================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_passthrough_passthrough_conversion_result.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::conversion_result_shape`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1conversion__result__shape`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::passthrough_shape
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

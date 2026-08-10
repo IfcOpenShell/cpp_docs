@@ -1,0 +1,76 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_clash_utils.h:
+
+File clash_utils.h
+==================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/clash_utils.h``)
+--------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_clash_utils.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifc_geomlibrary_api.h``
+
+- ``array`` (:ref:`file_src_ifcparse_variant_array.h`)
+
+- ``gp_Vec.hxx``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_tree.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1box`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1ray`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_clash__utils_8h_1a19a992d93152d3315804c7335faec9d0`
+
+- :ref:`exhale_function_clash__utils_8h_1a110c00024346829e435a8d9fb7d06e35`
+
+- :ref:`exhale_function_clash__utils_8h_1a3029b216d770791a7b05b9d775a459eb`
+
+- :ref:`exhale_function_clash__utils_8h_1a6a10f54156bf2598be06633263976986`
+
+- :ref:`exhale_function_clash__utils_8h_1aac81253b62a4c78d544bd96100af7196`
+

@@ -1,0 +1,14 @@
+.. _exhale_function_boolean__utils_8h_1a124f7d20d9b56ac8a415d2bb2b1fa05c:
+
+Function ifcopenshell::geom::util::get_edge_axis
+================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::util::get_edge_axis(const TopoDS_Edge&, gp_Ax1&)
+   :project: IfcOpenShell

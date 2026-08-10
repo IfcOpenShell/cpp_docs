@@ -1,0 +1,26 @@
+.. _exhale_struct_structimpl_1_1type__index_3_01_t_00_01_u_00_01_ts_8_8_8_01_4:
+
+Template Struct type_index< T, U, Ts... >
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_variant_array.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::integral_constant< std::size_t,(std::is_pointer_v< T > ? std::is_base_of_v< std::remove_pointer_t< U >, std::remove_pointer_t< T > > :std::is_same_v< T, U >) ? 0 :(type_index< T, Ts... >::value==std::numeric_limits< std::size_t >::max() ? std::numeric_limits< std::size_t >::max() :1+type_index< T, Ts... >::value)>``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::type_index< T, U, Ts... >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

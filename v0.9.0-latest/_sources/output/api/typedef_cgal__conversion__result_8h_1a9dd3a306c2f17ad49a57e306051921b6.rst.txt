@@ -1,0 +1,14 @@
+.. _exhale_typedef_cgal__conversion__result_8h_1a9dd3a306c2f17ad49a57e306051921b6:
+
+Typedef cgal_placement
+======================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: cgal_placement
+   :project: IfcOpenShell

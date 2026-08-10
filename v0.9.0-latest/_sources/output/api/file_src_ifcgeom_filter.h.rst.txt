@@ -1,0 +1,86 @@
+
+.. _file_src_ifcgeom_filter.h:
+
+File filter.h
+=============
+
+
+A set of predefined product filters for :ref:`exhale_class_classifcopenshell_1_1geom_1_1iterator`. 
+
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/filter.h``)
+-------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_filter.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../ifcgeom/abstract_kernel.h``
+
+- ``../ifcgeom/abstract_mapping.h``
+
+- ``../ifcparse/file.h``
+
+- ``boost/algorithm/string/case_conv.hpp``
+
+- ``boost/algorithm/string/replace.hpp``
+
+- ``boost/foreach.hpp``
+
+- ``boost/regex.hpp``
+
+- ``boost/version.hpp``
+
+- ``functional``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_ifcgeom_iterator.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1attribute__filter`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1entity__filter`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1filter`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1instance__id__filter`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1layer__filter`
+
+- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1wildcard__filter`
+

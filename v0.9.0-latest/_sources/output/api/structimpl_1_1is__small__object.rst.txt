@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1is__small__object:
+
+Template Struct is_small_object
+===============================
+
+- Defined in :ref:`file_src_ifcparse_variant_array.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::is_small_object
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

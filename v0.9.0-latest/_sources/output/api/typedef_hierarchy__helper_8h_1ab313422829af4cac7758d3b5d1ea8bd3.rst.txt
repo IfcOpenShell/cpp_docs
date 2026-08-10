@@ -1,0 +1,14 @@
+.. _exhale_typedef_hierarchy__helper_8h_1ab313422829af4cac7758d3b5d1ea8bd3:
+
+Typedef ifcopenshell::hierarchy_detail::surface_style_type
+==========================================================
+
+- Defined in :ref:`file_src_ifcparse_hierarchy_helper.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::hierarchy_detail::surface_style_type
+   :project: IfcOpenShell

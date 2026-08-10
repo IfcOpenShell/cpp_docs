@@ -1,0 +1,14 @@
+.. _exhale_function_nef__to__halfspace__tree_8h_1a7147421023c113236ed985856d6de166:
+
+Template Function ifcopenshell::geom::write_to_obj
+==================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::write_to_obj(const CGAL::Nef_polyhedron_3<Kernel>&, std::ostream&, size_t)
+   :project: IfcOpenShell
