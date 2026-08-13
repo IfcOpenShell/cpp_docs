@@ -70,13 +70,13 @@ Functions
 ---------
 
 
-- :ref:`exhale_function_cgal__kernel_8h_1af11c8bd1cae7c970408a7ed372426d72`
-
 - :ref:`exhale_function_cgal__kernel_8h_1a8830e814bb0fe3892d067c45fb864f3a`
 
-- :ref:`exhale_function_cgal__kernel_8h_1a61ef81b96c3842828edf6e338fa1d42e`
+- :ref:`exhale_function_cgal__kernel_8h_1af11c8bd1cae7c970408a7ed372426d72`
 
 - :ref:`exhale_function_cgal__kernel_8h_1a8aaa882114384f26c6a825f3860442ef`
+
+- :ref:`exhale_function_cgal__kernel_8h_1a61ef81b96c3842828edf6e338fa1d42e`
 
 - :ref:`exhale_function_cgal__kernel_8h_1a7e7493bda577177246b961dfcef71a9a`
 

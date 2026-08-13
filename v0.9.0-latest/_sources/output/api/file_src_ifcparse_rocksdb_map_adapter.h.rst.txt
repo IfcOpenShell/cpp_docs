@@ -77,9 +77,9 @@ Functions
 
 - :ref:`exhale_function_rocksdb__map__adapter_8h_1aad41b1637be9a385c85841fe62d6b0c2`
 
-- :ref:`exhale_function_rocksdb__map__adapter_8h_1af9356a73aaf9a6fd745cc10e42efb9ef`
-
 - :ref:`exhale_function_rocksdb__map__adapter_8h_1ad0db5cf73cc183adfdeee6cf674a7e41`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1af9356a73aaf9a6fd745cc10e42efb9ef`
 
 - :ref:`exhale_function_rocksdb__map__adapter_8h_1a9d88b377159850138e167adf798038a9`
 
