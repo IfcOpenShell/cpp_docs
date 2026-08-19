@@ -65,7 +65,7 @@
 <span class="cp">#define IFC_GEOMLIBRARY_API __declspec(dllimport)</span>
 <span class="cp">#endif</span>
 <span class="cp">#else </span><span class="c1">// simply assume *nix + GCC-like compiler</span>
-<span class="cp">#define IFC_GEOMLIBRARY_API __attribute__((visibility(&quot;default&quot;)))</span>
+<span class="cp">#define IFC_GEOMLIBRARY_API __attribute__((visibility("default")))</span>
 <span class="cp">#endif</span>
 
 <span class="cp">#endif</span>

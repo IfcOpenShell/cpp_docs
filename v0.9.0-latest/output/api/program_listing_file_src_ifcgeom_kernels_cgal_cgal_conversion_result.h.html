@@ -56,13 +56,13 @@
 <span class="cp">#ifndef CGALCONVERSIONRESULT_H</span>
 <span class="cp">#define CGALCONVERSIONRESULT_H</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/kernels/ifc_geomlibrary_api.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/kernels/ifc_geomlibrary_api.h"</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/element.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/element.h"</span>
 
 <span class="cp">#undef Handle</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/kernels/cgal/nef_to_halfspace_tree.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/kernels/cgal/nef_to_halfspace_tree.h"</span>
 
 <span class="cp">#define CGAL_NO_DEPRECATED_CODE</span>
 
@@ -124,7 +124,7 @@
 <span class="k">typedef</span><span class="w"> </span><span class="n">boost</span><span class="o">::</span><span class="n">graph_traits</span><span class="o">&lt;</span><span class="n">CGAL</span><span class="o">::</span><span class="n">Polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;&gt;::</span><span class="n">vertex_descriptor</span><span class="w"> </span><span class="n">cgal_vertex_descriptor</span><span class="p">;</span>
 <span class="k">typedef</span><span class="w"> </span><span class="n">boost</span><span class="o">::</span><span class="n">graph_traits</span><span class="o">&lt;</span><span class="n">CGAL</span><span class="o">::</span><span class="n">Polyhedron_3</span><span class="o">&lt;</span><span class="n">kernel_</span><span class="o">&gt;&gt;::</span><span class="n">face_descriptor</span><span class="w"> </span><span class="n">cgal_face_descriptor</span><span class="p">;</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/conversion_result.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/conversion_result.h"</span>
 
 <span class="k">namespace</span><span class="w"> </span><span class="nn">ifcopenshell</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">geom</span><span class="w"> </span><span class="p">{</span>
 
@@ -140,19 +140,19 @@
 <span class="w">            </span><span class="n">model</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">CGAL</span><span class="o">::</span><span class="n">Epeck</span><span class="o">::</span><span class="n">FT</span><span class="o">&amp;</span><span class="w"> </span><span class="n">v</span><span class="p">)</span>
 <span class="w">                </span><span class="o">:</span><span class="w"> </span><span class="n">value</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
 
-<span class="w">            </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">model</span><span class="o">&amp;</span><span class="w"> </span><span class="n">as_same</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">number_concept</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">model</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">as_same</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">number_concept</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                </span><span class="k">auto</span><span class="w"> </span><span class="n">same</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">dynamic_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">model</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">other</span><span class="p">);</span>
 <span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">same</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                    </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;Incompatible opaque number types&quot;</span><span class="p">);</span>
+<span class="w">                    </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">"Incompatible opaque number types"</span><span class="p">);</span>
 <span class="w">                </span><span class="p">}</span>
 <span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="n">same</span><span class="p">;</span>
 <span class="w">            </span><span class="p">}</span>
 
-<span class="w">            </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">to_double</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">to_double</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">CGAL</span><span class="o">::</span><span class="n">to_double</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>
 <span class="w">            </span><span class="p">}</span>
 
-<span class="w">            </span><span class="k">virtual</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">to_string</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">virtual</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">to_string</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">stringstream</span><span class="w"> </span><span class="n">ss</span><span class="p">;</span>
 <span class="w">                </span><span class="n">ss</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">value</span><span class="p">.</span><span class="n">exact</span><span class="p">();</span>
 <span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">ss</span><span class="p">.</span><span class="n">str</span><span class="p">();</span>
@@ -249,9 +249,9 @@
 
 <span class="w">        </span><span class="k">virtual</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string_view</span><span class="w"> </span><span class="n">backend_id</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="cp">#ifdef IFOPSH_SIMPLE_KERNEL</span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;cgal-simple&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="s">"cgal-simple"</span><span class="p">;</span>
 <span class="cp">#else</span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;cgal&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="s">"cgal"</span><span class="p">;</span>
 <span class="cp">#endif</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">        </span><span class="k">operator</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">cgal_polyhedron</span><span class="o">&amp;</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">poly</span><span class="p">();</span><span class="w"> </span><span class="p">}</span>
@@ -349,9 +349,9 @@
 <span class="w">        </span><span class="p">}</span>
 <span class="w">        </span><span class="k">virtual</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string_view</span><span class="w"> </span><span class="n">backend_id</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="cp">#ifdef IFOPSH_SIMPLE_KERNEL</span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;cgal-simple&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="s">"cgal-simple"</span><span class="p">;</span>
 <span class="cp">#else</span>
-<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;cgal&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="s">"cgal"</span><span class="p">;</span>
 <span class="cp">#endif</span>
 <span class="w">        </span><span class="p">}</span>
 

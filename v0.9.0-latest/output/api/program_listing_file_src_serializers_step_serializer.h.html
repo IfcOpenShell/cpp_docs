@@ -61,9 +61,9 @@
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;STEPControl_Writer.hxx&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Interface_Static.hxx&gt;</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/iterator.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/iterator.h"</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../serializers/open_cascade_based_serializer.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../serializers/open_cascade_based_serializer.h"</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">step_serializer</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">open_cascade_based_serializer</span>
 <span class="p">{</span>
@@ -77,7 +77,7 @@
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">writeShape</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">shape</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">stringstream</span><span class="w"> </span><span class="n">ss</span><span class="p">;</span>
 <span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">streambuf</span><span class="w"> </span><span class="o">*</span><span class="n">sb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">.</span><span class="n">rdbuf</span><span class="p">(</span><span class="n">ss</span><span class="p">.</span><span class="n">rdbuf</span><span class="p">());</span>
-<span class="w">        </span><span class="n">Interface_Static</span><span class="o">::</span><span class="n">SetCVal</span><span class="p">(</span><span class="s">&quot;write.step.product.name&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<span class="w">        </span><span class="n">Interface_Static</span><span class="o">::</span><span class="n">SetCVal</span><span class="p">(</span><span class="s">"write.step.product.name"</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
 <span class="w">        </span><span class="n">writer</span><span class="p">.</span><span class="n">Transfer</span><span class="p">(</span><span class="n">shape</span><span class="p">,</span><span class="w"> </span><span class="n">STEPControl_AsIs</span><span class="p">);</span>
 <span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">.</span><span class="n">rdbuf</span><span class="p">(</span><span class="n">sb</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
@@ -90,8 +90,8 @@
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">setUnitNameAndMagnitude</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="cm">/*name*/</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">magnitude</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">symbol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getSymbolForUnitMagnitude</span><span class="p">(</span><span class="n">magnitude</span><span class="p">);</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">symbol</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="c1">// Interface_Static::SetCVal(&quot;xstep.cascade.unit&quot;, symbol);</span>
-<span class="w">            </span><span class="n">Interface_Static</span><span class="o">::</span><span class="n">SetCVal</span><span class="p">(</span><span class="s">&quot;write.step.unit&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">symbol</span><span class="p">);</span>
+<span class="w">            </span><span class="c1">// Interface_Static::SetCVal("xstep.cascade.unit", symbol);</span>
+<span class="w">            </span><span class="n">Interface_Static</span><span class="o">::</span><span class="n">SetCVal</span><span class="p">(</span><span class="s">"write.step.unit"</span><span class="p">,</span><span class="w"> </span><span class="n">symbol</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>

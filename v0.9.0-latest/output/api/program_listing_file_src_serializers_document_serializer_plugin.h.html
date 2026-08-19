@@ -56,10 +56,10 @@
 <span class="cp">#ifndef IFCOPENSHELL_DOCUMENT_SERIALIZER_PLUGIN_H</span>
 <span class="cp">#define IFCOPENSHELL_DOCUMENT_SERIALIZER_PLUGIN_H</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../serializers/serializers_api.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/serializer.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcparse/file.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../plugin/plugin.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../serializers/serializers_api.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/serializer.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcparse/file.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../plugin/plugin.h"</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;functional&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span>
@@ -93,7 +93,7 @@
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">dialect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="w">    </span><span class="c1">// Supertype names to skip when streaming entities into the serializer.</span>
 <span class="w">    </span><span class="c1">// Currently only honoured by the RocksDB serializer; consumers building</span>
-<span class="w">    </span><span class="c1">// lossy/read-only databases pass e.g. {&quot;IfcRepresentationItem&quot;} to drop</span>
+<span class="w">    </span><span class="c1">// lossy/read-only databases pass e.g. {"IfcRepresentationItem"} to drop</span>
 <span class="w">    </span><span class="c1">// geometry definitions.</span>
 <span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">skip_supertypes</span><span class="p">;</span>
 <span class="p">};</span>

@@ -53,7 +53,7 @@ Program Listing for File abstract_mapping.h
        };
    
        typedef std::function<bool(const express::base&)> filter_function;
-       
+   
        class IFC_GEOM_API abstract_mapping {
        protected:
            ifcopenshell::geom::settings settings_;
@@ -115,7 +115,7 @@ Program Listing for File abstract_mapping.h
    
            IFC_GEOM_API mapping_factory_implementation& mapping_implementations();
        }
-       
+   
    }
    
    }

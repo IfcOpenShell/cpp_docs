@@ -39,11 +39,11 @@
 
 <span class="cp">#define SCHEMA_METHOD</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../serializers/serializers_api.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/serializer.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcparse/file.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../plugin/plugin.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../serializers/document_serializer_plugin.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../serializers/serializers_api.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/serializer.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcparse/file.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../plugin/plugin.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../serializers/document_serializer_plugin.h"</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span>
 
@@ -66,7 +66,7 @@
 <span class="w">        </span><span class="n">context</span><span class="p">.</span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">file</span><span class="p">;</span>
 <span class="w">        </span><span class="n">context</span><span class="p">.</span><span class="n">output_filename</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">xml_filename</span><span class="p">;</span>
 <span class="w">        </span><span class="n">context</span><span class="p">.</span><span class="n">schema_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">file</span><span class="o">-&gt;</span><span class="n">schema</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">();</span>
-<span class="w">        </span><span class="n">implementation_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">serializers</span><span class="o">::</span><span class="n">document_serializer_registry_instance</span><span class="p">().</span><span class="n">create</span><span class="p">(</span><span class="s">&quot;xml&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">context</span><span class="p">);</span>
+<span class="w">        </span><span class="n">implementation_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">serializers</span><span class="o">::</span><span class="n">document_serializer_registry_instance</span><span class="p">().</span><span class="n">create</span><span class="p">(</span><span class="s">"xml"</span><span class="p">,</span><span class="w"> </span><span class="n">context</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">xml_serializer</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
@@ -76,11 +76,11 @@
 
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">finalize</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">implementation_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">exception</span><span class="p">(</span><span class="s">&quot;No XML serializer implementation constructed&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">exception</span><span class="p">(</span><span class="s">"No XML serializer implementation constructed"</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">        </span><span class="n">implementation_</span><span class="o">-&gt;</span><span class="n">finalize</span><span class="p">();</span>
 <span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">setFile</span><span class="p">(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">file</span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">exception</span><span class="p">(</span><span class="s">&quot;Should be supplied on construction&quot;</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">setFile</span><span class="p">(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">file</span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">exception</span><span class="p">(</span><span class="s">"Should be supplied on construction"</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
 <span class="p">};</span>
 
 <span class="cp">#endif</span>

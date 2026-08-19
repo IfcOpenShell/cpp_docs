@@ -63,7 +63,7 @@
 <span class="cp">#ifndef IFCSPFSTREAM_H</span>
 <span class="cp">#define IFCSPFSTREAM_H</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;ifc_parse_api.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"ifc_parse_api.h"</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstddef&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstdint&gt;</span>
@@ -117,7 +117,7 @@
 <span class="w">        </span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="n">impl_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">Impl</span><span class="o">&gt;</span><span class="p">(</span><span class="n">path</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">static_assert</span><span class="p">(</span><span class="n">file_reader_dependent_false_v</span><span class="o">&lt;</span><span class="n">Impl</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;This file_reader constructor is not supported for the selected backend&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">static_assert</span><span class="p">(</span><span class="n">file_reader_dependent_false_v</span><span class="o">&lt;</span><span class="n">Impl</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="s">"This file_reader constructor is not supported for the selected backend"</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 
@@ -129,7 +129,7 @@
 <span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_same_v</span><span class="o">&lt;</span><span class="n">Impl</span><span class="p">,</span><span class="w"> </span><span class="n">pushed_sequential_impl</span><span class="o">&gt;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="n">impl_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">Impl</span><span class="o">&gt;</span><span class="p">();</span>
 <span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">static_assert</span><span class="p">(</span><span class="n">file_reader_dependent_false_v</span><span class="o">&lt;</span><span class="n">Impl</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;This file_reader constructor is not supported for the selected backend&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">static_assert</span><span class="p">(</span><span class="n">file_reader_dependent_false_v</span><span class="o">&lt;</span><span class="n">Impl</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="s">"This file_reader constructor is not supported for the selected backend"</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 
@@ -140,7 +140,7 @@
 <span class="w">            </span><span class="o">||</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">is_same_v</span><span class="o">&lt;</span><span class="n">Impl</span><span class="p">,</span><span class="w"> </span><span class="n">pushed_sequential_impl</span><span class="o">&gt;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="n">impl_</span><span class="o">-&gt;</span><span class="n">push_next_page</span><span class="p">(</span><span class="n">content</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">static_assert</span><span class="p">(</span><span class="n">file_reader_dependent_false_v</span><span class="o">&lt;</span><span class="n">Impl</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;This file_reader constructor is not supported for the selected backend&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">static_assert</span><span class="p">(</span><span class="n">file_reader_dependent_false_v</span><span class="o">&lt;</span><span class="n">Impl</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="s">"This file_reader constructor is not supported for the selected backend"</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 
@@ -149,7 +149,7 @@
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_same_v</span><span class="o">&lt;</span><span class="n">Impl</span><span class="p">,</span><span class="w"> </span><span class="n">paged_file_impl</span><span class="o">&gt;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="n">impl_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">Impl</span><span class="o">&gt;</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">page_size</span><span class="p">,</span><span class="w"> </span><span class="n">page_capacity</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">static_assert</span><span class="p">(</span><span class="n">file_reader_dependent_false_v</span><span class="o">&lt;</span><span class="n">Impl</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;This file_reader constructor is not supported for the selected backend&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">static_assert</span><span class="p">(</span><span class="n">file_reader_dependent_false_v</span><span class="o">&lt;</span><span class="n">Impl</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="s">"This file_reader constructor is not supported for the selected backend"</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 
@@ -161,7 +161,7 @@
 
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">seek</span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">position</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">position</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">size</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">out_of_range</span><span class="p">(</span><span class="s">&quot;seek out of range&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">out_of_range</span><span class="p">(</span><span class="s">"seek out of range"</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">        </span><span class="n">cursor_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">position</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
@@ -173,28 +173,28 @@
 
 <span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">peek</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cursor_</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">size</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">out_of_range</span><span class="p">(</span><span class="s">&quot;peek at EOF&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">out_of_range</span><span class="p">(</span><span class="s">"peek at EOF"</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">impl_</span><span class="o">-&gt;</span><span class="n">get</span><span class="p">(</span><span class="n">cursor_</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">peek_u64</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">remaining</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">uint64_t</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">out_of_range</span><span class="p">(</span><span class="s">&quot;peek_u64 at EOF&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">out_of_range</span><span class="p">(</span><span class="s">"peek_u64 at EOF"</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">impl_</span><span class="o">-&gt;</span><span class="n">get_u64</span><span class="p">(</span><span class="n">cursor_</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">peek_u32</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">remaining</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">uint32_t</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">out_of_range</span><span class="p">(</span><span class="s">&quot;peek_u32 at EOF&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">out_of_range</span><span class="p">(</span><span class="s">"peek_u32 at EOF"</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">impl_</span><span class="o">-&gt;</span><span class="n">get_u32</span><span class="p">(</span><span class="n">cursor_</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">increment</span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cursor_</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">size</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">out_of_range</span><span class="p">(</span><span class="s">&quot;increment past EOF&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">out_of_range</span><span class="p">(</span><span class="s">"increment past EOF"</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">        </span><span class="n">cursor_</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">count</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>

@@ -109,14 +109,6 @@ Typedefs
 --------
 
 
-- :ref:`exhale_typedef_express_8h_1a5e70d3f5847d8026278a89b4d5b1d258`
-
-- :ref:`exhale_typedef_express_8h_1ad90cd297559532dc2c12bd4d0429cd98`
-
-- :ref:`exhale_typedef_express_8h_1aced390c7b53aba7a89d9739a57337991`
-
-- :ref:`exhale_typedef_express_8h_1a5e376b340b3cca2fd7384bda7ef3bd5d`
-
 - :ref:`exhale_typedef_express_8h_1a2b86c5e65f39db2354a6bc1b2d265e52`
 
 - :ref:`exhale_typedef_express_8h_1a501ae54d6c3147f10f69892a9e08d5a9`

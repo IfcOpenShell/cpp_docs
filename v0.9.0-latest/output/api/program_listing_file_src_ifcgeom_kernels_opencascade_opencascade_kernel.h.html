@@ -77,18 +77,18 @@
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BRep_Builder.hxx&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BRepBuilderAPI_MakeEdge.hxx&gt;</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/abstract_kernel.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/abstract_kernel.h"</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/element.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/representation.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/conversion_result.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/element.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/representation.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/conversion_result.h"</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/kernels/opencascade/opencascade_conversion_result.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/kernels/opencascade/opencascade_conversion_result.h"</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/kernels/ifc_geomlibrary_api.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/kernels/ifc_geomlibrary_api.h"</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/taxonomy.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/conversion_settings.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/taxonomy.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/conversion_settings.h"</span>
 
 <span class="k">namespace</span><span class="w"> </span><span class="p">{</span>
 <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">Fn</span><span class="o">&gt;</span>
@@ -99,7 +99,7 @@
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">GetMessageString</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">strlen</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">GetMessageString</span><span class="p">()))</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">GetMessageString</span><span class="p">());</span>
 <span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;Unknown error creating geometry&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">"Unknown error creating geometry"</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
@@ -147,7 +147,7 @@
 <span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">precision_</span><span class="p">;</span>
 <span class="k">public</span><span class="o">:</span>
 <span class="w">    </span><span class="n">open_cascade_kernel</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">settings</span><span class="o">&amp;</span><span class="w"> </span><span class="n">settings</span><span class="p">,</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">&amp;</span><span class="w"> </span><span class="n">logger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">::</span><span class="n">root</span><span class="p">())</span>
-<span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="n">abstract_kernel</span><span class="p">(</span><span class="s">&quot;opencascade&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">settings</span><span class="p">,</span><span class="w"> </span><span class="n">logger</span><span class="p">)</span>
+<span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="n">abstract_kernel</span><span class="p">(</span><span class="s">"opencascade"</span><span class="p">,</span><span class="w"> </span><span class="n">settings</span><span class="p">,</span><span class="w"> </span><span class="n">logger</span><span class="p">)</span>
 <span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">faceset_helper_</span><span class="p">(</span><span class="nb">nullptr</span><span class="p">)</span>
 <span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">precision_</span><span class="p">(</span><span class="n">settings</span><span class="p">.</span><span class="n">get</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">settings</span><span class="o">::</span><span class="n">Precision</span><span class="o">&gt;</span><span class="p">().</span><span class="n">get</span><span class="p">())</span>
 <span class="w">    </span><span class="p">{}</span>

@@ -38,8 +38,8 @@
 <span class="cp">#define ROCKSDBSERIALIZER_H</span>
 <span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../serializers/serializers_api.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/serializer.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../serializers/serializers_api.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/serializer.h"</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
@@ -61,7 +61,7 @@
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">writeHeader</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{}</span>
 
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">finalize</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setFile</span><span class="p">(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">file</span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">exception</span><span class="p">(</span><span class="s">&quot;Streaming serializer uses input filename supplied on construction&quot;</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setFile</span><span class="p">(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">file</span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">exception</span><span class="p">(</span><span class="s">"Streaming serializer uses input filename supplied on construction"</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
 <span class="p">};</span>
 
 <span class="cp">#endif</span>

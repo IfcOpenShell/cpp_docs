@@ -107,7 +107,7 @@ Program Listing for File nef_to_halfspace_tree.h
    
        const auto& p = h->plane();
        oss << "Facet plane=" << p << std::endl;
-       
+   
        auto fc = h->facet_cycles_begin();
        auto se = shalfedge_const_handle(fc);
        CGAL_assertion(se != 0);
@@ -199,7 +199,7 @@ Program Listing for File nef_to_halfspace_tree.h
    
            fuzzy_sphere fs(query, search_radius, 0.);
            // std::cout << "q " << query << std::endl;
-           
+   
            std::list<point_d> results_pos, results_neg;
            kdtree.search(std::back_inserter(results_pos), fs);
    
@@ -813,7 +813,7 @@ Program Listing for File nef_to_halfspace_tree.h
            for (boost::tie(ei, ei_end) = boost::out_edges(cur, g); ei != ei_end; ++ei) {
                auto s = boost::source(*ei, g);
                auto t = boost::target(*ei, g);
-               
+   
                // @todo is this necessary?
                if (cur == t) {
                    std::swap(s, t);
@@ -875,10 +875,10 @@ Program Listing for File nef_to_halfspace_tree.h
            int largest_component_idx = -1;
    
            int num_components = 0;
-           
+   
            // @nb we don't just randomly start from an arbitrary seed, but we sort planes by d / | abc |
            // for (size_t i = 0; i < boost::num_vertices(sub_graph_0); ++i) {
-           
+   
            std::vector<size_t> sorted_verts;
            for (size_t i = 0; i < boost::num_vertices(sub_graph_0); ++i) {
                sorted_verts.push_back(i);
@@ -1244,7 +1244,7 @@ Program Listing for File nef_to_halfspace_tree.h
                // directly, so for now we need to isolate the individual volumes.
                CGAL::Polyhedron_3<Kernel> P;
                poly.convert_inner_shell_to_polyhedron(ci->shells_begin(), P);
-               CGAL::Nef_polyhedron_3<Kernel> Pnef(P);         
+               CGAL::Nef_polyhedron_3<Kernel> Pnef(P);
    
                for (auto it = Pnef.halffacets_begin(); it != Pnef.halffacets_end(); ++it) {
                    if (it->incident_volume()->mark()) {
@@ -1327,7 +1327,7 @@ Program Listing for File nef_to_halfspace_tree.h
                            bool exists = boost::edge(srcid, tt, G).second;
                            if (!exists) {
                                boost::add_edge(srcid, tt, G);
-                           }                       
+                           }
                        }
                    }
                    ++n;

@@ -94,14 +94,14 @@
 <span class="cp">#ifndef IFCGEOMITERATOR_H</span>
 <span class="cp">#define IFCGEOMITERATOR_H</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcparse/file.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcparse/file.h"</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/element.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/conversion_result.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/filter.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/taxonomy.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/converter.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/abstract_mapping.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/element.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/conversion_result.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/filter.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/taxonomy.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/converter.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/abstract_mapping.h"</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;boost/algorithm/string.hpp&gt;</span>
 
@@ -323,12 +323,12 @@
 <span class="w">        </span><span class="p">{</span>
 <span class="w">            </span><span class="n">validate_iterator_state</span><span class="p">();</span>
 <span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">settings_</span><span class="p">.</span><span class="n">get</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">settings</span><span class="o">::</span><span class="n">IteratorOutput</span><span class="o">&gt;</span><span class="p">().</span><span class="n">get</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">settings</span><span class="o">::</span><span class="n">NATIVE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;native output is returned by get(); use get() instead&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">"native output is returned by get(); use get() instead"</span><span class="p">);</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">lock_guard</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">mutex</span><span class="o">&gt;</span><span class="w"> </span><span class="n">lock</span><span class="p">(</span><span class="n">element_ready_mutex_</span><span class="p">);</span>
 <span class="w">            </span><span class="k">auto</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="o">*</span><span class="n">native_task_result_iterator_</span><span class="p">);</span>
 <span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">result</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;current native element has already been retrieved&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">"current native element has already been retrieved"</span><span class="p">);</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
 <span class="w">        </span><span class="p">}</span>

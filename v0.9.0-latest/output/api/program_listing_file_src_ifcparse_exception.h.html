@@ -56,14 +56,14 @@
 <span class="cp">#ifndef IFCEXCEPTION_H</span>
 <span class="cp">#define IFCEXCEPTION_H</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;ifc_parse_api.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"ifc_parse_api.h"</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;boost/lexical_cast.hpp&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;exception&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
 
 <span class="cp">#ifdef _MSC_VER</span>
-<span class="c1">// &quot;C4275 can be ignored in Visual C++ if you are deriving from a type in the Standard C++ Library&quot;,</span>
+<span class="c1">// "C4275 can be ignored in Visual C++ if you are deriving from a type in the Standard C++ Library",</span>
 <span class="c1">// https://msdn.microsoft.com/en-us/library/3tdb471s.aspx</span>
 <span class="cp">#pragma warning(push)</span>
 <span class="cp">#pragma warning(disable : 4275)</span>
@@ -97,14 +97,14 @@
 <span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">token_string</span><span class="p">,</span>
 <span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">expected_type</span><span class="p">)</span>
 <span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="n">exception</span><span class="p">(</span>
-<span class="w">              </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="s">&quot;token &quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">token_string</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; at offset &quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">              </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="s">"token "</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">token_string</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" at offset "</span><span class="w"> </span><span class="o">+</span>
 <span class="w">              </span><span class="n">boost</span><span class="o">::</span><span class="n">lexical_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="n">token_start</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
-<span class="w">              </span><span class="s">&quot; invalid &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">expected_type</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+<span class="w">              </span><span class="s">" invalid "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">expected_type</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
 <span class="w">    </span><span class="n">invalid_token_exception</span><span class="p">(</span>
 <span class="w">        </span><span class="kt">size_t</span><span class="w"> </span><span class="n">token_start</span><span class="p">,</span>
 <span class="w">        </span><span class="kt">char</span><span class="w"> </span><span class="n">character</span><span class="p">)</span>
 <span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="n">exception</span><span class="p">(</span>
-<span class="w">              </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="s">&quot;Unexpected &#39;&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">character</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;&#39; at offset &quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">              </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="s">"Unexpected '"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">character</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">"' at offset "</span><span class="w"> </span><span class="o">+</span>
 <span class="w">              </span><span class="n">boost</span><span class="o">::</span><span class="n">lexical_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="n">token_start</span><span class="p">))</span><span class="w"> </span><span class="p">{}</span>
 <span class="w">    </span><span class="o">~</span><span class="n">invalid_token_exception</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
 <span class="p">};</span>

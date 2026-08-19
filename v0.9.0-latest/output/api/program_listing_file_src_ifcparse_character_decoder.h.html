@@ -63,8 +63,8 @@
 <span class="cp">#ifndef IFCCHARACTERDECODER_H</span>
 <span class="cp">#define IFCCHARACTERDECODER_H</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;file_reader.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;logger.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"file_reader.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"logger.h"</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
 
@@ -91,7 +91,7 @@
 <span class="w">        </span><span class="n">ESCAPE</span>
 <span class="w">    </span><span class="p">};</span>
 <span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="n">ConversionMode</span><span class="w"> </span><span class="n">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UTF8</span><span class="p">;</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">substitution_character</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;_&#39;</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">substitution_character</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">'_'</span><span class="p">;</span>
 
 <span class="w">    </span><span class="n">character_decoder</span><span class="p">(</span><span class="n">Reader</span><span class="o">*</span><span class="w"> </span><span class="n">stream</span><span class="p">,</span><span class="w"> </span><span class="n">logger</span><span class="o">&amp;</span><span class="w"> </span><span class="n">logger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">::</span><span class="n">root</span><span class="p">());</span>
 <span class="w">    </span><span class="o">~</span><span class="n">character_decoder</span><span class="p">();</span>

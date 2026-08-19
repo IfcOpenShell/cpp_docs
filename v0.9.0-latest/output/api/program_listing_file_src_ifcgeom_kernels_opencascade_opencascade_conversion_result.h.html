@@ -67,8 +67,8 @@
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BRepAdaptor_Curve.hxx&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;GCPnts_QuasiUniformDeflection.hxx&gt;</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/conversion_result.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/kernels/ifc_geomlibrary_api.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/conversion_result.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/kernels/ifc_geomlibrary_api.h"</span>
 
 <span class="k">namespace</span><span class="w"> </span><span class="nn">ifcopenshell</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">namespace</span><span class="w"> </span><span class="nn">geom</span><span class="w"> </span><span class="p">{</span>
@@ -91,11 +91,11 @@
 <span class="w">            </span><span class="k">virtual</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">conversion_result_shape</span><span class="o">*</span><span class="w"> </span><span class="nf">clone</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 
 <span class="w">            </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">bounding_box</span><span class="p">(</span><span class="kt">void</span><span class="o">*&amp;</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;Not implemented&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">"Not implemented"</span><span class="p">);</span>
 <span class="w">            </span><span class="p">}</span>
 
 <span class="w">            </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">set_box</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;Not implemented&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">"Not implemented"</span><span class="p">);</span>
 <span class="w">            </span><span class="p">}</span>
 
 <span class="w">            </span><span class="k">virtual</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">surface_genus</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>

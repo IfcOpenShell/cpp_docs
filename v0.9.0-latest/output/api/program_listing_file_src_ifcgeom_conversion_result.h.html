@@ -56,9 +56,9 @@
 <span class="cp">#ifndef CONVERSIONRESULT_H</span>
 <span class="cp">#define CONVERSIONRESULT_H</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/render_styles.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/conversion_settings.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/taxonomy.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/render_styles.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/conversion_settings.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/taxonomy.h"</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;algorithm&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;array&gt;</span>
@@ -83,7 +83,7 @@
 <span class="w">    </span><span class="c1">// but retained to easily created a directed</span>
 <span class="w">    </span><span class="c1">// graph of the original boundary edges. Since</span>
 <span class="w">    </span><span class="c1">// the boundary edges are exactly those with</span>
-<span class="w">    </span><span class="c1">// count=1 we don&#39;t need to worry about</span>
+<span class="w">    </span><span class="c1">// count=1 we don't need to worry about</span>
 <span class="w">    </span><span class="c1">// conflicting original vertex indices.</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">ov1</span><span class="p">,</span><span class="w"> </span><span class="n">ov2</span><span class="p">;</span>
 
@@ -194,7 +194,7 @@
 <span class="w">            </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">number_model</span><span class="o">&amp;</span><span class="w"> </span><span class="n">as_same</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">number_concept</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                </span><span class="k">auto</span><span class="w"> </span><span class="n">same</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">dynamic_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">number_model</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">other</span><span class="p">);</span>
 <span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">same</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                    </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;Incompatible opaque number types&quot;</span><span class="p">);</span>
+<span class="w">                    </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">"Incompatible opaque number types"</span><span class="p">);</span>
 <span class="w">                </span><span class="p">}</span>
 <span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="n">same</span><span class="p">;</span>
 <span class="w">            </span><span class="p">}</span>
@@ -272,7 +272,7 @@
 
 <span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">number_concept</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">data</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">data_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;Empty opaque number&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">"Empty opaque number"</span><span class="p">);</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="n">data_</span><span class="p">;</span>
 <span class="w">        </span><span class="p">}</span>
@@ -309,7 +309,7 @@
 <span class="w">        </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
 <span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value_as</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">data</span><span class="p">().</span><span class="n">type</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">typeid</span><span class="p">(</span><span class="n">T</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">&quot;Unexpected opaque number type&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">"Unexpected opaque number type"</span><span class="p">);</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">data</span><span class="p">().</span><span class="n">value_ptr</span><span class="p">());</span>
 <span class="w">        </span><span class="p">}</span>

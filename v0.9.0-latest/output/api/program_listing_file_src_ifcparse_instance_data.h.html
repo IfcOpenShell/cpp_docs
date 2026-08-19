@@ -56,20 +56,20 @@
 <span class="cp">#ifndef InstanceData_H</span>
 <span class="cp">#define InstanceData_H</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;express.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;argument_type.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;variant_array.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;schema.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;storage.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"express.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"argument_type.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"variant_array.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"schema.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"storage.h"</span>
 
 <span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
 
-<span class="cp">#pragma push_macro(&quot;Handle&quot;)</span>
+<span class="cp">#pragma push_macro("Handle")</span>
 <span class="cp">#undef Handle</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;rocksdb/db.h&gt;</span>
 
-<span class="cp">#pragma pop_macro(&quot;Handle&quot;)</span>
+<span class="cp">#pragma pop_macro("Handle")</span>
 
 <span class="cp">#endif</span>
 
@@ -94,15 +94,15 @@
 <span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">index_</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
 <span class="w">    </span><span class="p">{}</span>
 
-<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="nf">value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">enumeration_</span><span class="o">-&gt;</span><span class="n">lookup_enum_value</span><span class="p">(</span><span class="n">index_</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">index</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">index</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">index_</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">enumeration_type</span><span class="o">*</span><span class="w"> </span><span class="n">enumeration</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">enumeration_type</span><span class="o">*</span><span class="w"> </span><span class="nf">enumeration</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">enumeration_</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
@@ -116,72 +116,72 @@
 <span class="k">namespace</span><span class="w"> </span><span class="nn">impl</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">blank</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;null&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"null"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">derived</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;derived&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"derived"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;int&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"int"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="kt">int64_t</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;int&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"int"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;bool&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"bool"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">boost</span><span class="o">::</span><span class="n">logic</span><span class="o">::</span><span class="n">tribool</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;logical&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"logical"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;real&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"real"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;string&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"string"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">boost</span><span class="o">::</span><span class="n">dynamic_bitset</span><span class="o">&lt;&gt;&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;binary&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"binary"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">enumeration_reference</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;enumeration&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"enumeration"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;instance&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"instance"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">empty_aggregate</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;aggregate&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"aggregate"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">Allocator</span><span class="o">&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span><span class="w"> </span><span class="n">Allocator</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;aggregate of &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">variant_type_name</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">get</span><span class="p">();</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"aggregate of "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">variant_type_name</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">get</span><span class="p">();</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">empty_aggregate_of_aggregate</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;aggregate of aggregate&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"aggregate of aggregate"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 <span class="p">}</span>
 
@@ -210,9 +210,9 @@
 <span class="w">    </span><span class="n">boost</span><span class="o">::</span><span class="n">logic</span><span class="o">::</span><span class="n">tribool</span><span class="p">,</span>
 <span class="w">    </span><span class="c1">// A floating point argument, e.g. 12.3</span>
 <span class="w">    </span><span class="kt">double</span><span class="p">,</span>
-<span class="w">    </span><span class="c1">// A character string argument, e.g. &#39;IfcOpenShell&#39;</span>
+<span class="w">    </span><span class="c1">// A character string argument, e.g. 'IfcOpenShell'</span>
 <span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span>
-<span class="w">    </span><span class="c1">// A binary argument, e.g. &quot;092A&quot; -&gt; 100100101010</span>
+<span class="w">    </span><span class="c1">// A binary argument, e.g. "092A" -&gt; 100100101010</span>
 <span class="w">    </span><span class="n">boost</span><span class="o">::</span><span class="n">dynamic_bitset</span><span class="o">&lt;&gt;</span><span class="p">,</span>
 <span class="w">    </span><span class="c1">// An enumeration argument, e.g. .USERDEFINED.</span>
 <span class="w">    </span><span class="c1">// To initialize the argument a string representation</span>
@@ -233,9 +233,9 @@
 <span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int64_t</span><span class="o">&gt;</span><span class="p">,</span>
 <span class="w">    </span><span class="c1">// An aggregate of floats, e.g. (12.3,4.)</span>
 <span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">,</span>
-<span class="w">    </span><span class="c1">// An aggregate of strings, e.g. (&#39;Ifc&#39;,&#39;Open&#39;,&#39;Shell&#39;)</span>
+<span class="w">    </span><span class="c1">// An aggregate of strings, e.g. ('Ifc','Open','Shell')</span>
 <span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">,</span>
-<span class="w">    </span><span class="c1">// An aggregate of binaries, e.g. (&quot;23B&quot;, &quot;092A&quot;) -&gt; (111011, 100100101010)</span>
+<span class="w">    </span><span class="c1">// An aggregate of binaries, e.g. ("23B", "092A") -&gt; (111011, 100100101010)</span>
 <span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">boost</span><span class="o">::</span><span class="n">dynamic_bitset</span><span class="o">&lt;&gt;&gt;</span><span class="p">,</span>
 <span class="w">    </span><span class="c1">// An aggregate of entity instances. It will either serialize to</span>
 <span class="w">    </span><span class="c1">// e.g. (#1,#2,#3) or datatype identifier for simple types,</span>
@@ -269,7 +269,7 @@
 <span class="k">struct</span><span class="w"> </span><span class="nc">type_encoder_impl</span><span class="o">&lt;</span><span class="n">parameter_pack</span><span class="o">&lt;</span><span class="n">Types</span><span class="p">...</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">U</span><span class="o">&gt;</span>
 <span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">encode_type</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="sc">&#39;A&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="o">::</span><span class="n">impl</span><span class="o">::</span><span class="n">TypeIndex_v</span><span class="o">&lt;</span><span class="n">U</span><span class="p">,</span><span class="w"> </span><span class="n">Types</span><span class="p">...</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="sc">'A'</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="o">::</span><span class="n">impl</span><span class="o">::</span><span class="n">TypeIndex_v</span><span class="o">&lt;</span><span class="n">U</span><span class="p">,</span><span class="w"> </span><span class="n">Types</span><span class="p">...</span><span class="o">&gt;</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
 
@@ -534,7 +534,7 @@
 <span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">atomic_uint32_t</span><span class="w"> </span><span class="n">counter_</span><span class="p">;</span>
 
 <span class="w">    </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">file</span><span class="o">*</span><span class="w"> </span><span class="n">file_</span><span class="p">;</span>
-<span class="w">    </span><span class="c1">// @todo this could also be a 2-byte index, because we can get the schema from the file. But it wouldn&#39;t save space due to alignment</span>
+<span class="w">    </span><span class="c1">// @todo this could also be a 2-byte index, because we can get the schema from the file. But it wouldn't save space due to alignment</span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">declaration</span><span class="o">*</span><span class="w"> </span><span class="n">declaration_</span><span class="p">;</span>
 <span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">identity_</span><span class="p">;</span>
 <span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">id_</span><span class="p">;</span>
@@ -619,7 +619,7 @@
 <span class="w">            </span><span class="k">return</span><span class="p">;</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="cp">#endif</span>
-<span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">logic_error</span><span class="p">(</span><span class="s">&quot;RocksDB storage is unavailable&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">logic_error</span><span class="p">(</span><span class="s">"RocksDB storage is unavailable"</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
@@ -632,7 +632,7 @@
 <span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">rocks_db_attribute_storage</span><span class="p">{}.</span><span class="n">has</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">get_storage_of_type</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">impl</span><span class="o">::</span><span class="n">rocks_db_file_storage</span><span class="o">&gt;</span><span class="p">(),</span><span class="w"> </span><span class="n">declaration_</span><span class="p">,</span><span class="w"> </span><span class="n">id_</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">id_</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">identity_</span><span class="p">,</span><span class="w"> </span><span class="n">attribute_index</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="cp">#endif</span>
-<span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">logic_error</span><span class="p">(</span><span class="s">&quot;RocksDB storage is unavailable&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">logic_error</span><span class="p">(</span><span class="s">"RocksDB storage is unavailable"</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">to_string</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="o">&amp;</span><span class="w"> </span><span class="n">stream</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">uppercase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>

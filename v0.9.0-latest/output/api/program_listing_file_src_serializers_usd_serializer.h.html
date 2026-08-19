@@ -61,23 +61,23 @@
 <span class="cp">#define __TBB_NO_IMPLICIT_LINKAGE 1</span>
 <span class="cp">#define __TBB_LIB_NAME bier</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../serializers/serializers_api.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcgeom/geometry_serializer.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../ifcparse/utils.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../serializers/serializers_api.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcgeom/geometry_serializer.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcparse/utils.h"</span>
 
 <span class="c1">// undefine opencascade Handle macro, because it conflicts with USD</span>
 <span class="c1">// Macro source code lives in Standard_Handle.hxx.</span>
-<span class="cp">#pragma push_macro(&quot;Handle&quot;)</span>
+<span class="cp">#pragma push_macro("Handle")</span>
 <span class="cp">#undef Handle</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;pxr/pxr.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;pxr/usd/usd/stage.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;pxr/base/vt/array.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;pxr/usd/usdGeom/mesh.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;pxr/usd/usdShade/material.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"pxr/pxr.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"pxr/usd/usd/stage.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"pxr/base/vt/array.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"pxr/usd/usdGeom/mesh.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"pxr/usd/usdShade/material.h"</span>
 
 <span class="c1">// redefine Handle macro.</span>
-<span class="cp">#pragma pop_macro(&quot;Handle&quot;)</span>
+<span class="cp">#pragma pop_macro("Handle")</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
@@ -89,7 +89,7 @@
 <span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">toPath</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">replace_if</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span>
 <span class="w">            </span><span class="p">[](</span><span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">48</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="n">c</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">65</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">57</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="n">c</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">97</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">90</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">122</span><span class="p">;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">            </span><span class="sc">&#39;_&#39;</span><span class="p">);</span>
+<span class="w">            </span><span class="sc">'_'</span><span class="p">);</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 

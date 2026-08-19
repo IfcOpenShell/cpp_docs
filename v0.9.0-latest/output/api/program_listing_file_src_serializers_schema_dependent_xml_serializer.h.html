@@ -56,9 +56,9 @@
 <span class="cp">#ifndef XMLSERIALIZERIMPL_H</span>
 <span class="cp">#define XMLSERIALIZERIMPL_H</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../ifcgeom/abstract_mapping.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../ifcparse/macros.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../serializers/xml_serializer.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../ifcgeom/abstract_mapping.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../ifcparse/macros.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../serializers/xml_serializer.h"</span>
 
 <span class="cp">#define INCLUDE_PARENT_PARENT_DIR(x) STRINGIFY(../../ifcparse/schemas/x.h)</span>
 <span class="cp">#include INCLUDE_PARENT_PARENT_DIR(IfcSchema)</span>
@@ -76,7 +76,7 @@
 
 <span class="k">public</span><span class="o">:</span>
 <span class="w">    </span><span class="n">POSTFIX_SCHEMA</span><span class="p">(</span><span class="n">xml_serializer</span><span class="p">)(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">file</span><span class="o">*</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">xml_filename</span><span class="p">,</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">&amp;</span><span class="w"> </span><span class="n">logger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">logger</span><span class="o">::</span><span class="n">root</span><span class="p">())</span>
-<span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="n">xml_serializer</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="n">xml_serializer</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s">""</span><span class="p">)</span>
 <span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">mapping_</span><span class="p">(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">geom</span><span class="o">::</span><span class="n">impl</span><span class="o">::</span><span class="n">mapping_implementations</span><span class="p">().</span><span class="n">construct</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">settings_</span><span class="p">,</span><span class="w"> </span><span class="n">logger</span><span class="p">))</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">file</span><span class="p">;</span>

@@ -56,10 +56,10 @@
 <span class="cp">#ifndef IFCBASECLASS_H</span>
 <span class="cp">#define IFCBASECLASS_H</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;argument.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;ifc_parse_api.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;schema.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;utils.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"argument.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"ifc_parse_api.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"schema.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"utils.h"</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;atomic&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span>
@@ -181,7 +181,7 @@
 <span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">T</span><span class="p">{};</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_same_v</span><span class="o">&lt;</span><span class="n">select</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">static_assert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_same_v</span><span class="o">&lt;</span><span class="n">select</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;select is abstract&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">static_assert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_same_v</span><span class="o">&lt;</span><span class="n">select</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="s">"select is abstract"</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">declaration</span><span class="p">().</span><span class="n">is</span><span class="p">(</span><span class="n">T</span><span class="o">::</span><span class="n">Class</span><span class="p">()))</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">T</span><span class="p">(</span><span class="n">data_weak</span><span class="p">());</span>
@@ -222,20 +222,13 @@
 <span class="p">};</span>
 
 <span class="c1">// @todo Investigate whether these should be template classes instead</span>
-<span class="c1">// @todo currently this class doesn&#39;t do much, decide whether to keep</span>
+<span class="c1">// @todo currently this class doesn't do much, decide whether to keep</span>
 <span class="c1">//       it or move certain functionality from base downwards to</span>
 <span class="c1">//       entity and declared_type</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">IFC_PARSE_API</span><span class="w"> </span><span class="n">declared_type</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">base</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="k">public</span><span class="o">:</span>
 <span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="n">base</span><span class="o">::</span><span class="n">base</span><span class="p">;</span>
 <span class="p">};</span>
-
-<span class="c1">// Compatibility aliases for checked-in generated schema sources. New generated</span>
-<span class="c1">// sources use the snake_case names directly.</span>
-<span class="k">using</span><span class="w"> </span><span class="n">Base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">base</span><span class="p">;</span>
-<span class="k">using</span><span class="w"> </span><span class="n">Entity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entity</span><span class="p">;</span>
-<span class="k">using</span><span class="w"> </span><span class="n">Select</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">select</span><span class="p">;</span>
-<span class="k">using</span><span class="w"> </span><span class="n">DeclaredType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">declared_type</span><span class="p">;</span>
 
 <span class="p">}</span><span class="w"> </span><span class="c1">// namespace express</span>
 

@@ -30,8 +30,8 @@ Functions
 ---------
 
 
-- :ref:`exhale_function_conversion__settings_8h_1a58821628922ecb5afccff064892fb619`
+- :ref:`exhale_function_conversion__settings_8h_1a5b26a5975bf6533ec93c3e44209e9609`
 
 - :ref:`exhale_function_conversion__settings_8h_1aa9ff219f5f43d20cba902bf0c195ff7a`
 
-- :ref:`exhale_function_conversion__settings_8h_1a5b26a5975bf6533ec93c3e44209e9609`
+- :ref:`exhale_function_conversion__settings_8h_1a58821628922ecb5afccff064892fb619`

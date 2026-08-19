@@ -38,7 +38,7 @@
 <span class="cp">#define STORAGE_H</span>
 
 <span class="c1">// Avoid conflicts with OpenCascade HANDLE type and RocksDB Handle</span>
-<span class="cp">#pragma push_macro(&quot;Handle&quot;)</span>
+<span class="cp">#pragma push_macro("Handle")</span>
 <span class="cp">#undef Handle</span>
 
 <span class="cp">#ifndef IFOPSH_WITH_ROCKSDB</span>
@@ -54,13 +54,13 @@
 
 <span class="cp">#endif</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rocksdb_map_adapter.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rocksdb_set_view.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;map_variant.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;map_transformer.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;set_to_map_transformer.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;file_open_status.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;logger.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"rocksdb_map_adapter.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"rocksdb_set_view.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"map_variant.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"map_transformer.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"set_to_map_transformer.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"file_open_status.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"logger.h"</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;functional&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;variant&gt;</span>
@@ -620,16 +620,16 @@
 <span class="w">                </span><span class="n">rocksdb</span><span class="o">::</span><span class="n">Iterator</span><span class="o">*</span><span class="w"> </span><span class="n">state_</span><span class="p">;</span>
 <span class="w">                </span><span class="k">const</span><span class="w"> </span><span class="n">rocks_db_file_storage</span><span class="o">*</span><span class="w"> </span><span class="n">storage_</span><span class="p">;</span>
 
-<span class="w">                </span><span class="k">static</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">prefix_</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;t|&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="k">static</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">prefix_</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"t|"</span><span class="p">;</span>
 
 <span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">size_t</span><span class="o">&gt;</span><span class="w"> </span><span class="n">read_id_</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
 <span class="w">                    </span><span class="k">auto</span><span class="w"> </span><span class="n">sv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">state_</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">ToStringView</span><span class="p">();</span>
-<span class="w">                    </span><span class="k">auto</span><span class="w"> </span><span class="n">ii</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sv</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="s">&quot;|&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+<span class="w">                    </span><span class="k">auto</span><span class="w"> </span><span class="n">ii</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sv</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="s">"|"</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
 <span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ii</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">decltype</span><span class="p">(</span><span class="n">sv</span><span class="p">)</span><span class="o">::</span><span class="n">npos</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                        </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">pEnd</span><span class="p">;</span>
 <span class="w">                        </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strtol</span><span class="p">(</span><span class="n">sv</span><span class="p">.</span><span class="n">data</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pEnd</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
-<span class="w">                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">pEnd</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;|&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">pEnd</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">'|'</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                            </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="kt">size_t</span><span class="p">)</span><span class="n">result</span><span class="p">;</span>
 <span class="w">                        </span><span class="p">}</span>
 <span class="w">                    </span><span class="p">}</span>
@@ -671,7 +671,7 @@
 <span class="w">                    </span><span class="k">auto</span><span class="w"> </span><span class="n">last_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">read_id_</span><span class="p">();</span>
 <span class="w">                    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">state_</span><span class="o">-&gt;</span><span class="n">Valid</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                        </span><span class="n">state_</span><span class="o">-&gt;</span><span class="n">Next</span><span class="p">();</span>
-<span class="w">                        </span><span class="c1">// Stop if we&#39;ve left the prefix range.</span>
+<span class="w">                        </span><span class="c1">// Stop if we've left the prefix range.</span>
 <span class="w">                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">state_</span><span class="o">-&gt;</span><span class="n">Valid</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">!</span><span class="n">state_</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">starts_with</span><span class="p">(</span><span class="n">prefix_</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                            </span><span class="k">delete</span><span class="w"> </span><span class="n">state_</span><span class="p">;</span>
 <span class="w">                            </span><span class="n">state_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">;</span>
@@ -733,7 +733,7 @@
 <span class="p">}</span>
 
 <span class="c1">// redefine Handle macro.</span>
-<span class="cp">#pragma pop_macro(&quot;Handle&quot;)</span>
+<span class="cp">#pragma pop_macro("Handle")</span>
 
 <span class="cp">#endif </span><span class="c1">// STORAGE_H</span>
 </pre></div>

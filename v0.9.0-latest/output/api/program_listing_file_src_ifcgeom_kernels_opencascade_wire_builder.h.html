@@ -56,7 +56,7 @@
 <span class="cp">#ifndef WIRE_BUILDER_H</span>
 <span class="cp">#define WIRE_BUILDER_H</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcparse/express.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcparse/express.h"</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Geom_Curve.hxx&gt;</span>
 
@@ -87,7 +87,7 @@
 <span class="w">        </span><span class="k">public</span><span class="o">:</span>
 <span class="w">            </span><span class="n">wire_builder</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="o">&amp;</span><span class="w"> </span><span class="n">inst</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="p">())</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">p_</span><span class="p">(</span><span class="n">p</span><span class="p">),</span><span class="w"> </span><span class="n">override_next_</span><span class="p">(</span><span class="nb">false</span><span class="p">),</span><span class="w"> </span><span class="n">inst_</span><span class="p">(</span><span class="n">inst</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
 
-<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="k">operator</span><span class="p">()(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">);</span>
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="nf">operator</span><span class="p">()(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">);</span>
 
 <span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="nf">operator</span><span class="p">()(</span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TopoDS_Shape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">last</span><span class="p">);</span>
 
@@ -117,7 +117,7 @@
 <span class="w">        </span><span class="cm">/*</span>
 <span class="cm">        Below is code to deduce the formula below in SageMath</span>
 
-<span class="cm">        | R, b = var(&#39;R b&#39;)</span>
+<span class="cm">        | R, b = var('R b')</span>
 <span class="cm">        |</span>
 <span class="cm">        | Bxy = R * cos(b), R * sin(b)</span>
 <span class="cm">        | Cxy = R * cos(b/2), R * sin(b/2)</span>

@@ -56,14 +56,14 @@
 <span class="cp">#ifndef IFCGEOMTREE_H</span>
 <span class="cp">#define IFCGEOMTREE_H</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcparse/file.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcparse/file.h"</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/element.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/iterator.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;../../../ifcgeom/tree.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;opencascade_conversion_result.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;opencascade_kernel.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;base_utils.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/element.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/iterator.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"../../../ifcgeom/tree.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"opencascade_conversion_result.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"opencascade_kernel.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"base_utils.h"</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;NCollection_UBTree.hxx&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;BRepBndLib.hxx&gt;</span>
@@ -106,7 +106,7 @@
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;GeomAPI_ProjectPointOnSurf.hxx&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Geom_Plane.hxx&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;IntTools_FaceFace.hxx&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;clash_utils.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"clash_utils.h"</span>
 
 <span class="k">namespace</span><span class="w"> </span><span class="nn">ifcopenshell</span><span class="o">::</span><span class="nn">geom</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">namespace</span><span class="w"> </span><span class="p">{</span>
@@ -183,7 +183,7 @@
 <span class="w">                    </span><span class="k">const</span><span class="w"> </span><span class="n">opencascade</span><span class="o">::</span><span class="n">handle</span><span class="o">&lt;</span><span class="n">BVH_Tree</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">BVH_BinaryTree</span><span class="o">&gt;&gt;&amp;</span><span class="w"> </span><span class="n">bvh</span><span class="p">,</span>
 <span class="w">                    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="o">&gt;&gt;&amp;</span><span class="w"> </span><span class="n">tris</span><span class="p">,</span>
 <span class="w">                    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">gp_Pnt</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">verts</span><span class="p">,</span>
-<span class="w">                    </span><span class="c1">// In the case of &quot;touching&quot; rays, let&#39;s check again!</span>
+<span class="w">                    </span><span class="c1">// In the case of "touching" rays, let's check again!</span>
 <span class="w">                    </span><span class="kt">bool</span><span class="w"> </span><span class="n">should_check_again</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span>
 <span class="w">                    </span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                </span><span class="n">ray</span><span class="w"> </span><span class="n">v_ray</span><span class="p">;</span>
@@ -194,10 +194,10 @@
 <span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">should_check_again</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                    </span><span class="c1">// The first check may be incorrect if it intersects</span>
 <span class="w">                    </span><span class="c1">// exactly between triangles or on edges of triangles.</span>
-<span class="w">                    </span><span class="c1">// A second check is used to &quot;double check&quot; the results.</span>
+<span class="w">                    </span><span class="c1">// A second check is used to "double check" the results.</span>
 <span class="w">                    </span><span class="c1">// The second check is perpendicular because AEC objects</span>
 <span class="w">                    </span><span class="c1">// are typically symmetrical along an axis, and goes down</span>
-<span class="w">                    </span><span class="c1">// because there&#39;s typically less stuff down there.</span>
+<span class="w">                    </span><span class="c1">// because there's typically less stuff down there.</span>
 <span class="w">                    </span><span class="n">v_ray</span><span class="p">.</span><span class="n">dir</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
 <span class="w">                    </span><span class="n">v_ray</span><span class="p">.</span><span class="n">dir</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
 <span class="w">                    </span><span class="n">v_ray</span><span class="p">.</span><span class="n">dir</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">-1.0f</span><span class="p">;</span>
@@ -213,7 +213,7 @@
 <span class="w">                    </span><span class="n">v_ray</span><span class="p">.</span><span class="n">dir_inv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">INFINITY</span><span class="p">;</span><span class="w"> </span><span class="c1">// 1.0f/dir[2]</span>
 <span class="w">                </span><span class="p">}</span>
 
-<span class="w">                </span><span class="n">gp_Vec</span><span class="w"> </span><span class="n">ray_origin</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">X</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">Y</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">Z</span><span class="p">());</span>
+<span class="w">                </span><span class="n">gp_Vec</span><span class="w"> </span><span class="nf">ray_origin</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">X</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">Y</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">Z</span><span class="p">());</span>
 <span class="w">                </span><span class="n">gp_Vec</span><span class="w"> </span><span class="nf">ray_vector</span><span class="p">(</span><span class="n">v_ray</span><span class="p">.</span><span class="n">dir</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="n">v_ray</span><span class="p">.</span><span class="n">dir</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="n">v_ray</span><span class="p">.</span><span class="n">dir</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
 
 <span class="w">                </span><span class="kt">int</span><span class="w"> </span><span class="n">total_intersections</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
@@ -237,27 +237,27 @@
 <span class="w">                    </span><span class="n">box</span><span class="p">.</span><span class="n">corners</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">(</span><span class="n">max_point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1e-5</span><span class="p">);</span>
 <span class="w">                    </span><span class="n">box</span><span class="p">.</span><span class="n">corners</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">(</span><span class="n">max_point</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1e-5</span><span class="p">);</span>
 <span class="w">                    </span><span class="cm">/*</span>
-<span class="cm">                    std::cout &lt;&lt; &quot;Ray &quot;</span>
-<span class="cm">                        &lt;&lt; v_ray.origin[0] &lt;&lt; &quot; &quot;</span>
-<span class="cm">                        &lt;&lt; v_ray.origin[1] &lt;&lt; &quot; &quot;</span>
-<span class="cm">                        &lt;&lt; v_ray.origin[2] &lt;&lt; &quot; &quot;</span>
+<span class="cm">                    std::cout &lt;&lt; "Ray "</span>
+<span class="cm">                        &lt;&lt; v_ray.origin[0] &lt;&lt; " "</span>
+<span class="cm">                        &lt;&lt; v_ray.origin[1] &lt;&lt; " "</span>
+<span class="cm">                        &lt;&lt; v_ray.origin[2] &lt;&lt; " "</span>
 <span class="cm">                        &lt;&lt; std::endl;</span>
-<span class="cm">                    std::cout &lt;&lt; &quot;Box &quot;</span>
-<span class="cm">                        &lt;&lt; min_point[0] &lt;&lt; &quot; &quot;</span>
-<span class="cm">                        &lt;&lt; min_point[1] &lt;&lt; &quot; &quot;</span>
-<span class="cm">                        &lt;&lt; min_point[2] &lt;&lt; &quot; &quot;</span>
-<span class="cm">                        &lt;&lt; max_point[0] &lt;&lt; &quot; &quot;</span>
-<span class="cm">                        &lt;&lt; max_point[1] &lt;&lt; &quot; &quot;</span>
-<span class="cm">                        &lt;&lt; max_point[2] &lt;&lt; &quot; &quot;</span>
+<span class="cm">                    std::cout &lt;&lt; "Box "</span>
+<span class="cm">                        &lt;&lt; min_point[0] &lt;&lt; " "</span>
+<span class="cm">                        &lt;&lt; min_point[1] &lt;&lt; " "</span>
+<span class="cm">                        &lt;&lt; min_point[2] &lt;&lt; " "</span>
+<span class="cm">                        &lt;&lt; max_point[0] &lt;&lt; " "</span>
+<span class="cm">                        &lt;&lt; max_point[1] &lt;&lt; " "</span>
+<span class="cm">                        &lt;&lt; max_point[2] &lt;&lt; " "</span>
 <span class="cm">                        &lt;&lt; std::endl;</span>
 <span class="cm">                    */</span>
 
 <span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">is_intersect_ray_box</span><span class="p">(</span><span class="o">&amp;</span><span class="n">v_ray</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">box</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                        </span><span class="k">continue</span><span class="p">;</span>
 <span class="w">                    </span><span class="p">}</span>
-<span class="w">                    </span><span class="c1">//std::cout &lt;&lt; &quot;Ray hits box&quot; &lt;&lt; std::endl;</span>
+<span class="w">                    </span><span class="c1">//std::cout &lt;&lt; "Ray hits box" &lt;&lt; std::endl;</span>
 <span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">bvh</span><span class="o">-&gt;</span><span class="n">IsOuter</span><span class="p">(</span><span class="n">i</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                        </span><span class="c1">//std::cout &lt;&lt; &quot;Ray hits leaf&quot; &lt;&lt; std::endl;</span>
+<span class="w">                        </span><span class="c1">//std::cout &lt;&lt; "Ray hits leaf" &lt;&lt; std::endl;</span>
 <span class="w">                        </span><span class="c1">// Do ray triangle check.</span>
 <span class="w">                        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="n">bvh</span><span class="o">-&gt;</span><span class="n">BegPrimitive</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="w"> </span><span class="n">j</span><span class="o">&lt;=</span><span class="n">bvh</span><span class="o">-&gt;</span><span class="n">EndPrimitive</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="w"> </span><span class="o">++</span><span class="n">j</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                            </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">tri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tris</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
@@ -267,10 +267,10 @@
 <span class="w">                            </span><span class="n">gp_Vec</span><span class="w"> </span><span class="nf">tc</span><span class="p">(</span><span class="n">verts</span><span class="p">[</span><span class="n">tri</span><span class="p">[</span><span class="mi">2</span><span class="p">]].</span><span class="n">XYZ</span><span class="p">());</span>
 
 <span class="w">                            </span><span class="cm">/*</span>
-<span class="cm">                            std::cout &lt;&lt; &quot;ray origin &quot; &lt;&lt; ray_origin.X() &lt;&lt; &quot; &quot; &lt;&lt; ray_origin.Y() &lt;&lt; &quot; &quot; &lt;&lt; ray_origin.Z() &lt;&lt; std::endl;</span>
-<span class="cm">                            std::cout &lt;&lt; &quot;inside-tri &quot; &lt;&lt; ta.X() &lt;&lt; &quot; &quot; &lt;&lt; ta.Y() &lt;&lt; &quot; &quot; &lt;&lt; ta.Z() &lt;&lt; std::endl;</span>
-<span class="cm">                            std::cout &lt;&lt; &quot;inside-tri &quot; &lt;&lt; tb.X() &lt;&lt; &quot; &quot; &lt;&lt; tb.Y() &lt;&lt; &quot; &quot; &lt;&lt; tb.Z() &lt;&lt; std::endl;</span>
-<span class="cm">                            std::cout &lt;&lt; &quot;inside-tri &quot; &lt;&lt; tc.X() &lt;&lt; &quot; &quot; &lt;&lt; tc.Y() &lt;&lt; &quot; &quot; &lt;&lt; tc.Z() &lt;&lt; std::endl;</span>
+<span class="cm">                            std::cout &lt;&lt; "ray origin " &lt;&lt; ray_origin.X() &lt;&lt; " " &lt;&lt; ray_origin.Y() &lt;&lt; " " &lt;&lt; ray_origin.Z() &lt;&lt; std::endl;</span>
+<span class="cm">                            std::cout &lt;&lt; "inside-tri " &lt;&lt; ta.X() &lt;&lt; " " &lt;&lt; ta.Y() &lt;&lt; " " &lt;&lt; ta.Z() &lt;&lt; std::endl;</span>
+<span class="cm">                            std::cout &lt;&lt; "inside-tri " &lt;&lt; tb.X() &lt;&lt; " " &lt;&lt; tb.Y() &lt;&lt; " " &lt;&lt; tb.Z() &lt;&lt; std::endl;</span>
+<span class="cm">                            std::cout &lt;&lt; "inside-tri " &lt;&lt; tc.X() &lt;&lt; " " &lt;&lt; tc.Y() &lt;&lt; " " &lt;&lt; tc.Z() &lt;&lt; std::endl;</span>
 <span class="cm">                            */</span>
 <span class="w">                            </span><span class="kt">double</span><span class="w"> </span><span class="n">at</span><span class="p">,</span><span class="w"> </span><span class="n">au</span><span class="p">,</span><span class="w"> </span><span class="n">av</span><span class="p">;</span>
 <span class="w">                            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intersectRayTriangle</span><span class="p">(</span><span class="n">ray_origin</span><span class="p">,</span><span class="w"> </span><span class="n">ray_vector</span><span class="p">,</span><span class="w"> </span><span class="n">ta</span><span class="p">,</span><span class="w"> </span><span class="n">tb</span><span class="p">,</span><span class="w"> </span><span class="n">tc</span><span class="p">,</span><span class="w"> </span><span class="n">at</span><span class="p">,</span><span class="w"> </span><span class="n">au</span><span class="p">,</span><span class="w"> </span><span class="n">av</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
@@ -568,7 +568,7 @@
 <span class="w">                            </span><span class="p">}</span>
 <span class="w">                        </span><span class="p">}</span>
 
-<span class="w">                        </span><span class="c1">// If there are no points in b, this may be a &quot;piercing&quot; triangle.</span>
+<span class="w">                        </span><span class="c1">// If there are no points in b, this may be a "piercing" triangle.</span>
 <span class="w">                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">points_in_b</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                            </span><span class="n">gp_Vec</span><span class="w"> </span><span class="nf">v1_a_vec</span><span class="p">(</span><span class="n">verts_a</span><span class="p">[</span><span class="n">tri</span><span class="p">[</span><span class="mi">0</span><span class="p">]].</span><span class="n">XYZ</span><span class="p">());</span>
 <span class="w">                            </span><span class="n">gp_Vec</span><span class="w"> </span><span class="nf">v2_a_vec</span><span class="p">(</span><span class="n">verts_a</span><span class="p">[</span><span class="n">tri</span><span class="p">[</span><span class="mi">1</span><span class="p">]].</span><span class="n">XYZ</span><span class="p">());</span>
@@ -577,7 +577,7 @@
 <span class="w">                            </span><span class="c1">// Protrusions take priority over piercings. We only check for piercings if:</span>
 <span class="w">                            </span><span class="c1">//  - This is a piercing triangle (e.g. no points in b)</span>
 <span class="w">                            </span><span class="c1">//  - No protrusion was already found</span>
-<span class="w">                            </span><span class="c1">//  - We haven&#39;t yet found a piercing at the max protrusion limit</span>
+<span class="w">                            </span><span class="c1">//  - We haven't yet found a piercing at the max protrusion limit</span>
 <span class="w">                            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">protrusion</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="o">-</span><span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">infinity</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">pierce</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">max_protrusion</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                                </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span>
 <span class="w">                                    </span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="o">&gt;&gt;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span>
@@ -603,7 +603,7 @@
 <span class="w">                                </span><span class="p">}</span>
 <span class="w">                            </span><span class="p">}</span>
 
-<span class="w">                            </span><span class="c1">// Since there were no points in b, we don&#39;t need to check for protrusions.</span>
+<span class="w">                            </span><span class="c1">// Since there were no points in b, we don't need to check for protrusions.</span>
 <span class="w">                            </span><span class="k">continue</span><span class="p">;</span>
 <span class="w">                        </span><span class="p">}</span>
 
@@ -620,7 +620,7 @@
 
 <span class="w">                                </span><span class="n">tri_count_</span><span class="o">++</span><span class="p">;</span>
 
-<span class="w">                                </span><span class="c1">// We&#39;re penetrating _into_ a shape, so don&#39;t</span>
+<span class="w">                                </span><span class="c1">// We're penetrating _into_ a shape, so don't</span>
 <span class="w">                                </span><span class="c1">// compare distances to faces with roughly the</span>
 <span class="w">                                </span><span class="c1">// same normal as the penetration.</span>
 <span class="w">                                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">normal_a</span><span class="p">.</span><span class="n">Dot</span><span class="p">(</span><span class="n">normal_b</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">0.9f</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -635,11 +635,11 @@
 <span class="w">                                    </span><span class="n">gp_Vec</span><span class="w"> </span><span class="nf">ray_origin</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">XYZ</span><span class="p">());</span>
 
 <span class="w">                                    </span><span class="cm">/*</span>
-<span class="cm">                                    std::cout &lt;&lt; &quot;POINT IN B &quot; &lt;&lt; v.X() &lt;&lt; &quot; &quot; &lt;&lt; v.Y() &lt;&lt; &quot; &quot; &lt;&lt; v.Z() &lt;&lt; std::endl;</span>
-<span class="cm">                                    std::cout &lt;&lt; &quot;dir-&gt; &quot; &lt;&lt; normal_b.X() &lt;&lt; &quot; &quot; &lt;&lt; normal_b.Y() &lt;&lt; &quot; &quot; &lt;&lt; normal_b.Z() &lt;&lt; std::endl;</span>
-<span class="cm">                                    std::cout &lt;&lt; &quot;-&gt;tri &quot; &lt;&lt; v1_b[0] &lt;&lt; &quot; &quot; &lt;&lt; v1_b[1] &lt;&lt; &quot; &quot; &lt;&lt; v1_b[2] &lt;&lt; std::endl;</span>
-<span class="cm">                                    std::cout &lt;&lt; &quot;-&gt;tri &quot; &lt;&lt; v2_b[0] &lt;&lt; &quot; &quot; &lt;&lt; v2_b[1] &lt;&lt; &quot; &quot; &lt;&lt; v2_b[2] &lt;&lt; std::endl;</span>
-<span class="cm">                                    std::cout &lt;&lt; &quot;-&gt;tri &quot; &lt;&lt; v3_b[0] &lt;&lt; &quot; &quot; &lt;&lt; v3_b[1] &lt;&lt; &quot; &quot; &lt;&lt; v3_b[2] &lt;&lt; std::endl;</span>
+<span class="cm">                                    std::cout &lt;&lt; "POINT IN B " &lt;&lt; v.X() &lt;&lt; " " &lt;&lt; v.Y() &lt;&lt; " " &lt;&lt; v.Z() &lt;&lt; std::endl;</span>
+<span class="cm">                                    std::cout &lt;&lt; "dir-&gt; " &lt;&lt; normal_b.X() &lt;&lt; " " &lt;&lt; normal_b.Y() &lt;&lt; " " &lt;&lt; normal_b.Z() &lt;&lt; std::endl;</span>
+<span class="cm">                                    std::cout &lt;&lt; "-&gt;tri " &lt;&lt; v1_b[0] &lt;&lt; " " &lt;&lt; v1_b[1] &lt;&lt; " " &lt;&lt; v1_b[2] &lt;&lt; std::endl;</span>
+<span class="cm">                                    std::cout &lt;&lt; "-&gt;tri " &lt;&lt; v2_b[0] &lt;&lt; " " &lt;&lt; v2_b[1] &lt;&lt; " " &lt;&lt; v2_b[2] &lt;&lt; std::endl;</span>
+<span class="cm">                                    std::cout &lt;&lt; "-&gt;tri " &lt;&lt; v3_b[0] &lt;&lt; " " &lt;&lt; v3_b[1] &lt;&lt; " " &lt;&lt; v3_b[2] &lt;&lt; std::endl;</span>
 <span class="cm">                                    */</span>
 
 <span class="w">                                    </span><span class="c1">// Do (cheaper) line check.</span>
@@ -647,11 +647,11 @@
 <span class="w">                                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intersectRayTriangle</span><span class="p">(</span><span class="n">ray_origin</span><span class="p">,</span><span class="w"> </span><span class="n">normal_b</span><span class="p">,</span><span class="w"> </span><span class="n">ta</span><span class="p">,</span><span class="w"> </span><span class="n">tb</span><span class="p">,</span><span class="w"> </span><span class="n">tc</span><span class="p">,</span><span class="w"> </span><span class="n">at</span><span class="p">,</span><span class="w"> </span><span class="n">au</span><span class="p">,</span><span class="w"> </span><span class="n">av</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                                        </span><span class="kt">double</span><span class="w"> </span><span class="n">current_v_protrusion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">at</span><span class="p">;</span>
 
-<span class="w">                                        </span><span class="c1">// std::cout &lt;&lt; &quot;We got a current protrusion &quot; &lt;&lt; current_v_protrusion &lt;&lt; std::endl;</span>
+<span class="w">                                        </span><span class="c1">// std::cout &lt;&lt; "We got a current protrusion " &lt;&lt; current_v_protrusion &lt;&lt; std::endl;</span>
 <span class="w">                                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">current_v_protrusion</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">v_protrusion</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                                            </span><span class="kt">double</span><span class="w"> </span><span class="n">aw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">au</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">av</span><span class="p">;</span><span class="w"> </span><span class="c1">// Barycentric coordinate for ta</span>
 <span class="w">                                            </span><span class="n">gp_Vec</span><span class="w"> </span><span class="n">point_on_b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">aw</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">ta</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">au</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">tb</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">av</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">tc</span><span class="p">;</span><span class="w"> </span><span class="c1">// Intersection point</span>
-<span class="w">                                            </span><span class="c1">// std::cout &lt;&lt; &quot;New v_protrusion winner of &quot; &lt;&lt; current_v_protrusion &lt;&lt; std::endl;</span>
+<span class="w">                                            </span><span class="c1">// std::cout &lt;&lt; "New v_protrusion winner of " &lt;&lt; current_v_protrusion &lt;&lt; std::endl;</span>
 <span class="w">                                            </span><span class="n">v_protrusion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">current_v_protrusion</span><span class="p">;</span>
 <span class="w">                                            </span><span class="n">v_protrusion_point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">v</span><span class="p">.</span><span class="n">X</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">Y</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">Z</span><span class="p">()};</span>
 <span class="w">                                            </span><span class="n">v_surface_point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">point_on_b</span><span class="p">.</span><span class="n">X</span><span class="p">(),</span><span class="w"> </span><span class="n">point_on_b</span><span class="p">.</span><span class="n">Y</span><span class="p">(),</span><span class="w"> </span><span class="n">point_on_b</span><span class="p">.</span><span class="n">Z</span><span class="p">()};</span>
@@ -667,7 +667,7 @@
 
 <span class="w">                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">v_protrusion</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;::</span><span class="n">infinity</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">v_protrusion</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">protrusion</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                                </span><span class="c1">// std::cout &lt;&lt; &quot;New actual protrusion winner of &quot; &lt;&lt; v_protrusion &lt;&lt; std::endl;</span>
+<span class="w">                                </span><span class="c1">// std::cout &lt;&lt; "New actual protrusion winner of " &lt;&lt; v_protrusion &lt;&lt; std::endl;</span>
 <span class="w">                                </span><span class="n">protrusion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v_protrusion</span><span class="p">;</span>
 <span class="w">                                </span><span class="n">protrusion_point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v_protrusion_point</span><span class="p">;</span>
 <span class="w">                                </span><span class="n">surface_point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v_surface_point</span><span class="p">;</span>
@@ -1122,7 +1122,7 @@
 <span class="w">                                </span><span class="n">clash</span><span class="w"> </span><span class="n">intersection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">test_intersection</span><span class="p">(</span><span class="n">task</span><span class="p">.</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">task</span><span class="p">.</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">tolerance</span><span class="p">,</span><span class="w"> </span><span class="n">check_all</span><span class="p">);</span>
 <span class="w">                                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">intersection</span><span class="p">.</span><span class="n">clash_type</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                                    </span><span class="c1">// Replace the clash result if any of these criteria apply:</span>
-<span class="w">                                    </span><span class="c1">// - We don&#39;t have a clash yet</span>
+<span class="w">                                    </span><span class="c1">// - We don't have a clash yet</span>
 <span class="w">                                    </span><span class="c1">// - Our previous clash is piercing, and our new one is a protrusion</span>
 <span class="w">                                    </span><span class="c1">// - We have the same clash type, but our clash is more severe</span>
 <span class="w">                                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span>
@@ -1558,10 +1558,10 @@
 
 <span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">uint8_to_b64</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">uuids_array</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">hex_str</span><span class="p">;</span>
-<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">byte</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">uuids_array</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="kt">byte</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">uuids_array</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                </span><span class="c1">// Convert each byte to a two-digit hexadecimal string and append it to the result</span>
 <span class="w">                </span><span class="kt">char</span><span class="w"> </span><span class="n">hex</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span><span class="w"> </span><span class="c1">// Two characters for the hex value and one for the null terminator</span>
-<span class="w">                </span><span class="n">snprintf</span><span class="p">(</span><span class="n">hex</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">hex</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;%02x&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">byte</span><span class="p">);</span>
+<span class="w">                </span><span class="n">snprintf</span><span class="p">(</span><span class="n">hex</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">hex</span><span class="p">),</span><span class="w"> </span><span class="s">"%02x"</span><span class="p">,</span><span class="w"> </span><span class="kt">byte</span><span class="p">);</span>
 <span class="w">                </span><span class="n">hex_str</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">hex</span><span class="p">);</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">hex_str</span><span class="p">;</span>
