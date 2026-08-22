@@ -79,10 +79,6 @@ Program Listing for File character_decoder.h
        std::string get(size_t& offset);
    };
    
-   } // namespace ifcopenshell
-   
-   namespace ifcopenshell {
-   
    class IFC_PARSE_API character_encoder {
      private:
        std::u32string str_;
@@ -92,6 +88,6 @@ Program Listing for File character_decoder.h
        operator std::string();
    };
    
-   } // namespace IfcWrite
+   } // namespace ifcopenshell
    
    #endif

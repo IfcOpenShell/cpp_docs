@@ -1,0 +1,14 @@
+.. _exhale_function_parse_8h_1aa903c330c7742f5e5a005605b9529a5d:
+
+Function ifcopenshell::decode_spf_string
+========================================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::decode_spf_string(const std::string&)
+   :project: IfcOpenShell

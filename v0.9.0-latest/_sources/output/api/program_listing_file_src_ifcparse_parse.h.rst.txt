@@ -59,6 +59,10 @@ Program Listing for File parse.h
    
    namespace ifcopenshell {
    
+   IFC_PARSE_API std::string encode_spf_string(const std::string& value);
+   
+   IFC_PARSE_API std::string decode_spf_string(const std::string& value);
+   
    template <typename Reader>
    class IFC_PARSE_API spf_lexer {
      private:

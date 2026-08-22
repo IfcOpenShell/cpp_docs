@@ -164,6 +164,10 @@ Functions
 
 - :ref:`exhale_function_character__decoder_8h_1aacb036a44fc72837346c54e676806cd4`
 
+- :ref:`exhale_function_parse_8h_1aa903c330c7742f5e5a005605b9529a5d`
+
+- :ref:`exhale_function_parse_8h_1ab57422e54b7615e4d35394159c502610`
+
 - :ref:`exhale_function_utils_8h_1a6c2b57f981ccb3a243fa6472cafb9d96`
 
 - :ref:`exhale_function_argument__type_8h_1aff2316110cf8e3b2cf8324a43457b593`
