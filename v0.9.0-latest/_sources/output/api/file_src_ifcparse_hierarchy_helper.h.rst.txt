@@ -90,13 +90,13 @@ Functions
 
 - :ref:`exhale_function_hierarchy__helper_8h_1ac25baaa12302d12501c24cf7b4a3419a`
 
-- :ref:`exhale_function_hierarchy__helper_8h_1a2791d3a23e08d3daf7a327c25c230b78`
-
 - :ref:`exhale_function_hierarchy__helper_8h_1a390fb9af29bc30ab75e98fe2c78f5cb4`
 
 - :ref:`exhale_function_hierarchy__helper_8h_1a3d4c2905c0618e0baf095abd62fa5e4a`
 
 - :ref:`exhale_function_hierarchy__helper_8h_1a1af3a292ce176894c2794137d81c3125`
+
+- :ref:`exhale_function_hierarchy__helper_8h_1a2791d3a23e08d3daf7a327c25c230b78`
 
 
 Typedefs
