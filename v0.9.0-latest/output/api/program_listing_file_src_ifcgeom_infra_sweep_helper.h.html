@@ -50,7 +50,13 @@
 <span class="w">            </span><span class="kt">double</span><span class="w"> </span><span class="n">dist_along</span><span class="p">;</span>
 <span class="w">            </span><span class="n">taxonomy</span><span class="o">::</span><span class="n">geom_item</span><span class="o">::</span><span class="n">ptr</span><span class="w"> </span><span class="n">section_geometry</span><span class="p">;</span>
 <span class="w">            </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3d</span><span class="w"> </span><span class="n">offset</span><span class="p">;</span>
+<span class="w">            </span><span class="c1">// rotation: the IfcAxis2PlacementLinear basis [X | Y | Axis], or nullopt when</span>
+<span class="w">            </span><span class="c1">// the placement carries neither Axis nor RefDirection.</span>
 <span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">Eigen</span><span class="o">::</span><span class="n">Matrix3d</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rotation</span><span class="p">;</span>
+<span class="w">            </span><span class="c1">// ref_direction: the raw RefDirection, only when it was actually authored on the</span>
+<span class="w">            </span><span class="c1">// placement (rotation carries a default otherwise). When absent the profile</span>
+<span class="w">            </span><span class="c1">// normal comes from the directrix tangent -- see buildingSMART IFC4.x-IF #147.</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3d</span><span class="o">&gt;</span><span class="w"> </span><span class="n">ref_direction</span><span class="p">;</span>
 
 <span class="w">            </span><span class="kt">bool</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="o">&lt;</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">cross_section</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">dist_along</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">other</span><span class="p">.</span><span class="n">dist_along</span><span class="p">;</span>
