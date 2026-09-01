@@ -25,6 +25,6 @@ Functions
 
 - :ref:`exhale_function_cgal__kernel_8h_1a8aaa882114384f26c6a825f3860442ef`
 
-- :ref:`exhale_function_cgal__kernel_8h_1a7e7493bda577177246b961dfcef71a9a`
-
 - :ref:`exhale_function_cgal__kernel_8h_1abeadcf0bf5599556b321b0189e440f0c`
+
+- :ref:`exhale_function_cgal__kernel_8h_1a7e7493bda577177246b961dfcef71a9a`
