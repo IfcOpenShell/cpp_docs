@@ -19,6 +19,8 @@ Classes
 
 - :ref:`exhale_struct_structifcopenshell_1_1impl_1_1in__memory__file__storage`
 
+- :ref:`exhale_struct_structifcopenshell_1_1impl_1_1inverse__index_1_1referenced__id__less`
+
 - :ref:`exhale_struct_structifcopenshell_1_1impl_1_1inverse__record`
 
 - :ref:`exhale_class_classifcopenshell_1_1impl_1_1inverse__index`

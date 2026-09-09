@@ -6,6 +6,16 @@ Class inverse_index
 - Defined in :ref:`file_src_ifcparse_storage.h`
 
 
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structifcopenshell_1_1impl_1_1inverse__index_1_1referenced__id__less`
+
+
 Class Documentation
 -------------------
 

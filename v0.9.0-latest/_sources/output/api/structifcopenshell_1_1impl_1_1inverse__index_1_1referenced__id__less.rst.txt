@@ -1,0 +1,23 @@
+.. _exhale_struct_structifcopenshell_1_1impl_1_1inverse__index_1_1referenced__id__less:
+
+Struct inverse_index::referenced_id_less
+========================================
+
+- Defined in :ref:`file_src_ifcparse_storage.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classifcopenshell_1_1impl_1_1inverse__index`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::impl::inverse_index::referenced_id_less
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:
