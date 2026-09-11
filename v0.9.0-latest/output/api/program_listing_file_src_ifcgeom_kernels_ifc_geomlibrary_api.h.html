@@ -57,18 +57,17 @@
 <span class="cp">#define IFC_GEOMLIBRARY_API_H</span>
 
 <span class="cp">#ifdef SWIG</span>
-<span class="cp">#define IFC_GEOMLIBRARY_API</span>
+<span class="w">  </span><span class="cp">#define IFC_GEOMLIBRARY_API</span>
 <span class="cp">#elif defined(_WIN32)</span>
-<span class="cp">#ifdef IFC_GEOMLIBRARY_EXPORTS</span>
-<span class="cp">#define IFC_GEOMLIBRARY_API __declspec(dllexport)</span>
-<span class="cp">#else</span>
-<span class="cp">#define IFC_GEOMLIBRARY_API __declspec(dllimport)</span>
-<span class="cp">#endif</span>
-<span class="cp">#else </span><span class="c1">// simply assume *nix + GCC-like compiler</span>
-<span class="cp">#define IFC_GEOMLIBRARY_API __attribute__((visibility("default")))</span>
-<span class="cp">#endif</span>
-
-<span class="cp">#endif</span>
+<span class="w">  </span><span class="cp">#ifdef IFC_GEOMLIBRARY_EXPORTS</span>
+<span class="w">    </span><span class="cp">#define IFC_GEOMLIBRARY_API __declspec(dllexport)</span>
+<span class="w">  </span><span class="cp">#else</span>
+<span class="w">    </span><span class="cp">#define IFC_GEOMLIBRARY_API __declspec(dllimport)</span>
+<span class="w">  </span><span class="cp">#endif</span>
+<span class="cp">#else </span><span class="c1">// *nix + GCC-like compiler</span>
+<span class="w">  </span><span class="cp">#define IFC_GEOMLIBRARY_API __attribute__((visibility("default")))</span>
+<span class="cp">#endif </span><span class="c1">// SWIG</span>
+<span class="cp">#endif </span><span class="c1">// IFC_GEOMLIBRARY_API_H</span>
 </pre></div>
 </div>
 </section>
