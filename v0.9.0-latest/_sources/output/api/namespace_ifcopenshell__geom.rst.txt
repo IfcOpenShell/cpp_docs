@@ -17,7 +17,7 @@ Namespaces
 ----------
 
 
-- :ref:`namespace_ifcopenshell__geom__@50`
+- :ref:`namespace_ifcopenshell__geom__@48`
 
 - :ref:`namespace_ifcopenshell__geom__impl`
 
