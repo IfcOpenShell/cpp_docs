@@ -337,6 +337,10 @@
 
 <span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="o">&gt;</span><span class="w"> </span><span class="n">instances_by_reference</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">reference_id</span><span class="p">);</span>
 
+<span class="cp">#ifndef SWIG</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">all_referencing_instances</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">instance_id</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">bool</span><span class="p">(</span><span class="kt">uint32_t</span><span class="p">)</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">pred</span><span class="p">);</span>
+<span class="cp">#endif</span>
+
 <span class="w">    </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="w"> </span><span class="nf">instance_by_id</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">instance_id</span><span class="p">);</span>
 
 <span class="w">    </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="w"> </span><span class="nf">instance_by_guid</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">global_id</span><span class="p">);</span>

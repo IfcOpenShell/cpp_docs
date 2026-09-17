@@ -313,6 +313,10 @@ Program Listing for File file.h
    
        std::vector<express::base> instances_by_reference(int reference_id);
    
+   #ifndef SWIG
+       bool all_referencing_instances(int instance_id, const std::function<bool(uint32_t)>& pred);
+   #endif
+   
        express::base instance_by_id(int instance_id);
    
        express::base instance_by_guid(const std::string& global_id);
