@@ -59,6 +59,7 @@
 <span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;rocksdb/db.h&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;rocksdb/options.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;rocksdb/write_batch.h&gt;</span>
 <span class="cp">#endif</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span>
@@ -232,6 +233,26 @@
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">iterator</span><span class="p">();</span>
 <span class="w">    </span><span class="p">}</span>
 
+<span class="w">    </span><span class="c1">// Removes the element: every key under prefix + key + "|". The exclusive</span>
+<span class="w">    </span><span class="c1">// upper bound is the same prefix with its separator incremented. Returns</span>
+<span class="w">    </span><span class="c1">// 1 if the element existed, 0 otherwise.</span>
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">erase</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">key_type</span><span class="o">&amp;</span><span class="w"> </span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">find</span><span class="p">(</span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">lower_bound</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prefix_</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">key_to_string</span><span class="p">(</span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">"|"</span><span class="p">;</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">upper_bound</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prefix_</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">key_to_string</span><span class="p">(</span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="sc">'|'</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">        </span><span class="n">rocksdb</span><span class="o">::</span><span class="n">WriteBatch</span><span class="w"> </span><span class="n">batch</span><span class="p">;</span>
+<span class="w">        </span><span class="n">batch</span><span class="p">.</span><span class="n">DeleteRange</span><span class="p">(</span><span class="n">lower_bound</span><span class="p">,</span><span class="w"> </span><span class="n">upper_bound</span><span class="p">);</span>
+<span class="w">        </span><span class="n">db_</span><span class="o">-&gt;</span><span class="n">Write</span><span class="p">(</span><span class="n">rocksdb</span><span class="o">::</span><span class="n">WriteOptions</span><span class="p">{},</span><span class="w"> </span><span class="o">&amp;</span><span class="n">batch</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="cp">#else</span>
+<span class="w">        </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="cp">#endif</span>
+<span class="w">    </span><span class="p">}</span>
+
 <span class="w">    </span><span class="c1">// Read-only find: returns an iterator to the element with the given key if it exists.</span>
 <span class="w">    </span><span class="n">iterator</span><span class="w"> </span><span class="nf">find</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">key_type</span><span class="o">&amp;</span><span class="w"> </span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="cp">#ifdef IFOPSH_WITH_ROCKSDB</span>
@@ -252,11 +273,6 @@
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">end</span><span class="p">();</span>
 <span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">erase</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">key_type</span><span class="o">&amp;</span><span class="w"> </span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
-<span class="w">        </span><span class="c1">// @todo</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
 
 <span class="cp">#endif</span>

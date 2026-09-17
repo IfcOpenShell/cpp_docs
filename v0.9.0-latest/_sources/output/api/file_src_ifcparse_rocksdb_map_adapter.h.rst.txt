@@ -50,6 +50,13 @@ Included By
 
 
 
+Namespaces
+----------
+
+
+- :ref:`namespace_rocksdb_key`
+
+
 Classes
 -------
 
@@ -77,9 +84,29 @@ Functions
 
 - :ref:`exhale_function_rocksdb__map__adapter_8h_1aad41b1637be9a385c85841fe62d6b0c2`
 
-- :ref:`exhale_function_rocksdb__map__adapter_8h_1af9356a73aaf9a6fd745cc10e42efb9ef`
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1aa3e2b83db1c4e055e9a861bfc4caaa12`
 
 - :ref:`exhale_function_rocksdb__map__adapter_8h_1ad0db5cf73cc183adfdeee6cf674a7e41`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1af9356a73aaf9a6fd745cc10e42efb9ef`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1aae13c074030f58e82049824b8e482d48`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1a330848d11df840c10611bcb59b937306`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1ac48770b676af809906f5d1c7b93d9628`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1addd88a93e5f50c665c63adaffbf1ada9`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1a4d2abfa32b2835b9ce260e4afb74752c`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1abf6fd5cbd30d25378311536cba2b0c48`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1aa3bbe937e277d6d41af0e2f544ec949a`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1a8776bd67257039babc0a6d3216374802`
+
+- :ref:`exhale_function_rocksdb__map__adapter_8h_1aae58c597dd05389819bc8a32b7d1de45`
 
 - :ref:`exhale_function_rocksdb__map__adapter_8h_1a9d88b377159850138e167adf798038a9`
 

@@ -1,0 +1,14 @@
+.. _exhale_function_rocksdb__map__adapter_8h_1a4d2abfa32b2835b9ce260e4afb74752c:
+
+Function rocksdb_key::inverse
+=============================
+
+- Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: rocksdb_key::inverse(uint64_t, uint64_t, uint64_t)
+   :project: IfcOpenShell

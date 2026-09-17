@@ -1,0 +1,14 @@
+.. _exhale_function_rocksdb__map__adapter_8h_1addd88a93e5f50c665c63adaffbf1ada9:
+
+Function rocksdb_key::instance
+==============================
+
+- Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: rocksdb_key::instance(bool, uint64_t)
+   :project: IfcOpenShell

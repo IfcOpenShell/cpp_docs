@@ -1,0 +1,17 @@
+.. _exhale_struct_structifcopenshell_1_1pack__element:
+
+Template Struct pack_element
+============================
+
+.. did not find file this was defined in
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ifcopenshell::pack_element
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

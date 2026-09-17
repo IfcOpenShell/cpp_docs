@@ -1,0 +1,14 @@
+.. _exhale_typedef_instance__data_8h_1a31f26d8dab187af14722a92870b09b3f:
+
+Typedef ifcopenshell::argument_storage_type_t
+=============================================
+
+- Defined in :ref:`file_src_ifcparse_instance_data.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ifcopenshell::argument_storage_type_t
+   :project: IfcOpenShell

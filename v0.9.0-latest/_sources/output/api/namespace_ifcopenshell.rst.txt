@@ -40,6 +40,10 @@ Classes
 
 - :ref:`exhale_struct_structifcopenshell_1_1instance__reference`
 
+- :ref:`exhale_struct_structifcopenshell_1_1pack__element`
+
+- :ref:`exhale_struct_structifcopenshell_1_1pack__element_3_01parameter__pack_3_01_args_8_8_8_01_4_01_4`
+
 - :ref:`exhale_struct_structifcopenshell_1_1pack__to__variant__array`
 
 - :ref:`exhale_struct_structifcopenshell_1_1pack__to__variant__array_3_01parameter__pack_3_01_args_8_8_8_01_4_01_4`
@@ -214,6 +218,8 @@ Functions
 Typedefs
 --------
 
+
+- :ref:`exhale_typedef_instance__data_8h_1a31f26d8dab187af14722a92870b09b3f`
 
 - :ref:`exhale_typedef_instance__data_8h_1a4b0a9710dc58c45738bfc0c6b2238a07`
 

@@ -1,0 +1,14 @@
+.. _exhale_function_rocksdb__map__adapter_8h_1aa3e2b83db1c4e055e9a861bfc4caaa12:
+
+Function hex_key
+================
+
+- Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: hex_key(uint64_t)
+   :project: IfcOpenShell

@@ -1,0 +1,14 @@
+.. _exhale_function_rocksdb__map__adapter_8h_1ac48770b676af809906f5d1c7b93d9628:
+
+Function rocksdb_key::header_attribute
+======================================
+
+- Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: rocksdb_key::header_attribute(const std::string&, uint64_t)
+   :project: IfcOpenShell

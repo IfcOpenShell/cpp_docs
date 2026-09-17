@@ -268,6 +268,7 @@
 <span class="w">    </span><span class="n">batch_deletion_ids_t</span><span class="w"> </span><span class="n">batch_deletion_ids_</span><span class="p">;</span>
 <span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">batch_mode_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">process_deletion_</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="o">&amp;</span><span class="w"> </span><span class="n">entity</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">erase_instances_</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">ids</span><span class="p">);</span>
 
 <span class="w">  </span><span class="k">public</span><span class="o">:</span>
 <span class="cp">#ifdef USE_MMAP</span>

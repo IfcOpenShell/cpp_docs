@@ -714,6 +714,13 @@
 <span class="w">            </span><span class="k">typedef</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="p">,</span><span class="w"> </span><span class="n">shared_pointer_type</span><span class="o">&gt;</span><span class="w"> </span><span class="n">entity_by_iden_cache</span><span class="p">;</span>
 <span class="w">            </span><span class="n">entity_by_iden_cache</span><span class="w"> </span><span class="n">instance_cache_</span><span class="p">,</span><span class="w"> </span><span class="n">type_instance_cache_</span><span class="p">;</span>
 <span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">mutex</span><span class="w"> </span><span class="n">instance_cache_mutex_</span><span class="p">;</span>
+<span class="w">            </span><span class="c1">// Opening a database doesn't visit every instance, so the file's</span>
+<span class="w">            </span><span class="c1">// id counter is recalculated on the first create().</span>
+<span class="w">            </span><span class="kt">bool</span><span class="w"> </span><span class="n">id_counter_recalculated_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+
+<span class="w">            </span><span class="c1">// Deletes every key of the given instances and drops their cached</span>
+<span class="w">            </span><span class="c1">// handles, in one write and under one lock.</span>
+<span class="w">            </span><span class="kt">void</span><span class="w"> </span><span class="nf">erase_instances</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">ids</span><span class="p">);</span>
 
 <span class="w">            </span><span class="c1">// @todo all these size_ts should probably be uint32_t for consistency with in-mem storage</span>
 

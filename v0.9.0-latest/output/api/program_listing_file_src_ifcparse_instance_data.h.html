@@ -68,6 +68,7 @@
 <span class="cp">#undef Handle</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;rocksdb/db.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;tuple&gt;</span>
 
 <span class="cp">#pragma pop_macro("Handle")</span>
 
@@ -261,6 +262,24 @@
 <span class="p">};</span>
 
 <span class="k">using</span><span class="w"> </span><span class="n">in_memory_attribute_storage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pack_to_variant_array</span><span class="o">&lt;</span><span class="n">type_variant_parameter_pack</span><span class="o">&gt;::</span><span class="n">type</span><span class="p">;</span>
+
+<span class="c1">// argument_type enumerates the members of type_variant_parameter_pack in</span>
+<span class="c1">// order, so a member maps back to the type stored for it.</span>
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">Pack</span><span class="o">&gt;</span>
+<span class="k">struct</span><span class="w"> </span><span class="nc">pack_element</span><span class="p">;</span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="p">...</span><span class="w"> </span><span class="n">Args</span><span class="o">&gt;</span>
+<span class="k">struct</span><span class="w"> </span><span class="nc">pack_element</span><span class="o">&lt;</span><span class="n">parameter_pack</span><span class="o">&lt;</span><span class="n">Args</span><span class="p">...</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="kt">size_t</span><span class="w"> </span><span class="n">I</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">tuple_element_t</span><span class="o">&lt;</span><span class="n">I</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">Args</span><span class="p">...</span><span class="o">&gt;&gt;</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="n">argument_type</span><span class="w"> </span><span class="n">A</span><span class="o">&gt;</span>
+<span class="k">using</span><span class="w"> </span><span class="n">argument_storage_type_t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">pack_element</span><span class="o">&lt;</span><span class="n">type_variant_parameter_pack</span><span class="o">&gt;::</span><span class="k">template</span><span class="w"> </span><span class="n">type</span><span class="o">&lt;</span><span class="n">A</span><span class="o">&gt;</span><span class="p">;</span>
+
+<span class="k">static_assert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_same_v</span><span class="o">&lt;</span><span class="n">argument_storage_type_t</span><span class="o">&lt;</span><span class="n">Argument_INT</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="kt">int64_t</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="s">"argument_type must enumerate type_variant_parameter_pack in order"</span><span class="p">);</span>
+<span class="k">static_assert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_same_v</span><span class="o">&lt;</span><span class="n">argument_storage_type_t</span><span class="o">&lt;</span><span class="n">Argument_AGGREGATE_OF_INT</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int64_t</span><span class="o">&gt;&gt;</span><span class="p">,</span><span class="w"> </span><span class="s">"argument_type must enumerate type_variant_parameter_pack in order"</span><span class="p">);</span>
+<span class="k">static_assert</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_same_v</span><span class="o">&lt;</span><span class="n">argument_storage_type_t</span><span class="o">&lt;</span><span class="n">Argument_AGGREGATE_OF_AGGREGATE_OF_ENTITY_INSTANCE</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="o">&gt;&gt;&gt;</span><span class="p">,</span><span class="w"> </span><span class="s">"argument_type must enumerate type_variant_parameter_pack in order"</span><span class="p">);</span>
 
 <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">Pack</span><span class="o">&gt;</span>
 <span class="k">struct</span><span class="w"> </span><span class="nc">type_encoder_impl</span><span class="p">;</span>
@@ -463,7 +482,7 @@
 <span class="w">    </span><span class="k">operator</span><span class="w"> </span><span class="n">enumeration_reference</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 
 <span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">isNull</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
-<span class="w">    </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">size</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">size</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 
 <span class="w">    </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">argument_type</span><span class="w"> </span><span class="nf">type</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 
