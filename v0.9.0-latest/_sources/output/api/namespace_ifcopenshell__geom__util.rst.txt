@@ -45,11 +45,11 @@ Functions
 
 - :ref:`exhale_function_layerset_8h_1ad1f0391284948997bd50806ee32e3fb5`
 
-- :ref:`exhale_function_base__utils_8h_1aa30c2ce9a6fd67b40c356cd70808ceeb`
+- :ref:`exhale_function_base__utils_8h_1ac9d89e4e1259271befbf6cc6439d64fa`
 
 - :ref:`exhale_function_base__utils_8h_1ad4664208e7b92a730347dcb7ac1a60ee`
 
-- :ref:`exhale_function_base__utils_8h_1ac9d89e4e1259271befbf6cc6439d64fa`
+- :ref:`exhale_function_base__utils_8h_1aa30c2ce9a6fd67b40c356cd70808ceeb`
 
 - :ref:`exhale_function_wire__utils_8h_1a62cf3a76e2f7c3d907cf2ded159a28b0`
 
@@ -79,9 +79,9 @@ Functions
 
 - :ref:`exhale_function_wire__utils_8h_1a608081b5da92e52135633f68ae281e96`
 
-- :ref:`exhale_function_boolean__utils_8h_1a366afc1b9dee9efbaf8b7b716683073f`
-
 - :ref:`exhale_function_boolean__utils_8h_1aab8751575a47b2a5c0dd07f7828e0a68`
+
+- :ref:`exhale_function_boolean__utils_8h_1a366afc1b9dee9efbaf8b7b716683073f`
 
 - :ref:`exhale_function_base__utils_8h_1a6d0949f3951706c4398569140f1f4f6d`
 

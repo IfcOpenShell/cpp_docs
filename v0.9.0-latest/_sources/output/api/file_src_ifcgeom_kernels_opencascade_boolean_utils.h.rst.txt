@@ -88,9 +88,9 @@ Functions
 
 - :ref:`exhale_function_boolean__utils_8h_1ac456a020bd46a569414bc2ce6866c4ad`
 
-- :ref:`exhale_function_boolean__utils_8h_1a366afc1b9dee9efbaf8b7b716683073f`
-
 - :ref:`exhale_function_boolean__utils_8h_1aab8751575a47b2a5c0dd07f7828e0a68`
+
+- :ref:`exhale_function_boolean__utils_8h_1a366afc1b9dee9efbaf8b7b716683073f`
 
 - :ref:`exhale_function_boolean__utils_8h_1aba2ea295874d1d3ca3c732e8ca8cd653`
 
