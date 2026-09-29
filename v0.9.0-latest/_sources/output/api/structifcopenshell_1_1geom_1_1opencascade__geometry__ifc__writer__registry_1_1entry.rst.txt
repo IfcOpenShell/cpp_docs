@@ -16,8 +16,4 @@ Struct Documentation
 --------------------
 
 
-.. doxygenstruct:: ifcopenshell::geom::opencascade_geometry_ifc_writer_registry::entry
-   :project: IfcOpenShell
-   :members:
-   :protected-members:
-   :undoc-members:
+See :ref:`exhale_class_classifcopenshell_1_1geom_1_1opencascade__geometry__ifc__writer__registry` for this nested type's documentation.

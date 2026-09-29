@@ -1,0 +1,17 @@
+.. _exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1vector_3_01std_1_1vector_3_01ifcopenshell_1_1referecad70d38c66d2536b0f397c31c048ddc:
+
+Template Struct variant_type_name< std::vector< std::vector< ifcopenshell::reference_or_simple_type > > >
+=========================================================================================================
+
+- Defined in :ref:`file_src_ifcparse_instance_data.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: impl::variant_type_name< std::vector< std::vector< ifcopenshell::reference_or_simple_type > > >
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

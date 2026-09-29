@@ -1,7 +1,7 @@
 .. _exhale_function_wire__utils_8h_1abe58c02923c99c360d3401dcd4418c99:
 
-Function ifcopenshell::geom::util::flatten_wire
-===============================================
+Function ifcopenshell::geom::util::flatten\_wire
+================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
 

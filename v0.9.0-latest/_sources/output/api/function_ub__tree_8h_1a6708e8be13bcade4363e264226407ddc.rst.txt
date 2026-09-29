@@ -1,0 +1,14 @@
+.. _exhale_function_ub__tree_8h_1a6708e8be13bcade4363e264226407ddc:
+
+Template Function ifcopenshell::geom::impl::to\_base\_vector
+============================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_ub_tree.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::impl::to_base_vector(const std::vector<T>&)
+   :project: IfcOpenShell

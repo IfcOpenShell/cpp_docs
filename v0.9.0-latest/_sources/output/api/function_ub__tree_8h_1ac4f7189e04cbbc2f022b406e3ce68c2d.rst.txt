@@ -1,0 +1,14 @@
+.. _exhale_function_ub__tree_8h_1ac4f7189e04cbbc2f022b406e3ce68c2d:
+
+Function ifcopenshell::geom::impl::make\_point
+==============================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_ub_tree.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::impl::make_point(const ifcopenshell::geom::tree_point&)
+   :project: IfcOpenShell

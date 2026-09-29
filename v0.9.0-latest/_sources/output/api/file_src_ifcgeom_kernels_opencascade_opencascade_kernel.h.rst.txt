@@ -81,12 +81,6 @@ Includes
 
 
 
-Included By
------------
-
-
-- :ref:`file_src_ifcgeom_kernels_opencascade_tree.h`
-
 
 
 

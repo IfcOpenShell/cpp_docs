@@ -16,8 +16,4 @@ Struct Documentation
 --------------------
 
 
-.. doxygenstruct:: ifcopenshell::schema_registry::entry
-   :project: IfcOpenShell
-   :members:
-   :protected-members:
-   :undoc-members:
+See :ref:`exhale_class_classifcopenshell_1_1schema__registry` for this nested type's documentation.

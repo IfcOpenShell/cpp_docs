@@ -1,7 +1,7 @@
 .. _exhale_function_boolean__utils_8h_1a124f7d20d9b56ac8a415d2bb2b1fa05c:
 
-Function ifcopenshell::geom::util::get_edge_axis
-================================================
+Function ifcopenshell::geom::util::get\_edge\_axis
+==================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
 

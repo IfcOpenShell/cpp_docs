@@ -6,6 +6,16 @@ Class tree
 - Defined in :ref:`file_src_ifcgeom_tree.h`
 
 
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public ifcopenshell::geom::impl::bvh_tree`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1bvh__tree`)
+- ``public ifcopenshell::geom::impl::ub_tree< T >`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1ub__tree`)
+
+
 Class Documentation
 -------------------
 

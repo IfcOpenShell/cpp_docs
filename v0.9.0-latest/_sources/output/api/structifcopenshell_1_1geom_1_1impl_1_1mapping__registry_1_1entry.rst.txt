@@ -16,8 +16,4 @@ Struct Documentation
 --------------------
 
 
-.. doxygenstruct:: ifcopenshell::geom::impl::mapping_registry::entry
-   :project: IfcOpenShell
-   :members:
-   :protected-members:
-   :undoc-members:
+See :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1mapping__registry` for this nested type's documentation.

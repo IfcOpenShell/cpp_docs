@@ -1,7 +1,7 @@
 .. _exhale_function_boolean__utils_8h_1ab5c3e488cd921e1ddfb050f8ef0cc465:
 
-Function ifcopenshell::geom::util::is_extrusion
-===============================================
+Function ifcopenshell::geom::util::is\_extrusion
+================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
 

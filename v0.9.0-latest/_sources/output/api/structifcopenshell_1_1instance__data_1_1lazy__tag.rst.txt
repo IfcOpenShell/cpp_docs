@@ -1,0 +1,19 @@
+.. _exhale_struct_structifcopenshell_1_1instance__data_1_1lazy__tag:
+
+Struct instance_data::lazy_tag
+==============================
+
+- Defined in :ref:`file_src_ifcparse_instance_data.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classifcopenshell_1_1instance__data`.
+
+
+Struct Documentation
+--------------------
+
+
+See :ref:`exhale_class_classifcopenshell_1_1instance__data` for this nested type's documentation.

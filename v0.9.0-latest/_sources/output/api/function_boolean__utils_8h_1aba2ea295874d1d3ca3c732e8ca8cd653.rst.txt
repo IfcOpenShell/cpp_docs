@@ -1,7 +1,7 @@
 .. _exhale_function_boolean__utils_8h_1aba2ea295874d1d3ca3c732e8ca8cd653:
 
-Function ifcopenshell::geom::util::eliminate_narrow_operands
-============================================================
+Function ifcopenshell::geom::util::eliminate\_narrow\_operands
+==============================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
 

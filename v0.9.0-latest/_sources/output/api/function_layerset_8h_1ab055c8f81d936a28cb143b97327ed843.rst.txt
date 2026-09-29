@@ -1,7 +1,7 @@
 .. _exhale_function_layerset_8h_1ab055c8f81d936a28cb143b97327ed843:
 
-Function ifcopenshell::geom::util::split_solid_by_surface
-=========================================================
+Function ifcopenshell::geom::util::split\_solid\_by\_surface
+============================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_layerset.h`
 

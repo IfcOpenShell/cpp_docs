@@ -1,7 +1,7 @@
 .. _exhale_function_utils_8h_1a6c2b57f981ccb3a243fa6472cafb9d96:
 
-Function ifcopenshell::escape_xml
-=================================
+Function ifcopenshell::escape\_xml
+==================================
 
 - Defined in :ref:`file_src_ifcparse_utils.h`
 

@@ -1,0 +1,14 @@
+.. _exhale_function_ub__tree_8h_1af60492322cb87df1ab2e3ab7661286f2:
+
+Function ifcopenshell::geom::impl::check\_product
+=================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_ub_tree.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::impl::check_product(const express::base&)
+   :project: IfcOpenShell

@@ -1,7 +1,7 @@
 .. _exhale_function_schema_8h_1aa4ad835a577ee6c09d8dd0eb5eeafa72:
 
-Function ifcopenshell::schema_plugin_registration_symbol
-========================================================
+Function ifcopenshell::schema\_plugin\_registration\_symbol
+===========================================================
 
 - Defined in :ref:`file_src_ifcparse_schema.h`
 

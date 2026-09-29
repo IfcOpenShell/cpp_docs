@@ -62,10 +62,7 @@
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">"../ifcparse/logger.h"</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;IGESControl_Writer.hxx&gt;</span>
-
-<span class="cp">#ifndef HAVE_CONFIG_H</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Interface_Static.hxx&gt;</span>
-<span class="cp">#endif</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">iges_serializer</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">open_cascade_based_serializer</span>
 <span class="p">{</span>
@@ -85,12 +82,8 @@
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">setUnitNameAndMagnitude</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="cm">/*name*/</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">magnitude</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">symbol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getSymbolForUnitMagnitude</span><span class="p">(</span><span class="n">magnitude</span><span class="p">);</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">symbol</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="cp">#ifdef HAVE_CONFIG_H</span>
-<span class="w">            </span><span class="n">logger_</span><span class="p">.</span><span class="n">warning</span><span class="p">(</span><span class="s">"SER"</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="s">"Setting IGES units not supported on OCE"</span><span class="p">);</span>
-<span class="cp">#else</span>
 <span class="w">            </span><span class="n">Interface_Static</span><span class="o">::</span><span class="n">SetCVal</span><span class="p">(</span><span class="s">"xstep.cascade.unit"</span><span class="p">,</span><span class="w"> </span><span class="n">symbol</span><span class="p">);</span>
 <span class="w">            </span><span class="n">Interface_Static</span><span class="o">::</span><span class="n">SetCVal</span><span class="p">(</span><span class="s">"write.iges.unit"</span><span class="p">,</span><span class="w"> </span><span class="n">symbol</span><span class="p">);</span>
-<span class="cp">#endif</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>

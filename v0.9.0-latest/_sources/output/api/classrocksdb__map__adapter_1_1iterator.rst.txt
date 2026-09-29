@@ -16,8 +16,4 @@ Class Documentation
 -------------------
 
 
-.. doxygenclass:: rocksdb_map_adapter::iterator
-   :project: IfcOpenShell
-   :members:
-   :protected-members:
-   :undoc-members:
+See :ref:`exhale_class_classrocksdb__map__adapter` for this nested type's documentation.

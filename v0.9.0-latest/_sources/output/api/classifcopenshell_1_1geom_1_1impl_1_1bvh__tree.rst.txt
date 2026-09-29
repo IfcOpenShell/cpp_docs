@@ -1,0 +1,26 @@
+.. _exhale_class_classifcopenshell_1_1geom_1_1impl_1_1bvh__tree:
+
+Class bvh_tree
+==============
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_bvh_tree.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ifcopenshell::geom::tree`` (:ref:`exhale_class_classifcopenshell_1_1geom_1_1tree`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ifcopenshell::geom::impl::bvh_tree
+   :project: IfcOpenShell
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -17,7 +17,7 @@ Namespaces
 ----------
 
 
-- :ref:`namespace_ifcopenshell__geom__@49`
+- :ref:`namespace_ifcopenshell__geom__@32`
 
 - :ref:`namespace_ifcopenshell__geom__impl`
 
@@ -157,8 +157,6 @@ Classes
 - :ref:`exhale_class_classifcopenshell_1_1geom_1_1open__cascade__shape`
 
 - :ref:`exhale_class_classifcopenshell_1_1geom_1_1opencascade__geometry__ifc__writer__registry`
-
-- :ref:`exhale_class_classifcopenshell_1_1geom_1_1opencascade__tree`
 
 - :ref:`exhale_class_classifcopenshell_1_1geom_1_1passthrough__shape`
 

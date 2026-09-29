@@ -1,0 +1,14 @@
+.. _exhale_variable_parse_8h_1a0247dd2c5ee1b3dcf2374478069e7f87:
+
+Variable ifcopenshell::SWAR::chars::space
+=========================================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: ifcopenshell::SWAR::chars::space
+   :project: IfcOpenShell

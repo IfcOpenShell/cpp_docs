@@ -1,7 +1,7 @@
 .. _exhale_function_wire__builder_8h_1afa13445918b627b3b7bdf02d99e7a7bd:
 
-Function ifcopenshell::geom::util::deflection_for_approximating_circle
-======================================================================
+Function ifcopenshell::geom::util::deflection\_for\_approximating\_circle
+=========================================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_builder.h`
 

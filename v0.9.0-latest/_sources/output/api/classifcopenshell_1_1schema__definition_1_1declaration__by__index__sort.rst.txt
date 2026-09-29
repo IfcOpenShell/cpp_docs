@@ -16,8 +16,4 @@ Class Documentation
 -------------------
 
 
-.. doxygenclass:: ifcopenshell::schema_definition::declaration_by_index_sort
-   :project: IfcOpenShell
-   :members:
-   :protected-members:
-   :undoc-members:
+See :ref:`exhale_class_classifcopenshell_1_1schema__definition` for this nested type's documentation.

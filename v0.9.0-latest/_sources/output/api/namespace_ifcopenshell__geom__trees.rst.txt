@@ -13,13 +13,6 @@ Namespace ifcopenshell::geom::trees
 
 
 
-Namespaces
-----------
-
-
-- :ref:`namespace_ifcopenshell__geom__trees__opencascade_tree_backends`
-
-
 Classes
 -------
 
@@ -28,8 +21,6 @@ Classes
 
 - :ref:`exhale_struct_structifcopenshell_1_1geom_1_1trees_1_1tree__registry_1_1entry`
 
-- :ref:`exhale_class_classifcopenshell_1_1geom_1_1trees_1_1abstract__tree`
-
 - :ref:`exhale_class_classifcopenshell_1_1geom_1_1trees_1_1tree__registry`
 
 
@@ -37,7 +28,7 @@ Functions
 ---------
 
 
-- :ref:`exhale_function_tree__registry_8h_1abbbc68983191014cf2bb89b5d6962b95`
+- :ref:`exhale_function_tree__registry_8h_1a1f74d69a3dc5254c3c80528805d681ea`
 
 - :ref:`exhale_function_tree__plugin_8h_1a95dde31e288adfff2e0ded6e7f88de9e`
 

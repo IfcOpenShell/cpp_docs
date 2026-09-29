@@ -1,7 +1,7 @@
 .. _exhale_function_taxonomy_8h_1a8baf34646c8894bb726ae1c240ee47f3:
 
-Function ifcopenshell::geom::taxonomy::loop_to_face_upgrade_impl
-================================================================
+Function ifcopenshell::geom::taxonomy::loop\_to\_face\_upgrade\_impl
+====================================================================
 
 - Defined in :ref:`file_src_ifcgeom_taxonomy.h`
 

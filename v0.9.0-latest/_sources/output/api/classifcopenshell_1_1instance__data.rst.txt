@@ -6,6 +6,16 @@ Class instance_data
 - Defined in :ref:`file_src_ifcparse_instance_data.h`
 
 
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structifcopenshell_1_1instance__data_1_1lazy__tag`
+
+
 Class Documentation
 -------------------
 

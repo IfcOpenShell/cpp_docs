@@ -1,0 +1,14 @@
+.. _exhale_function_parse_8h_1aa441127ade00e6ddfbb819e9e02228cb:
+
+Function ifcopenshell::is\_token\_delimiter
+===========================================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::is_token_delimiter(char)
+   :project: IfcOpenShell

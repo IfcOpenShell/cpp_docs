@@ -1,0 +1,14 @@
+.. _exhale_variable_parse_8h_1a2c57c9a3a7b9c6b7b56b00bd0e7d5c7a:
+
+Variable ifcopenshell::SWAR::chars::lpar
+========================================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: ifcopenshell::SWAR::chars::lpar
+   :project: IfcOpenShell

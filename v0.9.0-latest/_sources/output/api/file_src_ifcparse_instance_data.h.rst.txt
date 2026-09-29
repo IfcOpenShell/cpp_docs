@@ -41,6 +41,8 @@ Includes
 
 - ``memory``
 
+- ``optional``
+
 - ``schema.h`` (:ref:`file_src_ifcparse_schema.h`)
 
 - ``storage.h`` (:ref:`file_src_ifcparse_storage.h`)
@@ -73,6 +75,8 @@ Classes
 -------
 
 
+- :ref:`exhale_struct_structifcopenshell_1_1instance__data_1_1lazy__tag`
+
 - :ref:`exhale_struct_structifcopenshell_1_1pack__element_3_01parameter__pack_3_01_args_8_8_8_01_4_01_4`
 
 - :ref:`exhale_struct_structifcopenshell_1_1pack__to__variant__array_3_01parameter__pack_3_01_args_8_8_8_01_4_01_4`
@@ -103,11 +107,17 @@ Classes
 
 - :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1enumeration__reference_01_4`
 
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1instance__reference_01_4`
+
 - :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01int_01_4`
 
 - :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01int64__t_01_4`
 
 - :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1string_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1vector_3_01ifcopenshell_1_1reference__or__simple__type_01_4_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1vector_3_01std_1_1vector_3_01ifcopenshell_1_1referecad70d38c66d2536b0f397c31c048ddc`
 
 - :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1vector_3_01_t_00_01_allocator_01_4_01_4`
 
@@ -138,5 +148,5 @@ Typedefs
 
 - :ref:`exhale_typedef_instance__data_8h_1aede234cee79438273facc7fd916a1658`
 
-- :ref:`exhale_typedef_instance__data_8h_1a66b39e6bc3e79e82a03bdeef4ad389c5`
+- :ref:`exhale_typedef_instance__data_8h_1a94bcc3d97a796d91153618e6a3a16620`
 

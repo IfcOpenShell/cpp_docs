@@ -1,7 +1,7 @@
 .. _exhale_function_utils_8h_1af2eab241abda09c744e29cb3dcff40b7:
 
-Function ifcopenshell::path::rename_file
-========================================
+Function ifcopenshell::path::rename\_file
+=========================================
 
 - Defined in :ref:`file_src_ifcparse_utils.h`
 

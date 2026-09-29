@@ -16,8 +16,4 @@ Class Documentation
 -------------------
 
 
-.. doxygenclass:: set_to_map_transformer::iterator
-   :project: IfcOpenShell
-   :members:
-   :protected-members:
-   :undoc-members:
+See :ref:`exhale_class_classset__to__map__transformer` for this nested type's documentation.

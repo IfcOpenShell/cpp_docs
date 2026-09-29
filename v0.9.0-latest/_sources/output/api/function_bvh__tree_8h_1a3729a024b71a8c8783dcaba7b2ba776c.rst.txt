@@ -1,0 +1,14 @@
+.. _exhale_function_bvh__tree_8h_1a3729a024b71a8c8783dcaba7b2ba776c:
+
+Function ifcopenshell::geom::impl::check\_products
+==================================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_bvh_tree.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::impl::check_products(const std::vector<express::base>&)
+   :project: IfcOpenShell

@@ -1,7 +1,7 @@
 .. _exhale_function_kernel__registry_8h_1a99892f871751353ca61627a53d7ed7c9:
 
-Function ifcopenshell::geom::kernels::kernel_registry_instance
-==============================================================
+Function ifcopenshell::geom::kernels::kernel\_registry\_instance
+================================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernel_registry.h`
 

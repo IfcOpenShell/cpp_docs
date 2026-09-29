@@ -1,7 +1,7 @@
 .. _exhale_function_boolean__utils_8h_1a22218e6e4403acb7e1f98ca930e6fb6d:
 
-Function ifcopenshell::geom::util::is_subset
-============================================
+Function ifcopenshell::geom::util::is\_subset
+=============================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
 

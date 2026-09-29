@@ -6,6 +6,16 @@ Struct in_memory_file_storage
 - Defined in :ref:`file_src_ifcparse_storage.h`
 
 
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structifcopenshell_1_1impl_1_1in__memory__file__storage_1_1guid__key__hash`
+
+
 Struct Documentation
 --------------------
 

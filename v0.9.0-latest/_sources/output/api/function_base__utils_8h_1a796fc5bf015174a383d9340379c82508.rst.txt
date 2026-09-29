@@ -1,7 +1,7 @@
 .. _exhale_function_base__utils_8h_1a796fc5bf015174a383d9340379c82508:
 
-Function ifcopenshell::geom::util::create_solid_from_compound
-=============================================================
+Function ifcopenshell::geom::util::create\_solid\_from\_compound
+================================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
 

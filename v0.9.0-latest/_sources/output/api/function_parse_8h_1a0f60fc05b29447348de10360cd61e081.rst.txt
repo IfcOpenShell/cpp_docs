@@ -1,0 +1,14 @@
+.. _exhale_function_parse_8h_1a0f60fc05b29447348de10360cd61e081:
+
+Template Function ifcopenshell::parse\_num\_
+============================================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::parse_num_(const char *, size_t, T&)
+   :project: IfcOpenShell

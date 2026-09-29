@@ -1,0 +1,132 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_ub_tree.h:
+
+File ub_tree.h
+==============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/ub_tree.h``)
+----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_ub_tree.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../../ifcgeom/element.h``
+
+- ``../../../ifcgeom/iterator.h``
+
+- ``../../../ifcgeom/tree.h``
+
+- ``../../../ifcparse/exception.h``
+
+- ``../../../ifcparse/file.h``
+
+- ``../../kernel_registry.h``
+
+- ``BRepAlgoAPI_Common.hxx``
+
+- ``BRepAlgoAPI_Cut.hxx``
+
+- ``BRepBndLib.hxx``
+
+- ``BRepBuilderAPI_MakeEdge.hxx``
+
+- ``BRepClass3d_SolidClassifier.hxx``
+
+- ``BRepExtrema_DistShapeShape.hxx``
+
+- ``BRepExtrema_ExtPF.hxx``
+
+- ``BRep_Builder.hxx``
+
+- ``Bnd_Box.hxx``
+
+- ``NCollection_DataMap.hxx``
+
+- ``NCollection_UBTree.hxx``
+
+- ``Standard_Integer.hxx``
+
+- ``Standard_Macro.hxx``
+
+- ``Standard_Version.hxx``
+
+- ``TopTools_ShapeMapHasher.hxx``
+
+- ``TopoDS.hxx``
+
+- ``TopoDS_Face.hxx``
+
+- ``TopoDS_Shape.hxx``
+
+- ``algorithm``
+
+- ``array`` (:ref:`file_src_ifcparse_variant_array.h`)
+
+- ``base_utils.h`` (:ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`)
+
+- ``cmath``
+
+- ``limits``
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``opencascade_conversion_result.h`` (:ref:`file_src_ifcgeom_kernels_opencascade_opencascade_conversion_result.h`)
+
+- ``type_traits``
+
+- ``utility``
+
+- ``vector``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__impl`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1ub__tree`
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1ub__tree_1_1selector`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_ub__tree_8h_1af60492322cb87df1ab2e3ab7661286f2`
+
+- :ref:`exhale_function_ub__tree_8h_1a79aec8eefe1c1ecc86c54203a489f385`
+
+- :ref:`exhale_function_ub__tree_8h_1ac4f7189e04cbbc2f022b406e3ce68c2d`
+
+- :ref:`exhale_function_ub__tree_8h_1a6708e8be13bcade4363e264226407ddc`
+

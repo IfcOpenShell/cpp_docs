@@ -1,0 +1,14 @@
+.. _exhale_function_ub__tree_8h_1a79aec8eefe1c1ecc86c54203a489f385:
+
+Function ifcopenshell::geom::impl::make\_box
+============================================
+
+- Defined in :ref:`file_src_ifcgeom_kernels_opencascade_ub_tree.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::geom::impl::make_box(const ifcopenshell::geom::tree_box&)
+   :project: IfcOpenShell

@@ -67,11 +67,17 @@ Classes
 
 - :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1enumeration__reference_01_4`
 
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01ifcopenshell_1_1instance__reference_01_4`
+
 - :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01int_01_4`
 
 - :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01int64__t_01_4`
 
 - :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1string_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1vector_3_01ifcopenshell_1_1reference__or__simple__type_01_4_01_4`
+
+- :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1vector_3_01std_1_1vector_3_01ifcopenshell_1_1referecad70d38c66d2536b0f397c31c048ddc`
 
 - :ref:`exhale_struct_structimpl_1_1variant__type__name_3_01std_1_1vector_3_01_t_00_01_allocator_01_4_01_4`
 

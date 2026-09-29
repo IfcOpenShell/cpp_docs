@@ -1,7 +1,7 @@
 .. _exhale_function_wire__utils_8h_1a4fac8cf21dff02e1967b0ebb9f7c7a1c:
 
-Function ifcopenshell::geom::util::triangulate_wire
-===================================================
+Function ifcopenshell::geom::util::triangulate\_wire
+====================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
 

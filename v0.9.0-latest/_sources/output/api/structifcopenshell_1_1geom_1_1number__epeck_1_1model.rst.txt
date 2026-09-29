@@ -25,8 +25,4 @@ Struct Documentation
 --------------------
 
 
-.. doxygenstruct:: ifcopenshell::geom::number_epeck::model
-   :project: IfcOpenShell
-   :members:
-   :protected-members:
-   :undoc-members:
+See :ref:`exhale_class_classifcopenshell_1_1geom_1_1number__epeck` for this nested type's documentation.

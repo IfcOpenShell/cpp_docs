@@ -1,0 +1,42 @@
+
+.. _namespace_ifcopenshell__SWAR__chars:
+
+Namespace ifcopenshell::SWAR::chars
+===================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_parse_8h_1a62d58fa85a5fc1d00139178f38e5eeb1`
+
+- :ref:`exhale_variable_parse_8h_1ae03d77c37bed41f42615f691a22e7d09`
+
+- :ref:`exhale_variable_parse_8h_1a50a1f629bafacd53d26d9ff814cc06da`
+
+- :ref:`exhale_variable_parse_8h_1a2d499f5a066b2129639a8ece3d048699`
+
+- :ref:`exhale_variable_parse_8h_1af3f0e425502cb9927ac9b53d05109c8e`
+
+- :ref:`exhale_variable_parse_8h_1a2c57c9a3a7b9c6b7b56b00bd0e7d5c7a`
+
+- :ref:`exhale_variable_parse_8h_1ae65e71ecbf7afa9bc3cccdd29c17a811`
+
+- :ref:`exhale_variable_parse_8h_1a3fe1c0b9d861aafdcca389bfc87c0d2f`
+
+- :ref:`exhale_variable_parse_8h_1a8a36836e9b560fa90e020cfe393f1d21`
+
+- :ref:`exhale_variable_parse_8h_1a16122e9df9f62e798bfbaae88ce7242b`
+
+- :ref:`exhale_variable_parse_8h_1a0247dd2c5ee1b3dcf2374478069e7f87`
+
+- :ref:`exhale_variable_parse_8h_1adc77824b4acdf036cb87e59b3ca2b89d`

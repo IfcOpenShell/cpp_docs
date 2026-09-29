@@ -1,7 +1,7 @@
 .. _exhale_function_boolean__utils_8h_1ac1cead2ff55b86b49b24c7c14e6b38f5:
 
-Function ifcopenshell::geom::util::min_face_face_distance
-=========================================================
+Function ifcopenshell::geom::util::min\_face\_face\_distance
+============================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
 

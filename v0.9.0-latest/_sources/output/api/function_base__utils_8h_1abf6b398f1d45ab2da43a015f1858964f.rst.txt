@@ -1,7 +1,7 @@
 .. _exhale_function_base__utils_8h_1abf6b398f1d45ab2da43a015f1858964f:
 
-Function ifcopenshell::geom::util::is_manifold
-==============================================
+Function ifcopenshell::geom::util::is\_manifold
+===============================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
 

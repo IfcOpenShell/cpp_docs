@@ -1,7 +1,7 @@
 .. _exhale_function_nef__to__halfspace__tree_8h_1a00aeb8fab414b8ea67e17f0d261af128:
 
-Template Function ifcopenshell::geom::triangulate_nef_facet
-===========================================================
+Template Function ifcopenshell::geom::triangulate\_nef\_facet
+=============================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_cgal_nef_to_halfspace_tree.h`
 

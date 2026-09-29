@@ -1,7 +1,7 @@
 .. _exhale_function_hierarchy__helper_8h_1ac0da8e6b5d8fe4ad47329a5b5819ad02:
 
-Template Function ifcopenshell::hierarchy_detail::get_children_of_relation
-==========================================================================
+Template Function ifcopenshell::hierarchy\_detail::get\_children\_of\_relation
+==============================================================================
 
 - Defined in :ref:`file_src_ifcparse_hierarchy_helper.h`
 

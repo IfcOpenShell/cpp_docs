@@ -1,7 +1,7 @@
 .. _exhale_function_wire__utils_8h_1a70112aea84c86077e6a0b25d01dca00b:
 
-Function ifcopenshell::geom::util::assert_closed_wire
-=====================================================
+Function ifcopenshell::geom::util::assert\_closed\_wire
+=======================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
 

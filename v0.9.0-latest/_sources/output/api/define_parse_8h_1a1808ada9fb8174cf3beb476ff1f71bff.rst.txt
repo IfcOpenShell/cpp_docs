@@ -1,0 +1,14 @@
+.. _exhale_define_parse_8h_1a1808ada9fb8174cf3beb476ff1f71bff:
+
+Define IFC_SWAR_INLINE
+======================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: IFC_SWAR_INLINE
+   :project: IfcOpenShell

@@ -1,7 +1,7 @@
 .. _exhale_function_base__utils_8h_1aefa36564cdce1003243f4f32016f434d:
 
-Function ifcopenshell::geom::util::point_above_plane
-====================================================
+Function ifcopenshell::geom::util::point\_above\_plane
+======================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
 

@@ -1,7 +1,7 @@
 .. _exhale_function_rocksdb__map__adapter_8h_1abf6fd5cbd30d25378311536cba2b0c48:
 
-Function rocksdb_key::inverse_prefix
-====================================
+Function rocksdb\_key::inverse\_prefix
+======================================
 
 - Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
 

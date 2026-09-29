@@ -1,0 +1,130 @@
+
+.. _file_src_ifcgeom_kernels_opencascade_bvh_tree.h:
+
+File bvh_tree.h
+===============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ifcgeom/kernels/opencascade/bvh_tree.h``)
+-----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ifcgeom_kernels_opencascade_bvh_tree.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``../../../ifcgeom/element.h``
+
+- ``../../../ifcgeom/iterator.h``
+
+- ``../../../ifcgeom/tree.h``
+
+- ``../../../ifcparse/exception.h``
+
+- ``../../../ifcparse/file.h``
+
+- ``../../kernel_registry.h``
+
+- ``BVH_BinaryTree.hxx``
+
+- ``BVH_Box.hxx``
+
+- ``BVH_BoxSet.hxx``
+
+- ``BVH_LinearBuilder.hxx``
+
+- ``BVH_Tree.hxx``
+
+- ``BVH_Triangulation.hxx``
+
+- ``BVH_Types.hxx``
+
+- ``Bnd_Box.hxx``
+
+- ``Bnd_OBB.hxx``
+
+- ``Precision.hxx``
+
+- ``Standard_Macro.hxx``
+
+- ``Standard_Version.hxx``
+
+- ``TopoDS_Shape.hxx``
+
+- ``algorithm``
+
+- ``array`` (:ref:`file_src_ifcparse_variant_array.h`)
+
+- ``boost/functional/hash.hpp``
+
+- ``clash_utils.h`` (:ref:`file_src_ifcgeom_kernels_opencascade_clash_utils.h`)
+
+- ``cmath``
+
+- ``iterator`` (:ref:`file_src_ifcgeom_iterator.h`)
+
+- ``limits``
+
+- ``map`` (:ref:`file_src_ifcgeom_abstract_mapping.h`)
+
+- ``memory``
+
+- ``mutex``
+
+- ``set`` (:ref:`file_src_ifcgeom_conversion_settings.h`)
+
+- ``stack``
+
+- ``thread``
+
+- ``tuple``
+
+- ``unordered_map``
+
+- ``unordered_set``
+
+- ``utility``
+
+- ``vector``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_ifcopenshell`
+
+- :ref:`namespace_ifcopenshell__geom`
+
+- :ref:`namespace_ifcopenshell__geom__impl`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1bvh__tree`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_bvh__tree_8h_1a3729a024b71a8c8783dcaba7b2ba776c`
+

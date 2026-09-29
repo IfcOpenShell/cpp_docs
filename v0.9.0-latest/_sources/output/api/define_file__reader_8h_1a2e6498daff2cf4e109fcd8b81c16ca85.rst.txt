@@ -1,0 +1,14 @@
+.. _exhale_define_file__reader_8h_1a2e6498daff2cf4e109fcd8b81c16ca85:
+
+Define IFC_READER_INLINE
+========================
+
+- Defined in :ref:`file_src_ifcparse_file_reader.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: IFC_READER_INLINE
+   :project: IfcOpenShell

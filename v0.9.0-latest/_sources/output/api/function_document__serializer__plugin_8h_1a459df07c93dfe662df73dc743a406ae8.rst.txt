@@ -1,7 +1,7 @@
 .. _exhale_function_document__serializer__plugin_8h_1a459df07c93dfe662df73dc743a406ae8:
 
-Function ifcopenshell::serializers::document_serializer_plugin_registration_symbol
-==================================================================================
+Function ifcopenshell::serializers::document\_serializer\_plugin\_registration\_symbol
+======================================================================================
 
 - Defined in :ref:`file_src_serializers_document_serializer_plugin.h`
 

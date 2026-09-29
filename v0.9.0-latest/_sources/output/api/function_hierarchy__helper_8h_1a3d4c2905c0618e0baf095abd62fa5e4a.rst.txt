@@ -1,7 +1,7 @@
 .. _exhale_function_hierarchy__helper_8h_1a3d4c2905c0618e0baf095abd62fa5e4a:
 
-Template Function setSurfaceColour(hierarchy_helper<Schema>&, const typename Schema::IfcRepresentation&, double, double, double, double)
-========================================================================================================================================
+Template Function setSurfaceColour(hierarchy\_helper<Schema>&, const typename Schema::IfcRepresentation&, double, double, double, double)
+=========================================================================================================================================
 
 - Defined in :ref:`file_src_ifcparse_hierarchy_helper.h`
 

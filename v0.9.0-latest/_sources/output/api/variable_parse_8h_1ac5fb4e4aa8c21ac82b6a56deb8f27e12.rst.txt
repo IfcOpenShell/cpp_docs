@@ -1,0 +1,14 @@
+.. _exhale_variable_parse_8h_1ac5fb4e4aa8c21ac82b6a56deb8f27e12:
+
+Variable ifcopenshell::SWAR::HIGHS
+==================================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: ifcopenshell::SWAR::HIGHS
+   :project: IfcOpenShell

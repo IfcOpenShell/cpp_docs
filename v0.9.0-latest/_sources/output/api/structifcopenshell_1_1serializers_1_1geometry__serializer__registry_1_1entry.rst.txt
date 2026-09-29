@@ -16,8 +16,4 @@ Struct Documentation
 --------------------
 
 
-.. doxygenstruct:: ifcopenshell::serializers::geometry_serializer_registry::entry
-   :project: IfcOpenShell
-   :members:
-   :protected-members:
-   :undoc-members:
+See :ref:`exhale_class_classifcopenshell_1_1serializers_1_1geometry__serializer__registry` for this nested type's documentation.

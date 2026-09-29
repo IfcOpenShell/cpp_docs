@@ -1,7 +1,7 @@
 .. _exhale_function_wire__utils_8h_1aef8bf4ec2b06ce293f12a455abf7ba3d:
 
-Function ifcopenshell::geom::util::sequence_of_point_to_wire
-============================================================
+Function ifcopenshell::geom::util::sequence\_of\_point\_to\_wire
+================================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
 

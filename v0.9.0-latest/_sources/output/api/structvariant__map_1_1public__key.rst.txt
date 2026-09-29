@@ -1,0 +1,19 @@
+.. _exhale_struct_structvariant__map_1_1public__key:
+
+Template Struct variant_map::public_key
+=======================================
+
+- Defined in :ref:`file_src_ifcparse_map_variant.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classvariant__map`.
+
+
+Struct Documentation
+--------------------
+
+
+See :ref:`exhale_class_classvariant__map` for this nested type's documentation.

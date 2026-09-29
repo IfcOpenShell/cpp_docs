@@ -29,6 +29,8 @@ Namespaces
 
 - :ref:`namespace_ifcopenshell__serializers`
 
+- :ref:`namespace_ifcopenshell__SWAR`
+
 
 Classes
 -------
@@ -37,6 +39,8 @@ Classes
 - :ref:`exhale_struct_structifcopenshell_1_1caller__fed__tag`
 
 - :ref:`exhale_struct_structifcopenshell_1_1file__reader__page`
+
+- :ref:`exhale_struct_structifcopenshell_1_1instance__data_1_1lazy__tag`
 
 - :ref:`exhale_struct_structifcopenshell_1_1instance__reference`
 
@@ -151,6 +155,8 @@ Enums
 
 - :ref:`exhale_enum_argument__type_8h_1ac8ef6c1402f8474deddd9b40beedd419`
 
+- :ref:`exhale_enum_parse_8h_1a29acf6e77d942a70a384d575875eebb1`
+
 - :ref:`exhale_enum_file_8h_1a8349a4a0c47a32926cdabd33778787a2`
 
 
@@ -180,6 +186,8 @@ Functions
 
 - :ref:`exhale_function_file_8h_1a46fc3f1816a25e4790155d381c52388f`
 
+- :ref:`exhale_function_parse_8h_1aa441127ade00e6ddfbb819e9e02228cb`
+
 - :ref:`exhale_function_schema_8h_1a73ec47c8a22edaee429582ec57fc5f90`
 
 - :ref:`exhale_function_logger_8h_1ac328ce96a654c9d181bdd1a138038b27`
@@ -187,6 +195,8 @@ Functions
 - :ref:`exhale_function_argument__type_8h_1aeded9a8c0649a91dab15f91ab995f52b`
 
 - :ref:`exhale_function_express_8h_1a064e15e13259ab8d693e2673c06d69f7`
+
+- :ref:`exhale_function_parse_8h_1a0f60fc05b29447348de10360cd61e081`
 
 - :ref:`exhale_function_schema_8h_1a9cafababeb3757258a77db47762bc341`
 
@@ -231,7 +241,7 @@ Typedefs
 
 - :ref:`exhale_typedef_instance__data_8h_1aede234cee79438273facc7fd916a1658`
 
-- :ref:`exhale_typedef_instance__data_8h_1a66b39e6bc3e79e82a03bdeef4ad389c5`
+- :ref:`exhale_typedef_instance__data_8h_1a94bcc3d97a796d91153618e6a3a16620`
 
 - :ref:`exhale_typedef_storage_8h_1a0ca87e4c3024807607252c47265e3b13`
 

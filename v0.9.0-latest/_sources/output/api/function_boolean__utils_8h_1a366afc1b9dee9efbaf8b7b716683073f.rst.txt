@@ -1,7 +1,7 @@
 .. _exhale_function_boolean__utils_8h_1a366afc1b9dee9efbaf8b7b716683073f:
 
-Function ifcopenshell::geom::util::copy_operand(const TopoDS_Shape&)
-====================================================================
+Function ifcopenshell::geom::util::copy\_operand(const TopoDS\_Shape&)
+======================================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
 

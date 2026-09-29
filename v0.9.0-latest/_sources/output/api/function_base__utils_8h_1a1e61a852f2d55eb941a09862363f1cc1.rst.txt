@@ -1,7 +1,7 @@
 .. _exhale_function_base__utils_8h_1a1e61a852f2d55eb941a09862363f1cc1:
 
-Function ifcopenshell::geom::util::is_nested_compound_of_solid
-==============================================================
+Function ifcopenshell::geom::util::is\_nested\_compound\_of\_solid
+==================================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_base_utils.h`
 

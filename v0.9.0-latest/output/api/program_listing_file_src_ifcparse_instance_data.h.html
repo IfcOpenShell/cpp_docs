@@ -79,6 +79,7 @@
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;boost/optional.hpp&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;optional&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;boost/logic/tribool.hpp&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;boost/dynamic_bitset.hpp&gt;</span>
 
@@ -123,6 +124,21 @@
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
 <span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">derived</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"derived"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">instance_reference</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"unresolved reference"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">reference_or_simple_type</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"unresolved reference aggregate"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
+<span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">variant_type_name</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">reference_or_simple_type</span><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s">"unresolved reference aggregate of aggregates"</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">};</span>
 
 <span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
@@ -250,7 +266,15 @@
 <span class="w">    </span><span class="c1">// An aggregate of an aggregate of floats. E.g. ((1., 2.3), (4.))</span>
 <span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&gt;</span><span class="p">,</span>
 <span class="w">    </span><span class="c1">// An aggregate of an aggregate of entities. E.g. ((#1, #2), (#3))</span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="o">&gt;&gt;&gt;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">express</span><span class="o">::</span><span class="n">base</span><span class="o">&gt;&gt;</span><span class="p">,</span>
+<span class="w">    </span><span class="c1">// PARSE-TIME ONLY: a reference, or an aggregate mixing references and</span>
+<span class="w">    </span><span class="c1">// inline typed values, exactly as the tokenizer produced it, held in</span>
+<span class="w">    </span><span class="c1">// the slot until every instance has been read and then replaced by the</span>
+<span class="w">    </span><span class="c1">// three forms above. Never present once a file is loaded. Their indices</span>
+<span class="w">    </span><span class="c1">// match the Argument_UNRESOLVED_* members of argument_type.</span>
+<span class="w">    </span><span class="n">instance_reference</span><span class="p">,</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">reference_or_simple_type</span><span class="o">&gt;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">reference_or_simple_type</span><span class="o">&gt;&gt;&gt;</span>
 <span class="n">type_variant_parameter_pack</span><span class="p">;</span>
 
 <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">Pack</span><span class="o">&gt;</span>
@@ -564,8 +588,21 @@
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">populate_derived_</span><span class="p">();</span>
 
 <span class="w">  </span><span class="k">public</span><span class="o">:</span>
-<span class="w">      </span><span class="c1">// Since rocks_db_attribute_storage has no members this is not a variant&lt;in_memory, rocks&gt; but in_memory*, where nullptr means a rocks_db_attribute_storage is constructed on the fly given the context from instance data.</span>
-<span class="w">      </span><span class="n">in_memory_attribute_storage</span><span class="o">*</span><span class="w"> </span><span class="n">storage_</span><span class="p">;</span>
+<span class="w">      </span><span class="c1">// Since rocks_db_attribute_storage has no members this is not a variant&lt;in_memory, rocks&gt; but an optional in_memory storage, where an empty optional means a rocks_db_attribute_storage is constructed on the fly given the context from instance data.</span>
+<span class="w">      </span><span class="k">mutable</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">in_memory_attribute_storage</span><span class="o">&gt;</span><span class="w"> </span><span class="n">storage_</span><span class="p">;</span>
+
+<span class="w">      </span><span class="c1">// Lazy loading: parses the attributes from the file's retained source</span>
+<span class="w">      </span><span class="c1">// if this instance was indexed lazily and has not been accessed yet.</span>
+<span class="w">      </span><span class="c1">// No-op otherwise (loaded, created, or RocksDB-backed).</span>
+<span class="w">      </span><span class="kt">void</span><span class="w"> </span><span class="nf">ensure_loaded</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<span class="w">      </span><span class="c1">// A lazily indexed instance: the attributes, including the derived</span>
+<span class="w">      </span><span class="c1">// markers, are filled in by the file storage on first access.</span>
+<span class="w">      </span><span class="k">struct</span><span class="w"> </span><span class="nc">lazy_tag</span><span class="w"> </span><span class="p">{};</span>
+<span class="w">      </span><span class="n">instance_data</span><span class="p">(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">file</span><span class="o">*</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">declaration</span><span class="o">*</span><span class="w"> </span><span class="n">declaration</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">lazy_tag</span><span class="p">)</span>
+<span class="w">          </span><span class="o">:</span><span class="w"> </span><span class="n">file_</span><span class="p">(</span><span class="n">file</span><span class="p">),</span><span class="w"> </span><span class="n">declaration_</span><span class="p">(</span><span class="n">declaration</span><span class="p">),</span><span class="w"> </span><span class="n">identity_</span><span class="p">(</span><span class="n">counter_</span><span class="o">++</span><span class="p">),</span><span class="w"> </span><span class="n">id_</span><span class="p">(</span><span class="n">id</span><span class="p">),</span><span class="w"> </span><span class="n">storage_</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nullopt</span><span class="p">)</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="k">friend</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">ifcopenshell</span><span class="o">::</span><span class="n">impl</span><span class="o">::</span><span class="n">in_memory_file_storage</span><span class="p">;</span>
 
 <span class="w">      </span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">declaration</span><span class="o">*</span><span class="w"> </span><span class="nf">declaration</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
 <span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="n">declaration_</span><span class="p">;</span>
@@ -584,13 +621,13 @@
 <span class="w">      </span><span class="p">}</span>
 
 <span class="w">      </span><span class="n">instance_data</span><span class="p">(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">file</span><span class="o">*</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">declaration</span><span class="o">*</span><span class="w"> </span><span class="n">declaration</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">in_memory_attribute_storage</span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">storage</span><span class="p">)</span>
-<span class="w">          </span><span class="o">:</span><span class="w"> </span><span class="n">file_</span><span class="p">(</span><span class="n">file</span><span class="p">),</span><span class="w"> </span><span class="n">declaration_</span><span class="p">(</span><span class="n">declaration</span><span class="p">),</span><span class="w"> </span><span class="n">identity_</span><span class="p">(</span><span class="n">counter_</span><span class="o">++</span><span class="p">),</span><span class="w"> </span><span class="n">id_</span><span class="p">(</span><span class="n">id</span><span class="p">),</span><span class="w"> </span><span class="n">storage_</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">in_memory_attribute_storage</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">storage</span><span class="p">)))</span>
+<span class="w">          </span><span class="o">:</span><span class="w"> </span><span class="n">file_</span><span class="p">(</span><span class="n">file</span><span class="p">),</span><span class="w"> </span><span class="n">declaration_</span><span class="p">(</span><span class="n">declaration</span><span class="p">),</span><span class="w"> </span><span class="n">identity_</span><span class="p">(</span><span class="n">counter_</span><span class="o">++</span><span class="p">),</span><span class="w"> </span><span class="n">id_</span><span class="p">(</span><span class="n">id</span><span class="p">),</span><span class="w"> </span><span class="n">storage_</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">storage</span><span class="p">))</span>
 <span class="w">      </span><span class="p">{</span>
 <span class="w">            </span><span class="n">populate_derived_</span><span class="p">();</span>
 <span class="w">      </span><span class="p">}</span>
 
 <span class="w">      </span><span class="n">instance_data</span><span class="p">(</span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">file</span><span class="o">*</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ifcopenshell</span><span class="o">::</span><span class="n">declaration</span><span class="o">*</span><span class="w"> </span><span class="n">declaration</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">rocks_db_attribute_storage</span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">storage</span><span class="p">)</span>
-<span class="w">          </span><span class="o">:</span><span class="w"> </span><span class="n">file_</span><span class="p">(</span><span class="n">file</span><span class="p">),</span><span class="w"> </span><span class="n">declaration_</span><span class="p">(</span><span class="n">declaration</span><span class="p">),</span><span class="w"> </span><span class="n">identity_</span><span class="p">(</span><span class="n">counter_</span><span class="o">++</span><span class="p">),</span><span class="w"> </span><span class="n">id_</span><span class="p">(</span><span class="n">id</span><span class="p">),</span><span class="w"> </span><span class="n">storage_</span><span class="p">(</span><span class="nb">nullptr</span><span class="p">)</span>
+<span class="w">          </span><span class="o">:</span><span class="w"> </span><span class="n">file_</span><span class="p">(</span><span class="n">file</span><span class="p">),</span><span class="w"> </span><span class="n">declaration_</span><span class="p">(</span><span class="n">declaration</span><span class="p">),</span><span class="w"> </span><span class="n">identity_</span><span class="p">(</span><span class="n">counter_</span><span class="o">++</span><span class="p">),</span><span class="w"> </span><span class="n">id_</span><span class="p">(</span><span class="n">id</span><span class="p">),</span><span class="w"> </span><span class="n">storage_</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">nullopt</span><span class="p">)</span>
 <span class="w">      </span><span class="p">{</span>
 <span class="w">          </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span><span class="p">(</span><span class="n">storage</span><span class="p">);</span>
 <span class="w">          </span><span class="n">populate_derived_</span><span class="p">();</span>
@@ -599,7 +636,7 @@
 <span class="w">      </span><span class="cm">/*</span>
 <span class="cm">      // now that there are referenced as shared_ptr there is no move constructor anymore</span>
 <span class="cm">      instance_data(instance_data&amp;&amp; other) noexcept</span>
-<span class="cm">          : file_(other.file_), id_(other.id_), declaration_(other.declaration_), storage_(std::exchange(other.storage_, nullptr))</span>
+<span class="cm">          : file_(other.file_), id_(other.id_), declaration_(other.declaration_), storage_(std::move(other.storage_))</span>
 <span class="cm">      {}</span>
 <span class="cm">      */</span>
 
@@ -613,21 +650,22 @@
 <span class="cm">      // same</span>
 <span class="cm">      instance_data&amp; operator=(instance_data&amp;&amp; other) noexcept {</span>
 <span class="cm">          if (this != &amp;other) {</span>
-<span class="cm">              delete storage_;</span>
-<span class="cm">              storage_ = std::exchange(other.storage_, nullptr);</span>
+<span class="cm">              storage_ = std::move(other.storage_);</span>
+<span class="cm">              other.storage_.reset();</span>
 <span class="cm">          }</span>
 <span class="cm">          return *this;</span>
 <span class="cm">      }</span>
 <span class="cm">      */</span>
 
 <span class="w">      </span><span class="o">~</span><span class="n">instance_data</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="k">delete</span><span class="w"> </span><span class="n">storage_</span><span class="p">;</span>
+<span class="w">          </span><span class="n">storage_</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
 <span class="w">      </span><span class="p">}</span>
 
 <span class="w">    </span><span class="n">attribute_value</span><span class="w"> </span><span class="n">get_attribute_value</span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">attribute_index</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 
 <span class="w">    </span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">set_attribute_value</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">attribute_index</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">ensure_loaded</span><span class="p">();</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">storage_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="n">storage_</span><span class="o">-&gt;</span><span class="n">set</span><span class="p">(</span><span class="n">attribute_index</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">);</span>
 <span class="w">            </span><span class="k">return</span><span class="p">;</span>
@@ -643,6 +681,7 @@
 
 <span class="w">    </span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
 <span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">has_attribute_value</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">attribute_index</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">ensure_loaded</span><span class="p">();</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">storage_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">storage_</span><span class="o">-&gt;</span><span class="n">has</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">attribute_index</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>

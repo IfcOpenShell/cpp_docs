@@ -55,6 +55,7 @@
 <li><p><a class="reference internal" href="namespace_ifcopenshell__impl.html#namespace-ifcopenshell-impl"><span class="std std-ref">Namespace ifcopenshell::impl</span></a></p></li>
 <li><p><a class="reference internal" href="namespace_ifcopenshell__path.html#namespace-ifcopenshell-path"><span class="std std-ref">Namespace ifcopenshell::path</span></a></p></li>
 <li><p><a class="reference internal" href="namespace_ifcopenshell__serializers.html#namespace-ifcopenshell-serializers"><span class="std std-ref">Namespace ifcopenshell::serializers</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_ifcopenshell__SWAR.html#namespace-ifcopenshell-swar"><span class="std std-ref">Namespace ifcopenshell::SWAR</span></a></p></li>
 </ul>
 </section>
 <section id="classes">
@@ -62,6 +63,7 @@
 <ul class="simple">
 <li><p><a class="reference internal" href="structifcopenshell_1_1caller__fed__tag.html#exhale-struct-structifcopenshell-1-1caller-fed-tag"><span class="std std-ref">Struct caller_fed_tag</span></a></p></li>
 <li><p><a class="reference internal" href="structifcopenshell_1_1file__reader__page.html#exhale-struct-structifcopenshell-1-1file-reader-page"><span class="std std-ref">Struct file_reader_page</span></a></p></li>
+<li><p><a class="reference internal" href="structifcopenshell_1_1instance__data_1_1lazy__tag.html#exhale-struct-structifcopenshell-1-1instance-data-1-1lazy-tag"><span class="std std-ref">Struct instance_data::lazy_tag</span></a></p></li>
 <li><p><a class="reference internal" href="structifcopenshell_1_1instance__reference.html#exhale-struct-structifcopenshell-1-1instance-reference"><span class="std std-ref">Struct instance_reference</span></a></p></li>
 <li><p><a class="reference internal" href="structifcopenshell_1_1pack__element.html#exhale-struct-structifcopenshell-1-1pack-element"><span class="std std-ref">Template Struct pack_element</span></a></p></li>
 <li><p><a class="reference internal" href="structifcopenshell_1_1pack__element_3_01parameter__pack_3_01_args_8_8_8_01_4_01_4.html#exhale-struct-structifcopenshell-1-1pack-element-3-01parameter-pack-3-01-args-8-8-8-01-4-01-4"><span class="std std-ref">Template Struct pack_element&lt; parameter_pack&lt; Args… &gt; &gt;</span></a></p></li>
@@ -121,6 +123,7 @@
 <h2>Enums<a class="headerlink" href="#enums" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="enum_argument__type_8h_1ac8ef6c1402f8474deddd9b40beedd419.html#exhale-enum-argument-type-8h-1ac8ef6c1402f8474deddd9b40beedd419"><span class="std std-ref">Enum argument_type</span></a></p></li>
+<li><p><a class="reference internal" href="enum_parse_8h_1a29acf6e77d942a70a384d575875eebb1.html#exhale-enum-parse-8h-1a29acf6e77d942a70a384d575875eebb1"><span class="std std-ref">Enum body_kind</span></a></p></li>
 <li><p><a class="reference internal" href="enum_file_8h_1a8349a4a0c47a32926cdabd33778787a2.html#exhale-enum-file-8h-1a8349a4a0c47a32926cdabd33778787a2"><span class="std std-ref">Enum filetype</span></a></p></li>
 </ul>
 </section>
@@ -138,10 +141,12 @@
 <li><p><a class="reference internal" href="function_argument__type_8h_1aff2316110cf8e3b2cf8324a43457b593.html#exhale-function-argument-type-8h-1aff2316110cf8e3b2cf8324a43457b593"><span class="std std-ref">Function ifcopenshell::from_parameter_type</span></a></p></li>
 <li><p><a class="reference internal" href="function_si__prefix_8h_1a11beb662ad6af8973ec4f862a305520c.html#exhale-function-si-prefix-8h-1a11beb662ad6af8973ec4f862a305520c"><span class="std std-ref">Template Function ifcopenshell::get_SI_equivalent</span></a></p></li>
 <li><p><a class="reference internal" href="function_file_8h_1a46fc3f1816a25e4790155d381c52388f.html#exhale-function-file-8h-1a46fc3f1816a25e4790155d381c52388f"><span class="std std-ref">Function ifcopenshell::guess_file_type</span></a></p></li>
+<li><p><a class="reference internal" href="function_parse_8h_1aa441127ade00e6ddfbb819e9e02228cb.html#exhale-function-parse-8h-1aa441127ade00e6ddfbb819e9e02228cb"><span class="std std-ref">Function ifcopenshell::is_token_delimiter</span></a></p></li>
 <li><p><a class="reference internal" href="function_schema_8h_1a73ec47c8a22edaee429582ec57fc5f90.html#exhale-function-schema-8h-1a73ec47c8a22edaee429582ec57fc5f90"><span class="std std-ref">Function ifcopenshell::load_schema_plugins</span></a></p></li>
 <li><p><a class="reference internal" href="function_logger_8h_1ac328ce96a654c9d181bdd1a138038b27.html#exhale-function-logger-8h-1ac328ce96a654c9d181bdd1a138038b27"><span class="std std-ref">Function ifcopenshell::logger_or_root</span></a></p></li>
 <li><p><a class="reference internal" href="function_argument__type_8h_1aeded9a8c0649a91dab15f91ab995f52b.html#exhale-function-argument-type-8h-1aeded9a8c0649a91dab15f91ab995f52b"><span class="std std-ref">Function ifcopenshell::make_aggregate</span></a></p></li>
 <li><p><a class="reference internal" href="function_express_8h_1a064e15e13259ab8d693e2673c06d69f7.html#exhale-function-express-8h-1a064e15e13259ab8d693e2673c06d69f7"><span class="std std-ref">Template Function ifcopenshell::make_pointer_type</span></a></p></li>
+<li><p><a class="reference internal" href="function_parse_8h_1a0f60fc05b29447348de10360cd61e081.html#exhale-function-parse-8h-1a0f60fc05b29447348de10360cd61e081"><span class="std std-ref">Template Function ifcopenshell::parse_num_</span></a></p></li>
 <li><p><a class="reference internal" href="function_schema_8h_1a9cafababeb3757258a77db47762bc341.html#exhale-function-schema-8h-1a9cafababeb3757258a77db47762bc341"><span class="std std-ref">Function ifcopenshell::register_schema</span></a></p></li>
 <li><p><a class="reference internal" href="function_utils_8h_1a2772e014bdcdfd566695c49277c3ed49.html#exhale-function-utils-8h-1a2772e014bdcdfd566695c49277c3ed49"><span class="std std-ref">Function ifcopenshell::sanitate_material_name</span></a></p></li>
 <li><p><a class="reference internal" href="function_schema_8h_1a4f9bdfdd794137fe1a97d2b66ae4e494.html#exhale-function-schema-8h-1a4f9bdfdd794137fe1a97d2b66ae4e494"><span class="std std-ref">Function ifcopenshell::schema_by_name</span></a></p></li>
@@ -166,7 +171,7 @@
 <li><p><a class="reference internal" href="typedef_storage_8h_1a609012d06350c725b68d448c5e3c06ea.html#exhale-typedef-storage-8h-1a609012d06350c725b68d448c5e3c06ea"><span class="std std-ref">Typedef ifcopenshell::reference_or_simple_type</span></a></p></li>
 <li><p><a class="reference internal" href="typedef_express_8h_1a501ae54d6c3147f10f69892a9e08d5a9.html#exhale-typedef-express-8h-1a501ae54d6c3147f10f69892a9e08d5a9"><span class="std std-ref">Typedef ifcopenshell::shared_pointer_type</span></a></p></li>
 <li><p><a class="reference internal" href="typedef_instance__data_8h_1aede234cee79438273facc7fd916a1658.html#exhale-typedef-instance-data-8h-1aede234cee79438273facc7fd916a1658"><span class="std std-ref">Typedef ifcopenshell::type_encoder</span></a></p></li>
-<li><p><a class="reference internal" href="typedef_instance__data_8h_1a66b39e6bc3e79e82a03bdeef4ad389c5.html#exhale-typedef-instance-data-8h-1a66b39e6bc3e79e82a03bdeef4ad389c5"><span class="std std-ref">Typedef ifcopenshell::type_variant_parameter_pack</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_instance__data_8h_1a94bcc3d97a796d91153618e6a3a16620.html#exhale-typedef-instance-data-8h-1a94bcc3d97a796d91153618e6a3a16620"><span class="std std-ref">Typedef ifcopenshell::type_variant_parameter_pack</span></a></p></li>
 <li><p><a class="reference internal" href="typedef_storage_8h_1a0ca87e4c3024807607252c47265e3b13.html#exhale-typedef-storage-8h-1a0ca87e4c3024807607252c47265e3b13"><span class="std std-ref">Typedef ifcopenshell::unresolved_references</span></a></p></li>
 </ul>
 </section>

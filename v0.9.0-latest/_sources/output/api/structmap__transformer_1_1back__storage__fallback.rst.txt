@@ -16,8 +16,4 @@ Struct Documentation
 --------------------
 
 
-.. doxygenstruct:: map_transformer::back_storage_fallback
-   :project: IfcOpenShell
-   :members:
-   :protected-members:
-   :undoc-members:
+See :ref:`exhale_class_classmap__transformer` for this nested type's documentation.

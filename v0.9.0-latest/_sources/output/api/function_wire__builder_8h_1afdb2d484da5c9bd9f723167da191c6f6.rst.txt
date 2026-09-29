@@ -1,7 +1,7 @@
 .. _exhale_function_wire__builder_8h_1afdb2d484da5c9bd9f723167da191c6f6:
 
-Function ifcopenshell::geom::util::create_edge_over_curve_with_log_messages
-===========================================================================
+Function ifcopenshell::geom::util::create\_edge\_over\_curve\_with\_log\_messages
+=================================================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_builder.h`
 

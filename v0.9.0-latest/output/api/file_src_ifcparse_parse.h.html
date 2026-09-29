@@ -41,8 +41,10 @@
 <li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
 <li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
 <li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
-<li><p><a class="reference internal" href="#functions" id="id6">Functions</a></p></li>
-<li><p><a class="reference internal" href="#variables" id="id7">Variables</a></p></li>
+<li><p><a class="reference internal" href="#enums" id="id6">Enums</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id7">Functions</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id8">Defines</a></p></li>
+<li><p><a class="reference internal" href="#variables" id="id9">Variables</a></p></li>
 </ul>
 </nav>
 <section id="definition-src-ifcparse-parse-h">
@@ -59,6 +61,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">argument.h</span></code> (<a class="reference internal" href="file_src_ifcparse_argument.h.html#file-src-ifcparse-argument-h"><span class="std std-ref">File argument.h</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">boost/dynamic_bitset.hpp</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">character_decoder.h</span></code> (<a class="reference internal" href="file_src_ifcparse_character_decoder.h.html#file-src-ifcparse-character-decoder-h"><span class="std std-ref">File character_decoder.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">charconv</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cstring</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">express.h</span></code> (<a class="reference internal" href="file_src_ifcparse_express.h.html#file-src-ifcparse-express-h"><span class="std std-ref">File express.h</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">file_reader.h</span></code> (<a class="reference internal" href="file_src_ifcparse_file_reader.h.html#file-src-ifcparse-file-reader-h"><span class="std std-ref">File file_reader.h</span></a>)</p></li>
@@ -81,6 +84,8 @@
 <h2>Namespaces<a class="headerlink" href="#namespaces" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="namespace_ifcopenshell.html#namespace-ifcopenshell"><span class="std std-ref">Namespace ifcopenshell</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_ifcopenshell__SWAR.html#namespace-ifcopenshell-swar"><span class="std std-ref">Namespace ifcopenshell::SWAR</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_ifcopenshell__SWAR__chars.html#namespace-ifcopenshell-swar-chars"><span class="std std-ref">Namespace ifcopenshell::SWAR::chars</span></a></p></li>
 </ul>
 </section>
 <section id="classes">
@@ -89,19 +94,56 @@
 <li><p><a class="reference internal" href="classifcopenshell_1_1spf__lexer.html#exhale-class-classifcopenshell-1-1spf-lexer"><span class="std std-ref">Template Class spf_lexer</span></a></p></li>
 </ul>
 </section>
+<section id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="enum_parse_8h_1a29acf6e77d942a70a384d575875eebb1.html#exhale-enum-parse-8h-1a29acf6e77d942a70a384d575875eebb1"><span class="std std-ref">Enum body_kind</span></a></p></li>
+</ul>
+</section>
 <section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="function_parse_8h_1aa903c330c7742f5e5a005605b9529a5d.html#exhale-function-parse-8h-1aa903c330c7742f5e5a005605b9529a5d"><span class="std std-ref">Function ifcopenshell::decode_spf_string</span></a></p></li>
 <li><p><a class="reference internal" href="function_parse_8h_1ab57422e54b7615e4d35394159c502610.html#exhale-function-parse-8h-1ab57422e54b7615e4d35394159c502610"><span class="std std-ref">Function ifcopenshell::encode_spf_string</span></a></p></li>
+<li><p><a class="reference internal" href="function_parse_8h_1aa441127ade00e6ddfbb819e9e02228cb.html#exhale-function-parse-8h-1aa441127ade00e6ddfbb819e9e02228cb"><span class="std std-ref">Function ifcopenshell::is_token_delimiter</span></a></p></li>
+<li><p><a class="reference internal" href="function_parse_8h_1a0f60fc05b29447348de10360cd61e081.html#exhale-function-parse-8h-1a0f60fc05b29447348de10360cd61e081"><span class="std std-ref">Template Function ifcopenshell::parse_num_</span></a></p></li>
+<li><p><a class="reference internal" href="function_parse_8h_1a96595b46830df02e6f74708b7fe7ff40.html#exhale-function-parse-8h-1a96595b46830df02e6f74708b7fe7ff40"><span class="std std-ref">Function ifcopenshell::SWAR::eq_mask(uint32_t, uint32_t)</span></a></p></li>
+<li><p><a class="reference internal" href="function_parse_8h_1a0c045b00f7bc25422aaad0696e225588.html#exhale-function-parse-8h-1a0c045b00f7bc25422aaad0696e225588"><span class="std std-ref">Function ifcopenshell::SWAR::eq_mask(uint64_t, uint64_t)</span></a></p></li>
+<li><p><a class="reference internal" href="function_parse_8h_1ad9e7adce42f6551675f043d06e97109b.html#exhale-function-parse-8h-1ad9e7adce42f6551675f043d06e97109b"><span class="std std-ref">Template Function ifcopenshell::SWAR::has_special_char(uint64_t)</span></a></p></li>
+<li><p><a class="reference internal" href="function_parse_8h_1a1a5b1c94788ffe0ad0fc77782c90124f.html#exhale-function-parse-8h-1a1a5b1c94788ffe0ad0fc77782c90124f"><span class="std std-ref">Template Function ifcopenshell::SWAR::has_special_char(uint32_t)</span></a></p></li>
+<li><p><a class="reference internal" href="function_parse_8h_1a7af80554af81b4342922ec0ee8b89da6.html#exhale-function-parse-8h-1a7af80554af81b4342922ec0ee8b89da6"><span class="std std-ref">Function ifcopenshell::SWAR::has_zero_byte(uint32_t)</span></a></p></li>
+<li><p><a class="reference internal" href="function_parse_8h_1aa04569daa9b69977e638192b30feb818.html#exhale-function-parse-8h-1aa04569daa9b69977e638192b30feb818"><span class="std std-ref">Function ifcopenshell::SWAR::has_zero_byte(uint64_t)</span></a></p></li>
+<li><p><a class="reference internal" href="function_parse_8h_1a27c004b939f2f9c39693a6927c2a1417.html#exhale-function-parse-8h-1a27c004b939f2f9c39693a6927c2a1417"><span class="std std-ref">Function ifcopenshell::SWAR::splat</span></a></p></li>
 <li><p><a class="reference internal" href="function_parse_8h_1a596ed8cc0868e8ba266691fa1dc1a6d3.html#exhale-function-parse-8h-1a596ed8cc0868e8ba266691fa1dc1a6d3"><span class="std std-ref">Function ifcopenshell::traverse</span></a></p></li>
 <li><p><a class="reference internal" href="function_parse_8h_1aef4f6615104c983873ca7dc7fc9bef9e.html#exhale-function-parse-8h-1aef4f6615104c983873ca7dc7fc9bef9e"><span class="std std-ref">Function ifcopenshell::traverse_breadth_first</span></a></p></li>
 <li><p><a class="reference internal" href="function_parse_8h_1a399ed266a25030a49686f9a6a6526e42.html#exhale-function-parse-8h-1a399ed266a25030a49686f9a6a6526e42"><span class="std std-ref">Function operator&lt;&lt;</span></a></p></li>
 </ul>
 </section>
+<section id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define_parse_8h_1a1808ada9fb8174cf3beb476ff1f71bff.html#exhale-define-parse-8h-1a1808ada9fb8174cf3beb476ff1f71bff"><span class="std std-ref">Define IFC_SWAR_INLINE</span></a></p></li>
+</ul>
+</section>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">¶</a></h2>
 <ul class="simple">
+<li><p><a class="reference internal" href="variable_parse_8h_1a62d58fa85a5fc1d00139178f38e5eeb1.html#exhale-variable-parse-8h-1a62d58fa85a5fc1d00139178f38e5eeb1"><span class="std std-ref">Variable ifcopenshell::SWAR::chars::comma</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1ae03d77c37bed41f42615f691a22e7d09.html#exhale-variable-parse-8h-1ae03d77c37bed41f42615f691a22e7d09"><span class="std std-ref">Variable ifcopenshell::SWAR::chars::cr</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1a50a1f629bafacd53d26d9ff814cc06da.html#exhale-variable-parse-8h-1a50a1f629bafacd53d26d9ff814cc06da"><span class="std std-ref">Variable ifcopenshell::SWAR::chars::dot</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1a2d499f5a066b2129639a8ece3d048699.html#exhale-variable-parse-8h-1a2d499f5a066b2129639a8ece3d048699"><span class="std std-ref">Variable ifcopenshell::SWAR::chars::eq</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1af3f0e425502cb9927ac9b53d05109c8e.html#exhale-variable-parse-8h-1af3f0e425502cb9927ac9b53d05109c8e"><span class="std std-ref">Variable ifcopenshell::SWAR::chars::lf</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1a2c57c9a3a7b9c6b7b56b00bd0e7d5c7a.html#exhale-variable-parse-8h-1a2c57c9a3a7b9c6b7b56b00bd0e7d5c7a"><span class="std std-ref">Variable ifcopenshell::SWAR::chars::lpar</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1ae65e71ecbf7afa9bc3cccdd29c17a811.html#exhale-variable-parse-8h-1ae65e71ecbf7afa9bc3cccdd29c17a811"><span class="std std-ref">Variable ifcopenshell::SWAR::chars::quote</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1a3fe1c0b9d861aafdcca389bfc87c0d2f.html#exhale-variable-parse-8h-1a3fe1c0b9d861aafdcca389bfc87c0d2f"><span class="std std-ref">Variable ifcopenshell::SWAR::chars::rpar</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1a8a36836e9b560fa90e020cfe393f1d21.html#exhale-variable-parse-8h-1a8a36836e9b560fa90e020cfe393f1d21"><span class="std std-ref">Variable ifcopenshell::SWAR::chars::semi</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1a16122e9df9f62e798bfbaae88ce7242b.html#exhale-variable-parse-8h-1a16122e9df9f62e798bfbaae88ce7242b"><span class="std std-ref">Variable ifcopenshell::SWAR::chars::slash</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1a0247dd2c5ee1b3dcf2374478069e7f87.html#exhale-variable-parse-8h-1a0247dd2c5ee1b3dcf2374478069e7f87"><span class="std std-ref">Variable ifcopenshell::SWAR::chars::space</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1adc77824b4acdf036cb87e59b3ca2b89d.html#exhale-variable-parse-8h-1adc77824b4acdf036cb87e59b3ca2b89d"><span class="std std-ref">Variable ifcopenshell::SWAR::chars::tab</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1ac5fb4e4aa8c21ac82b6a56deb8f27e12.html#exhale-variable-parse-8h-1ac5fb4e4aa8c21ac82b6a56deb8f27e12"><span class="std std-ref">Variable ifcopenshell::SWAR::HIGHS</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1abdcdc32d85ab76ac93cb77c3a8c02bef.html#exhale-variable-parse-8h-1abdcdc32d85ab76ac93cb77c3a8c02bef"><span class="std std-ref">Variable ifcopenshell::SWAR::HIGHS32</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1a0d639530f8f31f25ab82c9d297853d39.html#exhale-variable-parse-8h-1a0d639530f8f31f25ab82c9d297853d39"><span class="std std-ref">Variable ifcopenshell::SWAR::ONES</span></a></p></li>
+<li><p><a class="reference internal" href="variable_parse_8h_1aff0f8126c4374937f35799f18d4cf67d.html#exhale-variable-parse-8h-1aff0f8126c4374937f35799f18d4cf67d"><span class="std std-ref">Variable ifcopenshell::SWAR::ONES32</span></a></p></li>
 <li><p><a class="reference internal" href="variable_parse_8h_1a6b3681e13490b3784be21bb328cceccc.html#exhale-variable-parse-8h-1a6b3681e13490b3784be21bb328cceccc"><span class="std std-ref">Variable IFCOPENSHELL_VERSION</span></a></p></li>
 </ul>
 </section>

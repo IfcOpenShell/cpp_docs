@@ -1,7 +1,7 @@
 .. _exhale_function_express_8h_1a064e15e13259ab8d693e2673c06d69f7:
 
-Template Function ifcopenshell::make_pointer_type
-=================================================
+Template Function ifcopenshell::make\_pointer\_type
+===================================================
 
 - Defined in :ref:`file_src_ifcparse_express.h`
 

@@ -1,7 +1,7 @@
 .. _exhale_function_sweep__utils_8h_1a10032f262bb1314b4ca959e7e8baa093:
 
-Function ifcopenshell::geom::util::process_sweep_as_revolution
-==============================================================
+Function ifcopenshell::geom::util::process\_sweep\_as\_revolution
+=================================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_sweep_utils.h`
 

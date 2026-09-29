@@ -25,7 +25,11 @@ Includes
 --------
 
 
+- ``array`` (:ref:`file_src_ifcparse_variant_array.h`)
+
 - ``cstddef``
+
+- ``cstring``
 
 - ``iostream``
 
@@ -53,6 +57,14 @@ Included By
 Classes
 -------
 
+
+- :ref:`exhale_struct_structvariant__map_1_1is__char__array`
+
+- :ref:`exhale_struct_structvariant__map_1_1is__char__array_3_01std_1_1array_3_01char_00_01_n_01_4_01_4`
+
+- :ref:`exhale_struct_structvariant__map_1_1public__key`
+
+- :ref:`exhale_struct_structvariant__map_1_1public__key_3_01std_1_1array_3_01char_00_01_n_01_4_01_4`
 
 - :ref:`exhale_class_classvariant__map`
 

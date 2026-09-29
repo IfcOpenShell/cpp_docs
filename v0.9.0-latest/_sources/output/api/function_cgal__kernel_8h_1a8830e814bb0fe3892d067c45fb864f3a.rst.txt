@@ -1,7 +1,7 @@
 .. _exhale_function_cgal__kernel_8h_1a8830e814bb0fe3892d067c45fb864f3a:
 
-Function ifcopenshell::geom::utils::create_cube(const kernel::Point_3&, const kernel::Point_3&)
-===============================================================================================
+Function ifcopenshell::geom::utils::create\_cube(const kernel::Point\_3&, const kernel::Point\_3&)
+==================================================================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_cgal_cgal_kernel.h`
 

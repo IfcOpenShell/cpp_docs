@@ -1,7 +1,7 @@
 .. _exhale_function_infra__sweep__helper_8h_1ac0b1629f4ffc108774544e1e7054cee9:
 
-Function ifcopenshell::geom::make_loft
-======================================
+Function ifcopenshell::geom::make\_loft
+=======================================
 
 - Defined in :ref:`file_src_ifcgeom_infra_sweep_helper.h`
 

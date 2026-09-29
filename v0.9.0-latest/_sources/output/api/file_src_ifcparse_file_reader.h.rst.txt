@@ -31,6 +31,8 @@ Includes
 
 - ``cstdio``
 
+- ``cstring``
+
 - ``deque``
 
 - ``ifc_parse_api.h`` (:ref:`file_src_ifcparse_ifc_parse_api.h`)
@@ -86,6 +88,13 @@ Classes
 - :ref:`exhale_class_classifcopenshell_1_1paged__file__impl`
 
 - :ref:`exhale_class_classifcopenshell_1_1pushed__sequential__impl`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_file__reader_8h_1a2e6498daff2cf4e109fcd8b81c16ca85`
 
 
 Variables

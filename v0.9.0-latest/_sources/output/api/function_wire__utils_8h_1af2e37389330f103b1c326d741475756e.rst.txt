@@ -1,7 +1,7 @@
 .. _exhale_function_wire__utils_8h_1af2e37389330f103b1c326d741475756e:
 
-Function ifcopenshell::geom::util::convert_wire_to_face
-=======================================================
+Function ifcopenshell::geom::util::convert\_wire\_to\_face
+==========================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
 

@@ -1,7 +1,7 @@
 .. _exhale_function_conversion__result_8h_1a2f2d26cf5206ec419aa96051c7470fd5:
 
-Template Function ifcopenshell::geom::util::find_boundary_loops
-===============================================================
+Template Function ifcopenshell::geom::util::find\_boundary\_loops
+=================================================================
 
 - Defined in :ref:`file_src_ifcgeom_conversion_result.h`
 

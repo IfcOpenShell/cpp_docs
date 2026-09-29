@@ -1,7 +1,7 @@
 .. _exhale_function_wire__utils_8h_1aac4381b1b61a14442ffc2048d872d739:
 
-Function ifcopenshell::geom::util::convert_curve_to_wire
-========================================================
+Function ifcopenshell::geom::util::convert\_curve\_to\_wire
+===========================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
 

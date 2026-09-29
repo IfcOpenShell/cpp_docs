@@ -1,0 +1,14 @@
+.. _exhale_function_parse_8h_1a1a5b1c94788ffe0ad0fc77782c90124f:
+
+Template Function ifcopenshell::SWAR::has\_special\_char(uint32\_t)
+===================================================================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::SWAR::has_special_char(uint32_t)
+   :project: IfcOpenShell

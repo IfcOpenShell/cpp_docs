@@ -1,7 +1,7 @@
 .. _exhale_function_kernel__plugin_8h_1a722645a71eb703324ab562d044e9d8e6:
 
-Function ifcopenshell::geom::kernels::kernel_plugin_registration_symbol
-=======================================================================
+Function ifcopenshell::geom::kernels::kernel\_plugin\_registration\_symbol
+==========================================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernel_plugin.h`
 

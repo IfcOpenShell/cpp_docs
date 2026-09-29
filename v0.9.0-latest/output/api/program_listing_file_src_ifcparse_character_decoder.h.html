@@ -98,6 +98,10 @@
 <span class="w">    </span><span class="c1">// Gets a decoded string representation at the token stream</span>
 <span class="w">    </span><span class="c1">// read pointer and advances the underlying token stream.</span>
 <span class="w">    </span><span class="k">operator</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">();</span>
+<span class="w">    </span><span class="c1">// Advances the token stream past the string at the read pointer</span>
+<span class="w">    </span><span class="c1">// without decoding it: the same state machine as the conversion, so</span>
+<span class="w">    </span><span class="c1">// escapes such as \S\' end the string at the same byte.</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">skip</span><span class="p">();</span>
 <span class="w">    </span><span class="c1">// Gets a decoded string representation at the offset provided,</span>
 <span class="w">    </span><span class="c1">// does not mutate the underlying token stream read pointer.</span>
 <span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="kt">size_t</span><span class="o">&amp;</span><span class="w"> </span><span class="n">offset</span><span class="p">);</span>

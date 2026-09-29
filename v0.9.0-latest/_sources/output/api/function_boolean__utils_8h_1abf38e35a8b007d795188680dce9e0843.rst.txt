@@ -1,7 +1,7 @@
 .. _exhale_function_boolean__utils_8h_1abf38e35a8b007d795188680dce9e0843:
 
-Function ifcopenshell::geom::util::ensure_fit_for_subtraction
-=============================================================
+Function ifcopenshell::geom::util::ensure\_fit\_for\_subtraction
+================================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_boolean_utils.h`
 

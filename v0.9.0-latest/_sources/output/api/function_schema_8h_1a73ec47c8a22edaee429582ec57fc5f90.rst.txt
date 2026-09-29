@@ -1,7 +1,7 @@
 .. _exhale_function_schema_8h_1a73ec47c8a22edaee429582ec57fc5f90:
 
-Function ifcopenshell::load_schema_plugins
-==========================================
+Function ifcopenshell::load\_schema\_plugins
+============================================
 
 - Defined in :ref:`file_src_ifcparse_schema.h`
 

@@ -1,0 +1,19 @@
+.. _exhale_struct_structifcopenshell_1_1impl_1_1in__memory__file__storage_1_1guid__key__hash:
+
+Struct in_memory_file_storage::guid_key_hash
+============================================
+
+- Defined in :ref:`file_src_ifcparse_storage.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_struct_structifcopenshell_1_1impl_1_1in__memory__file__storage`.
+
+
+Struct Documentation
+--------------------
+
+
+See :ref:`exhale_struct_structifcopenshell_1_1impl_1_1in__memory__file__storage` for this nested type's documentation.

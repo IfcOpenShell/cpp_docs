@@ -1,7 +1,7 @@
 .. _exhale_function_sweep__utils_8h_1af0762dcd39cd615ee7fdc779d322ade3:
 
-Function ifcopenshell::geom::util::process_sweep
-================================================
+Function ifcopenshell::geom::util::process\_sweep
+=================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_sweep_utils.h`
 

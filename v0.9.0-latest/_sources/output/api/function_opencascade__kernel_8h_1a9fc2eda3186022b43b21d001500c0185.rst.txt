@@ -1,7 +1,7 @@
 .. _exhale_function_opencascade__kernel_8h_1a9fc2eda3186022b43b21d001500c0185:
 
-Function ifcopenshell::geom::tesselate__Schema
-==============================================
+Function ifcopenshell::geom::tesselate\_\_Schema
+================================================
 
 .. did not find file this was defined in
 

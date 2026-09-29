@@ -1,7 +1,7 @@
 .. _exhale_function_parse_8h_1aef4f6615104c983873ca7dc7fc9bef9e:
 
-Function ifcopenshell::traverse_breadth_first
-=============================================
+Function ifcopenshell::traverse\_breadth\_first
+===============================================
 
 - Defined in :ref:`file_src_ifcparse_parse.h`
 

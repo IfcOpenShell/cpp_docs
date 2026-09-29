@@ -1,7 +1,7 @@
 .. _exhale_function_geometry__serializer__plugin_8h_1a8e6af6a9567ac3083d89cfc698b92c49:
 
-Function ifcopenshell::serializers::geometry_serializer_plugin_registration_symbol
-==================================================================================
+Function ifcopenshell::serializers::geometry\_serializer\_plugin\_registration\_symbol
+======================================================================================
 
 - Defined in :ref:`file_src_serializers_geometry_serializer_plugin.h`
 

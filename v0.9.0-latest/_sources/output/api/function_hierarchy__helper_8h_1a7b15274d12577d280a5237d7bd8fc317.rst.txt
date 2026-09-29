@@ -1,7 +1,7 @@
 .. _exhale_function_hierarchy__helper_8h_1a7b15274d12577d280a5237d7bd8fc317:
 
-Function ifcopenshell::hierarchy_detail::parent_attribute_name
-==============================================================
+Function ifcopenshell::hierarchy\_detail::parent\_attribute\_name
+=================================================================
 
 - Defined in :ref:`file_src_ifcparse_hierarchy_helper.h`
 

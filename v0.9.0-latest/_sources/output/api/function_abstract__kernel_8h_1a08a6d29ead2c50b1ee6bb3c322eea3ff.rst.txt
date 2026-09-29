@@ -1,7 +1,7 @@
 .. _exhale_function_abstract__kernel_8h_1a08a6d29ead2c50b1ee6bb3c322eea3ff:
 
-Template Function ALMOST_THE_SAME
-=================================
+Template Function ALMOST\_THE\_SAME
+===================================
 
 - Defined in :ref:`file_src_ifcgeom_abstract_kernel.h`
 

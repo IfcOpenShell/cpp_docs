@@ -1,7 +1,7 @@
 .. _exhale_function_layerset_8h_1a4cfe72c7c0398d5b029a7c8d5d55809f:
 
-Function ifcopenshell::geom::util::apply_folded_layerset
-========================================================
+Function ifcopenshell::geom::util::apply\_folded\_layerset
+==========================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_layerset.h`
 

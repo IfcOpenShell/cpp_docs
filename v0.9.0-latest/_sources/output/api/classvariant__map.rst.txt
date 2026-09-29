@@ -13,7 +13,9 @@ Nested Relationships
 Nested Types
 ************
 
+- :ref:`exhale_struct_structvariant__map_1_1is__char__array`
 - :ref:`exhale_class_classvariant__map_1_1iterator`
+- :ref:`exhale_struct_structvariant__map_1_1public__key`
 
 
 Class Documentation

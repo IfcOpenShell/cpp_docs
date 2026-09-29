@@ -1,7 +1,7 @@
 .. _exhale_function_cgal__kernel_8h_1af11c8bd1cae7c970408a7ed372426d72:
 
-Function ifcopenshell::geom::utils::create_cube(double)
-=======================================================
+Function ifcopenshell::geom::utils::create\_cube(double)
+========================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_cgal_cgal_kernel.h`
 

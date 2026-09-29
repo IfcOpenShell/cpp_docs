@@ -110,6 +110,11 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_src_ifcgeom_kernels_opencascade_bvh_tree.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_src_ifcgeom_kernels_cgal_cgal_conversion_result.h.rst
 
 .. toctree::
@@ -470,17 +475,7 @@ Files
 .. toctree::
    :maxdepth: 5
 
-   file_src_ifcgeom_kernels_opencascade_tree.h.rst
-
-.. toctree::
-   :maxdepth: 5
-
    file_src_ifcgeom_tree.h.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   file_src_ifcgeom_kernels_opencascade_tree_backends.h.rst
 
 .. toctree::
    :maxdepth: 5
@@ -496,6 +491,11 @@ Files
    :maxdepth: 5
 
    file_src_serializers_ttl_wkt_serializer.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_src_ifcgeom_kernels_opencascade_ub_tree.h.rst
 
 .. toctree::
    :maxdepth: 5

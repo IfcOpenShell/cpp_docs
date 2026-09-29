@@ -67,7 +67,9 @@ Included By
 -----------
 
 
-- :ref:`file_src_ifcgeom_kernels_opencascade_tree.h`
+- :ref:`file_src_ifcgeom_kernels_opencascade_bvh_tree.h`
+
+- :ref:`file_src_ifcgeom_kernels_opencascade_ub_tree.h`
 
 
 

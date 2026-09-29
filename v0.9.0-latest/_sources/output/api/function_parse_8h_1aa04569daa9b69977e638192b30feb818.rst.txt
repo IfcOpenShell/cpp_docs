@@ -1,0 +1,14 @@
+.. _exhale_function_parse_8h_1aa04569daa9b69977e638192b30feb818:
+
+Function ifcopenshell::SWAR::has\_zero\_byte(uint64\_t)
+=======================================================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::SWAR::has_zero_byte(uint64_t)
+   :project: IfcOpenShell

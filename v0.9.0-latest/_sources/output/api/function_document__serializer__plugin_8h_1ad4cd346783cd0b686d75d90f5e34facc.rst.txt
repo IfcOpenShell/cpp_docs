@@ -1,7 +1,7 @@
 .. _exhale_function_document__serializer__plugin_8h_1ad4cd346783cd0b686d75d90f5e34facc:
 
-Function ifcopenshell::serializers::document_serializer_plugin_metadata
-=======================================================================
+Function ifcopenshell::serializers::document\_serializer\_plugin\_metadata
+==========================================================================
 
 - Defined in :ref:`file_src_serializers_document_serializer_plugin.h`
 

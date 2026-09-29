@@ -1,7 +1,7 @@
 .. _exhale_function_rocksdb__map__adapter_8h_1aa3bbe937e277d6d41af0e2f544ec949a:
 
-Function rocksdb_key::type_list
-===============================
+Function rocksdb\_key::type\_list
+=================================
 
 - Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
 

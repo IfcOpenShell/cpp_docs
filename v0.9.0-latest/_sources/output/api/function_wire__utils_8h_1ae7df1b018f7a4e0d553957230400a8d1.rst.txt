@@ -1,7 +1,7 @@
 .. _exhale_function_wire__utils_8h_1ae7df1b018f7a4e0d553957230400a8d1:
 
-Function ifcopenshell::geom::util::select_largest
-=================================================
+Function ifcopenshell::geom::util::select\_largest
+==================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_wire_utils.h`
 

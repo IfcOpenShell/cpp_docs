@@ -1,0 +1,14 @@
+.. _exhale_function_parse_8h_1a27c004b939f2f9c39693a6927c2a1417:
+
+Function ifcopenshell::SWAR::splat
+==================================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::SWAR::splat(unsigned char)
+   :project: IfcOpenShell

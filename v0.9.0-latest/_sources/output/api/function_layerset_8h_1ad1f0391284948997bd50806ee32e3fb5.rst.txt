@@ -1,7 +1,7 @@
 .. _exhale_function_layerset_8h_1ad1f0391284948997bd50806ee32e3fb5:
 
-Function ifcopenshell::geom::util::apply_layerset
-=================================================
+Function ifcopenshell::geom::util::apply\_layerset
+==================================================
 
 - Defined in :ref:`file_src_ifcgeom_kernels_opencascade_layerset.h`
 

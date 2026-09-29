@@ -45,24 +45,32 @@ Classes
 
 - :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1readable__name_3_01std_1_1vector_3_01std_1_1string_01_4_01_4`
 
-- :ref:`exhale_struct_structifcopenshell_1_1geom_1_1impl_1_1tree_1_1clash__task`
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1bvh__tree`
 
 - :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1mapping__factory__implementation`
 
 - :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1mapping__registry`
 
-- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1tree`
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1ub__tree`
 
-- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1tree_1_1selector`
+- :ref:`exhale_class_classifcopenshell_1_1geom_1_1impl_1_1ub__tree_1_1selector`
 
 
 Functions
 ---------
 
 
+- :ref:`exhale_function_ub__tree_8h_1af60492322cb87df1ab2e3ab7661286f2`
+
+- :ref:`exhale_function_bvh__tree_8h_1a3729a024b71a8c8783dcaba7b2ba776c`
+
 - :ref:`exhale_function_mapping__plugin_8h_1a4b4adb9b13b1bbd43867d89924c5a947`
 
 - :ref:`exhale_function_mapping__plugin_8h_1a7c3622c6f9f0dd3710da04b0b8d89666`
+
+- :ref:`exhale_function_ub__tree_8h_1a79aec8eefe1c1ecc86c54203a489f385`
+
+- :ref:`exhale_function_ub__tree_8h_1ac4f7189e04cbbc2f022b406e3ce68c2d`
 
 - :ref:`exhale_function_abstract__mapping_8h_1a2da56ddf474c767e6343684c6b49ebdd`
 
@@ -73,6 +81,8 @@ Functions
 - :ref:`exhale_function_mapping__plugin_8h_1ac62cc6a92be27a5f8f134cddd3cc4cf7`
 
 - :ref:`exhale_function_abstract__mapping_8h_1afdec582d2050987fdf12547f58565c2d`
+
+- :ref:`exhale_function_ub__tree_8h_1a6708e8be13bcade4363e264226407ddc`
 
 
 Typedefs

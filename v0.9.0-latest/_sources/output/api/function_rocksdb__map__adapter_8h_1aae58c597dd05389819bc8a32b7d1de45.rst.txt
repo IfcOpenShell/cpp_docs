@@ -1,7 +1,7 @@
 .. _exhale_function_rocksdb__map__adapter_8h_1aae58c597dd05389819bc8a32b7d1de45:
 
-Function rocksdb_key::upper_bound
-=================================
+Function rocksdb\_key::upper\_bound
+===================================
 
 - Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
 

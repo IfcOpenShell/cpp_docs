@@ -1,7 +1,7 @@
 .. _exhale_function_rocksdb__map__adapter_8h_1aa3e2b83db1c4e055e9a861bfc4caaa12:
 
-Function hex_key
-================
+Function hex\_key
+=================
 
 - Defined in :ref:`file_src_ifcparse_rocksdb_map_adapter.h`
 

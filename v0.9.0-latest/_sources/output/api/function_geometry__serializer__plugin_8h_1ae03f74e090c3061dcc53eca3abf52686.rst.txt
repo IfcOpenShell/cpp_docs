@@ -1,7 +1,7 @@
 .. _exhale_function_geometry__serializer__plugin_8h_1ae03f74e090c3061dcc53eca3abf52686:
 
-Function ifcopenshell::serializers::geometry_serializer_plugin_metadata
-=======================================================================
+Function ifcopenshell::serializers::geometry\_serializer\_plugin\_metadata
+==========================================================================
 
 - Defined in :ref:`file_src_serializers_geometry_serializer_plugin.h`
 

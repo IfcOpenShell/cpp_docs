@@ -1,7 +1,7 @@
 .. _exhale_function_schema_8h_1a50b5dff7be007b8c7ac1560b8131c9c2:
 
-Function ifcopenshell::schema_plugin_directory
-==============================================
+Function ifcopenshell::schema\_plugin\_directory
+================================================
 
 - Defined in :ref:`file_src_ifcparse_schema.h`
 

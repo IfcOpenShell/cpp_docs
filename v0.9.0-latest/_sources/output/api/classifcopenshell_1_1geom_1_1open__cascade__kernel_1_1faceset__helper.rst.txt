@@ -16,8 +16,4 @@ Class Documentation
 -------------------
 
 
-.. doxygenclass:: ifcopenshell::geom::open_cascade_kernel::faceset_helper
-   :project: IfcOpenShell
-   :members:
-   :protected-members:
-   :undoc-members:
+See :ref:`exhale_class_classifcopenshell_1_1geom_1_1open__cascade__kernel` for this nested type's documentation.

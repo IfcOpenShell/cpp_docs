@@ -1,0 +1,14 @@
+.. _exhale_enum_parse_8h_1a29acf6e77d942a70a384d575875eebb1:
+
+Enum body_kind
+==============
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: ifcopenshell::body_kind
+   :project: IfcOpenShell

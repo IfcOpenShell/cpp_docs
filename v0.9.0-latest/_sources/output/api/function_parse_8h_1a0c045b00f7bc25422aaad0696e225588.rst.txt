@@ -1,0 +1,14 @@
+.. _exhale_function_parse_8h_1a0c045b00f7bc25422aaad0696e225588:
+
+Function ifcopenshell::SWAR::eq\_mask(uint64\_t, uint64\_t)
+===========================================================
+
+- Defined in :ref:`file_src_ifcparse_parse.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: ifcopenshell::SWAR::eq_mask(uint64_t, uint64_t)
+   :project: IfcOpenShell
