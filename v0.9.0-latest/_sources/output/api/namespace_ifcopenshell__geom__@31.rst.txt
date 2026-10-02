@@ -1,7 +1,7 @@
 
-.. _namespace_ifcopenshell__geom__@32:
+.. _namespace_ifcopenshell__geom__@31:
 
-Namespace ifcopenshell::geom::@32
+Namespace ifcopenshell::geom::@31
 =================================
 
 
