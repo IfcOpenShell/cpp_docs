@@ -17,7 +17,7 @@ Namespaces
 ----------
 
 
-- :ref:`namespace_ifcopenshell__geom__taxonomy__@55`
+- :ref:`namespace_ifcopenshell__geom__taxonomy__@56`
 
 - :ref:`namespace_ifcopenshell__geom__taxonomy__impl`
 

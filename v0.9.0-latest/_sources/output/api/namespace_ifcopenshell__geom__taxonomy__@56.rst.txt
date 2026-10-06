@@ -1,7 +1,7 @@
 
-.. _namespace_ifcopenshell__geom__taxonomy__@55:
+.. _namespace_ifcopenshell__geom__taxonomy__@56:
 
-Namespace ifcopenshell::geom::taxonomy::@55
+Namespace ifcopenshell::geom::taxonomy::@56
 ===========================================
 
 
